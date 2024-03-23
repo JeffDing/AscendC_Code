@@ -1,0 +1,32 @@
+{
+  "op_type": "SinhCustom",
+  "op_list": [
+    {
+      "bin_filename": "SinhCustom_01ec8ddcf6437b12e69898b368caea08",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "z",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ]
+    }
+  ]
+}
