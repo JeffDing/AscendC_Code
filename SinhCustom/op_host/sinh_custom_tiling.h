@@ -8,6 +8,6 @@ BEGIN_TILING_DATA_DEF(TilingData)
   TILING_DATA_FIELD_DEF(uint32_t, tileNum);
 END_TILING_DATA_DEF;
 
-REGISTER_TILING_DATA_CLASS(SinhCustom, SinhCustomTilingData)
+REGISTER_TILING_DATA_CLASS(SinhCustom, TilingData)
 }
 #endif

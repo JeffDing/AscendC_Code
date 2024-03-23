@@ -7,7 +7,7 @@ namespace optiling {
 static ge::graphStatus TilingFunc(gert::TilingContext* context)
 {
 
-  SinhCustomTilingData tiling;
+  TilingData tiling;
   const gert::StorageShape* x1_shape = context->GetInputShape(0);
   int32_t data_sz = 1;
   for (int i = 0; i < x1_shape->GetStorageShape().GetDimNum(); i++)
