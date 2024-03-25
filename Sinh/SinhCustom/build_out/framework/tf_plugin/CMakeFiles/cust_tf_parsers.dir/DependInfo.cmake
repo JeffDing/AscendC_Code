@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/root/cann_camp_2024/SinhCustom/framework/tf_plugin/tensorflow_sinh_custom_plugin.cc" "framework/tf_plugin/CMakeFiles/cust_tf_parsers.dir/tensorflow_sinh_custom_plugin.cc.o" "gcc" "framework/tf_plugin/CMakeFiles/cust_tf_parsers.dir/tensorflow_sinh_custom_plugin.cc.o.d"
+  "/tmp/code/SinhCustom/framework/tf_plugin/tensorflow_sinh_custom_plugin.cc" "framework/tf_plugin/CMakeFiles/cust_tf_parsers.dir/tensorflow_sinh_custom_plugin.cc.o" "gcc" "framework/tf_plugin/CMakeFiles/cust_tf_parsers.dir/tensorflow_sinh_custom_plugin.cc.o.d"
   )
 
 # Targets to which this target links.

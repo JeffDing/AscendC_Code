@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/root/cann_camp_2024/SinhCustom/build_out/autogen/op_proto.cc" "op_host/CMakeFiles/cust_op_proto.dir/__/autogen/op_proto.cc.o" "gcc" "op_host/CMakeFiles/cust_op_proto.dir/__/autogen/op_proto.cc.o.d"
-  "/root/cann_camp_2024/SinhCustom/op_host/sinh_custom.cpp" "op_host/CMakeFiles/cust_op_proto.dir/sinh_custom.cpp.o" "gcc" "op_host/CMakeFiles/cust_op_proto.dir/sinh_custom.cpp.o.d"
+  "/tmp/code/SinhCustom/build_out/autogen/op_proto.cc" "op_host/CMakeFiles/cust_op_proto.dir/__/autogen/op_proto.cc.o" "gcc" "op_host/CMakeFiles/cust_op_proto.dir/__/autogen/op_proto.cc.o.d"
+  "/tmp/code/SinhCustom/op_host/sinh_custom.cpp" "op_host/CMakeFiles/cust_op_proto.dir/sinh_custom.cpp.o" "gcc" "op_host/CMakeFiles/cust_op_proto.dir/sinh_custom.cpp.o.d"
   )
 
 # Targets to which this target links.

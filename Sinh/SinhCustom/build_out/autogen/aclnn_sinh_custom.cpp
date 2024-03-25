@@ -34,7 +34,10 @@ enum SocType {
     SOC_VERSION_ASCEND310B,
     SOC_VERSION_BS9SX1A
 };
-uint32_t socSupportList[] = {TensorDesc inputDesc0_0[1] =
+uint32_t socSupportList[] = {SOC_VERSION_ASCEND910B};
+uint32_t socSupportListLen = 1;
+
+TensorDesc inputDesc0_0[1] =
     {{ge::DT_FLOAT16, ge::FORMAT_ND}};
 TensorDesc outputDesc0_0[1] =
     {{ge::DT_FLOAT16, ge::FORMAT_ND}};
@@ -56,6 +59,8 @@ extern aclnnStatus NnopbaseCreateExecutorSpace(void **space);
 extern void *NnopbaseGetExecutor(void *space, const char *opType, char *inputsDesc, uint32_t inputNum,
                                  char *outputsDesc, uint32_t outputNum, char *attrsDesc, uint32_t attrsNum);
 extern aclnnStatus NnopbaseAddInput(void *executor, const aclTensor *tensor, const uint32_t index);
+extern aclnnStatus NnopbaseAddIgnoreContinuesInput(void *executor,
+                                                   const aclTensor *tensor, const uint32_t index);
 extern aclnnStatus NnopbaseAddIntArrayInput(void *executor, const aclIntArray *array, const uint32_t index);
 extern aclnnStatus NnopbaseAddBoolArrayInput(void *executor, const aclBoolArray *array, const uint32_t index);
 extern aclnnStatus NnopbaseAddFloatArrayInput(void *executor, const aclFloatArray *array, const uint32_t index);
@@ -73,6 +78,8 @@ extern void NnopbaseReportApiInfo(const uint64_t beginTime, NnopbaseDfxId &dfxId
 extern aclnnStatus NnopbaseRunForWorkspace(void *executor, uint64_t *workspaceLen);
 extern aclnnStatus NnopbaseRunWithWorkspace(void *executor, aclrtStream stream, void *workspace, uint64_t workspaceSize);
 extern aclnnStatus NnopbaseAddSupportList(void *executor, OpSupportList *list, uint32_t *socSupportList, size_t socSupportListLen);
+extern aclnnStatus NnopbaseAddScalarInput(void *executor, const aclScalar *scalar, const uint32_t index, const int32_t srcIndex, const ge::DataType dtype);
+extern aclnnStatus NnopbaseAddScalarListInput(void *executor, const aclScalarList *scalarList, const uint32_t index, const int32_t srcIndex, const ge::DataType dtype);
 
 #define ACLNN_SUCCESS  0
 #define ACLNN_ERR_PARAM_NULLPTR 161001
@@ -96,7 +103,7 @@ extern aclnnStatus NnopbaseAddSupportList(void *executor, OpSupportList *list, u
 
 aclnnStatus aclnnSinhCustomGetWorkspaceSize(
     const aclTensor *x,
-    const aclTensor *z,
+    const aclTensor *out,
     uint64_t *workspaceSize,
     aclOpExecutor **executor)
 {
@@ -111,7 +118,7 @@ aclnnStatus aclnnSinhCustomGetWorkspaceSize(
     char attrDesc[] = {};
 
     NNOPBASE_ASSERT_NOTNULL_RETVAL(x);
-    NNOPBASE_ASSERT_NOTNULL_RETVAL(z);
+    NNOPBASE_ASSERT_NOTNULL_RETVAL(out);
 
     if (!executorSpace) {
         NNOPBASE_ASSERT_OK_RETVAL(NnopbaseCreateExecutorSpace(&executorSpace));
@@ -123,7 +130,7 @@ aclnnStatus aclnnSinhCustomGetWorkspaceSize(
     *executor = reinterpret_cast<aclOpExecutor *>(nnopExecutor);
     NNOPBASE_ASSERT_OK_RETVAL(NnopbaseAddTilingId(*executor, &tilingId));
     NNOPBASE_ASSERT_OK_RETVAL(NnopbaseAddInput(*executor, x, 0));
-    NNOPBASE_ASSERT_OK_RETVAL(NnopbaseAddOutput(*executor, z, 0));
+    NNOPBASE_ASSERT_OK_RETVAL(NnopbaseAddOutput(*executor, out, 0));
     NNOPBASE_ASSERT_OK_RETVAL(NnopbaseAddSupportList(*executor, &supportList, socSupportList, socSupportListLen));
     aclnnStatus ret = NnopbaseRunForWorkspace(*executor, workspaceSize);
     NnopbaseReportApiInfo(timeStamp, dfxId);

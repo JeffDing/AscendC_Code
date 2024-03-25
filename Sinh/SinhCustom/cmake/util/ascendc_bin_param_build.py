@@ -40,7 +40,7 @@ class BinParamBuilder(opdesc_parser.OpDesc):
                 ifmts = self.input_fmt[idx].split(',')
                 itype = self.input_type[idx]
                 para = {}
-                para['name'] = self.input_name[idx]
+                para['name'] = self.input_name[idx][:-5]
                 para['index'] = idx
                 para['dtype'] = idtypes[i]
                 para['format'] = ifmts[i]
@@ -55,7 +55,7 @@ class BinParamBuilder(opdesc_parser.OpDesc):
                 ofmts = self.output_fmt[idx].split(',')
                 otype = self.output_type[idx]
                 para = {}
-                para['name'] = self.output_name[idx]
+                para['name'] = self.output_name[idx][:-5]
                 para['index'] = idx
                 para['dtype'] = odtypes[i]
                 para['format'] = ofmts[i]
@@ -69,7 +69,6 @@ class BinParamBuilder(opdesc_parser.OpDesc):
                 att = {}
                 att['name'] = attr
                 atype = self.attr_val.get(attr).get('type').lower()
-                atype = atype.replace('list', 'list_')
                 att['dtype'] = atype
                 att['value'] = const_var.ATTR_DEF_VAL.get(atype)
                 attrs.append(att)

@@ -45,7 +45,7 @@ def infer_code_channel(params: InfoCodeChanelParams):
         src_file (str): AscendC operator tiling header file
         kernel_name (str): kernel function name
         optype (str): operator type
-        compile_options (list): compile options for ccec cmd
+        compile_options (list): compile options for bisheng cmd
 
     Raises:
         Exception: if not exist L1/L0/UB if code, it's not a aicore code

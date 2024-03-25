@@ -94,63 +94,6 @@ function(add_ops_impl_target)
   endif()
 endfunction()
 
-function(add_ops_replay_targets)
-  cmake_parse_arguments(OPREPLAY "" "OPS_INFO;COMPUTE_UNIT;IMPL_DIR;OUT_DIR;INSTALL_DIR" "OPS_BATCH;OPS_ITERATE" ${ARGN})
-  # ccec compile options
-  set(ccec_base_opts -c -O2 --cce-aicore-only -mllvm -cce-aicore-function-stack-size=16000
-                     -mllvm -cce-aicore-record-overflow=false -std=c++17)
-  set(ccec_extopts_ascend310p --cce-aicore-arch=dav-m200 -mllvm -cce-aicore-fp-ceiling=2)
-  set(ccec_extopts_ascend910 --cce-aicore-arch=dav-c100)
-  set(ccec_extopts_ascend910b --cce-aicore-arch=dav-c220-cube)
-  file(MAKE_DIRECTORY ${OPREPLAY_OUT_DIR})
-  execute_process(COMMAND ${ASCEND_PYTHON_EXECUTABLE} ${CMAKE_SOURCE_DIR}/cmake/util/ascendc_replay_build.py
-                          ${OPREPLAY_OPS_INFO}
-                          "${OPREPLAY_OPS_BATCH}" "${OPREPLAY_OPS_ITERATE}"
-                          ${OPREPLAY_IMPL_DIR}
-                          ${OPREPLAY_OUT_DIR}
-                          ${OPREPLAY_COMPUTE_UNIT}
-  )
-  file(GLOB replay_kernel_entries ${OPREPLAY_OUT_DIR}/*.cce)
-  if (NOT "${replay_kernel_entries}x" STREQUAL "x")
-    foreach(replay_kernel_file ${replay_kernel_entries})
-      get_filename_component(replay_kernel_file_name "${replay_kernel_file}" NAME)
-      string(REPLACE "_entry.cce" "" op_kerne_name ${replay_kernel_file_name})
-      file(GLOB replay_lib_src ${OPREPLAY_OUT_DIR}/${op_kerne_name}*.cpp)
-      set(OP_TILING_DATA_H_PATH ${OPREPLAY_OUT_DIR}/${op_kerne_name}_tiling_data.h)
-      add_library(replay_${op_kerne_name}_${OPREPLAY_COMPUTE_UNIT} SHARED ${replay_lib_src})
-      if(EXISTS ${OP_TILING_DATA_H_PATH})
-        target_compile_options(replay_${op_kerne_name}_${OPREPLAY_COMPUTE_UNIT} PRIVATE
-          -include ${OP_TILING_DATA_H_PATH}
-        )
-      endif()
-      target_compile_definitions(replay_${op_kerne_name}_${OPREPLAY_COMPUTE_UNIT} PRIVATE
-        ${op_kerne_name}=${op_kerne_name}_${OPREPLAY_COMPUTE_UNIT}
-      )
-      target_compile_options(replay_${op_kerne_name}_${OPREPLAY_COMPUTE_UNIT} PRIVATE
-        -D__ASCENDC_REPLAY__
-      )
-      target_link_libraries(replay_${op_kerne_name}_${OPREPLAY_COMPUTE_UNIT} PRIVATE intf_pub
-        tikreplaylib::${OPREPLAY_COMPUTE_UNIT}
-        register
-      )
-      add_custom_command(OUTPUT ${OPREPLAY_OUT_DIR}/${op_kerne_name}_entry_${OPREPLAY_COMPUTE_UNIT}.o
-                         COMMAND ccec ${ccec_base_opts} ${ccec_extopts_${OPREPLAY_COMPUTE_UNIT}} ${replay_kernel_file}
-                                 -o ${OPREPLAY_OUT_DIR}/${op_kerne_name}_entry_${OPREPLAY_COMPUTE_UNIT}.o
-                         DEPENDS ${replay_kernel_file}
-      )
-      add_custom_target(replay_kernel_${op_kerne_name}_${OPREPLAY_COMPUTE_UNIT} ALL
-                        DEPENDS ${OPREPLAY_OUT_DIR}/${op_kerne_name}_entry_${OPREPLAY_COMPUTE_UNIT}.o
-      )
-      install(TARGETS replay_${op_kerne_name}_${OPREPLAY_COMPUTE_UNIT}
-              LIBRARY DESTINATION packages/vendors/${vendor_name}/op_impl/ai_core/tbe/op_replay
-      )
-      install(FILES ${OPREPLAY_OUT_DIR}/${op_kerne_name}_entry_${OPREPLAY_COMPUTE_UNIT}.o
-              DESTINATION packages/vendors/${vendor_name}/op_impl/ai_core/tbe/op_replay
-      )
-    endforeach()
-  endif()
-endfunction()
-
 function(add_npu_support_target)
   cmake_parse_arguments(NPUSUP "" "TARGET;OPS_INFO_DIR;OUT_DIR;INSTALL_DIR" "" ${ARGN})
   get_filename_component(npu_sup_file_path "${NPUSUP_OUT_DIR}" DIRECTORY)
@@ -216,7 +159,7 @@ function(add_bin_compile_target)
       )
     endif()
     add_custom_target(${BINCMP_TARGET}_${op_file}_${op_index}
-                      COMMAND export HI_PYTHON=${ASCEND_PYTHON_EXECUTABLE} && bash ${bin_script} ${BINCMP_OUT_DIR}/src/${op_type}.py ${BINCMP_OUT_DIR}/bin/${op_file}
+                      COMMAND export HI_PYTHON=${ASCEND_PYTHON_EXECUTABLE} && bash ${bin_script} ${BINCMP_OUT_DIR}/src/${op_type}.py ${BINCMP_OUT_DIR}/bin/${op_file} && echo $(MAKE)
                       WORKING_DIRECTORY ${BINCMP_OUT_DIR}
     )
     add_dependencies(${BINCMP_TARGET}_${op_file}_${op_index} ${BINCMP_TARGET} ${BINCMP_TARGET}_${op_file}_copy)
@@ -225,4 +168,25 @@ function(add_bin_compile_target)
   install(FILES ${BINCMP_OUT_DIR}/bin/binary_info_config.json
     DESTINATION ${BINCMP_INSTALL_DIR}/config/${BINCMP_COMPUTE_UNIT} OPTIONAL
   )
+
+  install(DIRECTORY ${BINCMP_OUT_DIR}/bin/${op_file}
+    DESTINATION ${CMAKE_CURRENT_SOURCE_DIR}/../build_out/kernel/${BINCMP_COMPUTE_UNIT} OPTIONAL
+  )
+  install(FILES ${BINCMP_OUT_DIR}/bin/binary_info_config.json
+    DESTINATION ${CMAKE_CURRENT_SOURCE_DIR}/../build_out/kernel/config/${BINCMP_COMPUTE_UNIT} OPTIONAL
+  )
+  install(FILES ${BINCMP_OUT_DIR}/bin/${op_file}.json
+    DESTINATION ${CMAKE_CURRENT_SOURCE_DIR}/../build_out/kernel/config/${BINCMP_COMPUTE_UNIT} OPTIONAL
+  )
+
+endfunction()
+
+function(add_cross_compile_target)
+    cmake_parse_arguments(CROSSMP "" "TARGET;OUT_DIR;INSTALL_DIR" "" ${ARGN})
+    add_custom_target(${CROSSMP_TARGET} ALL
+                        DEPENDS ${CROSSMP_OUT_DIR}
+    )
+    install(DIRECTORY ${CROSSMP_OUT_DIR}
+            DESTINATION ${CROSSMP_INSTALL_DIR}
+    )
 endfunction()

@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/root/cann_camp_2024/SinhCustom/op_host/sinh_custom.cpp" "op_host/CMakeFiles/cust_optiling.dir/sinh_custom.cpp.o" "gcc" "op_host/CMakeFiles/cust_optiling.dir/sinh_custom.cpp.o.d"
+  "/tmp/code/SinhCustom/op_host/sinh_custom.cpp" "op_host/CMakeFiles/cust_optiling.dir/sinh_custom.cpp.o" "gcc" "op_host/CMakeFiles/cust_optiling.dir/sinh_custom.cpp.o.d"
   )
 
 # Targets to which this target links.
