@@ -305,15 +305,15 @@ bool OpRunner::RunOp()
     INFO_LOG("Create stream success");
 
     size_t workspaceSize = 0;
-	aclOpExecutor *handle = nullptr;
-	auto ret = aclnnSinhCustomGetWorkspaceSize(inputTensor_[0], outputTensor_[0],
+    aclOpExecutor *handle = nullptr;
+    auto ret = aclnnSinhCustomGetWorkspaceSize(inputTensor_[0], outputTensor_[0],
                                               &workspaceSize, &handle);
     if (ret != ACL_SUCCESS) {
         (void)aclrtDestroyStream(stream);
         ERROR_LOG("Get Operator Workspace failed. error code is %d", static_cast<int32_t>(ret));
         return false;
     }
-	INFO_LOG("Execute aclnnSinhCustomGetWorkspaceSize success, workspace size %lu", workspaceSize);
+    INFO_LOG("Execute aclnnSinhCustomGetWorkspaceSize success, workspace size %lu", workspaceSize);
     
     void *workspace = nullptr;
     if (workspaceSize != 0) {
@@ -328,7 +328,7 @@ bool OpRunner::RunOp()
         ERROR_LOG("Execute Operator failed. error code is %d", static_cast<int32_t>(ret));
         return false;
     }
-	INFO_LOG("Execute aclnnSinhCustom success");
+    INFO_LOG("Execute aclnnSinhCustom success");
 
     ret = aclrtSynchronizeStreamWithTimeout(stream, 5000);
     if (ret != SUCCESS) {

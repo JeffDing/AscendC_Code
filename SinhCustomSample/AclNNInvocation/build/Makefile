@@ -270,30 +270,6 @@ operator_desc.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/execute_add_op.dir/build.make CMakeFiles/execute_add_op.dir/operator_desc.cpp.s
 .PHONY : operator_desc.cpp.s
 
-tmp/code/SinhCustomSample/SinhCustom/build_out/autogen/aclnn_sinh_custom.o: tmp/code/SinhCustomSample/SinhCustom/build_out/autogen/aclnn_sinh_custom.cpp.o
-.PHONY : tmp/code/SinhCustomSample/SinhCustom/build_out/autogen/aclnn_sinh_custom.o
-
-# target to build an object file
-tmp/code/SinhCustomSample/SinhCustom/build_out/autogen/aclnn_sinh_custom.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/execute_add_op.dir/build.make CMakeFiles/execute_add_op.dir/tmp/code/SinhCustomSample/SinhCustom/build_out/autogen/aclnn_sinh_custom.cpp.o
-.PHONY : tmp/code/SinhCustomSample/SinhCustom/build_out/autogen/aclnn_sinh_custom.cpp.o
-
-tmp/code/SinhCustomSample/SinhCustom/build_out/autogen/aclnn_sinh_custom.i: tmp/code/SinhCustomSample/SinhCustom/build_out/autogen/aclnn_sinh_custom.cpp.i
-.PHONY : tmp/code/SinhCustomSample/SinhCustom/build_out/autogen/aclnn_sinh_custom.i
-
-# target to preprocess a source file
-tmp/code/SinhCustomSample/SinhCustom/build_out/autogen/aclnn_sinh_custom.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/execute_add_op.dir/build.make CMakeFiles/execute_add_op.dir/tmp/code/SinhCustomSample/SinhCustom/build_out/autogen/aclnn_sinh_custom.cpp.i
-.PHONY : tmp/code/SinhCustomSample/SinhCustom/build_out/autogen/aclnn_sinh_custom.cpp.i
-
-tmp/code/SinhCustomSample/SinhCustom/build_out/autogen/aclnn_sinh_custom.s: tmp/code/SinhCustomSample/SinhCustom/build_out/autogen/aclnn_sinh_custom.cpp.s
-.PHONY : tmp/code/SinhCustomSample/SinhCustom/build_out/autogen/aclnn_sinh_custom.s
-
-# target to generate assembly for a file
-tmp/code/SinhCustomSample/SinhCustom/build_out/autogen/aclnn_sinh_custom.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/execute_add_op.dir/build.make CMakeFiles/execute_add_op.dir/tmp/code/SinhCustomSample/SinhCustom/build_out/autogen/aclnn_sinh_custom.cpp.s
-.PHONY : tmp/code/SinhCustomSample/SinhCustom/build_out/autogen/aclnn_sinh_custom.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -319,9 +295,6 @@ help:
 	@echo "... operator_desc.o"
 	@echo "... operator_desc.i"
 	@echo "... operator_desc.s"
-	@echo "... tmp/code/SinhCustomSample/SinhCustom/build_out/autogen/aclnn_sinh_custom.o"
-	@echo "... tmp/code/SinhCustomSample/SinhCustom/build_out/autogen/aclnn_sinh_custom.i"
-	@echo "... tmp/code/SinhCustomSample/SinhCustom/build_out/autogen/aclnn_sinh_custom.s"
 .PHONY : help
 
 

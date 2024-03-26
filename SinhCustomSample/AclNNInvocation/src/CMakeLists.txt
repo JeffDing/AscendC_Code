@@ -3,10 +3,6 @@
 # CMake lowest version requirement
 cmake_minimum_required(VERSION 3.5.1)
 
-
-#设置AUTO_GEN_PATH变量
-set(AUTO_GEN_PATH "../../SinhCustom/build_out/autogen")
-
 # project information
 project(acl_execute_add)
 
@@ -44,7 +40,6 @@ include_directories(
     ${INC_PATH}/atc/include
     ../inc
     ${CUST_PKG_PATH}/include
-    ${AUTO_GEN_PATH}
 )
 
 # add host lib path
@@ -60,7 +55,6 @@ add_executable(execute_add_op
     main.cpp
     op_runner.cpp
     common.cpp
-    ${AUTO_GEN_PATH}/aclnn_sinh_custom.cpp
 )
 
 target_link_libraries(execute_add_op
@@ -69,7 +63,6 @@ target_link_libraries(execute_add_op
     acl_op_compiler
     nnopbase
     stdc++
-    nnopbase
 )
 
 install(TARGETS execute_add_op DESTINATION ${CMAKE_RUNTIME_OUTPUT_DIRECTORY})

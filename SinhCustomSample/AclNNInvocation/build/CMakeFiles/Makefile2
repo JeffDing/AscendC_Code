@@ -81,12 +81,12 @@ clean: CMakeFiles/execute_add_op.dir/clean
 CMakeFiles/execute_add_op.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/execute_add_op.dir/build.make CMakeFiles/execute_add_op.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/execute_add_op.dir/build.make CMakeFiles/execute_add_op.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/tmp/code/SinhCustomSample/AclNNInvocation/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target execute_add_op"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/tmp/code/SinhCustomSample/AclNNInvocation/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target execute_add_op"
 .PHONY : CMakeFiles/execute_add_op.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/execute_add_op.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/code/SinhCustomSample/AclNNInvocation/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/code/SinhCustomSample/AclNNInvocation/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/execute_add_op.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/code/SinhCustomSample/AclNNInvocation/build/CMakeFiles 0
 .PHONY : CMakeFiles/execute_add_op.dir/rule

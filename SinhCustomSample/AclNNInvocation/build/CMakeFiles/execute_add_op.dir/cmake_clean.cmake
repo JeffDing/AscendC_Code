@@ -9,8 +9,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/execute_add_op.dir/op_runner.cpp.o.d"
   "CMakeFiles/execute_add_op.dir/operator_desc.cpp.o"
   "CMakeFiles/execute_add_op.dir/operator_desc.cpp.o.d"
-  "CMakeFiles/execute_add_op.dir/tmp/code/SinhCustomSample/SinhCustom/build_out/autogen/aclnn_sinh_custom.cpp.o"
-  "CMakeFiles/execute_add_op.dir/tmp/code/SinhCustomSample/SinhCustom/build_out/autogen/aclnn_sinh_custom.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.
