@@ -1,7 +1,0 @@
-/root/cann_camp_2024/AclNNInvocation/build/CMakeFiles/execute_add_op.dir
-/root/cann_camp_2024/AclNNInvocation/build/CMakeFiles/edit_cache.dir
-/root/cann_camp_2024/AclNNInvocation/build/CMakeFiles/rebuild_cache.dir
-/root/cann_camp_2024/AclNNInvocation/build/CMakeFiles/list_install_components.dir
-/root/cann_camp_2024/AclNNInvocation/build/CMakeFiles/install.dir
-/root/cann_camp_2024/AclNNInvocation/build/CMakeFiles/install/local.dir
-/root/cann_camp_2024/AclNNInvocation/build/CMakeFiles/install/strip.dir
