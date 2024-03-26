@@ -8,5 +8,5 @@
 
 ## cmake安装
 ```bash
-sed -i '$a export PATH=/tmp/code/cmake-3.20.0-rc5-linux-aarch64/bin:$PATH' ~/.bashrc
+sed -i '$a export PATH=/tmp/code/cmake-3.29.0-linux-aarch64/bin:$PATH' ~/.bashrc
 ```
