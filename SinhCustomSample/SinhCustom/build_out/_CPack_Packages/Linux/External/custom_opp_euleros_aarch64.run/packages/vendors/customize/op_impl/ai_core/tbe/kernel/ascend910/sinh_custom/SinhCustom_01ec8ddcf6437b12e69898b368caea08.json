@@ -1,0 +1,69 @@
+{
+    "binFileName": "SinhCustom_01ec8ddcf6437b12e69898b368caea08",
+    "binFileSuffix": ".o",
+    "blockDim": -1,
+    "coreType": "AiCore",
+    "globalworkspace_spec_workspace": {
+        "size": 32,
+        "type": 0
+    },
+    "kernelName": "SinhCustom_01ec8ddcf6437b12e69898b368caea08",
+    "magic": "RT_DEV_BINARY_MAGIC_ELF",
+    "memoryStamping": [],
+    "opParaSize": 8,
+    "parameters": [],
+    "sha256": "43b62a880e62f9581f35706c243d01093ff502a90ab5529d9a65ec39008436b9",
+    "workspace": {
+        "num": 1,
+        "size": [
+            -1
+        ],
+        "type": [
+            0
+        ]
+    },
+    "kernelList": [
+        {
+            "kernelName": "SinhCustom_01ec8ddcf6437b12e69898b368caea08_0"
+        }
+    ],
+    "optionalInputMode": "gen_placeholder",
+    "compileInfo": {},
+    "supportInfo": {
+        "implMode": "",
+        "int64Mode": false,
+        "simplifiedKeyMode": 0,
+        "simplifiedKey": [
+            "SinhCustom/d=0,p=0/1,2/1,2",
+            "SinhCustom/d=1,p=0/1,2/1,2"
+        ],
+        "staticKey": "6ea53f6da880a8179848e8d27d9656470fcc75d7d663e87a5ddd49a942d586d5",
+        "inputs": [
+            {
+                "name": "x",
+                "index": 0,
+                "dtype": "float16",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "outputs": [
+            {
+                "name": "z",
+                "index": 0,
+                "dtype": "float16",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "opMode": "dynamic",
+        "optionalInputMode": "gen_placeholder",
+        "deterministic": "ignore"
+    }
+}

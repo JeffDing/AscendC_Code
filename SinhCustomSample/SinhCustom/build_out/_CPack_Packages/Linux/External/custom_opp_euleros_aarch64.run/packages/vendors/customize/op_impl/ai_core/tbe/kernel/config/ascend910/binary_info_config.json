@@ -1,0 +1,18 @@
+{
+  "SinhCustom": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 1,
+        "simplifiedKey": "SinhCustom/d=0,p=0/1,2/1,2",
+        "binPath": "ascend910/sinh_custom/SinhCustom_01ec8ddcf6437b12e69898b368caea08.o"
+      },
+      {
+        "coreType": 1,
+        "simplifiedKey": "SinhCustom/d=1,p=0/1,2/1,2",
+        "binPath": "ascend910/sinh_custom/SinhCustom_01ec8ddcf6437b12e69898b368caea08.o"
+      }
+    ]
+  }
+}
