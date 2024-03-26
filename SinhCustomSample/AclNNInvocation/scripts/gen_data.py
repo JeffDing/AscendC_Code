@@ -5,7 +5,7 @@ import numpy as np
 
 def gen_golden_data_simple():
     
-    input_x = np.random.uniform(-10,10,[8,2048]).astype(np.float16)
+    input_x = np.random.uniform(1,10,[8,2048]).astype(np.float16)
     golden = np.sinh(input_x).astype(np.float16)
 
     input_x.tofile("./input/input_x.bin")
