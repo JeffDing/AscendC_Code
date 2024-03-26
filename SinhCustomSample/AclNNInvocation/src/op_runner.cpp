@@ -322,7 +322,7 @@ bool OpRunner::RunOp()
         }
     }
 
-    ret = aclnnSinhCustom(workspace, workspaceSize, handle, stream);
+    ret = aclnnSinhCustom(&workspace, workspaceSize, handle, stream);
     if (ret != ACL_SUCCESS) {
         (void)aclrtDestroyStream(stream);
         ERROR_LOG("Execute Operator failed. error code is %d", static_cast<int32_t>(ret));

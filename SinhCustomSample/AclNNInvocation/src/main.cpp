@@ -29,7 +29,6 @@ OperatorDesc CreateOpDesc()
     aclFormat format = ACL_FORMAT_ND;
     OperatorDesc opDesc;
     opDesc.AddInputTensorDesc(dataType, shape.size(), shape.data(), format);
-    opDesc.AddInputTensorDesc(dataType, shape.size(), shape.data(), format);
     opDesc.AddOutputTensorDesc(dataType, shape.size(), shape.data(), format);
     return opDesc;
 }
