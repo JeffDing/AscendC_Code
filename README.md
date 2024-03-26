@@ -10,3 +10,8 @@
 ```bash
 sed -i '$a export PATH=/tmp/code/cmake-3.29.0-linux-aarch64/bin:$PATH' ~/.bashrc
 ```
+
+## 激活Ascend环境
+```bash
+source /usr/local/Ascend/ascend-toolkit/set_env.sh
+```
