@@ -52,7 +52,7 @@ int32_t main(int32_t argc, char* argv[])
 
     CHECK_ACL(aclrtMemcpy(xDevice, inputByteSize, xHost, inputByteSize, ACL_MEMCPY_HOST_TO_DEVICE));
 
-    add_custom_do(blockDim, nullptr, stream, xDevice, zDevice);
+    sinh_custom_do(blockDim, nullptr, stream, xDevice, zDevice);
     CHECK_ACL(aclrtSynchronizeStream(stream));
 
     CHECK_ACL(aclrtMemcpy(zHost, outputByteSize, zDevice, outputByteSize, ACL_MEMCPY_DEVICE_TO_HOST));
