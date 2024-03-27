@@ -1,8 +1,8 @@
-# Install script for directory: /tmp/code/SinhCustomSample/SinhCustom
+# Install script for directory: /root/cann_camp_2024/SinhCustomSample/SinhCustom
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/tmp/code/SinhCustomSample/SinhCustom/build_out")
+  set(CMAKE_INSTALL_PREFIX "/root/cann_camp_2024/SinhCustomSample/SinhCustom/build_out")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -29,7 +29,7 @@ endif()
 
 # Install shared libraries without execute permission?
 if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  set(CMAKE_INSTALL_SO_NO_EXE "0")
+  set(CMAKE_INSTALL_SO_NO_EXE "1")
 endif()
 
 # Is this installation the result of a crosscompile?
@@ -44,29 +44,29 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/tmp/code/SinhCustomSample/SinhCustom/build_out/framework/cmake_install.cmake")
+  include("/root/cann_camp_2024/SinhCustomSample/SinhCustom/build_out/framework/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/tmp/code/SinhCustomSample/SinhCustom/build_out/op_host/cmake_install.cmake")
+  include("/root/cann_camp_2024/SinhCustomSample/SinhCustom/build_out/op_host/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/tmp/code/SinhCustomSample/SinhCustom/build_out/op_kernel/cmake_install.cmake")
+  include("/root/cann_camp_2024/SinhCustomSample/SinhCustom/build_out/op_kernel/cmake_install.cmake")
 endif()
 
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/." TYPE DIRECTORY PERMISSIONS OWNER_EXECUTE OWNER_READ GROUP_READ FILES "/tmp/code/SinhCustomSample/SinhCustom/build_out/scripts/")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/." TYPE DIRECTORY PERMISSIONS OWNER_EXECUTE OWNER_READ GROUP_READ FILES "/root/cann_camp_2024/SinhCustomSample/SinhCustom/build_out/scripts/")
 endif()
 
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/packages" TYPE FILE OPTIONAL FILES "/tmp/code/SinhCustomSample/SinhCustom/custom.proto")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/packages" TYPE FILE OPTIONAL FILES "/root/cann_camp_2024/SinhCustomSample/SinhCustom/custom.proto")
 endif()
 
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/packages/vendors/customize" TYPE FILE FILES "/tmp/code/SinhCustomSample/SinhCustom/build_out/version.info")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/packages/vendors/customize" TYPE FILE FILES "/root/cann_camp_2024/SinhCustomSample/SinhCustom/build_out/version.info")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -77,5 +77,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/tmp/code/SinhCustomSample/SinhCustom/build_out/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/root/cann_camp_2024/SinhCustomSample/SinhCustom/build_out/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

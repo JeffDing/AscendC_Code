@@ -8,15 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/tmp/code/SinhCustomSample/SinhCustom/framework/tf_plugin/tensorflow_add_custom_plugin.cc" "framework/tf_plugin/CMakeFiles/cust_tf_parsers.dir/tensorflow_add_custom_plugin.cc.o" "gcc" "framework/tf_plugin/CMakeFiles/cust_tf_parsers.dir/tensorflow_add_custom_plugin.cc.o.d"
+  "/root/cann_camp_2024/SinhCustomSample/SinhCustom/framework/tf_plugin/tensorflow_add_custom_plugin.cc" "framework/tf_plugin/CMakeFiles/cust_tf_parsers.dir/tensorflow_add_custom_plugin.cc.o" "gcc" "framework/tf_plugin/CMakeFiles/cust_tf_parsers.dir/tensorflow_add_custom_plugin.cc.o.d"
   )
 
-# Targets to which this target links which contain Fortran sources.
-set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
-  )
-
-# Targets to which this target links which contain Fortran sources.
-set(CMAKE_Fortran_TARGET_FORWARD_LINKED_INFO_FILES
+# Targets to which this target links.
+set(CMAKE_TARGET_LINKED_INFO_FILES
   )
 
 # Fortran module output directory.

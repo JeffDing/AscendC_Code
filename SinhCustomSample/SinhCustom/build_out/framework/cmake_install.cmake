@@ -1,8 +1,8 @@
-# Install script for directory: /tmp/code/SinhCustomSample/SinhCustom/framework
+# Install script for directory: /root/cann_camp_2024/SinhCustomSample/SinhCustom/framework
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/tmp/code/SinhCustomSample/SinhCustom/build_out")
+  set(CMAKE_INSTALL_PREFIX "/root/cann_camp_2024/SinhCustomSample/SinhCustom/build_out")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -29,7 +29,7 @@ endif()
 
 # Install shared libraries without execute permission?
 if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  set(CMAKE_INSTALL_SO_NO_EXE "0")
+  set(CMAKE_INSTALL_SO_NO_EXE "1")
 endif()
 
 # Is this installation the result of a crosscompile?
@@ -44,6 +44,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/tmp/code/SinhCustomSample/SinhCustom/build_out/framework/tf_plugin/cmake_install.cmake")
+  include("/root/cann_camp_2024/SinhCustomSample/SinhCustom/build_out/framework/tf_plugin/cmake_install.cmake")
 endif()
 

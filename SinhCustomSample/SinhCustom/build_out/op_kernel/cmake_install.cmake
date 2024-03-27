@@ -1,8 +1,8 @@
-# Install script for directory: /tmp/code/SinhCustomSample/SinhCustom/op_kernel
+# Install script for directory: /root/cann_camp_2024/SinhCustomSample/SinhCustom/op_kernel
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/tmp/code/SinhCustomSample/SinhCustom/build_out")
+  set(CMAKE_INSTALL_PREFIX "/root/cann_camp_2024/SinhCustomSample/SinhCustom/build_out")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -29,7 +29,7 @@ endif()
 
 # Install shared libraries without execute permission?
 if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  set(CMAKE_INSTALL_SO_NO_EXE "0")
+  set(CMAKE_INSTALL_SO_NO_EXE "1")
 endif()
 
 # Is this installation the result of a crosscompile?
@@ -42,31 +42,31 @@ if(NOT DEFINED CMAKE_OBJDUMP)
   set(CMAKE_OBJDUMP "/usr/bin/objdump")
 endif()
 
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/packages/vendors/customize/op_impl/ai_core/tbe/config/ascend910" TYPE FILE FILES "/tmp/code/SinhCustomSample/SinhCustom/build_out/op_kernel/tbe/op_info_cfg/ai_core/ascend910/aic-ascend910-ops-info.json")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/packages/vendors/customize/op_impl/ai_core/tbe/config/ascend910" TYPE FILE FILES "/root/cann_camp_2024/SinhCustomSample/SinhCustom/build_out/op_kernel/tbe/op_info_cfg/ai_core/ascend910/aic-ascend910-ops-info.json")
 endif()
 
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/packages/vendors/customize/op_impl/ai_core/tbe/customize_impl" TYPE DIRECTORY FILES "/tmp/code/SinhCustomSample/SinhCustom/build_out/op_kernel/tbe/dynamic")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/packages/vendors/customize/op_impl/ai_core/tbe/customize_impl" TYPE DIRECTORY FILES "/root/cann_camp_2024/SinhCustomSample/SinhCustom/build_out/op_kernel/tbe/dynamic")
 endif()
 
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/packages/vendors/customize/op_impl/ai_core/tbe/kernel/ascend910" TYPE DIRECTORY OPTIONAL FILES "/tmp/code/SinhCustomSample/SinhCustom/build_out/op_kernel/binary/ascend910/bin/sinh_custom")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/packages/vendors/customize/op_impl/ai_core/tbe/kernel/ascend910" TYPE DIRECTORY OPTIONAL FILES "/root/cann_camp_2024/SinhCustomSample/SinhCustom/build_out/op_kernel/binary/ascend910/bin/sinh_custom")
 endif()
 
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/packages/vendors/customize/op_impl/ai_core/tbe/kernel/config/ascend910" TYPE FILE OPTIONAL FILES "/tmp/code/SinhCustomSample/SinhCustom/build_out/op_kernel/binary/ascend910/bin/sinh_custom.json")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/packages/vendors/customize/op_impl/ai_core/tbe/kernel/config/ascend910" TYPE FILE OPTIONAL FILES "/root/cann_camp_2024/SinhCustomSample/SinhCustom/build_out/op_kernel/binary/ascend910/bin/sinh_custom.json")
 endif()
 
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/packages/vendors/customize/op_impl/ai_core/tbe/kernel/config/ascend910" TYPE FILE OPTIONAL FILES "/tmp/code/SinhCustomSample/SinhCustom/build_out/op_kernel/binary/ascend910/bin/binary_info_config.json")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/packages/vendors/customize/op_impl/ai_core/tbe/kernel/config/ascend910" TYPE FILE OPTIONAL FILES "/root/cann_camp_2024/SinhCustomSample/SinhCustom/build_out/op_kernel/binary/ascend910/bin/binary_info_config.json")
 endif()
 
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/packages/vendors/customize/framework/tensorflow" TYPE FILE FILES "/tmp/code/SinhCustomSample/SinhCustom/build_out/op_kernel/tbe/op_info_cfg/ai_core/npu_supported_ops.json")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/packages/vendors/customize/framework/tensorflow" TYPE FILE FILES "/root/cann_camp_2024/SinhCustomSample/SinhCustom/build_out/op_kernel/tbe/op_info_cfg/ai_core/npu_supported_ops.json")
 endif()
 
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/packages/vendors/customize/op_impl/ai_core/tbe/customize_impl/dynamic" TYPE FILE FILES "/tmp/code/SinhCustomSample/SinhCustom/op_kernel/sinh_custom.cpp")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/packages/vendors/customize/op_impl/ai_core/tbe/customize_impl/dynamic" TYPE FILE FILES "/root/cann_camp_2024/SinhCustomSample/SinhCustom/op_kernel/sinh_custom.cpp")
 endif()
 
