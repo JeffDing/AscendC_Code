@@ -11,7 +11,7 @@ constexpr int32_t BUFFER_NUM = 2;                                     // tensor 
 class KernelSinh {
 public:
     __aicore__ inline KernelSinh() {}
-    __aicore__ inline void Init(GM_ADDR x, GM_ADDR z, uint32_t blockLength,
+    __aicore__ inline void Init(GM_ADDR x, GM_ADDR z, float value, uint32_t blockLength,
                               uint32_t tileNum, uint32_t tileLength,
                               uint32_t lasttileLength, uint32_t formerNum,
                               uint32_t formerLength, uint32_t formertileNum,
@@ -22,6 +22,7 @@ public:
                               uint32_t taillasttileLength, uint32_t tilingKey)
     {
         ASSERT(GetBlockNum() != 0 && "block dim can not be zero!");
+        this->value = static_cast<half>(value);
 
         if (tilingKey == 1) {
           this->blockLength = blockLength;
@@ -89,22 +90,22 @@ public:
 private:
     __aicore__ inline void CopyIn(int32_t progress)
     {
-        LocalTensor<half> xLocal = inQueueX.AllocTensor<half>();
+        LocalTensor<half> inLocal = inQueueX.AllocTensor<half>();
         
         if (BUFFER_NUM == 1) {
               if (progress == this->tileNum - 1) {
                 if (progress == 0) {
                   //如果只有一包，则搬运的起始地址为0，tileLength为实际分块的数据量
-                  DataCopy(xLocal[0], xGm[0], this->tileLength);
+                  DataCopy(inLocal[0], xGm[0], this->tileLength);
                 } else {
                   //将最后一个分块的起始地址向前移动tileLength-lasttileLength
                   DataCopy(
-                      xLocal[0],
+                      inLocal[0],
                       xGm[(progress - 1) * this->tileLength + this->lasttileLength],
                       this->tileLength);
                 }
               } else {
-                DataCopy(xLocal[0], xGm[progress * this->tileLength],
+                DataCopy(inLocal[0], xGm[progress * this->tileLength],
                          this->tileLength);
               }
             }
@@ -117,30 +118,30 @@ private:
             //分块大小变为tileLength的一半
             //倒数第2个分块数据的起始地址向前移动（tileLength-lasttileLength)，最后一个分块的起始地址以此为基础进行移动
             DataCopy(
-                xLocal[0],
+                inLocal[0],
                 xGm[(progress - 2) * (this->tileLength) + this->lasttileLength],
                 (this->tileLength));
           }
 
           else {
-            DataCopy(xLocal[0], xGm[progress * (this->tileLength)],
+            DataCopy(inLocal[0], xGm[progress * (this->tileLength)],
                      (this->tileLength));
           }
         }
         
-        inQueueX.EnQue(xLocal);
+        inQueueX.EnQue(inLocal);
     }
     __aicore__ inline void Compute(int32_t progress)
     {  
-        LocalTensor<half> xLocal = inQueueX.DeQue<half>();
+        LocalTensor<half> inLocal = inQueueX.DeQue<half>();
+        LocalTensor<half> xLocal = inLocal;
         LocalTensor<half> zLocal = outQueueZ.AllocTensor<half>();
         Exp(xLocal, xLocal, this->tileLength);
         Reciprocal(zLocal, xLocal, this->tileLength);
         Sub(zLocal, xLocal, zLocal, this->tileLength);
-        half scalar = 0.5;
-        Muls(zLocal, zLocal, scalar, this->tileLength);
+        Muls(zLocal, zLocal, this->value, this->tileLength);
         outQueueZ.EnQue<half>(zLocal);
-        inQueueX.FreeTensor(xLocal);
+        inQueueX.FreeTensor(inLocal);
     }
     __aicore__ inline void CopyOut(int32_t progress)
     {
@@ -188,6 +189,7 @@ private:
     TQue<QuePosition::VECOUT, BUFFER_NUM> outQueueZ;
     GlobalTensor<half> xGm;
     GlobalTensor<half> zGm;
+    half value;
     uint32_t blockLength;
     uint32_t tileNum;
     uint32_t tileLength;
