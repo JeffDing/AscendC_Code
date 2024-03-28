@@ -56,3 +56,60 @@ def infer_code_channel(params: InfoCodeChanelParams):
     if not _is_v220(params.op_product):
         return CODE_MIX
     return CODE_VEC
+    if params.compile_options is None:
+        compile_options = []
+    else:
+        compile_options = params.compile_options
+    ccec = shutil.which("ccec")
+    if ccec is not None:
+        ccec_path = os.path.dirname(ccec)
+        tikcpp_path = os.path.realpath(os.path.join(ccec_path, "..", "..", "tikcpp"))
+    else:
+        tikcpp_path = os.path.realpath("/usr/local/Ascend/latest/compiler/tikcpp")
+    compile_options.append("-I" + tikcpp_path)
+    compile_options.append("-I" + os.path.join(tikcpp_path, "tikcfw"))
+    compile_options.append("-I" + os.path.join(tikcpp_path, "tikcfw", "impl"))
+    compile_options.append("-I" + os.path.join(tikcpp_path, "tikcfw", "interface"))
+    compile_options += ["-include", params.tiling_header]
+    arch = "dav-c220-cube"
+    sub_core_type = "AIC"
+    optional_core = "AiCore"
+    compile_cmd = [shutil.which("ccec"), '-c', '-O3']
+    compile_cmd += compile_options
+    temp_file_name_tag = "_" + str(os.getpid()) + "_temp.o"
+    dst_file = os.path.join(kernel_meta_dir, kernel_name + temp_file_name_tag)
+    compile_cmd += [params.src_file, "--cce-aicore-arch={}".format(arch),
+                    "--cce-aicore-only", "-o", dst_file,
+                    "-mllvm", "-cce-aicore-function-stack-size=16000",
+                    "-mllvm", "-cce-aicore-record-overflow=true",
+                    "-mllvm", "-cce-aicore-addr-transform"]
+    compile_cmd += ["-std=c++17"]
+    print('get_code_channel: ', ' '.join(compile_cmd))
+    proc = subprocess.Popen(
+        compile_cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+    (out, _) = proc.communicate()
+    if proc.returncode != 0:
+        print('get_code_channel coretype compile error: ', out.decode())
+        msg = "compile %s error :%s\n" % (params.src_file, out.decode())
+        raise Exception(f"get_code_channel coretype error, msg is{msg}")
+    objdump_cmd = ['objdump', '-s', '-j', '.text', '{}'.format(dst_file)]
+
+    proc = subprocess.Popen(
+        objdump_cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+    (out, _) = proc.communicate()
+    if proc.returncode != 0:
+        print('get_code_channel objdump error: ', out.decode())
+        msg = "get_code_channel objdump %s error :%s\n" % (src_file, out.decode())
+        raise Exception(f"get_code_channel objdump error, msg is{msg}")
+    os.remove(dst_file)
+    lines = out.decode('utf-8').split('\n')
+    for line in lines:
+        insts = line.strip().split()
+        if len(insts) < 5:
+            continue
+        for inst in insts[1:]:
+            if len(inst) != 8:
+                continue
+            if inst[6] == 'f':
+                return CODE_MIX
+    return CODE_VEC

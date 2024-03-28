@@ -34,6 +34,7 @@ foreach(compute_unit ${ASCEND_COMPUTE_UNIT})
         )
         add_dependencies(ascendc_bin_${compute_unit} ascendc_impl_gen)
     endif()
+
 endforeach()
 
 # generate npu_supported_ops.json

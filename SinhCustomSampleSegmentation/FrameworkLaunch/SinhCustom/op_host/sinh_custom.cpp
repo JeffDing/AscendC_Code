@@ -215,8 +215,7 @@ class SinhCustom : public OpDef {
         .DataType({ge::DT_FLOAT16})
         .Format({ge::FORMAT_ND})
         .UnknownShapeFormat({ge::FORMAT_ND});
-    this->Attr("value").AttrType(OPTIONAL).Float(1.0);
-
+      
     this->SetInferShape(ge::InferShape);
 
     this->AICore().SetTiling(optiling::TilingFunc);
