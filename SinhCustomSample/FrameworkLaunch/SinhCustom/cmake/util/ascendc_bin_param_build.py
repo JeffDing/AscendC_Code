@@ -95,11 +95,10 @@ class BinParamBuilder(opdesc_parser.OpDesc):
                 json.dump(param, fd, indent='  ')
             self._write_buld_cmd(param_file, bin_file, i)
 
-
     def _write_buld_cmd(self: any, param_file: str, bin_file: str, index: int):
         hard_soc = const_var.SOC_MAP_EXT.get(self.soc)
         if not hard_soc:
-            hard_soc = soc.capitalize()
+            hard_soc = self.soc.capitalize()
         name_com = [self.op_type, self.op_file, str(index)]
         compile_file = os.path.join(self.out_path, '-'.join(name_com) + '.sh')
         compile_file = os.path.realpath(compile_file)

@@ -5,13 +5,11 @@ Created on Feb  28 20:56:45 2020
 Copyright (c) Huawei Technologies Co., Ltd. 2020-2021. All rights reserved.
 """
 
-import sys
 import os
 import re
 import glob
 import json
 import argparse
-import const_var
 
 
 DATA_TPYE_DICT = {
@@ -27,9 +25,6 @@ DATA_TPYE_DICT = {
     'uint64': 10,
     'bool': 12,
     'double': 11,
-    'string': 13,
-    'dual': 14,
-    'dual': 15,
     'complex64': 16,
     'complex128': 17,
     'qint8': 18,
@@ -203,7 +198,6 @@ def insert_simplified_keys(json_file):
         return
     support_info = contents.get('supportInfo')
     bin_file_name = contents.get('binFileName')
-    bin_suffix = contents.get('binFileSuffix')
     # 'simplifiedKey'字段已经存在时，直接返回，不重复生成
     if 'simplifiedKey' in support_info:
         return

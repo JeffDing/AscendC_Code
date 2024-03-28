@@ -84,10 +84,22 @@ def get_shortsoc_compile_option(compile_option_list: list, shortsoc:str):
         compile_options = compile_option_list['__ALLSOC__']
     return compile_options
 
+def get_kernel_source(src_file, dir_snake, dir_ex):
+    src_ex = os.path.join(PYF_PATH, "..", "ascendc", dir_ex, src_file)
+    if os.path.exists(src_ex):
+        return src_ex
+    src = os.path.join(PYF_PATH, "..", "ascendc", dir_snake, src_file)
+    if os.path.exists(src):
+        return src
+    src = os.path.join(PYF_PATH, src_file)
+    if os.path.exists(src):
+        return src
+    return src_ex
+
 '''
 
 IMPL_API = '''
-@tbe_register.register_operator("{}")
+@tbe_register.register_operator("{}", trans_bool_to_s8=False)
 @para_check.check_op_params({})
 def {}({}, kernel_name="{}", impl_mode=""):
     if get_current_build_config("enable_op_prebuild"):
@@ -125,11 +137,10 @@ def {}({}, kernel_name="{}", impl_mode=""):
     options += custom_compile_options_soc
 
     origin_func_name = "{}"
+    ascendc_src_dir_ex = "{}"
     ascendc_src_dir = "{}"
     ascendc_src_file = "{}"
-    src = os.path.join(PYF_PATH, "..", "ascendc", ascendc_src_dir, ascendc_src_file)
-    if not os.path.exists(src):
-        src = os.path.join(PYF_PATH, ascendc_src_file)
+    src = get_kernel_source(ascendc_src_file, ascendc_src_dir, ascendc_src_dir_ex)
 '''
 
 REPLAY_OP_API = '''
@@ -205,10 +216,33 @@ ATTR_DEFAULT = {'bool': 'False', 'int': '0', 'float': '0.0', 'listInt': '[]',
                 'listFloat': '[]', 'listBool': '[]', 'listListInt': '[[]]', 'str': ''}
 
 
+def _get_snake_str(s, i):
+    if s[i - 1] != '_':
+        if not s[i - 1].isupper():
+            return "_"
+        elif s[i - 1].isupper() and (i + 1) < len(s) and s[i + 1].islower():
+            return "_"
+        return ""
+    return ""
+
+
 def optype_snake(origin_str):
     temp_str = origin_str[0].lower() + origin_str[1:]
     new_str = re.sub(r'([A-Z])', r'_\1', temp_str).lower()
     return new_str
+
+
+def optype_snake_ex(s):
+    snake_case = ""
+    for i, c in enumerate(s):
+        if i == 0:
+            snake_case += c.lower()
+        elif c.isupper():
+            snake_case += _get_snake_str(s, i)
+            snake_case += c.lower()
+        else:
+            snake_case += c
+    return snake_case
 
 
 class AdpBuilder(opdesc_parser.OpDesc):
@@ -400,7 +434,7 @@ class AdpBuilder(opdesc_parser.OpDesc):
         src = self.op_file + '.cpp'
         fd.write(IMPL_API.format(self.op_type, pchk, self.op_intf, argsdef, kern_name, argsval,\
                                  self.custom_compile_options, self.custom_all_compile_options, self.op_intf,\
-                                 optype_snake(self.op_type), src))
+                                 optype_snake_ex(self.op_type), optype_snake(self.op_type), src))
         if self.op_replay_flag:
             fd.write(REPLAY_OP_API.format(self.op_type, kern_name, self.op_file, self.op_type, self.op_file,\
                 self.op_compile_option))
