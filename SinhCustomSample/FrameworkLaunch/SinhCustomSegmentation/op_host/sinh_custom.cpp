@@ -25,9 +25,7 @@ static ge::graphStatus TilingFunc(gert::TilingContext* context) {
 
   uint32_t ALIGN_NUM = BLOCK_SIZE / sizeofdatatype;
   //核内拆分，策略是尽可能的填满ub_size，最后一包单独处理，
-  uint32_t ub_block_num_real =
-      ((ub_size) / BLOCK_SIZE / 2) * 13 /
-      20;  // ub_block在Ascend C中不能全部被用来作为输入输出，给了13/20系数。
+  uint32_t ub_block_num_real = ((ub_size) / BLOCK_SIZE / 2) * 13 / 20;  // ub_block在Ascend C中不能全部被用来作为输入输出，给了13/20系数。
   uint32_t ub_block_num = 5;  //为测试方便，验证代码流程
   uint32_t tile_num;
 
