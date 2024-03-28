@@ -16,8 +16,8 @@ rights reserved.
 
 namespace domi {
 // register op info to GE
-REGISTER_CUSTOM_OP("SinhdivCustom")
+REGISTER_CUSTOM_OP("AddCustom")
     .FrameworkType(TENSORFLOW)   // type: CAFFE, TENSORFLOW
-    .OriginOpType("SinhdivCustom")      // name in tf module
+    .OriginOpType("Add")      // name in tf module
     .ParseParamsByOperatorFn(AutoMappingByOpFn);
 }  // namespace domi
