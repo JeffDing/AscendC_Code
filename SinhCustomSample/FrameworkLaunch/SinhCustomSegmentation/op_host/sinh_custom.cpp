@@ -36,10 +36,6 @@ static ge::graphStatus TilingFunc(gert::TilingContext* context)
     ub_block_num = ub_block_num - 1;
     }
 
-    // get attr
-    const float* pvalue = context->GetAttrs()->GetFloat(0);
-    tiling.set_value(*pvalue);
-
     // 1.输入向量满足32字节对齐
     if (totalLength % ALIGN_NUM != 0) {  //不对齐，先32位对齐
     totalLengthAligned =
