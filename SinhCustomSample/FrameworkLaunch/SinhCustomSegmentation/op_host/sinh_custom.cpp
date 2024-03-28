@@ -48,10 +48,8 @@ static ge::graphStatus TilingFunc(gert::TilingContext* context) {
   if (totalLengthAligned <= ub_block_num * ALIGN_NUM) {  // shape较小，用单核
     context->SetBlockDim(1);
   } else {
-    if (((totalLengthAligned / ALIGN_NUM) % ub_block_num) ==
-        0) {  //可以核间均分
-      if ((totalLengthAligned / ALIGN_NUM / ub_block_num) <=
-          aivNum) {  //且计算出均分后的核数小于当前aicore数量，按计算值
+    if (((totalLengthAligned / ALIGN_NUM) % ub_block_num) == 0) {  //可以核间均分
+      if ((totalLengthAligned / ALIGN_NUM / ub_block_num) <= aivNum) {  //且计算出均分后的核数小于当前aicore数量，按计算值
         context->SetBlockDim(totalLengthAligned / ALIGN_NUM / ub_block_num);
 
       } else {
@@ -63,8 +61,7 @@ static ge::graphStatus TilingFunc(gert::TilingContext* context) {
     } else {  //核间不能均分
       if (((totalLengthAligned / ALIGN_NUM / ub_block_num) + 1) <=
           aivNum) {  //且计算出均分后的核数小于当前aicore数量，按计算值
-        context->SetBlockDim((totalLengthAligned / ALIGN_NUM / ub_block_num) +
-                             1);
+        context->SetBlockDim((totalLengthAligned / ALIGN_NUM / ub_block_num) + 1);
       } else {
         // ... 按照aivNum切分
         // context->SetBlockDim(ascendcPlatform.CalcTschBlockDim(aivNum, aicNum,
