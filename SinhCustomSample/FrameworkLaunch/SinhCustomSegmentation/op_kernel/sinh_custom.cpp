@@ -11,7 +11,7 @@ constexpr int32_t BUFFER_NUM = 2;                                     // tensor 
 class KernelSinh {
 public:
     __aicore__ inline KernelSinh() {}
-    __aicore__ inline void Init(GM_ADDR x, GM_ADDR z, float value, uint32_t blockLength,
+    __aicore__ inline void Init(GM_ADDR x, GM_ADDR z, uint32_t blockLength,
                               uint32_t tileNum, uint32_t tileLength,
                               uint32_t lasttileLength, uint32_t formerNum,
                               uint32_t formerLength, uint32_t formertileNum,
@@ -22,7 +22,6 @@ public:
                               uint32_t taillasttileLength, uint32_t tilingKey)
     {
         ASSERT(GetBlockNum() != 0 && "block dim can not be zero!");
-        this->value = static_cast<half>(value);
 
         if (tilingKey == 1) {
           this->blockLength = blockLength;
@@ -139,7 +138,8 @@ private:
         Exp(xLocal, xLocal, this->tileLength);
         Reciprocal(zLocal, xLocal, this->tileLength);
         Sub(zLocal, xLocal, zLocal, this->tileLength);
-        Muls(zLocal, zLocal, this->value, this->tileLength);
+        half scalar = 0.5;
+	Muls(zLocal, zLocal, scalar, this->tileLength);
         outQueueZ.EnQue<half>(zLocal);
         inQueueX.FreeTensor(inLocal);
     }
@@ -189,7 +189,6 @@ private:
     TQue<QuePosition::VECOUT, BUFFER_NUM> outQueueZ;
     GlobalTensor<half> xGm;
     GlobalTensor<half> zGm;
-    half value;
     uint32_t blockLength;
     uint32_t tileNum;
     uint32_t tileLength;
@@ -218,7 +217,7 @@ extern "C" __global__ __aicore__ void sinh_custom(GM_ADDR x, GM_ADDR z, GM_ADDR 
     } else {
         tilingKey = 1;
     }
-    op.Init(x, z, tiling_data.value, tiling_data.blockLength,
+    op.Init(x, z, tiling_data.blockLength,
           tiling_data.tileNum, tiling_data.tileLength,
           tiling_data.lasttileLength, tiling_data.formerNum,
           tiling_data.formerLength, tiling_data.formertileNum,
