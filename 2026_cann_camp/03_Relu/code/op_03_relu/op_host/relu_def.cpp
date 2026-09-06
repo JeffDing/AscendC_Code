@@ -22,7 +22,10 @@ public:
         .UnknownShapeFormat({ge::FORMAT_ND, ge::FORMAT_ND})
         .AutoContiguous();
 
-        this->AICore().AddConfig("ascend910b");
+        this->AICore()
+            .AddConfig("ascend910b")
+            .AddConfig("ascend910a3")
+            .AddConfig("ascend950");
     }
 };
 OP_ADD(Relu);
