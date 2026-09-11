@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/workspace/code/tests/ut/build/CMakeFiles/third_party_gtest"
+		},
+		{
+			"file" : "/workspace/code/tests/ut/build/CMakeFiles/third_party_gtest.rule"
+		},
+		{
+			"file" : "/workspace/code/tests/ut/build/CMakeFiles/third_party_gtest-complete.rule"
+		},
+		{
+			"file" : "/workspace/code/tests/ut/build/third_party_gtest-prefix/src/third_party_gtest-stamp/third_party_gtest-build.rule"
+		},
+		{
+			"file" : "/workspace/code/tests/ut/build/third_party_gtest-prefix/src/third_party_gtest-stamp/third_party_gtest-configure.rule"
+		},
+		{
+			"file" : "/workspace/code/tests/ut/build/third_party_gtest-prefix/src/third_party_gtest-stamp/third_party_gtest-download.rule"
+		},
+		{
+			"file" : "/workspace/code/tests/ut/build/third_party_gtest-prefix/src/third_party_gtest-stamp/third_party_gtest-install.rule"
+		},
+		{
+			"file" : "/workspace/code/tests/ut/build/third_party_gtest-prefix/src/third_party_gtest-stamp/third_party_gtest-mkdir.rule"
+		},
+		{
+			"file" : "/workspace/code/tests/ut/build/third_party_gtest-prefix/src/third_party_gtest-stamp/third_party_gtest-patch.rule"
+		},
+		{
+			"file" : "/workspace/code/tests/ut/build/third_party_gtest-prefix/src/third_party_gtest-stamp/third_party_gtest-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"third_party_gtest"
+		],
+		"name" : "third_party_gtest"
+	}
+}

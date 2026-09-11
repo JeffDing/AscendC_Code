@@ -1,0 +1,50 @@
+{
+  "Relu": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "optionalInputMode": "gen_placeholder",
+    "optionalOutputMode": "gen_placeholder",
+    "params": {
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "paramType": "required",
+          "formatMode": "static_nd_agnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "paramType": "required",
+          "formatMode": "static_nd_agnostic"
+        }
+      ]
+    },
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": [
+          "Relu/d=0,p=1/0,2/0,2",
+          "Relu/d=0,p=0/0,2/0,2",
+          "Relu/d=1,p=1/0,2/0,2",
+          "Relu/d=1,p=0/0,2/0,2"
+        ],
+        "binPath": "ascend910b/relu/Relu_1827d3c8769e3312b6fc1067ec7a7d89.o",
+        "jsonPath": "ascend910b/relu/Relu_1827d3c8769e3312b6fc1067ec7a7d89.json"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": [
+          "Relu/d=0,p=1/1,2/1,2",
+          "Relu/d=0,p=0/1,2/1,2",
+          "Relu/d=1,p=1/1,2/1,2",
+          "Relu/d=1,p=0/1,2/1,2"
+        ],
+        "binPath": "ascend910b/relu/Relu_7fc60dc8157aa7a339c399ebe03cb85a.o",
+        "jsonPath": "ascend910b/relu/Relu_7fc60dc8157aa7a339c399ebe03cb85a.json"
+      }
+    ]
+  }
+}

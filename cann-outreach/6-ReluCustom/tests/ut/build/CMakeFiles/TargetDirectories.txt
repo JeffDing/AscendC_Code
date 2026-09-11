@@ -1,0 +1,10 @@
+/workspace/code/tests/ut/build/CMakeFiles/third_party_gtest.dir
+/workspace/code/tests/ut/build/CMakeFiles/edit_cache.dir
+/workspace/code/tests/ut/build/CMakeFiles/rebuild_cache.dir
+/workspace/code/tests/ut/build/op_host/CMakeFiles/relu_op_host_ut_lib.dir
+/workspace/code/tests/ut/build/op_host/CMakeFiles/relu_op_host_ut.dir
+/workspace/code/tests/ut/build/op_host/CMakeFiles/edit_cache.dir
+/workspace/code/tests/ut/build/op_host/CMakeFiles/rebuild_cache.dir
+/workspace/code/tests/ut/build/op_kernel/CMakeFiles/relu_op_kernel_ut.dir
+/workspace/code/tests/ut/build/op_kernel/CMakeFiles/edit_cache.dir
+/workspace/code/tests/ut/build/op_kernel/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,3520 @@
+
+### set_ffts_base_addr((uint64_t)281472984331936);
+
+[set_ffts_base_addr] unsupported
+[S] [RECV_INST] set_ffts_base_addr type 7
+[S] [EXECUTE] set_ffts_base_addr type 7
+
+### set_mask_norm();
+
+[set_mask_norm] unsupported
+[S] [RECV_INST] set_mask_norm type 7
+[S] [EXECUTE] set_mask_norm type 7
+
+### set_vector_mask((uint64_t)18446744073709551615, (uint64_t)18446744073709551615);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+[ALL] [TBUF_EVENT] ABS_ADDR 0xffff8625a010 0x30000 B type L1
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[ALL] [TBUF_EVENT] ABS_ADDR 0xffff861d9010 0x80000 B type L0A
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[ALL] [TBUF_EVENT] ABS_ADDR 0xaaaac9367c50 0x10000 B type L1
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[ALL] [TBUF_EVENT] ABS_ADDR 0xaaaac9377c60 0x10000 B type L0B
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[ALL] [TBUF_EVENT] ABS_ADDR 0xffff861b8010 0x20000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[ALL] [TBUF_EVENT] ABS_ADDR 0xaaaac8e30dd0 0x400 B type L0C
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[ALL] [TBUF_EVENT] ABS_ADDR 0xaaaac935fdc0 0x1c00 B type L0C
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[ALL] [TBUF_EVENT] INIT 0xffff8625a010 0x8000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x8000, Rate: 12.5%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[ALL] [TBUF_EVENT] INIT 0xffff86262010 0x8000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x10000, Rate: 25%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][InitMemRecord]add addr: 281472932356112len: 32768
+[ALL] [TBUF_EVENT] INIT 0xffff8626a010 0x8000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x18000, Rate: 37.5%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[ALL] [TBUF_EVENT] INIT 0xffff86272010 0x8000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x20000, Rate: 50%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][InitMemRecord]add addr: 281472932421648len: 32768
+[ALL] [TBUF_EVENT] ALLOC 0xffff8625a010 0x8000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x8000, Rate: 12.5%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x20000, Rate: 50%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281472932356112len: 32768
+
+### copy_gm_to_ubuf((__ubuf__ void*)0xffff8625a010, (__gm__ void*)0xffff873eb000, (uint8_t)0, (uint16_t)1, (uint16_t)1024, (uint16_t)0, (uint16_t)0);
+
+[MTE2] [RECV_INST] copy_gm_to_ubuf type 0
+[MTE2] [EXECUTE] copy_gm_to_ubuf type 0
+[MTE2] read  data 0xffff873eb000 0x8000 B type GM
+[MTE2] [DATA_MARK] 0xffff873eb000 0x8000 B type GM mark read
+[MTE2] write data 0xffff8625a010 0x8000 B type UB
+[MTE2] checking pending queue
+[MTE2] [CHECK_DATA] 0xffff8625a010 0x8000 B type UB
+[MTE2] checking wrote queue
+[MTE2] [CHECK_DATA] 0xffff8625a010 0x8000 B type UB
+[MTE2] [CHECK_TBUF] 0xffff8625a010 0x8000 B type UB
+[MTE2] allocation buffer match result 0
+[MEMCHEK] Mem[281472932356112]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)0);
+
+[MTE2] [RECV_INST] set_flag type 3
+[MTE2] [EXECUTE] set_flag type 3
+[MTE2] [SYNC_DATA] 0xffff8625a010 0x8000 B type UB
+[MTE2] [send event] on set_flag 4 1 0
+[MTE2] -> [V] [GET_DATA] 0xffff8625a010 0x8000 B stat 1 type UB
+[V] [RECV_EVENT] SRC MTE2 DST V EVENT 0
+[V] [RECV_DATA] 0xffff8625a010 0x8000 B stat 1 type UB
+[MEMCHEK] Mem[281472932356112]checkNum is 0
+
+### wait_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)0);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 4 1 0
+[MTE2] [EVENT_CLEAR] send 4 1 0 has been waited
+[MEMCHEK] Mem[281472932356112]checkNum is 0
+[ALL] [TBUF_EVENT] ALLOC 0xffff8626a010 0x8000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x10000, Rate: 25%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x20000, Rate: 50%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281472932421648len: 32768
+
+### set_mask_count();
+
+[set_mask_count] unsupported
+[S] [RECV_INST] set_mask_count type 7
+[S] [EXECUTE] set_mask_count type 7
+
+### set_vector_mask((uint64_t)0, (uint64_t)8192);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### vmaxs((__ubuf__ float*)0xffff8626a010, (__ubuf__ float*)0xffff8625a010, (float)0, (uint8_t)1, (uint16_t)1, (uint16_t)1, (uint8_t)8, (uint8_t)8, (bool)0, (bool)0);
+
+[V] [RECV_INST] vmaxs type 1
+[V] [EXECUTE] vmaxs type 1
+[MEMCHEK] Mem[281472932356112]checkNum is 0
+[MEMCHEK] Mem[281472932421648]checkNum is 0
+DataMergeAllOnceAll dataLen: 32768
+[V] [ErrorRead4] on read 0 0x8000 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffff8913e9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffff8913ef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x1ec) [0xffff89116df4]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x434) [0xffff89119334]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1c8) [0xffff89113d54]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffff8912500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk5vmaxsEPfS0_fhtthhbb+0x4d0) [0xffff8921b3d0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z5vmaxsPfS_fhtthhbb+0xa0) [0xffff88f8c9f4]
+  ./relu_op_kernel_ut(+0x3fa2c) [0xaaaac507fa2c]
+  ./relu_op_kernel_ut(+0x4bec8) [0xaaaac508bec8]
+  ./relu_op_kernel_ut(+0x47088) [0xaaaac5087088]
+  ./relu_op_kernel_ut(+0x41d2c) [0xaaaac5081d2c]
+  ./relu_op_kernel_ut(+0x3c1bc) [0xaaaac507c1bc]
+  ./relu_op_kernel_ut(+0x364c4) [0xaaaac50764c4]
+  ./relu_op_kernel_ut(+0x36cac) [0xaaaac5076cac]
+  ./relu_op_kernel_ut(+0x2b31c) [0xaaaac506b31c]
+  ./relu_op_kernel_ut(+0x93ff8) [0xaaaac50d3ff8]
+  ./relu_op_kernel_ut(+0x80790) [0xaaaac50c0790]
+  ./relu_op_kernel_ut(+0x80994) [0xaaaac50c0994]
+  ./relu_op_kernel_ut(+0x83970) [0xaaaac50c3970]
+  ./relu_op_kernel_ut(+0x86e2c) [0xaaaac50c6e2c]
+  ./relu_op_kernel_ut(+0x80b84) [0xaaaac50c0b84]
+  ./relu_op_kernel_ut(+0x2a918) [0xaaaac506a918]
+  /lib/aarch64-linux-gnu/libc.so.6(+0x27400) [0xffff87e67400]
+  /lib/aarch64-linux-gnu/libc.so.6(__libc_start_main+0x98) [0xffff87e674d8]
+  ./relu_op_kernel_ut(+0x2af30) [0xaaaac506af30]
+
+[V] read  data 0 0x8000 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0 0x8000 B type UB
+[V] [ErrorRead2] on read 0 0x8000 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffff8913e9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffff8913ef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x4e0) [0xffff891170e8]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x434) [0xffff89119334]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1c8) [0xffff89113d54]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffff8912500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk5vmaxsEPfS0_fhtthhbb+0x4d0) [0xffff8921b3d0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z5vmaxsPfS_fhtthhbb+0xa0) [0xffff88f8c9f4]
+  ./relu_op_kernel_ut(+0x3fa2c) [0xaaaac507fa2c]
+  ./relu_op_kernel_ut(+0x4bec8) [0xaaaac508bec8]
+  ./relu_op_kernel_ut(+0x47088) [0xaaaac5087088]
+  ./relu_op_kernel_ut(+0x41d2c) [0xaaaac5081d2c]
+  ./relu_op_kernel_ut(+0x3c1bc) [0xaaaac507c1bc]
+  ./relu_op_kernel_ut(+0x364c4) [0xaaaac50764c4]
+  ./relu_op_kernel_ut(+0x36cac) [0xaaaac5076cac]
+  ./relu_op_kernel_ut(+0x2b31c) [0xaaaac506b31c]
+  ./relu_op_kernel_ut(+0x93ff8) [0xaaaac50d3ff8]
+  ./relu_op_kernel_ut(+0x80790) [0xaaaac50c0790]
+  ./relu_op_kernel_ut(+0x80994) [0xaaaac50c0994]
+  ./relu_op_kernel_ut(+0x83970) [0xaaaac50c3970]
+  ./relu_op_kernel_ut(+0x86e2c) [0xaaaac50c6e2c]
+  ./relu_op_kernel_ut(+0x80b84) [0xaaaac50c0b84]
+  ./relu_op_kernel_ut(+0x2a918) [0xaaaac506a918]
+  /lib/aarch64-linux-gnu/libc.so.6(+0x27400) [0xffff87e67400]
+  /lib/aarch64-linux-gnu/libc.so.6(__libc_start_main+0x98) [0xffff87e674d8]
+  ./relu_op_kernel_ut(+0x2af30) [0xaaaac506af30]
+
+[V] checking pending queue
+[V] [CHECK_DATA] 0 0x8000 B type UB
+[V] [CHECK_TBUF] 0 0x8000 B type UB
+[V] allocation buffer match result 2
+[V] persistent buffer match result 2
+[V] [ErrorRead1] on read 0 0x8000 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffff8913e9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffff8913ef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x82c) [0xffff89117434]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x434) [0xffff89119334]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1c8) [0xffff89113d54]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffff8912500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk5vmaxsEPfS0_fhtthhbb+0x4d0) [0xffff8921b3d0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z5vmaxsPfS_fhtthhbb+0xa0) [0xffff88f8c9f4]
+  ./relu_op_kernel_ut(+0x3fa2c) [0xaaaac507fa2c]
+  ./relu_op_kernel_ut(+0x4bec8) [0xaaaac508bec8]
+  ./relu_op_kernel_ut(+0x47088) [0xaaaac5087088]
+  ./relu_op_kernel_ut(+0x41d2c) [0xaaaac5081d2c]
+  ./relu_op_kernel_ut(+0x3c1bc) [0xaaaac507c1bc]
+  ./relu_op_kernel_ut(+0x364c4) [0xaaaac50764c4]
+  ./relu_op_kernel_ut(+0x36cac) [0xaaaac5076cac]
+  ./relu_op_kernel_ut(+0x2b31c) [0xaaaac506b31c]
+  ./relu_op_kernel_ut(+0x93ff8) [0xaaaac50d3ff8]
+  ./relu_op_kernel_ut(+0x80790) [0xaaaac50c0790]
+  ./relu_op_kernel_ut(+0x80994) [0xaaaac50c0994]
+  ./relu_op_kernel_ut(+0x83970) [0xaaaac50c3970]
+  ./relu_op_kernel_ut(+0x86e2c) [0xaaaac50c6e2c]
+  ./relu_op_kernel_ut(+0x80b84) [0xaaaac50c0b84]
+  ./relu_op_kernel_ut(+0x2a918) [0xaaaac506a918]
+  /lib/aarch64-linux-gnu/libc.so.6(+0x27400) [0xffff87e67400]
+  /lib/aarch64-linux-gnu/libc.so.6(__libc_start_main+0x98) [0xffff87e674d8]
+  ./relu_op_kernel_ut(+0x2af30) [0xaaaac506af30]
+
+[V] read  data 0xffff8625a010 0x8000 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0xffff8625a010 0x8000 B type UB
+[V] data matched whole 0xffff8625a010 0x8000 stat 1
+[V] [DATA_MARK] 0xffff8625a010 0x8000 B type UB mark read
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffff8625a010 0x8000 B type UB
+[V] [CHECK_TBUF] 0xffff8625a010 0x8000 B type UB
+[V] allocation buffer match result 0
+[V] write data 0xffff8626a010 0x8000 B type UB
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffff8626a010 0x8000 B type UB
+[V] checking wrote queue
+[V] [CHECK_DATA] 0xffff8626a010 0x8000 B type UB
+[V] [CHECK_TBUF] 0xffff8626a010 0x8000 B type UB
+[V] allocation buffer match result 0
+
+### set_vector_mask((uint64_t)18446744073709551615, (uint64_t)18446744073709551615);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### set_mask_norm();
+
+[set_mask_norm] unsupported
+[S] [RECV_INST] set_mask_norm type 7
+[S] [EXECUTE] set_mask_norm type 7
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE3, (event_t)0);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [SYNC_DATA] 0xffff8626a010 0x8000 B type UB
+[V] [send event] on set_flag 1 5 0
+[V] -> [MTE3] [GET_DATA] 0xffff8626a010 0x8000 B stat 1 type UB
+[MTE3] [RECV_EVENT] SRC V DST MTE3 EVENT 0
+[MTE3] [RECV_DATA] 0xffff8626a010 0x8000 B stat 1 type UB
+[MEMCHEK] Mem[281472932421648]checkNum is 0
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)0);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [send event] on set_flag 1 4 0
+[V] -> [MTE2] [GET_DATA] 0xffff8626a010 0x8000 B stat 1 type UB
+[MTE2] [RECV_EVENT] SRC V DST MTE2 EVENT 0
+[MTE2] [RECV_DATA] 0xffff8626a010 0x8000 B stat 1 type UB
+[ALL] [TBUF_EVENT] FREE 0xffff8625a010 0x8000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x8000, Rate: 12.5%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x20000, Rate: 50%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281472932356112]checkNum is 0
+[MEMCHEK] Mem[281472932356112] is FREE
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE3, (event_t)0);
+
+[MTE3] [RECV_INST] wait_flag type 4
+[MTE3] [EXECUTE] wait_flag type 4
+[MTE3] [no wait] on wait_flag 1 5 0
+[V] [EVENT_CLEAR] send 1 5 0 has been waited
+[MEMCHEK] Mem[281472932421648]checkNum is 0
+
+### copy_ubuf_to_gm((__gm__ void*)0xffff8738f000, (__ubuf__ void*)0xffff8626a010, (uint8_t)0, (uint16_t)1, (uint16_t)1024, (uint16_t)0, (uint16_t)0);
+
+[MTE3] [RECV_INST] copy_ubuf_to_gm type 0
+[MTE3] [EXECUTE] copy_ubuf_to_gm type 0
+[MTE3] read  data 0xffff8626a010 0x8000 B type UB
+[MTE3] checking synced queue
+[MTE3] [CHECK_DATA] 0xffff8626a010 0x8000 B type UB
+[MTE3] data matched whole 0xffff8626a010 0x8000 stat 1
+[MTE3] [DATA_MARK] 0xffff8626a010 0x8000 B type UB mark read
+[MTE3] checking pending queue
+[MTE3] [CHECK_DATA] 0xffff8626a010 0x8000 B type UB
+[MTE3] [CHECK_TBUF] 0xffff8626a010 0x8000 B type UB
+[MTE3] allocation buffer match result 0
+[MTE3] write data 0xffff8738f000 0x8000 B type GM
+[MTE3] checking pending queue
+[MTE3] [CHECK_DATA] 0xffff8738f000 0x8000 B type GM
+[MTE3] checking wrote queue
+[MTE3] [CHECK_DATA] 0xffff8738f000 0x8000 B type GM
+[MTE3] [CHECK_TBUF] 0xffff8738f000 0x8000 B type GM
+[MEMCHEK] Mem[281472932421648]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE3, (pipe_t)PIPE_V, (event_t)0);
+
+[MTE3] [RECV_INST] set_flag type 3
+[MTE3] [EXECUTE] set_flag type 3
+[MTE3] [SYNC_DATA] 0xffff8738f000 0x8000 B type GM
+[MTE3] [send event] on set_flag 5 1 0
+[MTE3] -> [V] [GET_DATA] 0xffff8738f000 0x8000 B stat 1 type GM
+[V] [RECV_EVENT] SRC MTE3 DST V EVENT 0
+[V] [RECV_DATA] 0xffff8738f000 0x8000 B stat 1 type GM
+[ALL] [TBUF_EVENT] FREE 0xffff8626a010 0x8000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x20000, Rate: 50%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281472932421648]checkNum is 0
+[MEMCHEK] Mem[281472932421648] is FREE
+[ALL] [TBUF_EVENT] ALLOC 0xffff86262010 0x8000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x8000, Rate: 12.5%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x20000, Rate: 50%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281472932388880len: 32768
+
+### copy_gm_to_ubuf((__ubuf__ void*)0xffff86262010, (__gm__ void*)0xffff873f3000, (uint8_t)0, (uint16_t)1, (uint16_t)1024, (uint16_t)0, (uint16_t)0);
+
+[MTE2] [RECV_INST] copy_gm_to_ubuf type 0
+[MTE2] [EXECUTE] copy_gm_to_ubuf type 0
+[MTE2] read  data 0xffff873f3000 0x8000 B type GM
+[MTE2] [DATA_MARK] 0xffff873f3000 0x8000 B type GM mark read
+[MTE2] write data 0xffff86262010 0x8000 B type UB
+[MTE2] checking pending queue
+[MTE2] [CHECK_DATA] 0xffff86262010 0x8000 B type UB
+[MTE2] checking wrote queue
+[MTE2] [CHECK_DATA] 0xffff86262010 0x8000 B type UB
+[MTE2] [CHECK_TBUF] 0xffff86262010 0x8000 B type UB
+[MTE2] allocation buffer match result 0
+[MEMCHEK] Mem[281472932388880]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)0);
+
+[MTE2] [RECV_INST] set_flag type 3
+[MTE2] [EXECUTE] set_flag type 3
+[MTE2] [SYNC_DATA] 0xffff86262010 0x8000 B type UB
+[MTE2] [send event] on set_flag 4 1 0
+[MTE2] -> [V] [GET_DATA] 0xffff8625a010 0x10000 B stat 1 type UB
+[V] [RECV_EVENT] SRC MTE2 DST V EVENT 0
+[V] [RECV_DATA] 0xffff8625a010 0x10000 B stat 1 type UB
+[MEMCHEK] Mem[281472932388880]checkNum is 0
+
+### wait_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)0);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 4 1 0
+[MTE2] [EVENT_CLEAR] send 4 1 0 has been waited
+[MEMCHEK] Mem[281472932388880]checkNum is 0
+[ALL] [TBUF_EVENT] ALLOC 0xffff86272010 0x8000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x10000, Rate: 25%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x20000, Rate: 50%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281472932454416len: 32768
+
+### set_mask_count();
+
+[set_mask_count] unsupported
+[S] [RECV_INST] set_mask_count type 7
+[S] [EXECUTE] set_mask_count type 7
+
+### set_vector_mask((uint64_t)0, (uint64_t)8192);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### vmaxs((__ubuf__ float*)0xffff86272010, (__ubuf__ float*)0xffff86262010, (float)0, (uint8_t)1, (uint16_t)1, (uint16_t)1, (uint8_t)8, (uint8_t)8, (bool)0, (bool)0);
+
+[V] [RECV_INST] vmaxs type 1
+[V] [EXECUTE] vmaxs type 1
+[MEMCHEK] Mem[281472932388880]checkNum is 0
+[MEMCHEK] Mem[281472932454416]checkNum is 0
+DataMergeAllOnceAll dataLen: 32768
+[V] [ErrorRead4] on read 0 0x8000 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffff8913e9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffff8913ef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x1ec) [0xffff89116df4]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x434) [0xffff89119334]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1c8) [0xffff89113d54]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffff8912500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk5vmaxsEPfS0_fhtthhbb+0x4d0) [0xffff8921b3d0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z5vmaxsPfS_fhtthhbb+0xa0) [0xffff88f8c9f4]
+  ./relu_op_kernel_ut(+0x3fa2c) [0xaaaac507fa2c]
+  ./relu_op_kernel_ut(+0x4bec8) [0xaaaac508bec8]
+  ./relu_op_kernel_ut(+0x47088) [0xaaaac5087088]
+  ./relu_op_kernel_ut(+0x41d2c) [0xaaaac5081d2c]
+  ./relu_op_kernel_ut(+0x3c1bc) [0xaaaac507c1bc]
+  ./relu_op_kernel_ut(+0x364c4) [0xaaaac50764c4]
+  ./relu_op_kernel_ut(+0x36cac) [0xaaaac5076cac]
+  ./relu_op_kernel_ut(+0x2b31c) [0xaaaac506b31c]
+  ./relu_op_kernel_ut(+0x93ff8) [0xaaaac50d3ff8]
+  ./relu_op_kernel_ut(+0x80790) [0xaaaac50c0790]
+  ./relu_op_kernel_ut(+0x80994) [0xaaaac50c0994]
+  ./relu_op_kernel_ut(+0x83970) [0xaaaac50c3970]
+  ./relu_op_kernel_ut(+0x86e2c) [0xaaaac50c6e2c]
+  ./relu_op_kernel_ut(+0x80b84) [0xaaaac50c0b84]
+  ./relu_op_kernel_ut(+0x2a918) [0xaaaac506a918]
+  /lib/aarch64-linux-gnu/libc.so.6(+0x27400) [0xffff87e67400]
+  /lib/aarch64-linux-gnu/libc.so.6(__libc_start_main+0x98) [0xffff87e674d8]
+  ./relu_op_kernel_ut(+0x2af30) [0xaaaac506af30]
+
+[V] read  data 0 0x8000 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0 0x8000 B type UB
+[V] [ErrorRead2] on read 0 0x8000 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffff8913e9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffff8913ef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x4e0) [0xffff891170e8]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x434) [0xffff89119334]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1c8) [0xffff89113d54]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffff8912500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk5vmaxsEPfS0_fhtthhbb+0x4d0) [0xffff8921b3d0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z5vmaxsPfS_fhtthhbb+0xa0) [0xffff88f8c9f4]
+  ./relu_op_kernel_ut(+0x3fa2c) [0xaaaac507fa2c]
+  ./relu_op_kernel_ut(+0x4bec8) [0xaaaac508bec8]
+  ./relu_op_kernel_ut(+0x47088) [0xaaaac5087088]
+  ./relu_op_kernel_ut(+0x41d2c) [0xaaaac5081d2c]
+  ./relu_op_kernel_ut(+0x3c1bc) [0xaaaac507c1bc]
+  ./relu_op_kernel_ut(+0x364c4) [0xaaaac50764c4]
+  ./relu_op_kernel_ut(+0x36cac) [0xaaaac5076cac]
+  ./relu_op_kernel_ut(+0x2b31c) [0xaaaac506b31c]
+  ./relu_op_kernel_ut(+0x93ff8) [0xaaaac50d3ff8]
+  ./relu_op_kernel_ut(+0x80790) [0xaaaac50c0790]
+  ./relu_op_kernel_ut(+0x80994) [0xaaaac50c0994]
+  ./relu_op_kernel_ut(+0x83970) [0xaaaac50c3970]
+  ./relu_op_kernel_ut(+0x86e2c) [0xaaaac50c6e2c]
+  ./relu_op_kernel_ut(+0x80b84) [0xaaaac50c0b84]
+  ./relu_op_kernel_ut(+0x2a918) [0xaaaac506a918]
+  /lib/aarch64-linux-gnu/libc.so.6(+0x27400) [0xffff87e67400]
+  /lib/aarch64-linux-gnu/libc.so.6(__libc_start_main+0x98) [0xffff87e674d8]
+  ./relu_op_kernel_ut(+0x2af30) [0xaaaac506af30]
+
+[V] checking pending queue
+[V] [CHECK_DATA] 0 0x8000 B type UB
+[V] [CHECK_TBUF] 0 0x8000 B type UB
+[V] allocation buffer match result 2
+[V] persistent buffer match result 2
+[V] [ErrorRead1] on read 0 0x8000 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffff8913e9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffff8913ef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x82c) [0xffff89117434]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x434) [0xffff89119334]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1c8) [0xffff89113d54]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffff8912500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk5vmaxsEPfS0_fhtthhbb+0x4d0) [0xffff8921b3d0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z5vmaxsPfS_fhtthhbb+0xa0) [0xffff88f8c9f4]
+  ./relu_op_kernel_ut(+0x3fa2c) [0xaaaac507fa2c]
+  ./relu_op_kernel_ut(+0x4bec8) [0xaaaac508bec8]
+  ./relu_op_kernel_ut(+0x47088) [0xaaaac5087088]
+  ./relu_op_kernel_ut(+0x41d2c) [0xaaaac5081d2c]
+  ./relu_op_kernel_ut(+0x3c1bc) [0xaaaac507c1bc]
+  ./relu_op_kernel_ut(+0x364c4) [0xaaaac50764c4]
+  ./relu_op_kernel_ut(+0x36cac) [0xaaaac5076cac]
+  ./relu_op_kernel_ut(+0x2b31c) [0xaaaac506b31c]
+  ./relu_op_kernel_ut(+0x93ff8) [0xaaaac50d3ff8]
+  ./relu_op_kernel_ut(+0x80790) [0xaaaac50c0790]
+  ./relu_op_kernel_ut(+0x80994) [0xaaaac50c0994]
+  ./relu_op_kernel_ut(+0x83970) [0xaaaac50c3970]
+  ./relu_op_kernel_ut(+0x86e2c) [0xaaaac50c6e2c]
+  ./relu_op_kernel_ut(+0x80b84) [0xaaaac50c0b84]
+  ./relu_op_kernel_ut(+0x2a918) [0xaaaac506a918]
+  /lib/aarch64-linux-gnu/libc.so.6(+0x27400) [0xffff87e67400]
+  /lib/aarch64-linux-gnu/libc.so.6(__libc_start_main+0x98) [0xffff87e674d8]
+  ./relu_op_kernel_ut(+0x2af30) [0xaaaac506af30]
+
+[V] read  data 0xffff86262010 0x8000 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0xffff86262010 0x8000 B type UB
+[V] data matched whole 0xffff8625a010 0x10000 stat 1
+[V] [DATA_MARK] 0xffff86262010 0x8000 B type UB mark read
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffff86262010 0x8000 B type UB
+[V] [CHECK_TBUF] 0xffff86262010 0x8000 B type UB
+[V] allocation buffer match result 0
+[V] write data 0xffff86272010 0x8000 B type UB
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffff86272010 0x8000 B type UB
+[V] checking wrote queue
+[V] [CHECK_DATA] 0xffff86272010 0x8000 B type UB
+[V] [CHECK_TBUF] 0xffff86272010 0x8000 B type UB
+[V] allocation buffer match result 0
+
+### set_vector_mask((uint64_t)18446744073709551615, (uint64_t)18446744073709551615);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### set_mask_norm();
+
+[set_mask_norm] unsupported
+[S] [RECV_INST] set_mask_norm type 7
+[S] [EXECUTE] set_mask_norm type 7
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE3, (event_t)0);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [SYNC_DATA] 0xffff86272010 0x8000 B type UB
+[V] [send event] on set_flag 1 5 0
+[V] -> [MTE3] [GET_DATA] 0xffff8626a010 0x10000 B stat 1 type UB
+[MTE3] [RECV_EVENT] SRC V DST MTE3 EVENT 0
+[MTE3] [RECV_DATA] 0xffff8626a010 0x10000 B stat 1 type UB
+[MEMCHEK] Mem[281472932454416]checkNum is 0
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)1);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [send event] on set_flag 1 4 1
+[V] -> [MTE2] [GET_DATA] 0xffff8626a010 0x10000 B stat 1 type UB
+[MTE2] [RECV_EVENT] SRC V DST MTE2 EVENT 1
+[MTE2] [RECV_DATA] 0xffff8626a010 0x10000 B stat 1 type UB
+[ALL] [TBUF_EVENT] FREE 0xffff86262010 0x8000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x8000, Rate: 12.5%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x20000, Rate: 50%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281472932388880]checkNum is 0
+[MEMCHEK] Mem[281472932388880] is FREE
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE3, (event_t)0);
+
+[MTE3] [RECV_INST] wait_flag type 4
+[MTE3] [EXECUTE] wait_flag type 4
+[MTE3] [no wait] on wait_flag 1 5 0
+[V] [EVENT_CLEAR] send 1 5 0 has been waited
+[MEMCHEK] Mem[281472932454416]checkNum is 0
+
+### copy_ubuf_to_gm((__gm__ void*)0xffff87397000, (__ubuf__ void*)0xffff86272010, (uint8_t)0, (uint16_t)1, (uint16_t)1024, (uint16_t)0, (uint16_t)0);
+
+[MTE3] [RECV_INST] copy_ubuf_to_gm type 0
+[MTE3] [EXECUTE] copy_ubuf_to_gm type 0
+[MTE3] read  data 0xffff86272010 0x8000 B type UB
+[MTE3] checking synced queue
+[MTE3] [CHECK_DATA] 0xffff86272010 0x8000 B type UB
+[MTE3] data matched whole 0xffff8626a010 0x10000 stat 1
+[MTE3] [DATA_MARK] 0xffff86272010 0x8000 B type UB mark read
+[MTE3] checking pending queue
+[MTE3] [CHECK_DATA] 0xffff86272010 0x8000 B type UB
+[MTE3] [CHECK_TBUF] 0xffff86272010 0x8000 B type UB
+[MTE3] allocation buffer match result 0
+[MTE3] write data 0xffff87397000 0x8000 B type GM
+[MTE3] checking pending queue
+[MTE3] [CHECK_DATA] 0xffff87397000 0x8000 B type GM
+[MTE3] checking wrote queue
+[MTE3] [CHECK_DATA] 0xffff87397000 0x8000 B type GM
+[MTE3] [CHECK_TBUF] 0xffff87397000 0x8000 B type GM
+[MEMCHEK] Mem[281472932454416]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE3, (pipe_t)PIPE_V, (event_t)1);
+
+[MTE3] [RECV_INST] set_flag type 3
+[MTE3] [EXECUTE] set_flag type 3
+[MTE3] [SYNC_DATA] 0xffff87397000 0x8000 B type GM
+[MTE3] [send event] on set_flag 5 1 1
+[MTE3] -> [V] [GET_DATA] 0xffff8738f000 0x10000 B stat 1 type GM
+[V] [RECV_EVENT] SRC MTE3 DST V EVENT 1
+[V] [RECV_DATA] 0xffff8738f000 0x10000 B stat 1 type GM
+[ALL] [TBUF_EVENT] FREE 0xffff86272010 0x8000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x20000, Rate: 50%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281472932454416]checkNum is 0
+[MEMCHEK] Mem[281472932454416] is FREE
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)0);
+
+[MTE2] [RECV_INST] wait_flag type 4
+[MTE2] [EXECUTE] wait_flag type 4
+[MTE2] [no wait] on wait_flag 1 4 0
+[V] [EVENT_CLEAR] send 1 4 0 has been waited
+[ALL] [TBUF_EVENT] ALLOC 0xffff8625a010 0x8000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x8000, Rate: 12.5%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x20000, Rate: 50%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281472932356112len: 32768
+
+### copy_gm_to_ubuf((__ubuf__ void*)0xffff8625a010, (__gm__ void*)0xffff873fb000, (uint8_t)0, (uint16_t)1, (uint16_t)1024, (uint16_t)0, (uint16_t)0);
+
+[MTE2] [RECV_INST] copy_gm_to_ubuf type 0
+[MTE2] [EXECUTE] copy_gm_to_ubuf type 0
+[MTE2] read  data 0xffff873fb000 0x8000 B type GM
+[MTE2] [DATA_MARK] 0xffff873fb000 0x8000 B type GM mark read
+[MTE2] write data 0xffff8625a010 0x8000 B type UB
+[MTE2] checking pending queue
+[MTE2] [CHECK_DATA] 0xffff8625a010 0x8000 B type UB
+[MTE2] checking wrote queue
+[MTE2] [CHECK_DATA] 0xffff8625a010 0x8000 B type UB
+[MTE2] data matched whole 0xffff8625a010 0x10000 stat 1
+[MTE2] [CHECK_TBUF] 0xffff8625a010 0x8000 B type UB
+[MTE2] allocation buffer match result 0
+[MEMCHEK] Mem[281472932356112]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)0);
+
+[MTE2] [RECV_INST] set_flag type 3
+[MTE2] [EXECUTE] set_flag type 3
+[MTE2] [SYNC_DATA] 0xffff8625a010 0x8000 B type UB
+[MTE2] [send event] on set_flag 4 1 0
+[MTE2] -> [V] [GET_DATA] 0xffff8625a010 0x10000 B stat 1 type UB
+[V] [RECV_EVENT] SRC MTE2 DST V EVENT 0
+[V] [RECV_DATA] 0xffff8625a010 0x10000 B stat 1 type UB
+[MEMCHEK] Mem[281472932356112]checkNum is 0
+
+### wait_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)0);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 4 1 0
+[MTE2] [EVENT_CLEAR] send 4 1 0 has been waited
+[MEMCHEK] Mem[281472932356112]checkNum is 0
+
+### wait_flag((pipe_t)PIPE_MTE3, (pipe_t)PIPE_V, (event_t)0);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 5 1 0
+[MTE3] [EVENT_CLEAR] send 5 1 0 has been waited
+[ALL] [TBUF_EVENT] ALLOC 0xffff8626a010 0x8000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x10000, Rate: 25%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x20000, Rate: 50%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281472932421648len: 32768
+
+### set_mask_count();
+
+[set_mask_count] unsupported
+[S] [RECV_INST] set_mask_count type 7
+[S] [EXECUTE] set_mask_count type 7
+
+### set_vector_mask((uint64_t)0, (uint64_t)8192);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### vmaxs((__ubuf__ float*)0xffff8626a010, (__ubuf__ float*)0xffff8625a010, (float)0, (uint8_t)1, (uint16_t)1, (uint16_t)1, (uint8_t)8, (uint8_t)8, (bool)0, (bool)0);
+
+[V] [RECV_INST] vmaxs type 1
+[V] [EXECUTE] vmaxs type 1
+[MEMCHEK] Mem[281472932356112]checkNum is 0
+[MEMCHEK] Mem[281472932421648]checkNum is 0
+DataMergeAllOnceAll dataLen: 32768
+[V] [ErrorRead4] on read 0 0x8000 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffff8913e9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffff8913ef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x1ec) [0xffff89116df4]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x434) [0xffff89119334]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1c8) [0xffff89113d54]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffff8912500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk5vmaxsEPfS0_fhtthhbb+0x4d0) [0xffff8921b3d0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z5vmaxsPfS_fhtthhbb+0xa0) [0xffff88f8c9f4]
+  ./relu_op_kernel_ut(+0x3fa2c) [0xaaaac507fa2c]
+  ./relu_op_kernel_ut(+0x4bec8) [0xaaaac508bec8]
+  ./relu_op_kernel_ut(+0x47088) [0xaaaac5087088]
+  ./relu_op_kernel_ut(+0x41d2c) [0xaaaac5081d2c]
+  ./relu_op_kernel_ut(+0x3c1bc) [0xaaaac507c1bc]
+  ./relu_op_kernel_ut(+0x364c4) [0xaaaac50764c4]
+  ./relu_op_kernel_ut(+0x36cac) [0xaaaac5076cac]
+  ./relu_op_kernel_ut(+0x2b31c) [0xaaaac506b31c]
+  ./relu_op_kernel_ut(+0x93ff8) [0xaaaac50d3ff8]
+  ./relu_op_kernel_ut(+0x80790) [0xaaaac50c0790]
+  ./relu_op_kernel_ut(+0x80994) [0xaaaac50c0994]
+  ./relu_op_kernel_ut(+0x83970) [0xaaaac50c3970]
+  ./relu_op_kernel_ut(+0x86e2c) [0xaaaac50c6e2c]
+  ./relu_op_kernel_ut(+0x80b84) [0xaaaac50c0b84]
+  ./relu_op_kernel_ut(+0x2a918) [0xaaaac506a918]
+  /lib/aarch64-linux-gnu/libc.so.6(+0x27400) [0xffff87e67400]
+  /lib/aarch64-linux-gnu/libc.so.6(__libc_start_main+0x98) [0xffff87e674d8]
+  ./relu_op_kernel_ut(+0x2af30) [0xaaaac506af30]
+
+[V] read  data 0 0x8000 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0 0x8000 B type UB
+[V] [ErrorRead2] on read 0 0x8000 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffff8913e9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffff8913ef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x4e0) [0xffff891170e8]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x434) [0xffff89119334]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1c8) [0xffff89113d54]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffff8912500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk5vmaxsEPfS0_fhtthhbb+0x4d0) [0xffff8921b3d0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z5vmaxsPfS_fhtthhbb+0xa0) [0xffff88f8c9f4]
+  ./relu_op_kernel_ut(+0x3fa2c) [0xaaaac507fa2c]
+  ./relu_op_kernel_ut(+0x4bec8) [0xaaaac508bec8]
+  ./relu_op_kernel_ut(+0x47088) [0xaaaac5087088]
+  ./relu_op_kernel_ut(+0x41d2c) [0xaaaac5081d2c]
+  ./relu_op_kernel_ut(+0x3c1bc) [0xaaaac507c1bc]
+  ./relu_op_kernel_ut(+0x364c4) [0xaaaac50764c4]
+  ./relu_op_kernel_ut(+0x36cac) [0xaaaac5076cac]
+  ./relu_op_kernel_ut(+0x2b31c) [0xaaaac506b31c]
+  ./relu_op_kernel_ut(+0x93ff8) [0xaaaac50d3ff8]
+  ./relu_op_kernel_ut(+0x80790) [0xaaaac50c0790]
+  ./relu_op_kernel_ut(+0x80994) [0xaaaac50c0994]
+  ./relu_op_kernel_ut(+0x83970) [0xaaaac50c3970]
+  ./relu_op_kernel_ut(+0x86e2c) [0xaaaac50c6e2c]
+  ./relu_op_kernel_ut(+0x80b84) [0xaaaac50c0b84]
+  ./relu_op_kernel_ut(+0x2a918) [0xaaaac506a918]
+  /lib/aarch64-linux-gnu/libc.so.6(+0x27400) [0xffff87e67400]
+  /lib/aarch64-linux-gnu/libc.so.6(__libc_start_main+0x98) [0xffff87e674d8]
+  ./relu_op_kernel_ut(+0x2af30) [0xaaaac506af30]
+
+[V] checking pending queue
+[V] [CHECK_DATA] 0 0x8000 B type UB
+[V] [CHECK_TBUF] 0 0x8000 B type UB
+[V] allocation buffer match result 2
+[V] persistent buffer match result 2
+[V] [ErrorRead1] on read 0 0x8000 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffff8913e9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffff8913ef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x82c) [0xffff89117434]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x434) [0xffff89119334]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1c8) [0xffff89113d54]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffff8912500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk5vmaxsEPfS0_fhtthhbb+0x4d0) [0xffff8921b3d0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z5vmaxsPfS_fhtthhbb+0xa0) [0xffff88f8c9f4]
+  ./relu_op_kernel_ut(+0x3fa2c) [0xaaaac507fa2c]
+  ./relu_op_kernel_ut(+0x4bec8) [0xaaaac508bec8]
+  ./relu_op_kernel_ut(+0x47088) [0xaaaac5087088]
+  ./relu_op_kernel_ut(+0x41d2c) [0xaaaac5081d2c]
+  ./relu_op_kernel_ut(+0x3c1bc) [0xaaaac507c1bc]
+  ./relu_op_kernel_ut(+0x364c4) [0xaaaac50764c4]
+  ./relu_op_kernel_ut(+0x36cac) [0xaaaac5076cac]
+  ./relu_op_kernel_ut(+0x2b31c) [0xaaaac506b31c]
+  ./relu_op_kernel_ut(+0x93ff8) [0xaaaac50d3ff8]
+  ./relu_op_kernel_ut(+0x80790) [0xaaaac50c0790]
+  ./relu_op_kernel_ut(+0x80994) [0xaaaac50c0994]
+  ./relu_op_kernel_ut(+0x83970) [0xaaaac50c3970]
+  ./relu_op_kernel_ut(+0x86e2c) [0xaaaac50c6e2c]
+  ./relu_op_kernel_ut(+0x80b84) [0xaaaac50c0b84]
+  ./relu_op_kernel_ut(+0x2a918) [0xaaaac506a918]
+  /lib/aarch64-linux-gnu/libc.so.6(+0x27400) [0xffff87e67400]
+  /lib/aarch64-linux-gnu/libc.so.6(__libc_start_main+0x98) [0xffff87e674d8]
+  ./relu_op_kernel_ut(+0x2af30) [0xaaaac506af30]
+
+[V] read  data 0xffff8625a010 0x8000 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0xffff8625a010 0x8000 B type UB
+[V] data matched whole 0xffff8625a010 0x10000 stat 1
+[V] [DATA_MARK] 0xffff8625a010 0x8000 B type UB mark read
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffff8625a010 0x8000 B type UB
+[V] [CHECK_TBUF] 0xffff8625a010 0x8000 B type UB
+[V] allocation buffer match result 0
+[V] write data 0xffff8626a010 0x8000 B type UB
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffff8626a010 0x8000 B type UB
+[V] checking wrote queue
+[V] [CHECK_DATA] 0xffff8626a010 0x8000 B type UB
+[V] data matched whole 0xffff8626a010 0x10000 stat 1
+[V] [CHECK_TBUF] 0xffff8626a010 0x8000 B type UB
+[V] allocation buffer match result 0
+
+### set_vector_mask((uint64_t)18446744073709551615, (uint64_t)18446744073709551615);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### set_mask_norm();
+
+[set_mask_norm] unsupported
+[S] [RECV_INST] set_mask_norm type 7
+[S] [EXECUTE] set_mask_norm type 7
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE3, (event_t)0);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [SYNC_DATA] 0xffff8626a010 0x8000 B type UB
+[V] [send event] on set_flag 1 5 0
+[V] -> [MTE3] [GET_DATA] 0xffff8626a010 0x10000 B stat 1 type UB
+[MTE3] [RECV_EVENT] SRC V DST MTE3 EVENT 0
+[MTE3] [RECV_DATA] 0xffff8626a010 0x10000 B stat 1 type UB
+[MEMCHEK] Mem[281472932421648]checkNum is 0
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)0);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [send event] on set_flag 1 4 0
+[V] -> [MTE2] [GET_DATA] 0xffff8626a010 0x10000 B stat 1 type UB
+[MTE2] [RECV_EVENT] SRC V DST MTE2 EVENT 0
+[MTE2] [RECV_DATA] 0xffff8626a010 0x10000 B stat 1 type UB
+[ALL] [TBUF_EVENT] FREE 0xffff8625a010 0x8000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x8000, Rate: 12.5%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x20000, Rate: 50%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281472932356112]checkNum is 0
+[MEMCHEK] Mem[281472932356112] is FREE
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE3, (event_t)0);
+
+[MTE3] [RECV_INST] wait_flag type 4
+[MTE3] [EXECUTE] wait_flag type 4
+[MTE3] [no wait] on wait_flag 1 5 0
+[V] [EVENT_CLEAR] send 1 5 0 has been waited
+[MEMCHEK] Mem[281472932421648]checkNum is 0
+
+### copy_ubuf_to_gm((__gm__ void*)0xffff8739f000, (__ubuf__ void*)0xffff8626a010, (uint8_t)0, (uint16_t)1, (uint16_t)1024, (uint16_t)0, (uint16_t)0);
+
+[MTE3] [RECV_INST] copy_ubuf_to_gm type 0
+[MTE3] [EXECUTE] copy_ubuf_to_gm type 0
+[MTE3] read  data 0xffff8626a010 0x8000 B type UB
+[MTE3] checking synced queue
+[MTE3] [CHECK_DATA] 0xffff8626a010 0x8000 B type UB
+[MTE3] data matched whole 0xffff8626a010 0x10000 stat 1
+[MTE3] [DATA_MARK] 0xffff8626a010 0x8000 B type UB mark read
+[MTE3] checking pending queue
+[MTE3] [CHECK_DATA] 0xffff8626a010 0x8000 B type UB
+[MTE3] [CHECK_TBUF] 0xffff8626a010 0x8000 B type UB
+[MTE3] allocation buffer match result 0
+[MTE3] write data 0xffff8739f000 0x8000 B type GM
+[MTE3] checking pending queue
+[MTE3] [CHECK_DATA] 0xffff8739f000 0x8000 B type GM
+[MTE3] checking wrote queue
+[MTE3] [CHECK_DATA] 0xffff8739f000 0x8000 B type GM
+[MTE3] [CHECK_TBUF] 0xffff8739f000 0x8000 B type GM
+[MEMCHEK] Mem[281472932421648]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE3, (pipe_t)PIPE_V, (event_t)0);
+
+[MTE3] [RECV_INST] set_flag type 3
+[MTE3] [EXECUTE] set_flag type 3
+[MTE3] [SYNC_DATA] 0xffff8739f000 0x8000 B type GM
+[MTE3] [send event] on set_flag 5 1 0
+[MTE3] -> [V] [GET_DATA] 0xffff8738f000 0x18000 B stat 1 type GM
+[V] [RECV_EVENT] SRC MTE3 DST V EVENT 0
+[V] [RECV_DATA] 0xffff8738f000 0x18000 B stat 1 type GM
+[ALL] [TBUF_EVENT] FREE 0xffff8626a010 0x8000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x20000, Rate: 50%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281472932421648]checkNum is 0
+[MEMCHEK] Mem[281472932421648] is FREE
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)1);
+
+[MTE2] [RECV_INST] wait_flag type 4
+[MTE2] [EXECUTE] wait_flag type 4
+[MTE2] [no wait] on wait_flag 1 4 1
+[V] [EVENT_CLEAR] send 1 4 1 has been waited
+[ALL] [TBUF_EVENT] ALLOC 0xffff86262010 0x8000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x8000, Rate: 12.5%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x20000, Rate: 50%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281472932388880len: 32768
+
+### copy_gm_to_ubuf((__ubuf__ void*)0xffff86262010, (__gm__ void*)0xffff87403000, (uint8_t)0, (uint16_t)1, (uint16_t)1024, (uint16_t)0, (uint16_t)0);
+
+[MTE2] [RECV_INST] copy_gm_to_ubuf type 0
+[MTE2] [EXECUTE] copy_gm_to_ubuf type 0
+[MTE2] read  data 0xffff87403000 0x8000 B type GM
+[MTE2] [DATA_MARK] 0xffff87403000 0x8000 B type GM mark read
+[MTE2] write data 0xffff86262010 0x8000 B type UB
+[MTE2] checking pending queue
+[MTE2] [CHECK_DATA] 0xffff86262010 0x8000 B type UB
+[MTE2] checking wrote queue
+[MTE2] [CHECK_DATA] 0xffff86262010 0x8000 B type UB
+[MTE2] data matched whole 0xffff8625a010 0x10000 stat 1
+[MTE2] [CHECK_TBUF] 0xffff86262010 0x8000 B type UB
+[MTE2] allocation buffer match result 0
+[MEMCHEK] Mem[281472932388880]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)0);
+
+[MTE2] [RECV_INST] set_flag type 3
+[MTE2] [EXECUTE] set_flag type 3
+[MTE2] [SYNC_DATA] 0xffff86262010 0x8000 B type UB
+[MTE2] [send event] on set_flag 4 1 0
+[MTE2] -> [V] [GET_DATA] 0xffff8625a010 0x10000 B stat 1 type UB
+[V] [RECV_EVENT] SRC MTE2 DST V EVENT 0
+[V] [RECV_DATA] 0xffff8625a010 0x10000 B stat 1 type UB
+[MEMCHEK] Mem[281472932388880]checkNum is 0
+
+### wait_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)0);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 4 1 0
+[MTE2] [EVENT_CLEAR] send 4 1 0 has been waited
+[MEMCHEK] Mem[281472932388880]checkNum is 0
+
+### wait_flag((pipe_t)PIPE_MTE3, (pipe_t)PIPE_V, (event_t)1);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 5 1 1
+[MTE3] [EVENT_CLEAR] send 5 1 1 has been waited
+[ALL] [TBUF_EVENT] ALLOC 0xffff86272010 0x8000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x10000, Rate: 25%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x20000, Rate: 50%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281472932454416len: 32768
+
+### set_mask_count();
+
+[set_mask_count] unsupported
+[S] [RECV_INST] set_mask_count type 7
+[S] [EXECUTE] set_mask_count type 7
+
+### set_vector_mask((uint64_t)0, (uint64_t)8192);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### vmaxs((__ubuf__ float*)0xffff86272010, (__ubuf__ float*)0xffff86262010, (float)0, (uint8_t)1, (uint16_t)1, (uint16_t)1, (uint8_t)8, (uint8_t)8, (bool)0, (bool)0);
+
+[V] [RECV_INST] vmaxs type 1
+[V] [EXECUTE] vmaxs type 1
+[MEMCHEK] Mem[281472932388880]checkNum is 0
+[MEMCHEK] Mem[281472932454416]checkNum is 0
+DataMergeAllOnceAll dataLen: 32768
+[V] [ErrorRead4] on read 0 0x8000 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffff8913e9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffff8913ef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x1ec) [0xffff89116df4]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x434) [0xffff89119334]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1c8) [0xffff89113d54]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffff8912500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk5vmaxsEPfS0_fhtthhbb+0x4d0) [0xffff8921b3d0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z5vmaxsPfS_fhtthhbb+0xa0) [0xffff88f8c9f4]
+  ./relu_op_kernel_ut(+0x3fa2c) [0xaaaac507fa2c]
+  ./relu_op_kernel_ut(+0x4bec8) [0xaaaac508bec8]
+  ./relu_op_kernel_ut(+0x47088) [0xaaaac5087088]
+  ./relu_op_kernel_ut(+0x41d2c) [0xaaaac5081d2c]
+  ./relu_op_kernel_ut(+0x3c1bc) [0xaaaac507c1bc]
+  ./relu_op_kernel_ut(+0x364c4) [0xaaaac50764c4]
+  ./relu_op_kernel_ut(+0x36cac) [0xaaaac5076cac]
+  ./relu_op_kernel_ut(+0x2b31c) [0xaaaac506b31c]
+  ./relu_op_kernel_ut(+0x93ff8) [0xaaaac50d3ff8]
+  ./relu_op_kernel_ut(+0x80790) [0xaaaac50c0790]
+  ./relu_op_kernel_ut(+0x80994) [0xaaaac50c0994]
+  ./relu_op_kernel_ut(+0x83970) [0xaaaac50c3970]
+  ./relu_op_kernel_ut(+0x86e2c) [0xaaaac50c6e2c]
+  ./relu_op_kernel_ut(+0x80b84) [0xaaaac50c0b84]
+  ./relu_op_kernel_ut(+0x2a918) [0xaaaac506a918]
+  /lib/aarch64-linux-gnu/libc.so.6(+0x27400) [0xffff87e67400]
+  /lib/aarch64-linux-gnu/libc.so.6(__libc_start_main+0x98) [0xffff87e674d8]
+  ./relu_op_kernel_ut(+0x2af30) [0xaaaac506af30]
+
+[V] read  data 0 0x8000 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0 0x8000 B type UB
+[V] [ErrorRead2] on read 0 0x8000 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffff8913e9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffff8913ef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x4e0) [0xffff891170e8]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x434) [0xffff89119334]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1c8) [0xffff89113d54]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffff8912500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk5vmaxsEPfS0_fhtthhbb+0x4d0) [0xffff8921b3d0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z5vmaxsPfS_fhtthhbb+0xa0) [0xffff88f8c9f4]
+  ./relu_op_kernel_ut(+0x3fa2c) [0xaaaac507fa2c]
+  ./relu_op_kernel_ut(+0x4bec8) [0xaaaac508bec8]
+  ./relu_op_kernel_ut(+0x47088) [0xaaaac5087088]
+  ./relu_op_kernel_ut(+0x41d2c) [0xaaaac5081d2c]
+  ./relu_op_kernel_ut(+0x3c1bc) [0xaaaac507c1bc]
+  ./relu_op_kernel_ut(+0x364c4) [0xaaaac50764c4]
+  ./relu_op_kernel_ut(+0x36cac) [0xaaaac5076cac]
+  ./relu_op_kernel_ut(+0x2b31c) [0xaaaac506b31c]
+  ./relu_op_kernel_ut(+0x93ff8) [0xaaaac50d3ff8]
+  ./relu_op_kernel_ut(+0x80790) [0xaaaac50c0790]
+  ./relu_op_kernel_ut(+0x80994) [0xaaaac50c0994]
+  ./relu_op_kernel_ut(+0x83970) [0xaaaac50c3970]
+  ./relu_op_kernel_ut(+0x86e2c) [0xaaaac50c6e2c]
+  ./relu_op_kernel_ut(+0x80b84) [0xaaaac50c0b84]
+  ./relu_op_kernel_ut(+0x2a918) [0xaaaac506a918]
+  /lib/aarch64-linux-gnu/libc.so.6(+0x27400) [0xffff87e67400]
+  /lib/aarch64-linux-gnu/libc.so.6(__libc_start_main+0x98) [0xffff87e674d8]
+  ./relu_op_kernel_ut(+0x2af30) [0xaaaac506af30]
+
+[V] checking pending queue
+[V] [CHECK_DATA] 0 0x8000 B type UB
+[V] [CHECK_TBUF] 0 0x8000 B type UB
+[V] allocation buffer match result 2
+[V] persistent buffer match result 2
+[V] [ErrorRead1] on read 0 0x8000 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffff8913e9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffff8913ef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x82c) [0xffff89117434]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x434) [0xffff89119334]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1c8) [0xffff89113d54]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffff8912500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk5vmaxsEPfS0_fhtthhbb+0x4d0) [0xffff8921b3d0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z5vmaxsPfS_fhtthhbb+0xa0) [0xffff88f8c9f4]
+  ./relu_op_kernel_ut(+0x3fa2c) [0xaaaac507fa2c]
+  ./relu_op_kernel_ut(+0x4bec8) [0xaaaac508bec8]
+  ./relu_op_kernel_ut(+0x47088) [0xaaaac5087088]
+  ./relu_op_kernel_ut(+0x41d2c) [0xaaaac5081d2c]
+  ./relu_op_kernel_ut(+0x3c1bc) [0xaaaac507c1bc]
+  ./relu_op_kernel_ut(+0x364c4) [0xaaaac50764c4]
+  ./relu_op_kernel_ut(+0x36cac) [0xaaaac5076cac]
+  ./relu_op_kernel_ut(+0x2b31c) [0xaaaac506b31c]
+  ./relu_op_kernel_ut(+0x93ff8) [0xaaaac50d3ff8]
+  ./relu_op_kernel_ut(+0x80790) [0xaaaac50c0790]
+  ./relu_op_kernel_ut(+0x80994) [0xaaaac50c0994]
+  ./relu_op_kernel_ut(+0x83970) [0xaaaac50c3970]
+  ./relu_op_kernel_ut(+0x86e2c) [0xaaaac50c6e2c]
+  ./relu_op_kernel_ut(+0x80b84) [0xaaaac50c0b84]
+  ./relu_op_kernel_ut(+0x2a918) [0xaaaac506a918]
+  /lib/aarch64-linux-gnu/libc.so.6(+0x27400) [0xffff87e67400]
+  /lib/aarch64-linux-gnu/libc.so.6(__libc_start_main+0x98) [0xffff87e674d8]
+  ./relu_op_kernel_ut(+0x2af30) [0xaaaac506af30]
+
+[V] read  data 0xffff86262010 0x8000 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0xffff86262010 0x8000 B type UB
+[V] data matched whole 0xffff8625a010 0x18000 stat 1
+[V] [DATA_MARK] 0xffff86262010 0x8000 B type UB mark read
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffff86262010 0x8000 B type UB
+[V] [CHECK_TBUF] 0xffff86262010 0x8000 B type UB
+[V] allocation buffer match result 0
+[V] write data 0xffff86272010 0x8000 B type UB
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffff86272010 0x8000 B type UB
+[V] checking wrote queue
+[V] [CHECK_DATA] 0xffff86272010 0x8000 B type UB
+[V] data matched whole 0xffff8626a010 0x10000 stat 1
+[V] [CHECK_TBUF] 0xffff86272010 0x8000 B type UB
+[V] allocation buffer match result 0
+
+### set_vector_mask((uint64_t)18446744073709551615, (uint64_t)18446744073709551615);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### set_mask_norm();
+
+[set_mask_norm] unsupported
+[S] [RECV_INST] set_mask_norm type 7
+[S] [EXECUTE] set_mask_norm type 7
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE3, (event_t)0);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [SYNC_DATA] 0xffff86272010 0x8000 B type UB
+[V] [send event] on set_flag 1 5 0
+[V] -> [MTE3] [GET_DATA] 0xffff8626a010 0x10000 B stat 1 type UB
+[MTE3] [RECV_EVENT] SRC V DST MTE3 EVENT 0
+[MTE3] [RECV_DATA] 0xffff8626a010 0x10000 B stat 1 type UB
+[MEMCHEK] Mem[281472932454416]checkNum is 0
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)1);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [send event] on set_flag 1 4 1
+[V] -> [MTE2] [GET_DATA] 0xffff8626a010 0x10000 B stat 1 type UB
+[MTE2] [RECV_EVENT] SRC V DST MTE2 EVENT 1
+[MTE2] [RECV_DATA] 0xffff8626a010 0x10000 B stat 1 type UB
+[ALL] [TBUF_EVENT] FREE 0xffff86262010 0x8000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x8000, Rate: 12.5%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x20000, Rate: 50%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281472932388880]checkNum is 0
+[MEMCHEK] Mem[281472932388880] is FREE
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE3, (event_t)0);
+
+[MTE3] [RECV_INST] wait_flag type 4
+[MTE3] [EXECUTE] wait_flag type 4
+[MTE3] [no wait] on wait_flag 1 5 0
+[V] [EVENT_CLEAR] send 1 5 0 has been waited
+[MEMCHEK] Mem[281472932454416]checkNum is 0
+
+### copy_ubuf_to_gm((__gm__ void*)0xffff873a7000, (__ubuf__ void*)0xffff86272010, (uint8_t)0, (uint16_t)1, (uint16_t)1024, (uint16_t)0, (uint16_t)0);
+
+[MTE3] [RECV_INST] copy_ubuf_to_gm type 0
+[MTE3] [EXECUTE] copy_ubuf_to_gm type 0
+[MTE3] read  data 0xffff86272010 0x8000 B type UB
+[MTE3] checking synced queue
+[MTE3] [CHECK_DATA] 0xffff86272010 0x8000 B type UB
+[MTE3] data matched whole 0xffff8626a010 0x10000 stat 1
+[MTE3] [DATA_MARK] 0xffff86272010 0x8000 B type UB mark read
+[MTE3] checking pending queue
+[MTE3] [CHECK_DATA] 0xffff86272010 0x8000 B type UB
+[MTE3] [CHECK_TBUF] 0xffff86272010 0x8000 B type UB
+[MTE3] allocation buffer match result 0
+[MTE3] write data 0xffff873a7000 0x8000 B type GM
+[MTE3] checking pending queue
+[MTE3] [CHECK_DATA] 0xffff873a7000 0x8000 B type GM
+[MTE3] checking wrote queue
+[MTE3] [CHECK_DATA] 0xffff873a7000 0x8000 B type GM
+[MTE3] [CHECK_TBUF] 0xffff873a7000 0x8000 B type GM
+[MEMCHEK] Mem[281472932454416]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE3, (pipe_t)PIPE_V, (event_t)1);
+
+[MTE3] [RECV_INST] set_flag type 3
+[MTE3] [EXECUTE] set_flag type 3
+[MTE3] [SYNC_DATA] 0xffff873a7000 0x8000 B type GM
+[MTE3] [send event] on set_flag 5 1 1
+[MTE3] -> [V] [GET_DATA] 0xffff8738f000 0x20000 B stat 1 type GM
+[V] [RECV_EVENT] SRC MTE3 DST V EVENT 1
+[V] [RECV_DATA] 0xffff8738f000 0x20000 B stat 1 type GM
+[ALL] [TBUF_EVENT] FREE 0xffff86272010 0x8000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x20000, Rate: 50%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281472932454416]checkNum is 0
+[MEMCHEK] Mem[281472932454416] is FREE
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)0);
+
+[MTE2] [RECV_INST] wait_flag type 4
+[MTE2] [EXECUTE] wait_flag type 4
+[MTE2] [no wait] on wait_flag 1 4 0
+[V] [EVENT_CLEAR] send 1 4 0 has been waited
+[ALL] [TBUF_EVENT] ALLOC 0xffff8625a010 0x8000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x8000, Rate: 12.5%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x20000, Rate: 50%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281472932356112len: 32768
+
+### copy_gm_to_ubuf((__ubuf__ void*)0xffff8625a010, (__gm__ void*)0xffff8740b000, (uint8_t)0, (uint16_t)1, (uint16_t)1024, (uint16_t)0, (uint16_t)0);
+
+[MTE2] [RECV_INST] copy_gm_to_ubuf type 0
+[MTE2] [EXECUTE] copy_gm_to_ubuf type 0
+[MTE2] read  data 0xffff8740b000 0x8000 B type GM
+[MTE2] [DATA_MARK] 0xffff8740b000 0x8000 B type GM mark read
+[MTE2] write data 0xffff8625a010 0x8000 B type UB
+[MTE2] checking pending queue
+[MTE2] [CHECK_DATA] 0xffff8625a010 0x8000 B type UB
+[MTE2] checking wrote queue
+[MTE2] [CHECK_DATA] 0xffff8625a010 0x8000 B type UB
+[MTE2] data matched whole 0xffff8625a010 0x10000 stat 1
+[MTE2] [CHECK_TBUF] 0xffff8625a010 0x8000 B type UB
+[MTE2] allocation buffer match result 0
+[MEMCHEK] Mem[281472932356112]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)0);
+
+[MTE2] [RECV_INST] set_flag type 3
+[MTE2] [EXECUTE] set_flag type 3
+[MTE2] [SYNC_DATA] 0xffff8625a010 0x8000 B type UB
+[MTE2] [send event] on set_flag 4 1 0
+[MTE2] -> [V] [GET_DATA] 0xffff8625a010 0x10000 B stat 1 type UB
+[V] [RECV_EVENT] SRC MTE2 DST V EVENT 0
+[V] [RECV_DATA] 0xffff8625a010 0x10000 B stat 1 type UB
+[MEMCHEK] Mem[281472932356112]checkNum is 0
+
+### wait_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)0);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 4 1 0
+[MTE2] [EVENT_CLEAR] send 4 1 0 has been waited
+[MEMCHEK] Mem[281472932356112]checkNum is 0
+
+### wait_flag((pipe_t)PIPE_MTE3, (pipe_t)PIPE_V, (event_t)0);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 5 1 0
+[MTE3] [EVENT_CLEAR] send 5 1 0 has been waited
+[ALL] [TBUF_EVENT] ALLOC 0xffff8626a010 0x8000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x10000, Rate: 25%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x20000, Rate: 50%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281472932421648len: 32768
+
+### set_mask_count();
+
+[set_mask_count] unsupported
+[S] [RECV_INST] set_mask_count type 7
+[S] [EXECUTE] set_mask_count type 7
+
+### set_vector_mask((uint64_t)0, (uint64_t)8192);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### vmaxs((__ubuf__ float*)0xffff8626a010, (__ubuf__ float*)0xffff8625a010, (float)0, (uint8_t)1, (uint16_t)1, (uint16_t)1, (uint8_t)8, (uint8_t)8, (bool)0, (bool)0);
+
+[V] [RECV_INST] vmaxs type 1
+[V] [EXECUTE] vmaxs type 1
+[MEMCHEK] Mem[281472932356112]checkNum is 0
+[MEMCHEK] Mem[281472932421648]checkNum is 0
+DataMergeAllOnceAll dataLen: 32768
+[V] [ErrorRead4] on read 0 0x8000 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffff8913e9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffff8913ef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x1ec) [0xffff89116df4]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x434) [0xffff89119334]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1c8) [0xffff89113d54]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffff8912500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk5vmaxsEPfS0_fhtthhbb+0x4d0) [0xffff8921b3d0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z5vmaxsPfS_fhtthhbb+0xa0) [0xffff88f8c9f4]
+  ./relu_op_kernel_ut(+0x3fa2c) [0xaaaac507fa2c]
+  ./relu_op_kernel_ut(+0x4bec8) [0xaaaac508bec8]
+  ./relu_op_kernel_ut(+0x47088) [0xaaaac5087088]
+  ./relu_op_kernel_ut(+0x41d2c) [0xaaaac5081d2c]
+  ./relu_op_kernel_ut(+0x3c1bc) [0xaaaac507c1bc]
+  ./relu_op_kernel_ut(+0x364c4) [0xaaaac50764c4]
+  ./relu_op_kernel_ut(+0x36cac) [0xaaaac5076cac]
+  ./relu_op_kernel_ut(+0x2b31c) [0xaaaac506b31c]
+  ./relu_op_kernel_ut(+0x93ff8) [0xaaaac50d3ff8]
+  ./relu_op_kernel_ut(+0x80790) [0xaaaac50c0790]
+  ./relu_op_kernel_ut(+0x80994) [0xaaaac50c0994]
+  ./relu_op_kernel_ut(+0x83970) [0xaaaac50c3970]
+  ./relu_op_kernel_ut(+0x86e2c) [0xaaaac50c6e2c]
+  ./relu_op_kernel_ut(+0x80b84) [0xaaaac50c0b84]
+  ./relu_op_kernel_ut(+0x2a918) [0xaaaac506a918]
+  /lib/aarch64-linux-gnu/libc.so.6(+0x27400) [0xffff87e67400]
+  /lib/aarch64-linux-gnu/libc.so.6(__libc_start_main+0x98) [0xffff87e674d8]
+  ./relu_op_kernel_ut(+0x2af30) [0xaaaac506af30]
+
+[V] read  data 0 0x8000 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0 0x8000 B type UB
+[V] [ErrorRead2] on read 0 0x8000 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffff8913e9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffff8913ef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x4e0) [0xffff891170e8]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x434) [0xffff89119334]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1c8) [0xffff89113d54]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffff8912500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk5vmaxsEPfS0_fhtthhbb+0x4d0) [0xffff8921b3d0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z5vmaxsPfS_fhtthhbb+0xa0) [0xffff88f8c9f4]
+  ./relu_op_kernel_ut(+0x3fa2c) [0xaaaac507fa2c]
+  ./relu_op_kernel_ut(+0x4bec8) [0xaaaac508bec8]
+  ./relu_op_kernel_ut(+0x47088) [0xaaaac5087088]
+  ./relu_op_kernel_ut(+0x41d2c) [0xaaaac5081d2c]
+  ./relu_op_kernel_ut(+0x3c1bc) [0xaaaac507c1bc]
+  ./relu_op_kernel_ut(+0x364c4) [0xaaaac50764c4]
+  ./relu_op_kernel_ut(+0x36cac) [0xaaaac5076cac]
+  ./relu_op_kernel_ut(+0x2b31c) [0xaaaac506b31c]
+  ./relu_op_kernel_ut(+0x93ff8) [0xaaaac50d3ff8]
+  ./relu_op_kernel_ut(+0x80790) [0xaaaac50c0790]
+  ./relu_op_kernel_ut(+0x80994) [0xaaaac50c0994]
+  ./relu_op_kernel_ut(+0x83970) [0xaaaac50c3970]
+  ./relu_op_kernel_ut(+0x86e2c) [0xaaaac50c6e2c]
+  ./relu_op_kernel_ut(+0x80b84) [0xaaaac50c0b84]
+  ./relu_op_kernel_ut(+0x2a918) [0xaaaac506a918]
+  /lib/aarch64-linux-gnu/libc.so.6(+0x27400) [0xffff87e67400]
+  /lib/aarch64-linux-gnu/libc.so.6(__libc_start_main+0x98) [0xffff87e674d8]
+  ./relu_op_kernel_ut(+0x2af30) [0xaaaac506af30]
+
+[V] checking pending queue
+[V] [CHECK_DATA] 0 0x8000 B type UB
+[V] [CHECK_TBUF] 0 0x8000 B type UB
+[V] allocation buffer match result 2
+[V] persistent buffer match result 2
+[V] [ErrorRead1] on read 0 0x8000 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffff8913e9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffff8913ef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x82c) [0xffff89117434]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x434) [0xffff89119334]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1c8) [0xffff89113d54]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffff8912500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk5vmaxsEPfS0_fhtthhbb+0x4d0) [0xffff8921b3d0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z5vmaxsPfS_fhtthhbb+0xa0) [0xffff88f8c9f4]
+  ./relu_op_kernel_ut(+0x3fa2c) [0xaaaac507fa2c]
+  ./relu_op_kernel_ut(+0x4bec8) [0xaaaac508bec8]
+  ./relu_op_kernel_ut(+0x47088) [0xaaaac5087088]
+  ./relu_op_kernel_ut(+0x41d2c) [0xaaaac5081d2c]
+  ./relu_op_kernel_ut(+0x3c1bc) [0xaaaac507c1bc]
+  ./relu_op_kernel_ut(+0x364c4) [0xaaaac50764c4]
+  ./relu_op_kernel_ut(+0x36cac) [0xaaaac5076cac]
+  ./relu_op_kernel_ut(+0x2b31c) [0xaaaac506b31c]
+  ./relu_op_kernel_ut(+0x93ff8) [0xaaaac50d3ff8]
+  ./relu_op_kernel_ut(+0x80790) [0xaaaac50c0790]
+  ./relu_op_kernel_ut(+0x80994) [0xaaaac50c0994]
+  ./relu_op_kernel_ut(+0x83970) [0xaaaac50c3970]
+  ./relu_op_kernel_ut(+0x86e2c) [0xaaaac50c6e2c]
+  ./relu_op_kernel_ut(+0x80b84) [0xaaaac50c0b84]
+  ./relu_op_kernel_ut(+0x2a918) [0xaaaac506a918]
+  /lib/aarch64-linux-gnu/libc.so.6(+0x27400) [0xffff87e67400]
+  /lib/aarch64-linux-gnu/libc.so.6(__libc_start_main+0x98) [0xffff87e674d8]
+  ./relu_op_kernel_ut(+0x2af30) [0xaaaac506af30]
+
+[V] read  data 0xffff8625a010 0x8000 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0xffff8625a010 0x8000 B type UB
+[V] data matched whole 0xffff8625a010 0x20000 stat 1
+[V] [DATA_MARK] 0xffff8625a010 0x8000 B type UB mark read
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffff8625a010 0x8000 B type UB
+[V] [CHECK_TBUF] 0xffff8625a010 0x8000 B type UB
+[V] allocation buffer match result 0
+[V] write data 0xffff8626a010 0x8000 B type UB
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffff8626a010 0x8000 B type UB
+[V] checking wrote queue
+[V] [CHECK_DATA] 0xffff8626a010 0x8000 B type UB
+[V] data matched whole 0xffff8626a010 0x10000 stat 1
+[V] [CHECK_TBUF] 0xffff8626a010 0x8000 B type UB
+[V] allocation buffer match result 0
+
+### set_vector_mask((uint64_t)18446744073709551615, (uint64_t)18446744073709551615);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### set_mask_norm();
+
+[set_mask_norm] unsupported
+[S] [RECV_INST] set_mask_norm type 7
+[S] [EXECUTE] set_mask_norm type 7
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE3, (event_t)0);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [SYNC_DATA] 0xffff8626a010 0x8000 B type UB
+[V] [send event] on set_flag 1 5 0
+[V] -> [MTE3] [GET_DATA] 0xffff8626a010 0x10000 B stat 1 type UB
+[MTE3] [RECV_EVENT] SRC V DST MTE3 EVENT 0
+[MTE3] [RECV_DATA] 0xffff8626a010 0x10000 B stat 1 type UB
+[MEMCHEK] Mem[281472932421648]checkNum is 0
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)0);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [send event] on set_flag 1 4 0
+[V] -> [MTE2] [GET_DATA] 0xffff8626a010 0x10000 B stat 1 type UB
+[MTE2] [RECV_EVENT] SRC V DST MTE2 EVENT 0
+[MTE2] [RECV_DATA] 0xffff8626a010 0x10000 B stat 1 type UB
+[ALL] [TBUF_EVENT] FREE 0xffff8625a010 0x8000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x8000, Rate: 12.5%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x20000, Rate: 50%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281472932356112]checkNum is 0
+[MEMCHEK] Mem[281472932356112] is FREE
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE3, (event_t)0);
+
+[MTE3] [RECV_INST] wait_flag type 4
+[MTE3] [EXECUTE] wait_flag type 4
+[MTE3] [no wait] on wait_flag 1 5 0
+[V] [EVENT_CLEAR] send 1 5 0 has been waited
+[MEMCHEK] Mem[281472932421648]checkNum is 0
+
+### copy_ubuf_to_gm((__gm__ void*)0xffff873af000, (__ubuf__ void*)0xffff8626a010, (uint8_t)0, (uint16_t)1, (uint16_t)1024, (uint16_t)0, (uint16_t)0);
+
+[MTE3] [RECV_INST] copy_ubuf_to_gm type 0
+[MTE3] [EXECUTE] copy_ubuf_to_gm type 0
+[MTE3] read  data 0xffff8626a010 0x8000 B type UB
+[MTE3] checking synced queue
+[MTE3] [CHECK_DATA] 0xffff8626a010 0x8000 B type UB
+[MTE3] data matched whole 0xffff8626a010 0x10000 stat 1
+[MTE3] [DATA_MARK] 0xffff8626a010 0x8000 B type UB mark read
+[MTE3] checking pending queue
+[MTE3] [CHECK_DATA] 0xffff8626a010 0x8000 B type UB
+[MTE3] [CHECK_TBUF] 0xffff8626a010 0x8000 B type UB
+[MTE3] allocation buffer match result 0
+[MTE3] write data 0xffff873af000 0x8000 B type GM
+[MTE3] checking pending queue
+[MTE3] [CHECK_DATA] 0xffff873af000 0x8000 B type GM
+[MTE3] checking wrote queue
+[MTE3] [CHECK_DATA] 0xffff873af000 0x8000 B type GM
+[MTE3] [CHECK_TBUF] 0xffff873af000 0x8000 B type GM
+[MEMCHEK] Mem[281472932421648]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE3, (pipe_t)PIPE_V, (event_t)0);
+
+[MTE3] [RECV_INST] set_flag type 3
+[MTE3] [EXECUTE] set_flag type 3
+[MTE3] [SYNC_DATA] 0xffff873af000 0x8000 B type GM
+[MTE3] [send event] on set_flag 5 1 0
+[MTE3] -> [V] [GET_DATA] 0xffff8738f000 0x28000 B stat 1 type GM
+[V] [RECV_EVENT] SRC MTE3 DST V EVENT 0
+[V] [RECV_DATA] 0xffff8738f000 0x28000 B stat 1 type GM
+[ALL] [TBUF_EVENT] FREE 0xffff8626a010 0x8000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x20000, Rate: 50%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281472932421648]checkNum is 0
+[MEMCHEK] Mem[281472932421648] is FREE
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)1);
+
+[MTE2] [RECV_INST] wait_flag type 4
+[MTE2] [EXECUTE] wait_flag type 4
+[MTE2] [no wait] on wait_flag 1 4 1
+[V] [EVENT_CLEAR] send 1 4 1 has been waited
+[ALL] [TBUF_EVENT] ALLOC 0xffff86262010 0x8000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x8000, Rate: 12.5%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x20000, Rate: 50%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281472932388880len: 32768
+
+### copy_gm_to_ubuf((__ubuf__ void*)0xffff86262010, (__gm__ void*)0xffff87413000, (uint8_t)0, (uint16_t)1, (uint16_t)1024, (uint16_t)0, (uint16_t)0);
+
+[MTE2] [RECV_INST] copy_gm_to_ubuf type 0
+[MTE2] [EXECUTE] copy_gm_to_ubuf type 0
+[MTE2] read  data 0xffff87413000 0x8000 B type GM
+[MTE2] [DATA_MARK] 0xffff87413000 0x8000 B type GM mark read
+[MTE2] write data 0xffff86262010 0x8000 B type UB
+[MTE2] checking pending queue
+[MTE2] [CHECK_DATA] 0xffff86262010 0x8000 B type UB
+[MTE2] checking wrote queue
+[MTE2] [CHECK_DATA] 0xffff86262010 0x8000 B type UB
+[MTE2] data matched whole 0xffff8625a010 0x10000 stat 1
+[MTE2] [CHECK_TBUF] 0xffff86262010 0x8000 B type UB
+[MTE2] allocation buffer match result 0
+[MEMCHEK] Mem[281472932388880]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)0);
+
+[MTE2] [RECV_INST] set_flag type 3
+[MTE2] [EXECUTE] set_flag type 3
+[MTE2] [SYNC_DATA] 0xffff86262010 0x8000 B type UB
+[MTE2] [send event] on set_flag 4 1 0
+[MTE2] -> [V] [GET_DATA] 0xffff8625a010 0x10000 B stat 1 type UB
+[V] [RECV_EVENT] SRC MTE2 DST V EVENT 0
+[V] [RECV_DATA] 0xffff8625a010 0x10000 B stat 1 type UB
+[MEMCHEK] Mem[281472932388880]checkNum is 0
+
+### wait_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)0);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 4 1 0
+[MTE2] [EVENT_CLEAR] send 4 1 0 has been waited
+[MEMCHEK] Mem[281472932388880]checkNum is 0
+
+### wait_flag((pipe_t)PIPE_MTE3, (pipe_t)PIPE_V, (event_t)1);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 5 1 1
+[MTE3] [EVENT_CLEAR] send 5 1 1 has been waited
+[ALL] [TBUF_EVENT] ALLOC 0xffff86272010 0x8000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x10000, Rate: 25%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x20000, Rate: 50%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281472932454416len: 32768
+
+### set_mask_count();
+
+[set_mask_count] unsupported
+[S] [RECV_INST] set_mask_count type 7
+[S] [EXECUTE] set_mask_count type 7
+
+### set_vector_mask((uint64_t)0, (uint64_t)8192);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### vmaxs((__ubuf__ float*)0xffff86272010, (__ubuf__ float*)0xffff86262010, (float)0, (uint8_t)1, (uint16_t)1, (uint16_t)1, (uint8_t)8, (uint8_t)8, (bool)0, (bool)0);
+
+[V] [RECV_INST] vmaxs type 1
+[V] [EXECUTE] vmaxs type 1
+[MEMCHEK] Mem[281472932388880]checkNum is 0
+[MEMCHEK] Mem[281472932454416]checkNum is 0
+DataMergeAllOnceAll dataLen: 32768
+[V] [ErrorRead4] on read 0 0x8000 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffff8913e9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffff8913ef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x1ec) [0xffff89116df4]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x434) [0xffff89119334]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1c8) [0xffff89113d54]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffff8912500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk5vmaxsEPfS0_fhtthhbb+0x4d0) [0xffff8921b3d0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z5vmaxsPfS_fhtthhbb+0xa0) [0xffff88f8c9f4]
+  ./relu_op_kernel_ut(+0x3fa2c) [0xaaaac507fa2c]
+  ./relu_op_kernel_ut(+0x4bec8) [0xaaaac508bec8]
+  ./relu_op_kernel_ut(+0x47088) [0xaaaac5087088]
+  ./relu_op_kernel_ut(+0x41d2c) [0xaaaac5081d2c]
+  ./relu_op_kernel_ut(+0x3c1bc) [0xaaaac507c1bc]
+  ./relu_op_kernel_ut(+0x364c4) [0xaaaac50764c4]
+  ./relu_op_kernel_ut(+0x36cac) [0xaaaac5076cac]
+  ./relu_op_kernel_ut(+0x2b31c) [0xaaaac506b31c]
+  ./relu_op_kernel_ut(+0x93ff8) [0xaaaac50d3ff8]
+  ./relu_op_kernel_ut(+0x80790) [0xaaaac50c0790]
+  ./relu_op_kernel_ut(+0x80994) [0xaaaac50c0994]
+  ./relu_op_kernel_ut(+0x83970) [0xaaaac50c3970]
+  ./relu_op_kernel_ut(+0x86e2c) [0xaaaac50c6e2c]
+  ./relu_op_kernel_ut(+0x80b84) [0xaaaac50c0b84]
+  ./relu_op_kernel_ut(+0x2a918) [0xaaaac506a918]
+  /lib/aarch64-linux-gnu/libc.so.6(+0x27400) [0xffff87e67400]
+  /lib/aarch64-linux-gnu/libc.so.6(__libc_start_main+0x98) [0xffff87e674d8]
+  ./relu_op_kernel_ut(+0x2af30) [0xaaaac506af30]
+
+[V] read  data 0 0x8000 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0 0x8000 B type UB
+[V] [ErrorRead2] on read 0 0x8000 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffff8913e9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffff8913ef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x4e0) [0xffff891170e8]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x434) [0xffff89119334]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1c8) [0xffff89113d54]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffff8912500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk5vmaxsEPfS0_fhtthhbb+0x4d0) [0xffff8921b3d0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z5vmaxsPfS_fhtthhbb+0xa0) [0xffff88f8c9f4]
+  ./relu_op_kernel_ut(+0x3fa2c) [0xaaaac507fa2c]
+  ./relu_op_kernel_ut(+0x4bec8) [0xaaaac508bec8]
+  ./relu_op_kernel_ut(+0x47088) [0xaaaac5087088]
+  ./relu_op_kernel_ut(+0x41d2c) [0xaaaac5081d2c]
+  ./relu_op_kernel_ut(+0x3c1bc) [0xaaaac507c1bc]
+  ./relu_op_kernel_ut(+0x364c4) [0xaaaac50764c4]
+  ./relu_op_kernel_ut(+0x36cac) [0xaaaac5076cac]
+  ./relu_op_kernel_ut(+0x2b31c) [0xaaaac506b31c]
+  ./relu_op_kernel_ut(+0x93ff8) [0xaaaac50d3ff8]
+  ./relu_op_kernel_ut(+0x80790) [0xaaaac50c0790]
+  ./relu_op_kernel_ut(+0x80994) [0xaaaac50c0994]
+  ./relu_op_kernel_ut(+0x83970) [0xaaaac50c3970]
+  ./relu_op_kernel_ut(+0x86e2c) [0xaaaac50c6e2c]
+  ./relu_op_kernel_ut(+0x80b84) [0xaaaac50c0b84]
+  ./relu_op_kernel_ut(+0x2a918) [0xaaaac506a918]
+  /lib/aarch64-linux-gnu/libc.so.6(+0x27400) [0xffff87e67400]
+  /lib/aarch64-linux-gnu/libc.so.6(__libc_start_main+0x98) [0xffff87e674d8]
+  ./relu_op_kernel_ut(+0x2af30) [0xaaaac506af30]
+
+[V] checking pending queue
+[V] [CHECK_DATA] 0 0x8000 B type UB
+[V] [CHECK_TBUF] 0 0x8000 B type UB
+[V] allocation buffer match result 2
+[V] persistent buffer match result 2
+[V] [ErrorRead1] on read 0 0x8000 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffff8913e9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffff8913ef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x82c) [0xffff89117434]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x434) [0xffff89119334]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1c8) [0xffff89113d54]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffff8912500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk5vmaxsEPfS0_fhtthhbb+0x4d0) [0xffff8921b3d0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z5vmaxsPfS_fhtthhbb+0xa0) [0xffff88f8c9f4]
+  ./relu_op_kernel_ut(+0x3fa2c) [0xaaaac507fa2c]
+  ./relu_op_kernel_ut(+0x4bec8) [0xaaaac508bec8]
+  ./relu_op_kernel_ut(+0x47088) [0xaaaac5087088]
+  ./relu_op_kernel_ut(+0x41d2c) [0xaaaac5081d2c]
+  ./relu_op_kernel_ut(+0x3c1bc) [0xaaaac507c1bc]
+  ./relu_op_kernel_ut(+0x364c4) [0xaaaac50764c4]
+  ./relu_op_kernel_ut(+0x36cac) [0xaaaac5076cac]
+  ./relu_op_kernel_ut(+0x2b31c) [0xaaaac506b31c]
+  ./relu_op_kernel_ut(+0x93ff8) [0xaaaac50d3ff8]
+  ./relu_op_kernel_ut(+0x80790) [0xaaaac50c0790]
+  ./relu_op_kernel_ut(+0x80994) [0xaaaac50c0994]
+  ./relu_op_kernel_ut(+0x83970) [0xaaaac50c3970]
+  ./relu_op_kernel_ut(+0x86e2c) [0xaaaac50c6e2c]
+  ./relu_op_kernel_ut(+0x80b84) [0xaaaac50c0b84]
+  ./relu_op_kernel_ut(+0x2a918) [0xaaaac506a918]
+  /lib/aarch64-linux-gnu/libc.so.6(+0x27400) [0xffff87e67400]
+  /lib/aarch64-linux-gnu/libc.so.6(__libc_start_main+0x98) [0xffff87e674d8]
+  ./relu_op_kernel_ut(+0x2af30) [0xaaaac506af30]
+
+[V] read  data 0xffff86262010 0x8000 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0xffff86262010 0x8000 B type UB
+[V] data matched whole 0xffff8625a010 0x20000 stat 1
+[V] [DATA_MARK] 0xffff86262010 0x8000 B type UB mark read
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffff86262010 0x8000 B type UB
+[V] [CHECK_TBUF] 0xffff86262010 0x8000 B type UB
+[V] allocation buffer match result 0
+[V] write data 0xffff86272010 0x8000 B type UB
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffff86272010 0x8000 B type UB
+[V] checking wrote queue
+[V] [CHECK_DATA] 0xffff86272010 0x8000 B type UB
+[V] data matched whole 0xffff8626a010 0x10000 stat 1
+[V] [CHECK_TBUF] 0xffff86272010 0x8000 B type UB
+[V] allocation buffer match result 0
+
+### set_vector_mask((uint64_t)18446744073709551615, (uint64_t)18446744073709551615);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### set_mask_norm();
+
+[set_mask_norm] unsupported
+[S] [RECV_INST] set_mask_norm type 7
+[S] [EXECUTE] set_mask_norm type 7
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE3, (event_t)0);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [SYNC_DATA] 0xffff86272010 0x8000 B type UB
+[V] [send event] on set_flag 1 5 0
+[V] -> [MTE3] [GET_DATA] 0xffff8626a010 0x10000 B stat 1 type UB
+[MTE3] [RECV_EVENT] SRC V DST MTE3 EVENT 0
+[MTE3] [RECV_DATA] 0xffff8626a010 0x10000 B stat 1 type UB
+[MEMCHEK] Mem[281472932454416]checkNum is 0
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)1);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [send event] on set_flag 1 4 1
+[V] -> [MTE2] [GET_DATA] 0xffff8626a010 0x10000 B stat 1 type UB
+[MTE2] [RECV_EVENT] SRC V DST MTE2 EVENT 1
+[MTE2] [RECV_DATA] 0xffff8626a010 0x10000 B stat 1 type UB
+[ALL] [TBUF_EVENT] FREE 0xffff86262010 0x8000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x8000, Rate: 12.5%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x20000, Rate: 50%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281472932388880]checkNum is 0
+[MEMCHEK] Mem[281472932388880] is FREE
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE3, (event_t)0);
+
+[MTE3] [RECV_INST] wait_flag type 4
+[MTE3] [EXECUTE] wait_flag type 4
+[MTE3] [no wait] on wait_flag 1 5 0
+[V] [EVENT_CLEAR] send 1 5 0 has been waited
+[MEMCHEK] Mem[281472932454416]checkNum is 0
+
+### copy_ubuf_to_gm((__gm__ void*)0xffff873b7000, (__ubuf__ void*)0xffff86272010, (uint8_t)0, (uint16_t)1, (uint16_t)1024, (uint16_t)0, (uint16_t)0);
+
+[MTE3] [RECV_INST] copy_ubuf_to_gm type 0
+[MTE3] [EXECUTE] copy_ubuf_to_gm type 0
+[MTE3] read  data 0xffff86272010 0x8000 B type UB
+[MTE3] checking synced queue
+[MTE3] [CHECK_DATA] 0xffff86272010 0x8000 B type UB
+[MTE3] data matched whole 0xffff8626a010 0x10000 stat 1
+[MTE3] [DATA_MARK] 0xffff86272010 0x8000 B type UB mark read
+[MTE3] checking pending queue
+[MTE3] [CHECK_DATA] 0xffff86272010 0x8000 B type UB
+[MTE3] [CHECK_TBUF] 0xffff86272010 0x8000 B type UB
+[MTE3] allocation buffer match result 0
+[MTE3] write data 0xffff873b7000 0x8000 B type GM
+[MTE3] checking pending queue
+[MTE3] [CHECK_DATA] 0xffff873b7000 0x8000 B type GM
+[MTE3] checking wrote queue
+[MTE3] [CHECK_DATA] 0xffff873b7000 0x8000 B type GM
+[MTE3] [CHECK_TBUF] 0xffff873b7000 0x8000 B type GM
+[MEMCHEK] Mem[281472932454416]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE3, (pipe_t)PIPE_V, (event_t)1);
+
+[MTE3] [RECV_INST] set_flag type 3
+[MTE3] [EXECUTE] set_flag type 3
+[MTE3] [SYNC_DATA] 0xffff873b7000 0x8000 B type GM
+[MTE3] [send event] on set_flag 5 1 1
+[MTE3] -> [V] [GET_DATA] 0xffff8738f000 0x30000 B stat 1 type GM
+[V] [RECV_EVENT] SRC MTE3 DST V EVENT 1
+[V] [RECV_DATA] 0xffff8738f000 0x30000 B stat 1 type GM
+[ALL] [TBUF_EVENT] FREE 0xffff86272010 0x8000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x20000, Rate: 50%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281472932454416]checkNum is 0
+[MEMCHEK] Mem[281472932454416] is FREE
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)0);
+
+[MTE2] [RECV_INST] wait_flag type 4
+[MTE2] [EXECUTE] wait_flag type 4
+[MTE2] [no wait] on wait_flag 1 4 0
+[V] [EVENT_CLEAR] send 1 4 0 has been waited
+[ALL] [TBUF_EVENT] ALLOC 0xffff8625a010 0x8000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x8000, Rate: 12.5%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x20000, Rate: 50%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281472932356112len: 32768
+
+### copy_gm_to_ubuf((__ubuf__ void*)0xffff8625a010, (__gm__ void*)0xffff8741b000, (uint8_t)0, (uint16_t)1, (uint16_t)1024, (uint16_t)0, (uint16_t)0);
+
+[MTE2] [RECV_INST] copy_gm_to_ubuf type 0
+[MTE2] [EXECUTE] copy_gm_to_ubuf type 0
+[MTE2] read  data 0xffff8741b000 0x8000 B type GM
+[MTE2] [DATA_MARK] 0xffff8741b000 0x8000 B type GM mark read
+[MTE2] write data 0xffff8625a010 0x8000 B type UB
+[MTE2] checking pending queue
+[MTE2] [CHECK_DATA] 0xffff8625a010 0x8000 B type UB
+[MTE2] checking wrote queue
+[MTE2] [CHECK_DATA] 0xffff8625a010 0x8000 B type UB
+[MTE2] data matched whole 0xffff8625a010 0x10000 stat 1
+[MTE2] [CHECK_TBUF] 0xffff8625a010 0x8000 B type UB
+[MTE2] allocation buffer match result 0
+[MEMCHEK] Mem[281472932356112]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)0);
+
+[MTE2] [RECV_INST] set_flag type 3
+[MTE2] [EXECUTE] set_flag type 3
+[MTE2] [SYNC_DATA] 0xffff8625a010 0x8000 B type UB
+[MTE2] [send event] on set_flag 4 1 0
+[MTE2] -> [V] [GET_DATA] 0xffff8625a010 0x10000 B stat 1 type UB
+[V] [RECV_EVENT] SRC MTE2 DST V EVENT 0
+[V] [RECV_DATA] 0xffff8625a010 0x10000 B stat 1 type UB
+[MEMCHEK] Mem[281472932356112]checkNum is 0
+
+### wait_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)0);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 4 1 0
+[MTE2] [EVENT_CLEAR] send 4 1 0 has been waited
+[MEMCHEK] Mem[281472932356112]checkNum is 0
+
+### wait_flag((pipe_t)PIPE_MTE3, (pipe_t)PIPE_V, (event_t)0);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 5 1 0
+[MTE3] [EVENT_CLEAR] send 5 1 0 has been waited
+[ALL] [TBUF_EVENT] ALLOC 0xffff8626a010 0x8000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x10000, Rate: 25%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x20000, Rate: 50%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281472932421648len: 32768
+
+### set_mask_count();
+
+[set_mask_count] unsupported
+[S] [RECV_INST] set_mask_count type 7
+[S] [EXECUTE] set_mask_count type 7
+
+### set_vector_mask((uint64_t)0, (uint64_t)8192);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### vmaxs((__ubuf__ float*)0xffff8626a010, (__ubuf__ float*)0xffff8625a010, (float)0, (uint8_t)1, (uint16_t)1, (uint16_t)1, (uint8_t)8, (uint8_t)8, (bool)0, (bool)0);
+
+[V] [RECV_INST] vmaxs type 1
+[V] [EXECUTE] vmaxs type 1
+[MEMCHEK] Mem[281472932356112]checkNum is 0
+[MEMCHEK] Mem[281472932421648]checkNum is 0
+DataMergeAllOnceAll dataLen: 32768
+[V] [ErrorRead4] on read 0 0x8000 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffff8913e9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffff8913ef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x1ec) [0xffff89116df4]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x434) [0xffff89119334]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1c8) [0xffff89113d54]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffff8912500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk5vmaxsEPfS0_fhtthhbb+0x4d0) [0xffff8921b3d0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z5vmaxsPfS_fhtthhbb+0xa0) [0xffff88f8c9f4]
+  ./relu_op_kernel_ut(+0x3fa2c) [0xaaaac507fa2c]
+  ./relu_op_kernel_ut(+0x4bec8) [0xaaaac508bec8]
+  ./relu_op_kernel_ut(+0x47088) [0xaaaac5087088]
+  ./relu_op_kernel_ut(+0x41d2c) [0xaaaac5081d2c]
+  ./relu_op_kernel_ut(+0x3c1bc) [0xaaaac507c1bc]
+  ./relu_op_kernel_ut(+0x364c4) [0xaaaac50764c4]
+  ./relu_op_kernel_ut(+0x36cac) [0xaaaac5076cac]
+  ./relu_op_kernel_ut(+0x2b31c) [0xaaaac506b31c]
+  ./relu_op_kernel_ut(+0x93ff8) [0xaaaac50d3ff8]
+  ./relu_op_kernel_ut(+0x80790) [0xaaaac50c0790]
+  ./relu_op_kernel_ut(+0x80994) [0xaaaac50c0994]
+  ./relu_op_kernel_ut(+0x83970) [0xaaaac50c3970]
+  ./relu_op_kernel_ut(+0x86e2c) [0xaaaac50c6e2c]
+  ./relu_op_kernel_ut(+0x80b84) [0xaaaac50c0b84]
+  ./relu_op_kernel_ut(+0x2a918) [0xaaaac506a918]
+  /lib/aarch64-linux-gnu/libc.so.6(+0x27400) [0xffff87e67400]
+  /lib/aarch64-linux-gnu/libc.so.6(__libc_start_main+0x98) [0xffff87e674d8]
+  ./relu_op_kernel_ut(+0x2af30) [0xaaaac506af30]
+
+[V] read  data 0 0x8000 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0 0x8000 B type UB
+[V] [ErrorRead2] on read 0 0x8000 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffff8913e9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffff8913ef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x4e0) [0xffff891170e8]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x434) [0xffff89119334]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1c8) [0xffff89113d54]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffff8912500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk5vmaxsEPfS0_fhtthhbb+0x4d0) [0xffff8921b3d0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z5vmaxsPfS_fhtthhbb+0xa0) [0xffff88f8c9f4]
+  ./relu_op_kernel_ut(+0x3fa2c) [0xaaaac507fa2c]
+  ./relu_op_kernel_ut(+0x4bec8) [0xaaaac508bec8]
+  ./relu_op_kernel_ut(+0x47088) [0xaaaac5087088]
+  ./relu_op_kernel_ut(+0x41d2c) [0xaaaac5081d2c]
+  ./relu_op_kernel_ut(+0x3c1bc) [0xaaaac507c1bc]
+  ./relu_op_kernel_ut(+0x364c4) [0xaaaac50764c4]
+  ./relu_op_kernel_ut(+0x36cac) [0xaaaac5076cac]
+  ./relu_op_kernel_ut(+0x2b31c) [0xaaaac506b31c]
+  ./relu_op_kernel_ut(+0x93ff8) [0xaaaac50d3ff8]
+  ./relu_op_kernel_ut(+0x80790) [0xaaaac50c0790]
+  ./relu_op_kernel_ut(+0x80994) [0xaaaac50c0994]
+  ./relu_op_kernel_ut(+0x83970) [0xaaaac50c3970]
+  ./relu_op_kernel_ut(+0x86e2c) [0xaaaac50c6e2c]
+  ./relu_op_kernel_ut(+0x80b84) [0xaaaac50c0b84]
+  ./relu_op_kernel_ut(+0x2a918) [0xaaaac506a918]
+  /lib/aarch64-linux-gnu/libc.so.6(+0x27400) [0xffff87e67400]
+  /lib/aarch64-linux-gnu/libc.so.6(__libc_start_main+0x98) [0xffff87e674d8]
+  ./relu_op_kernel_ut(+0x2af30) [0xaaaac506af30]
+
+[V] checking pending queue
+[V] [CHECK_DATA] 0 0x8000 B type UB
+[V] [CHECK_TBUF] 0 0x8000 B type UB
+[V] allocation buffer match result 2
+[V] persistent buffer match result 2
+[V] [ErrorRead1] on read 0 0x8000 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffff8913e9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffff8913ef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x82c) [0xffff89117434]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x434) [0xffff89119334]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1c8) [0xffff89113d54]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffff8912500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk5vmaxsEPfS0_fhtthhbb+0x4d0) [0xffff8921b3d0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z5vmaxsPfS_fhtthhbb+0xa0) [0xffff88f8c9f4]
+  ./relu_op_kernel_ut(+0x3fa2c) [0xaaaac507fa2c]
+  ./relu_op_kernel_ut(+0x4bec8) [0xaaaac508bec8]
+  ./relu_op_kernel_ut(+0x47088) [0xaaaac5087088]
+  ./relu_op_kernel_ut(+0x41d2c) [0xaaaac5081d2c]
+  ./relu_op_kernel_ut(+0x3c1bc) [0xaaaac507c1bc]
+  ./relu_op_kernel_ut(+0x364c4) [0xaaaac50764c4]
+  ./relu_op_kernel_ut(+0x36cac) [0xaaaac5076cac]
+  ./relu_op_kernel_ut(+0x2b31c) [0xaaaac506b31c]
+  ./relu_op_kernel_ut(+0x93ff8) [0xaaaac50d3ff8]
+  ./relu_op_kernel_ut(+0x80790) [0xaaaac50c0790]
+  ./relu_op_kernel_ut(+0x80994) [0xaaaac50c0994]
+  ./relu_op_kernel_ut(+0x83970) [0xaaaac50c3970]
+  ./relu_op_kernel_ut(+0x86e2c) [0xaaaac50c6e2c]
+  ./relu_op_kernel_ut(+0x80b84) [0xaaaac50c0b84]
+  ./relu_op_kernel_ut(+0x2a918) [0xaaaac506a918]
+  /lib/aarch64-linux-gnu/libc.so.6(+0x27400) [0xffff87e67400]
+  /lib/aarch64-linux-gnu/libc.so.6(__libc_start_main+0x98) [0xffff87e674d8]
+  ./relu_op_kernel_ut(+0x2af30) [0xaaaac506af30]
+
+[V] read  data 0xffff8625a010 0x8000 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0xffff8625a010 0x8000 B type UB
+[V] data matched whole 0xffff8625a010 0x20000 stat 1
+[V] [DATA_MARK] 0xffff8625a010 0x8000 B type UB mark read
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffff8625a010 0x8000 B type UB
+[V] [CHECK_TBUF] 0xffff8625a010 0x8000 B type UB
+[V] allocation buffer match result 0
+[V] write data 0xffff8626a010 0x8000 B type UB
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffff8626a010 0x8000 B type UB
+[V] checking wrote queue
+[V] [CHECK_DATA] 0xffff8626a010 0x8000 B type UB
+[V] data matched whole 0xffff8626a010 0x10000 stat 1
+[V] [CHECK_TBUF] 0xffff8626a010 0x8000 B type UB
+[V] allocation buffer match result 0
+
+### set_vector_mask((uint64_t)18446744073709551615, (uint64_t)18446744073709551615);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### set_mask_norm();
+
+[set_mask_norm] unsupported
+[S] [RECV_INST] set_mask_norm type 7
+[S] [EXECUTE] set_mask_norm type 7
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE3, (event_t)0);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [SYNC_DATA] 0xffff8626a010 0x8000 B type UB
+[V] [send event] on set_flag 1 5 0
+[V] -> [MTE3] [GET_DATA] 0xffff8626a010 0x10000 B stat 1 type UB
+[MTE3] [RECV_EVENT] SRC V DST MTE3 EVENT 0
+[MTE3] [RECV_DATA] 0xffff8626a010 0x10000 B stat 1 type UB
+[MEMCHEK] Mem[281472932421648]checkNum is 0
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)0);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [send event] on set_flag 1 4 0
+[V] -> [MTE2] [GET_DATA] 0xffff8626a010 0x10000 B stat 1 type UB
+[MTE2] [RECV_EVENT] SRC V DST MTE2 EVENT 0
+[MTE2] [RECV_DATA] 0xffff8626a010 0x10000 B stat 1 type UB
+[ALL] [TBUF_EVENT] FREE 0xffff8625a010 0x8000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x8000, Rate: 12.5%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x20000, Rate: 50%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281472932356112]checkNum is 0
+[MEMCHEK] Mem[281472932356112] is FREE
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE3, (event_t)0);
+
+[MTE3] [RECV_INST] wait_flag type 4
+[MTE3] [EXECUTE] wait_flag type 4
+[MTE3] [no wait] on wait_flag 1 5 0
+[V] [EVENT_CLEAR] send 1 5 0 has been waited
+[MEMCHEK] Mem[281472932421648]checkNum is 0
+
+### copy_ubuf_to_gm((__gm__ void*)0xffff873bf000, (__ubuf__ void*)0xffff8626a010, (uint8_t)0, (uint16_t)1, (uint16_t)1024, (uint16_t)0, (uint16_t)0);
+
+[MTE3] [RECV_INST] copy_ubuf_to_gm type 0
+[MTE3] [EXECUTE] copy_ubuf_to_gm type 0
+[MTE3] read  data 0xffff8626a010 0x8000 B type UB
+[MTE3] checking synced queue
+[MTE3] [CHECK_DATA] 0xffff8626a010 0x8000 B type UB
+[MTE3] data matched whole 0xffff8626a010 0x10000 stat 1
+[MTE3] [DATA_MARK] 0xffff8626a010 0x8000 B type UB mark read
+[MTE3] checking pending queue
+[MTE3] [CHECK_DATA] 0xffff8626a010 0x8000 B type UB
+[MTE3] [CHECK_TBUF] 0xffff8626a010 0x8000 B type UB
+[MTE3] allocation buffer match result 0
+[MTE3] write data 0xffff873bf000 0x8000 B type GM
+[MTE3] checking pending queue
+[MTE3] [CHECK_DATA] 0xffff873bf000 0x8000 B type GM
+[MTE3] checking wrote queue
+[MTE3] [CHECK_DATA] 0xffff873bf000 0x8000 B type GM
+[MTE3] [CHECK_TBUF] 0xffff873bf000 0x8000 B type GM
+[MEMCHEK] Mem[281472932421648]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE3, (pipe_t)PIPE_V, (event_t)0);
+
+[MTE3] [RECV_INST] set_flag type 3
+[MTE3] [EXECUTE] set_flag type 3
+[MTE3] [SYNC_DATA] 0xffff873bf000 0x8000 B type GM
+[MTE3] [send event] on set_flag 5 1 0
+[MTE3] -> [V] [GET_DATA] 0xffff8738f000 0x38000 B stat 1 type GM
+[V] [RECV_EVENT] SRC MTE3 DST V EVENT 0
+[V] [RECV_DATA] 0xffff8738f000 0x38000 B stat 1 type GM
+[ALL] [TBUF_EVENT] FREE 0xffff8626a010 0x8000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x20000, Rate: 50%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281472932421648]checkNum is 0
+[MEMCHEK] Mem[281472932421648] is FREE
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)1);
+
+[MTE2] [RECV_INST] wait_flag type 4
+[MTE2] [EXECUTE] wait_flag type 4
+[MTE2] [no wait] on wait_flag 1 4 1
+[V] [EVENT_CLEAR] send 1 4 1 has been waited
+[ALL] [TBUF_EVENT] ALLOC 0xffff86262010 0x8000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x8000, Rate: 12.5%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x20000, Rate: 50%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281472932388880len: 32768
+
+### copy_gm_to_ubuf((__ubuf__ void*)0xffff86262010, (__gm__ void*)0xffff87423000, (uint8_t)0, (uint16_t)1, (uint16_t)1024, (uint16_t)0, (uint16_t)0);
+
+[MTE2] [RECV_INST] copy_gm_to_ubuf type 0
+[MTE2] [EXECUTE] copy_gm_to_ubuf type 0
+[MTE2] read  data 0xffff87423000 0x8000 B type GM
+[MTE2] [DATA_MARK] 0xffff87423000 0x8000 B type GM mark read
+[MTE2] write data 0xffff86262010 0x8000 B type UB
+[MTE2] checking pending queue
+[MTE2] [CHECK_DATA] 0xffff86262010 0x8000 B type UB
+[MTE2] checking wrote queue
+[MTE2] [CHECK_DATA] 0xffff86262010 0x8000 B type UB
+[MTE2] data matched whole 0xffff8625a010 0x10000 stat 1
+[MTE2] [CHECK_TBUF] 0xffff86262010 0x8000 B type UB
+[MTE2] allocation buffer match result 0
+[MEMCHEK] Mem[281472932388880]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)0);
+
+[MTE2] [RECV_INST] set_flag type 3
+[MTE2] [EXECUTE] set_flag type 3
+[MTE2] [SYNC_DATA] 0xffff86262010 0x8000 B type UB
+[MTE2] [send event] on set_flag 4 1 0
+[MTE2] -> [V] [GET_DATA] 0xffff8625a010 0x10000 B stat 1 type UB
+[V] [RECV_EVENT] SRC MTE2 DST V EVENT 0
+[V] [RECV_DATA] 0xffff8625a010 0x10000 B stat 1 type UB
+[MEMCHEK] Mem[281472932388880]checkNum is 0
+
+### wait_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)0);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 4 1 0
+[MTE2] [EVENT_CLEAR] send 4 1 0 has been waited
+[MEMCHEK] Mem[281472932388880]checkNum is 0
+
+### wait_flag((pipe_t)PIPE_MTE3, (pipe_t)PIPE_V, (event_t)1);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 5 1 1
+[MTE3] [EVENT_CLEAR] send 5 1 1 has been waited
+[ALL] [TBUF_EVENT] ALLOC 0xffff86272010 0x8000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x10000, Rate: 25%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x20000, Rate: 50%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281472932454416len: 32768
+
+### set_mask_count();
+
+[set_mask_count] unsupported
+[S] [RECV_INST] set_mask_count type 7
+[S] [EXECUTE] set_mask_count type 7
+
+### set_vector_mask((uint64_t)0, (uint64_t)8192);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### vmaxs((__ubuf__ float*)0xffff86272010, (__ubuf__ float*)0xffff86262010, (float)0, (uint8_t)1, (uint16_t)1, (uint16_t)1, (uint8_t)8, (uint8_t)8, (bool)0, (bool)0);
+
+[V] [RECV_INST] vmaxs type 1
+[V] [EXECUTE] vmaxs type 1
+[MEMCHEK] Mem[281472932388880]checkNum is 0
+[MEMCHEK] Mem[281472932454416]checkNum is 0
+DataMergeAllOnceAll dataLen: 32768
+[V] [ErrorRead4] on read 0 0x8000 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffff8913e9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffff8913ef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x1ec) [0xffff89116df4]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x434) [0xffff89119334]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1c8) [0xffff89113d54]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffff8912500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk5vmaxsEPfS0_fhtthhbb+0x4d0) [0xffff8921b3d0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z5vmaxsPfS_fhtthhbb+0xa0) [0xffff88f8c9f4]
+  ./relu_op_kernel_ut(+0x3fa2c) [0xaaaac507fa2c]
+  ./relu_op_kernel_ut(+0x4bec8) [0xaaaac508bec8]
+  ./relu_op_kernel_ut(+0x47088) [0xaaaac5087088]
+  ./relu_op_kernel_ut(+0x41d2c) [0xaaaac5081d2c]
+  ./relu_op_kernel_ut(+0x3c1bc) [0xaaaac507c1bc]
+  ./relu_op_kernel_ut(+0x364c4) [0xaaaac50764c4]
+  ./relu_op_kernel_ut(+0x36cac) [0xaaaac5076cac]
+  ./relu_op_kernel_ut(+0x2b31c) [0xaaaac506b31c]
+  ./relu_op_kernel_ut(+0x93ff8) [0xaaaac50d3ff8]
+  ./relu_op_kernel_ut(+0x80790) [0xaaaac50c0790]
+  ./relu_op_kernel_ut(+0x80994) [0xaaaac50c0994]
+  ./relu_op_kernel_ut(+0x83970) [0xaaaac50c3970]
+  ./relu_op_kernel_ut(+0x86e2c) [0xaaaac50c6e2c]
+  ./relu_op_kernel_ut(+0x80b84) [0xaaaac50c0b84]
+  ./relu_op_kernel_ut(+0x2a918) [0xaaaac506a918]
+  /lib/aarch64-linux-gnu/libc.so.6(+0x27400) [0xffff87e67400]
+  /lib/aarch64-linux-gnu/libc.so.6(__libc_start_main+0x98) [0xffff87e674d8]
+  ./relu_op_kernel_ut(+0x2af30) [0xaaaac506af30]
+
+[V] read  data 0 0x8000 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0 0x8000 B type UB
+[V] [ErrorRead2] on read 0 0x8000 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffff8913e9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffff8913ef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x4e0) [0xffff891170e8]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x434) [0xffff89119334]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1c8) [0xffff89113d54]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffff8912500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk5vmaxsEPfS0_fhtthhbb+0x4d0) [0xffff8921b3d0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z5vmaxsPfS_fhtthhbb+0xa0) [0xffff88f8c9f4]
+  ./relu_op_kernel_ut(+0x3fa2c) [0xaaaac507fa2c]
+  ./relu_op_kernel_ut(+0x4bec8) [0xaaaac508bec8]
+  ./relu_op_kernel_ut(+0x47088) [0xaaaac5087088]
+  ./relu_op_kernel_ut(+0x41d2c) [0xaaaac5081d2c]
+  ./relu_op_kernel_ut(+0x3c1bc) [0xaaaac507c1bc]
+  ./relu_op_kernel_ut(+0x364c4) [0xaaaac50764c4]
+  ./relu_op_kernel_ut(+0x36cac) [0xaaaac5076cac]
+  ./relu_op_kernel_ut(+0x2b31c) [0xaaaac506b31c]
+  ./relu_op_kernel_ut(+0x93ff8) [0xaaaac50d3ff8]
+  ./relu_op_kernel_ut(+0x80790) [0xaaaac50c0790]
+  ./relu_op_kernel_ut(+0x80994) [0xaaaac50c0994]
+  ./relu_op_kernel_ut(+0x83970) [0xaaaac50c3970]
+  ./relu_op_kernel_ut(+0x86e2c) [0xaaaac50c6e2c]
+  ./relu_op_kernel_ut(+0x80b84) [0xaaaac50c0b84]
+  ./relu_op_kernel_ut(+0x2a918) [0xaaaac506a918]
+  /lib/aarch64-linux-gnu/libc.so.6(+0x27400) [0xffff87e67400]
+  /lib/aarch64-linux-gnu/libc.so.6(__libc_start_main+0x98) [0xffff87e674d8]
+  ./relu_op_kernel_ut(+0x2af30) [0xaaaac506af30]
+
+[V] checking pending queue
+[V] [CHECK_DATA] 0 0x8000 B type UB
+[V] [CHECK_TBUF] 0 0x8000 B type UB
+[V] allocation buffer match result 2
+[V] persistent buffer match result 2
+[V] [ErrorRead1] on read 0 0x8000 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffff8913e9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffff8913ef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x82c) [0xffff89117434]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x434) [0xffff89119334]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1c8) [0xffff89113d54]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffff8912500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk5vmaxsEPfS0_fhtthhbb+0x4d0) [0xffff8921b3d0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z5vmaxsPfS_fhtthhbb+0xa0) [0xffff88f8c9f4]
+  ./relu_op_kernel_ut(+0x3fa2c) [0xaaaac507fa2c]
+  ./relu_op_kernel_ut(+0x4bec8) [0xaaaac508bec8]
+  ./relu_op_kernel_ut(+0x47088) [0xaaaac5087088]
+  ./relu_op_kernel_ut(+0x41d2c) [0xaaaac5081d2c]
+  ./relu_op_kernel_ut(+0x3c1bc) [0xaaaac507c1bc]
+  ./relu_op_kernel_ut(+0x364c4) [0xaaaac50764c4]
+  ./relu_op_kernel_ut(+0x36cac) [0xaaaac5076cac]
+  ./relu_op_kernel_ut(+0x2b31c) [0xaaaac506b31c]
+  ./relu_op_kernel_ut(+0x93ff8) [0xaaaac50d3ff8]
+  ./relu_op_kernel_ut(+0x80790) [0xaaaac50c0790]
+  ./relu_op_kernel_ut(+0x80994) [0xaaaac50c0994]
+  ./relu_op_kernel_ut(+0x83970) [0xaaaac50c3970]
+  ./relu_op_kernel_ut(+0x86e2c) [0xaaaac50c6e2c]
+  ./relu_op_kernel_ut(+0x80b84) [0xaaaac50c0b84]
+  ./relu_op_kernel_ut(+0x2a918) [0xaaaac506a918]
+  /lib/aarch64-linux-gnu/libc.so.6(+0x27400) [0xffff87e67400]
+  /lib/aarch64-linux-gnu/libc.so.6(__libc_start_main+0x98) [0xffff87e674d8]
+  ./relu_op_kernel_ut(+0x2af30) [0xaaaac506af30]
+
+[V] read  data 0xffff86262010 0x8000 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0xffff86262010 0x8000 B type UB
+[V] data matched whole 0xffff8625a010 0x20000 stat 1
+[V] [DATA_MARK] 0xffff86262010 0x8000 B type UB mark read
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffff86262010 0x8000 B type UB
+[V] [CHECK_TBUF] 0xffff86262010 0x8000 B type UB
+[V] allocation buffer match result 0
+[V] write data 0xffff86272010 0x8000 B type UB
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffff86272010 0x8000 B type UB
+[V] checking wrote queue
+[V] [CHECK_DATA] 0xffff86272010 0x8000 B type UB
+[V] data matched whole 0xffff8626a010 0x10000 stat 1
+[V] [CHECK_TBUF] 0xffff86272010 0x8000 B type UB
+[V] allocation buffer match result 0
+
+### set_vector_mask((uint64_t)18446744073709551615, (uint64_t)18446744073709551615);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### set_mask_norm();
+
+[set_mask_norm] unsupported
+[S] [RECV_INST] set_mask_norm type 7
+[S] [EXECUTE] set_mask_norm type 7
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE3, (event_t)0);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [SYNC_DATA] 0xffff86272010 0x8000 B type UB
+[V] [send event] on set_flag 1 5 0
+[V] -> [MTE3] [GET_DATA] 0xffff8626a010 0x10000 B stat 1 type UB
+[MTE3] [RECV_EVENT] SRC V DST MTE3 EVENT 0
+[MTE3] [RECV_DATA] 0xffff8626a010 0x10000 B stat 1 type UB
+[MEMCHEK] Mem[281472932454416]checkNum is 0
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)1);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [send event] on set_flag 1 4 1
+[V] -> [MTE2] [GET_DATA] 0xffff8626a010 0x10000 B stat 1 type UB
+[MTE2] [RECV_EVENT] SRC V DST MTE2 EVENT 1
+[MTE2] [RECV_DATA] 0xffff8626a010 0x10000 B stat 1 type UB
+[ALL] [TBUF_EVENT] FREE 0xffff86262010 0x8000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x8000, Rate: 12.5%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x20000, Rate: 50%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281472932388880]checkNum is 0
+[MEMCHEK] Mem[281472932388880] is FREE
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE3, (event_t)0);
+
+[MTE3] [RECV_INST] wait_flag type 4
+[MTE3] [EXECUTE] wait_flag type 4
+[MTE3] [no wait] on wait_flag 1 5 0
+[V] [EVENT_CLEAR] send 1 5 0 has been waited
+[MEMCHEK] Mem[281472932454416]checkNum is 0
+
+### copy_ubuf_to_gm((__gm__ void*)0xffff873c7000, (__ubuf__ void*)0xffff86272010, (uint8_t)0, (uint16_t)1, (uint16_t)1024, (uint16_t)0, (uint16_t)0);
+
+[MTE3] [RECV_INST] copy_ubuf_to_gm type 0
+[MTE3] [EXECUTE] copy_ubuf_to_gm type 0
+[MTE3] read  data 0xffff86272010 0x8000 B type UB
+[MTE3] checking synced queue
+[MTE3] [CHECK_DATA] 0xffff86272010 0x8000 B type UB
+[MTE3] data matched whole 0xffff8626a010 0x10000 stat 1
+[MTE3] [DATA_MARK] 0xffff86272010 0x8000 B type UB mark read
+[MTE3] checking pending queue
+[MTE3] [CHECK_DATA] 0xffff86272010 0x8000 B type UB
+[MTE3] [CHECK_TBUF] 0xffff86272010 0x8000 B type UB
+[MTE3] allocation buffer match result 0
+[MTE3] write data 0xffff873c7000 0x8000 B type GM
+[MTE3] checking pending queue
+[MTE3] [CHECK_DATA] 0xffff873c7000 0x8000 B type GM
+[MTE3] checking wrote queue
+[MTE3] [CHECK_DATA] 0xffff873c7000 0x8000 B type GM
+[MTE3] [CHECK_TBUF] 0xffff873c7000 0x8000 B type GM
+[MEMCHEK] Mem[281472932454416]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE3, (pipe_t)PIPE_V, (event_t)1);
+
+[MTE3] [RECV_INST] set_flag type 3
+[MTE3] [EXECUTE] set_flag type 3
+[MTE3] [SYNC_DATA] 0xffff873c7000 0x8000 B type GM
+[MTE3] [send event] on set_flag 5 1 1
+[MTE3] -> [V] [GET_DATA] 0xffff8738f000 0x40000 B stat 1 type GM
+[V] [RECV_EVENT] SRC MTE3 DST V EVENT 1
+[V] [RECV_DATA] 0xffff8738f000 0x40000 B stat 1 type GM
+[ALL] [TBUF_EVENT] FREE 0xffff86272010 0x8000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x20000, Rate: 50%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281472932454416]checkNum is 0
+[MEMCHEK] Mem[281472932454416] is FREE
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)0);
+
+[MTE2] [RECV_INST] wait_flag type 4
+[MTE2] [EXECUTE] wait_flag type 4
+[MTE2] [no wait] on wait_flag 1 4 0
+[V] [EVENT_CLEAR] send 1 4 0 has been waited
+[ALL] [TBUF_EVENT] ALLOC 0xffff8625a010 0x8000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x8000, Rate: 12.5%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x20000, Rate: 50%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281472932356112len: 32768
+
+### copy_gm_to_ubuf((__ubuf__ void*)0xffff8625a010, (__gm__ void*)0xffff8742b000, (uint8_t)0, (uint16_t)1, (uint16_t)1024, (uint16_t)0, (uint16_t)0);
+
+[MTE2] [RECV_INST] copy_gm_to_ubuf type 0
+[MTE2] [EXECUTE] copy_gm_to_ubuf type 0
+[MTE2] read  data 0xffff8742b000 0x8000 B type GM
+[MTE2] [DATA_MARK] 0xffff8742b000 0x8000 B type GM mark read
+[MTE2] write data 0xffff8625a010 0x8000 B type UB
+[MTE2] checking pending queue
+[MTE2] [CHECK_DATA] 0xffff8625a010 0x8000 B type UB
+[MTE2] checking wrote queue
+[MTE2] [CHECK_DATA] 0xffff8625a010 0x8000 B type UB
+[MTE2] data matched whole 0xffff8625a010 0x10000 stat 1
+[MTE2] [CHECK_TBUF] 0xffff8625a010 0x8000 B type UB
+[MTE2] allocation buffer match result 0
+[MEMCHEK] Mem[281472932356112]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)0);
+
+[MTE2] [RECV_INST] set_flag type 3
+[MTE2] [EXECUTE] set_flag type 3
+[MTE2] [SYNC_DATA] 0xffff8625a010 0x8000 B type UB
+[MTE2] [send event] on set_flag 4 1 0
+[MTE2] -> [V] [GET_DATA] 0xffff8625a010 0x10000 B stat 1 type UB
+[V] [RECV_EVENT] SRC MTE2 DST V EVENT 0
+[V] [RECV_DATA] 0xffff8625a010 0x10000 B stat 1 type UB
+[MEMCHEK] Mem[281472932356112]checkNum is 0
+
+### wait_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)0);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 4 1 0
+[MTE2] [EVENT_CLEAR] send 4 1 0 has been waited
+[MEMCHEK] Mem[281472932356112]checkNum is 0
+
+### wait_flag((pipe_t)PIPE_MTE3, (pipe_t)PIPE_V, (event_t)0);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 5 1 0
+[MTE3] [EVENT_CLEAR] send 5 1 0 has been waited
+[ALL] [TBUF_EVENT] ALLOC 0xffff8626a010 0x8000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x10000, Rate: 25%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x20000, Rate: 50%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281472932421648len: 32768
+
+### set_mask_count();
+
+[set_mask_count] unsupported
+[S] [RECV_INST] set_mask_count type 7
+[S] [EXECUTE] set_mask_count type 7
+
+### set_vector_mask((uint64_t)0, (uint64_t)8192);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### vmaxs((__ubuf__ float*)0xffff8626a010, (__ubuf__ float*)0xffff8625a010, (float)0, (uint8_t)1, (uint16_t)1, (uint16_t)1, (uint8_t)8, (uint8_t)8, (bool)0, (bool)0);
+
+[V] [RECV_INST] vmaxs type 1
+[V] [EXECUTE] vmaxs type 1
+[MEMCHEK] Mem[281472932356112]checkNum is 0
+[MEMCHEK] Mem[281472932421648]checkNum is 0
+DataMergeAllOnceAll dataLen: 32768
+[V] [ErrorRead4] on read 0 0x8000 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffff8913e9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffff8913ef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x1ec) [0xffff89116df4]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x434) [0xffff89119334]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1c8) [0xffff89113d54]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffff8912500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk5vmaxsEPfS0_fhtthhbb+0x4d0) [0xffff8921b3d0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z5vmaxsPfS_fhtthhbb+0xa0) [0xffff88f8c9f4]
+  ./relu_op_kernel_ut(+0x3fa2c) [0xaaaac507fa2c]
+  ./relu_op_kernel_ut(+0x4bec8) [0xaaaac508bec8]
+  ./relu_op_kernel_ut(+0x47088) [0xaaaac5087088]
+  ./relu_op_kernel_ut(+0x41d2c) [0xaaaac5081d2c]
+  ./relu_op_kernel_ut(+0x3c1bc) [0xaaaac507c1bc]
+  ./relu_op_kernel_ut(+0x364c4) [0xaaaac50764c4]
+  ./relu_op_kernel_ut(+0x36cac) [0xaaaac5076cac]
+  ./relu_op_kernel_ut(+0x2b31c) [0xaaaac506b31c]
+  ./relu_op_kernel_ut(+0x93ff8) [0xaaaac50d3ff8]
+  ./relu_op_kernel_ut(+0x80790) [0xaaaac50c0790]
+  ./relu_op_kernel_ut(+0x80994) [0xaaaac50c0994]
+  ./relu_op_kernel_ut(+0x83970) [0xaaaac50c3970]
+  ./relu_op_kernel_ut(+0x86e2c) [0xaaaac50c6e2c]
+  ./relu_op_kernel_ut(+0x80b84) [0xaaaac50c0b84]
+  ./relu_op_kernel_ut(+0x2a918) [0xaaaac506a918]
+  /lib/aarch64-linux-gnu/libc.so.6(+0x27400) [0xffff87e67400]
+  /lib/aarch64-linux-gnu/libc.so.6(__libc_start_main+0x98) [0xffff87e674d8]
+  ./relu_op_kernel_ut(+0x2af30) [0xaaaac506af30]
+
+[V] read  data 0 0x8000 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0 0x8000 B type UB
+[V] [ErrorRead2] on read 0 0x8000 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffff8913e9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffff8913ef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x4e0) [0xffff891170e8]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x434) [0xffff89119334]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1c8) [0xffff89113d54]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffff8912500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk5vmaxsEPfS0_fhtthhbb+0x4d0) [0xffff8921b3d0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z5vmaxsPfS_fhtthhbb+0xa0) [0xffff88f8c9f4]
+  ./relu_op_kernel_ut(+0x3fa2c) [0xaaaac507fa2c]
+  ./relu_op_kernel_ut(+0x4bec8) [0xaaaac508bec8]
+  ./relu_op_kernel_ut(+0x47088) [0xaaaac5087088]
+  ./relu_op_kernel_ut(+0x41d2c) [0xaaaac5081d2c]
+  ./relu_op_kernel_ut(+0x3c1bc) [0xaaaac507c1bc]
+  ./relu_op_kernel_ut(+0x364c4) [0xaaaac50764c4]
+  ./relu_op_kernel_ut(+0x36cac) [0xaaaac5076cac]
+  ./relu_op_kernel_ut(+0x2b31c) [0xaaaac506b31c]
+  ./relu_op_kernel_ut(+0x93ff8) [0xaaaac50d3ff8]
+  ./relu_op_kernel_ut(+0x80790) [0xaaaac50c0790]
+  ./relu_op_kernel_ut(+0x80994) [0xaaaac50c0994]
+  ./relu_op_kernel_ut(+0x83970) [0xaaaac50c3970]
+  ./relu_op_kernel_ut(+0x86e2c) [0xaaaac50c6e2c]
+  ./relu_op_kernel_ut(+0x80b84) [0xaaaac50c0b84]
+  ./relu_op_kernel_ut(+0x2a918) [0xaaaac506a918]
+  /lib/aarch64-linux-gnu/libc.so.6(+0x27400) [0xffff87e67400]
+  /lib/aarch64-linux-gnu/libc.so.6(__libc_start_main+0x98) [0xffff87e674d8]
+  ./relu_op_kernel_ut(+0x2af30) [0xaaaac506af30]
+
+[V] checking pending queue
+[V] [CHECK_DATA] 0 0x8000 B type UB
+[V] [CHECK_TBUF] 0 0x8000 B type UB
+[V] allocation buffer match result 2
+[V] persistent buffer match result 2
+[V] [ErrorRead1] on read 0 0x8000 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffff8913e9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffff8913ef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x82c) [0xffff89117434]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x434) [0xffff89119334]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1c8) [0xffff89113d54]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffff8912500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk5vmaxsEPfS0_fhtthhbb+0x4d0) [0xffff8921b3d0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z5vmaxsPfS_fhtthhbb+0xa0) [0xffff88f8c9f4]
+  ./relu_op_kernel_ut(+0x3fa2c) [0xaaaac507fa2c]
+  ./relu_op_kernel_ut(+0x4bec8) [0xaaaac508bec8]
+  ./relu_op_kernel_ut(+0x47088) [0xaaaac5087088]
+  ./relu_op_kernel_ut(+0x41d2c) [0xaaaac5081d2c]
+  ./relu_op_kernel_ut(+0x3c1bc) [0xaaaac507c1bc]
+  ./relu_op_kernel_ut(+0x364c4) [0xaaaac50764c4]
+  ./relu_op_kernel_ut(+0x36cac) [0xaaaac5076cac]
+  ./relu_op_kernel_ut(+0x2b31c) [0xaaaac506b31c]
+  ./relu_op_kernel_ut(+0x93ff8) [0xaaaac50d3ff8]
+  ./relu_op_kernel_ut(+0x80790) [0xaaaac50c0790]
+  ./relu_op_kernel_ut(+0x80994) [0xaaaac50c0994]
+  ./relu_op_kernel_ut(+0x83970) [0xaaaac50c3970]
+  ./relu_op_kernel_ut(+0x86e2c) [0xaaaac50c6e2c]
+  ./relu_op_kernel_ut(+0x80b84) [0xaaaac50c0b84]
+  ./relu_op_kernel_ut(+0x2a918) [0xaaaac506a918]
+  /lib/aarch64-linux-gnu/libc.so.6(+0x27400) [0xffff87e67400]
+  /lib/aarch64-linux-gnu/libc.so.6(__libc_start_main+0x98) [0xffff87e674d8]
+  ./relu_op_kernel_ut(+0x2af30) [0xaaaac506af30]
+
+[V] read  data 0xffff8625a010 0x8000 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0xffff8625a010 0x8000 B type UB
+[V] data matched whole 0xffff8625a010 0x20000 stat 1
+[V] [DATA_MARK] 0xffff8625a010 0x8000 B type UB mark read
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffff8625a010 0x8000 B type UB
+[V] [CHECK_TBUF] 0xffff8625a010 0x8000 B type UB
+[V] allocation buffer match result 0
+[V] write data 0xffff8626a010 0x8000 B type UB
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffff8626a010 0x8000 B type UB
+[V] checking wrote queue
+[V] [CHECK_DATA] 0xffff8626a010 0x8000 B type UB
+[V] data matched whole 0xffff8626a010 0x10000 stat 1
+[V] [CHECK_TBUF] 0xffff8626a010 0x8000 B type UB
+[V] allocation buffer match result 0
+
+### set_vector_mask((uint64_t)18446744073709551615, (uint64_t)18446744073709551615);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### set_mask_norm();
+
+[set_mask_norm] unsupported
+[S] [RECV_INST] set_mask_norm type 7
+[S] [EXECUTE] set_mask_norm type 7
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE3, (event_t)0);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [SYNC_DATA] 0xffff8626a010 0x8000 B type UB
+[V] [send event] on set_flag 1 5 0
+[V] -> [MTE3] [GET_DATA] 0xffff8626a010 0x10000 B stat 1 type UB
+[MTE3] [RECV_EVENT] SRC V DST MTE3 EVENT 0
+[MTE3] [RECV_DATA] 0xffff8626a010 0x10000 B stat 1 type UB
+[MEMCHEK] Mem[281472932421648]checkNum is 0
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)0);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [send event] on set_flag 1 4 0
+[V] -> [MTE2] [GET_DATA] 0xffff8626a010 0x10000 B stat 1 type UB
+[MTE2] [RECV_EVENT] SRC V DST MTE2 EVENT 0
+[MTE2] [RECV_DATA] 0xffff8626a010 0x10000 B stat 1 type UB
+[ALL] [TBUF_EVENT] FREE 0xffff8625a010 0x8000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x8000, Rate: 12.5%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x20000, Rate: 50%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281472932356112]checkNum is 0
+[MEMCHEK] Mem[281472932356112] is FREE
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE3, (event_t)0);
+
+[MTE3] [RECV_INST] wait_flag type 4
+[MTE3] [EXECUTE] wait_flag type 4
+[MTE3] [no wait] on wait_flag 1 5 0
+[V] [EVENT_CLEAR] send 1 5 0 has been waited
+[MEMCHEK] Mem[281472932421648]checkNum is 0
+
+### copy_ubuf_to_gm((__gm__ void*)0xffff873cf000, (__ubuf__ void*)0xffff8626a010, (uint8_t)0, (uint16_t)1, (uint16_t)1024, (uint16_t)0, (uint16_t)0);
+
+[MTE3] [RECV_INST] copy_ubuf_to_gm type 0
+[MTE3] [EXECUTE] copy_ubuf_to_gm type 0
+[MTE3] read  data 0xffff8626a010 0x8000 B type UB
+[MTE3] checking synced queue
+[MTE3] [CHECK_DATA] 0xffff8626a010 0x8000 B type UB
+[MTE3] data matched whole 0xffff8626a010 0x10000 stat 1
+[MTE3] [DATA_MARK] 0xffff8626a010 0x8000 B type UB mark read
+[MTE3] checking pending queue
+[MTE3] [CHECK_DATA] 0xffff8626a010 0x8000 B type UB
+[MTE3] [CHECK_TBUF] 0xffff8626a010 0x8000 B type UB
+[MTE3] allocation buffer match result 0
+[MTE3] write data 0xffff873cf000 0x8000 B type GM
+[MTE3] checking pending queue
+[MTE3] [CHECK_DATA] 0xffff873cf000 0x8000 B type GM
+[MTE3] checking wrote queue
+[MTE3] [CHECK_DATA] 0xffff873cf000 0x8000 B type GM
+[MTE3] [CHECK_TBUF] 0xffff873cf000 0x8000 B type GM
+[MEMCHEK] Mem[281472932421648]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE3, (pipe_t)PIPE_V, (event_t)0);
+
+[MTE3] [RECV_INST] set_flag type 3
+[MTE3] [EXECUTE] set_flag type 3
+[MTE3] [SYNC_DATA] 0xffff873cf000 0x8000 B type GM
+[MTE3] [send event] on set_flag 5 1 0
+[MTE3] -> [V] [GET_DATA] 0xffff8738f000 0x48000 B stat 1 type GM
+[V] [RECV_EVENT] SRC MTE3 DST V EVENT 0
+[V] [RECV_DATA] 0xffff8738f000 0x48000 B stat 1 type GM
+[ALL] [TBUF_EVENT] FREE 0xffff8626a010 0x8000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x20000, Rate: 50%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281472932421648]checkNum is 0
+[MEMCHEK] Mem[281472932421648] is FREE
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)1);
+
+[MTE2] [RECV_INST] wait_flag type 4
+[MTE2] [EXECUTE] wait_flag type 4
+[MTE2] [no wait] on wait_flag 1 4 1
+[V] [EVENT_CLEAR] send 1 4 1 has been waited
+[ALL] [TBUF_EVENT] ALLOC 0xffff86262010 0x8000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x8000, Rate: 12.5%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x20000, Rate: 50%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281472932388880len: 32768
+
+### copy_gm_to_ubuf((__ubuf__ void*)0xffff86262010, (__gm__ void*)0xffff87433000, (uint8_t)0, (uint16_t)1, (uint16_t)1024, (uint16_t)0, (uint16_t)0);
+
+[MTE2] [RECV_INST] copy_gm_to_ubuf type 0
+[MTE2] [EXECUTE] copy_gm_to_ubuf type 0
+[MTE2] read  data 0xffff87433000 0x8000 B type GM
+[MTE2] [DATA_MARK] 0xffff87433000 0x8000 B type GM mark read
+[MTE2] write data 0xffff86262010 0x8000 B type UB
+[MTE2] checking pending queue
+[MTE2] [CHECK_DATA] 0xffff86262010 0x8000 B type UB
+[MTE2] checking wrote queue
+[MTE2] [CHECK_DATA] 0xffff86262010 0x8000 B type UB
+[MTE2] data matched whole 0xffff8625a010 0x10000 stat 1
+[MTE2] [CHECK_TBUF] 0xffff86262010 0x8000 B type UB
+[MTE2] allocation buffer match result 0
+[MEMCHEK] Mem[281472932388880]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)0);
+
+[MTE2] [RECV_INST] set_flag type 3
+[MTE2] [EXECUTE] set_flag type 3
+[MTE2] [SYNC_DATA] 0xffff86262010 0x8000 B type UB
+[MTE2] [send event] on set_flag 4 1 0
+[MTE2] -> [V] [GET_DATA] 0xffff8625a010 0x10000 B stat 1 type UB
+[V] [RECV_EVENT] SRC MTE2 DST V EVENT 0
+[V] [RECV_DATA] 0xffff8625a010 0x10000 B stat 1 type UB
+[MEMCHEK] Mem[281472932388880]checkNum is 0
+
+### wait_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)0);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 4 1 0
+[MTE2] [EVENT_CLEAR] send 4 1 0 has been waited
+[MEMCHEK] Mem[281472932388880]checkNum is 0
+
+### wait_flag((pipe_t)PIPE_MTE3, (pipe_t)PIPE_V, (event_t)1);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 5 1 1
+[MTE3] [EVENT_CLEAR] send 5 1 1 has been waited
+[ALL] [TBUF_EVENT] ALLOC 0xffff86272010 0x8000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x10000, Rate: 25%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x20000, Rate: 50%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281472932454416len: 32768
+
+### set_mask_count();
+
+[set_mask_count] unsupported
+[S] [RECV_INST] set_mask_count type 7
+[S] [EXECUTE] set_mask_count type 7
+
+### set_vector_mask((uint64_t)0, (uint64_t)8192);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### vmaxs((__ubuf__ float*)0xffff86272010, (__ubuf__ float*)0xffff86262010, (float)0, (uint8_t)1, (uint16_t)1, (uint16_t)1, (uint8_t)8, (uint8_t)8, (bool)0, (bool)0);
+
+[V] [RECV_INST] vmaxs type 1
+[V] [EXECUTE] vmaxs type 1
+[MEMCHEK] Mem[281472932388880]checkNum is 0
+[MEMCHEK] Mem[281472932454416]checkNum is 0
+DataMergeAllOnceAll dataLen: 32768
+[V] [ErrorRead4] on read 0 0x8000 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffff8913e9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffff8913ef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x1ec) [0xffff89116df4]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x434) [0xffff89119334]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1c8) [0xffff89113d54]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffff8912500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk5vmaxsEPfS0_fhtthhbb+0x4d0) [0xffff8921b3d0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z5vmaxsPfS_fhtthhbb+0xa0) [0xffff88f8c9f4]
+  ./relu_op_kernel_ut(+0x3fa2c) [0xaaaac507fa2c]
+  ./relu_op_kernel_ut(+0x4bec8) [0xaaaac508bec8]
+  ./relu_op_kernel_ut(+0x47088) [0xaaaac5087088]
+  ./relu_op_kernel_ut(+0x41d2c) [0xaaaac5081d2c]
+  ./relu_op_kernel_ut(+0x3c1bc) [0xaaaac507c1bc]
+  ./relu_op_kernel_ut(+0x364c4) [0xaaaac50764c4]
+  ./relu_op_kernel_ut(+0x36cac) [0xaaaac5076cac]
+  ./relu_op_kernel_ut(+0x2b31c) [0xaaaac506b31c]
+  ./relu_op_kernel_ut(+0x93ff8) [0xaaaac50d3ff8]
+  ./relu_op_kernel_ut(+0x80790) [0xaaaac50c0790]
+  ./relu_op_kernel_ut(+0x80994) [0xaaaac50c0994]
+  ./relu_op_kernel_ut(+0x83970) [0xaaaac50c3970]
+  ./relu_op_kernel_ut(+0x86e2c) [0xaaaac50c6e2c]
+  ./relu_op_kernel_ut(+0x80b84) [0xaaaac50c0b84]
+  ./relu_op_kernel_ut(+0x2a918) [0xaaaac506a918]
+  /lib/aarch64-linux-gnu/libc.so.6(+0x27400) [0xffff87e67400]
+  /lib/aarch64-linux-gnu/libc.so.6(__libc_start_main+0x98) [0xffff87e674d8]
+  ./relu_op_kernel_ut(+0x2af30) [0xaaaac506af30]
+
+[V] read  data 0 0x8000 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0 0x8000 B type UB
+[V] [ErrorRead2] on read 0 0x8000 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffff8913e9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffff8913ef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x4e0) [0xffff891170e8]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x434) [0xffff89119334]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1c8) [0xffff89113d54]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffff8912500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk5vmaxsEPfS0_fhtthhbb+0x4d0) [0xffff8921b3d0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z5vmaxsPfS_fhtthhbb+0xa0) [0xffff88f8c9f4]
+  ./relu_op_kernel_ut(+0x3fa2c) [0xaaaac507fa2c]
+  ./relu_op_kernel_ut(+0x4bec8) [0xaaaac508bec8]
+  ./relu_op_kernel_ut(+0x47088) [0xaaaac5087088]
+  ./relu_op_kernel_ut(+0x41d2c) [0xaaaac5081d2c]
+  ./relu_op_kernel_ut(+0x3c1bc) [0xaaaac507c1bc]
+  ./relu_op_kernel_ut(+0x364c4) [0xaaaac50764c4]
+  ./relu_op_kernel_ut(+0x36cac) [0xaaaac5076cac]
+  ./relu_op_kernel_ut(+0x2b31c) [0xaaaac506b31c]
+  ./relu_op_kernel_ut(+0x93ff8) [0xaaaac50d3ff8]
+  ./relu_op_kernel_ut(+0x80790) [0xaaaac50c0790]
+  ./relu_op_kernel_ut(+0x80994) [0xaaaac50c0994]
+  ./relu_op_kernel_ut(+0x83970) [0xaaaac50c3970]
+  ./relu_op_kernel_ut(+0x86e2c) [0xaaaac50c6e2c]
+  ./relu_op_kernel_ut(+0x80b84) [0xaaaac50c0b84]
+  ./relu_op_kernel_ut(+0x2a918) [0xaaaac506a918]
+  /lib/aarch64-linux-gnu/libc.so.6(+0x27400) [0xffff87e67400]
+  /lib/aarch64-linux-gnu/libc.so.6(__libc_start_main+0x98) [0xffff87e674d8]
+  ./relu_op_kernel_ut(+0x2af30) [0xaaaac506af30]
+
+[V] checking pending queue
+[V] [CHECK_DATA] 0 0x8000 B type UB
+[V] [CHECK_TBUF] 0 0x8000 B type UB
+[V] allocation buffer match result 2
+[V] persistent buffer match result 2
+[V] [ErrorRead1] on read 0 0x8000 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffff8913e9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffff8913ef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x82c) [0xffff89117434]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x434) [0xffff89119334]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1c8) [0xffff89113d54]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffff8912500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk5vmaxsEPfS0_fhtthhbb+0x4d0) [0xffff8921b3d0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z5vmaxsPfS_fhtthhbb+0xa0) [0xffff88f8c9f4]
+  ./relu_op_kernel_ut(+0x3fa2c) [0xaaaac507fa2c]
+  ./relu_op_kernel_ut(+0x4bec8) [0xaaaac508bec8]
+  ./relu_op_kernel_ut(+0x47088) [0xaaaac5087088]
+  ./relu_op_kernel_ut(+0x41d2c) [0xaaaac5081d2c]
+  ./relu_op_kernel_ut(+0x3c1bc) [0xaaaac507c1bc]
+  ./relu_op_kernel_ut(+0x364c4) [0xaaaac50764c4]
+  ./relu_op_kernel_ut(+0x36cac) [0xaaaac5076cac]
+  ./relu_op_kernel_ut(+0x2b31c) [0xaaaac506b31c]
+  ./relu_op_kernel_ut(+0x93ff8) [0xaaaac50d3ff8]
+  ./relu_op_kernel_ut(+0x80790) [0xaaaac50c0790]
+  ./relu_op_kernel_ut(+0x80994) [0xaaaac50c0994]
+  ./relu_op_kernel_ut(+0x83970) [0xaaaac50c3970]
+  ./relu_op_kernel_ut(+0x86e2c) [0xaaaac50c6e2c]
+  ./relu_op_kernel_ut(+0x80b84) [0xaaaac50c0b84]
+  ./relu_op_kernel_ut(+0x2a918) [0xaaaac506a918]
+  /lib/aarch64-linux-gnu/libc.so.6(+0x27400) [0xffff87e67400]
+  /lib/aarch64-linux-gnu/libc.so.6(__libc_start_main+0x98) [0xffff87e674d8]
+  ./relu_op_kernel_ut(+0x2af30) [0xaaaac506af30]
+
+[V] read  data 0xffff86262010 0x8000 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0xffff86262010 0x8000 B type UB
+[V] data matched whole 0xffff8625a010 0x20000 stat 1
+[V] [DATA_MARK] 0xffff86262010 0x8000 B type UB mark read
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffff86262010 0x8000 B type UB
+[V] [CHECK_TBUF] 0xffff86262010 0x8000 B type UB
+[V] allocation buffer match result 0
+[V] write data 0xffff86272010 0x8000 B type UB
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffff86272010 0x8000 B type UB
+[V] checking wrote queue
+[V] [CHECK_DATA] 0xffff86272010 0x8000 B type UB
+[V] data matched whole 0xffff8626a010 0x10000 stat 1
+[V] [CHECK_TBUF] 0xffff86272010 0x8000 B type UB
+[V] allocation buffer match result 0
+
+### set_vector_mask((uint64_t)18446744073709551615, (uint64_t)18446744073709551615);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### set_mask_norm();
+
+[set_mask_norm] unsupported
+[S] [RECV_INST] set_mask_norm type 7
+[S] [EXECUTE] set_mask_norm type 7
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE3, (event_t)0);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [SYNC_DATA] 0xffff86272010 0x8000 B type UB
+[V] [send event] on set_flag 1 5 0
+[V] -> [MTE3] [GET_DATA] 0xffff8626a010 0x10000 B stat 1 type UB
+[MTE3] [RECV_EVENT] SRC V DST MTE3 EVENT 0
+[MTE3] [RECV_DATA] 0xffff8626a010 0x10000 B stat 1 type UB
+[MEMCHEK] Mem[281472932454416]checkNum is 0
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)1);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [send event] on set_flag 1 4 1
+[V] -> [MTE2] [GET_DATA] 0xffff8626a010 0x10000 B stat 1 type UB
+[MTE2] [RECV_EVENT] SRC V DST MTE2 EVENT 1
+[MTE2] [RECV_DATA] 0xffff8626a010 0x10000 B stat 1 type UB
+[ALL] [TBUF_EVENT] FREE 0xffff86262010 0x8000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x8000, Rate: 12.5%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x20000, Rate: 50%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281472932388880]checkNum is 0
+[MEMCHEK] Mem[281472932388880] is FREE
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE3, (event_t)0);
+
+[MTE3] [RECV_INST] wait_flag type 4
+[MTE3] [EXECUTE] wait_flag type 4
+[MTE3] [no wait] on wait_flag 1 5 0
+[V] [EVENT_CLEAR] send 1 5 0 has been waited
+[MEMCHEK] Mem[281472932454416]checkNum is 0
+
+### copy_ubuf_to_gm((__gm__ void*)0xffff873d7000, (__ubuf__ void*)0xffff86272010, (uint8_t)0, (uint16_t)1, (uint16_t)1024, (uint16_t)0, (uint16_t)0);
+
+[MTE3] [RECV_INST] copy_ubuf_to_gm type 0
+[MTE3] [EXECUTE] copy_ubuf_to_gm type 0
+[MTE3] read  data 0xffff86272010 0x8000 B type UB
+[MTE3] checking synced queue
+[MTE3] [CHECK_DATA] 0xffff86272010 0x8000 B type UB
+[MTE3] data matched whole 0xffff8626a010 0x10000 stat 1
+[MTE3] [DATA_MARK] 0xffff86272010 0x8000 B type UB mark read
+[MTE3] checking pending queue
+[MTE3] [CHECK_DATA] 0xffff86272010 0x8000 B type UB
+[MTE3] [CHECK_TBUF] 0xffff86272010 0x8000 B type UB
+[MTE3] allocation buffer match result 0
+[MTE3] write data 0xffff873d7000 0x8000 B type GM
+[MTE3] checking pending queue
+[MTE3] [CHECK_DATA] 0xffff873d7000 0x8000 B type GM
+[MTE3] checking wrote queue
+[MTE3] [CHECK_DATA] 0xffff873d7000 0x8000 B type GM
+[MTE3] [CHECK_TBUF] 0xffff873d7000 0x8000 B type GM
+[MEMCHEK] Mem[281472932454416]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE3, (pipe_t)PIPE_V, (event_t)1);
+
+[MTE3] [RECV_INST] set_flag type 3
+[MTE3] [EXECUTE] set_flag type 3
+[MTE3] [SYNC_DATA] 0xffff873d7000 0x8000 B type GM
+[MTE3] [send event] on set_flag 5 1 1
+[MTE3] -> [V] [GET_DATA] 0xffff8738f000 0x50000 B stat 1 type GM
+[V] [RECV_EVENT] SRC MTE3 DST V EVENT 1
+[V] [RECV_DATA] 0xffff8738f000 0x50000 B stat 1 type GM
+[ALL] [TBUF_EVENT] FREE 0xffff86272010 0x8000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x20000, Rate: 50%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281472932454416]checkNum is 0
+[MEMCHEK] Mem[281472932454416] is FREE
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)0);
+
+[MTE2] [RECV_INST] wait_flag type 4
+[MTE2] [EXECUTE] wait_flag type 4
+[MTE2] [no wait] on wait_flag 1 4 0
+[V] [EVENT_CLEAR] send 1 4 0 has been waited
+[ALL] [TBUF_EVENT] ALLOC 0xffff8625a010 0x8000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x8000, Rate: 12.5%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x20000, Rate: 50%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281472932356112len: 32768
+
+### copy_gm_to_ubuf((__ubuf__ void*)0xffff8625a010, (__gm__ void*)0xffff8743b000, (uint8_t)0, (uint16_t)1, (uint16_t)1024, (uint16_t)0, (uint16_t)0);
+
+[MTE2] [RECV_INST] copy_gm_to_ubuf type 0
+[MTE2] [EXECUTE] copy_gm_to_ubuf type 0
+[MTE2] read  data 0xffff8743b000 0x8000 B type GM
+[MTE2] [DATA_MARK] 0xffff8743b000 0x8000 B type GM mark read
+[MTE2] write data 0xffff8625a010 0x8000 B type UB
+[MTE2] checking pending queue
+[MTE2] [CHECK_DATA] 0xffff8625a010 0x8000 B type UB
+[MTE2] checking wrote queue
+[MTE2] [CHECK_DATA] 0xffff8625a010 0x8000 B type UB
+[MTE2] data matched whole 0xffff8625a010 0x10000 stat 1
+[MTE2] [CHECK_TBUF] 0xffff8625a010 0x8000 B type UB
+[MTE2] allocation buffer match result 0
+[MEMCHEK] Mem[281472932356112]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)0);
+
+[MTE2] [RECV_INST] set_flag type 3
+[MTE2] [EXECUTE] set_flag type 3
+[MTE2] [SYNC_DATA] 0xffff8625a010 0x8000 B type UB
+[MTE2] [send event] on set_flag 4 1 0
+[MTE2] -> [V] [GET_DATA] 0xffff8625a010 0x10000 B stat 1 type UB
+[V] [RECV_EVENT] SRC MTE2 DST V EVENT 0
+[V] [RECV_DATA] 0xffff8625a010 0x10000 B stat 1 type UB
+[MEMCHEK] Mem[281472932356112]checkNum is 0
+
+### wait_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)0);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 4 1 0
+[MTE2] [EVENT_CLEAR] send 4 1 0 has been waited
+[MEMCHEK] Mem[281472932356112]checkNum is 0
+
+### wait_flag((pipe_t)PIPE_MTE3, (pipe_t)PIPE_V, (event_t)0);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 5 1 0
+[MTE3] [EVENT_CLEAR] send 5 1 0 has been waited
+[ALL] [TBUF_EVENT] ALLOC 0xffff8626a010 0x8000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x10000, Rate: 25%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x20000, Rate: 50%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281472932421648len: 32768
+
+### set_mask_count();
+
+[set_mask_count] unsupported
+[S] [RECV_INST] set_mask_count type 7
+[S] [EXECUTE] set_mask_count type 7
+
+### set_vector_mask((uint64_t)0, (uint64_t)8192);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### vmaxs((__ubuf__ float*)0xffff8626a010, (__ubuf__ float*)0xffff8625a010, (float)0, (uint8_t)1, (uint16_t)1, (uint16_t)1, (uint8_t)8, (uint8_t)8, (bool)0, (bool)0);
+
+[V] [RECV_INST] vmaxs type 1
+[V] [EXECUTE] vmaxs type 1
+[MEMCHEK] Mem[281472932356112]checkNum is 0
+[MEMCHEK] Mem[281472932421648]checkNum is 0
+DataMergeAllOnceAll dataLen: 32768
+[V] [ErrorRead4] on read 0 0x8000 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffff8913e9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffff8913ef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x1ec) [0xffff89116df4]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x434) [0xffff89119334]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1c8) [0xffff89113d54]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffff8912500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk5vmaxsEPfS0_fhtthhbb+0x4d0) [0xffff8921b3d0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z5vmaxsPfS_fhtthhbb+0xa0) [0xffff88f8c9f4]
+  ./relu_op_kernel_ut(+0x3fa2c) [0xaaaac507fa2c]
+  ./relu_op_kernel_ut(+0x4bec8) [0xaaaac508bec8]
+  ./relu_op_kernel_ut(+0x47088) [0xaaaac5087088]
+  ./relu_op_kernel_ut(+0x41d2c) [0xaaaac5081d2c]
+  ./relu_op_kernel_ut(+0x3c1bc) [0xaaaac507c1bc]
+  ./relu_op_kernel_ut(+0x364c4) [0xaaaac50764c4]
+  ./relu_op_kernel_ut(+0x36cac) [0xaaaac5076cac]
+  ./relu_op_kernel_ut(+0x2b31c) [0xaaaac506b31c]
+  ./relu_op_kernel_ut(+0x93ff8) [0xaaaac50d3ff8]
+  ./relu_op_kernel_ut(+0x80790) [0xaaaac50c0790]
+  ./relu_op_kernel_ut(+0x80994) [0xaaaac50c0994]
+  ./relu_op_kernel_ut(+0x83970) [0xaaaac50c3970]
+  ./relu_op_kernel_ut(+0x86e2c) [0xaaaac50c6e2c]
+  ./relu_op_kernel_ut(+0x80b84) [0xaaaac50c0b84]
+  ./relu_op_kernel_ut(+0x2a918) [0xaaaac506a918]
+  /lib/aarch64-linux-gnu/libc.so.6(+0x27400) [0xffff87e67400]
+  /lib/aarch64-linux-gnu/libc.so.6(__libc_start_main+0x98) [0xffff87e674d8]
+  ./relu_op_kernel_ut(+0x2af30) [0xaaaac506af30]
+
+[V] read  data 0 0x8000 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0 0x8000 B type UB
+[V] [ErrorRead2] on read 0 0x8000 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffff8913e9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffff8913ef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x4e0) [0xffff891170e8]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x434) [0xffff89119334]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1c8) [0xffff89113d54]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffff8912500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk5vmaxsEPfS0_fhtthhbb+0x4d0) [0xffff8921b3d0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z5vmaxsPfS_fhtthhbb+0xa0) [0xffff88f8c9f4]
+  ./relu_op_kernel_ut(+0x3fa2c) [0xaaaac507fa2c]
+  ./relu_op_kernel_ut(+0x4bec8) [0xaaaac508bec8]
+  ./relu_op_kernel_ut(+0x47088) [0xaaaac5087088]
+  ./relu_op_kernel_ut(+0x41d2c) [0xaaaac5081d2c]
+  ./relu_op_kernel_ut(+0x3c1bc) [0xaaaac507c1bc]
+  ./relu_op_kernel_ut(+0x364c4) [0xaaaac50764c4]
+  ./relu_op_kernel_ut(+0x36cac) [0xaaaac5076cac]
+  ./relu_op_kernel_ut(+0x2b31c) [0xaaaac506b31c]
+  ./relu_op_kernel_ut(+0x93ff8) [0xaaaac50d3ff8]
+  ./relu_op_kernel_ut(+0x80790) [0xaaaac50c0790]
+  ./relu_op_kernel_ut(+0x80994) [0xaaaac50c0994]
+  ./relu_op_kernel_ut(+0x83970) [0xaaaac50c3970]
+  ./relu_op_kernel_ut(+0x86e2c) [0xaaaac50c6e2c]
+  ./relu_op_kernel_ut(+0x80b84) [0xaaaac50c0b84]
+  ./relu_op_kernel_ut(+0x2a918) [0xaaaac506a918]
+  /lib/aarch64-linux-gnu/libc.so.6(+0x27400) [0xffff87e67400]
+  /lib/aarch64-linux-gnu/libc.so.6(__libc_start_main+0x98) [0xffff87e674d8]
+  ./relu_op_kernel_ut(+0x2af30) [0xaaaac506af30]
+
+[V] checking pending queue
+[V] [CHECK_DATA] 0 0x8000 B type UB
+[V] [CHECK_TBUF] 0 0x8000 B type UB
+[V] allocation buffer match result 2
+[V] persistent buffer match result 2
+[V] [ErrorRead1] on read 0 0x8000 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffff8913e9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffff8913ef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x82c) [0xffff89117434]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x434) [0xffff89119334]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1c8) [0xffff89113d54]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffff8912500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk5vmaxsEPfS0_fhtthhbb+0x4d0) [0xffff8921b3d0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z5vmaxsPfS_fhtthhbb+0xa0) [0xffff88f8c9f4]
+  ./relu_op_kernel_ut(+0x3fa2c) [0xaaaac507fa2c]
+  ./relu_op_kernel_ut(+0x4bec8) [0xaaaac508bec8]
+  ./relu_op_kernel_ut(+0x47088) [0xaaaac5087088]
+  ./relu_op_kernel_ut(+0x41d2c) [0xaaaac5081d2c]
+  ./relu_op_kernel_ut(+0x3c1bc) [0xaaaac507c1bc]
+  ./relu_op_kernel_ut(+0x364c4) [0xaaaac50764c4]
+  ./relu_op_kernel_ut(+0x36cac) [0xaaaac5076cac]
+  ./relu_op_kernel_ut(+0x2b31c) [0xaaaac506b31c]
+  ./relu_op_kernel_ut(+0x93ff8) [0xaaaac50d3ff8]
+  ./relu_op_kernel_ut(+0x80790) [0xaaaac50c0790]
+  ./relu_op_kernel_ut(+0x80994) [0xaaaac50c0994]
+  ./relu_op_kernel_ut(+0x83970) [0xaaaac50c3970]
+  ./relu_op_kernel_ut(+0x86e2c) [0xaaaac50c6e2c]
+  ./relu_op_kernel_ut(+0x80b84) [0xaaaac50c0b84]
+  ./relu_op_kernel_ut(+0x2a918) [0xaaaac506a918]
+  /lib/aarch64-linux-gnu/libc.so.6(+0x27400) [0xffff87e67400]
+  /lib/aarch64-linux-gnu/libc.so.6(__libc_start_main+0x98) [0xffff87e674d8]
+  ./relu_op_kernel_ut(+0x2af30) [0xaaaac506af30]
+
+[V] read  data 0xffff8625a010 0x8000 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0xffff8625a010 0x8000 B type UB
+[V] data matched whole 0xffff8625a010 0x20000 stat 1
+[V] [DATA_MARK] 0xffff8625a010 0x8000 B type UB mark read
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffff8625a010 0x8000 B type UB
+[V] [CHECK_TBUF] 0xffff8625a010 0x8000 B type UB
+[V] allocation buffer match result 0
+[V] write data 0xffff8626a010 0x8000 B type UB
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffff8626a010 0x8000 B type UB
+[V] checking wrote queue
+[V] [CHECK_DATA] 0xffff8626a010 0x8000 B type UB
+[V] data matched whole 0xffff8626a010 0x10000 stat 1
+[V] [CHECK_TBUF] 0xffff8626a010 0x8000 B type UB
+[V] allocation buffer match result 0
+
+### set_vector_mask((uint64_t)18446744073709551615, (uint64_t)18446744073709551615);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### set_mask_norm();
+
+[set_mask_norm] unsupported
+[S] [RECV_INST] set_mask_norm type 7
+[S] [EXECUTE] set_mask_norm type 7
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE3, (event_t)0);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [SYNC_DATA] 0xffff8626a010 0x8000 B type UB
+[V] [send event] on set_flag 1 5 0
+[V] -> [MTE3] [GET_DATA] 0xffff8626a010 0x10000 B stat 1 type UB
+[MTE3] [RECV_EVENT] SRC V DST MTE3 EVENT 0
+[MTE3] [RECV_DATA] 0xffff8626a010 0x10000 B stat 1 type UB
+[MEMCHEK] Mem[281472932421648]checkNum is 0
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)0);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [send event] on set_flag 1 4 0
+[V] -> [MTE2] [GET_DATA] 0xffff8626a010 0x10000 B stat 1 type UB
+[MTE2] [RECV_EVENT] SRC V DST MTE2 EVENT 0
+[MTE2] [RECV_DATA] 0xffff8626a010 0x10000 B stat 1 type UB
+[ALL] [TBUF_EVENT] FREE 0xffff8625a010 0x8000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x8000, Rate: 12.5%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x20000, Rate: 50%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281472932356112]checkNum is 0
+[MEMCHEK] Mem[281472932356112] is FREE
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE3, (event_t)0);
+
+[MTE3] [RECV_INST] wait_flag type 4
+[MTE3] [EXECUTE] wait_flag type 4
+[MTE3] [no wait] on wait_flag 1 5 0
+[V] [EVENT_CLEAR] send 1 5 0 has been waited
+[MEMCHEK] Mem[281472932421648]checkNum is 0
+
+### copy_ubuf_to_gm((__gm__ void*)0xffff873df000, (__ubuf__ void*)0xffff8626a010, (uint8_t)0, (uint16_t)1, (uint16_t)1024, (uint16_t)0, (uint16_t)0);
+
+[MTE3] [RECV_INST] copy_ubuf_to_gm type 0
+[MTE3] [EXECUTE] copy_ubuf_to_gm type 0
+[MTE3] read  data 0xffff8626a010 0x8000 B type UB
+[MTE3] checking synced queue
+[MTE3] [CHECK_DATA] 0xffff8626a010 0x8000 B type UB
+[MTE3] data matched whole 0xffff8626a010 0x10000 stat 1
+[MTE3] [DATA_MARK] 0xffff8626a010 0x8000 B type UB mark read
+[MTE3] checking pending queue
+[MTE3] [CHECK_DATA] 0xffff8626a010 0x8000 B type UB
+[MTE3] [CHECK_TBUF] 0xffff8626a010 0x8000 B type UB
+[MTE3] allocation buffer match result 0
+[MTE3] write data 0xffff873df000 0x8000 B type GM
+[MTE3] checking pending queue
+[MTE3] [CHECK_DATA] 0xffff873df000 0x8000 B type GM
+[MTE3] checking wrote queue
+[MTE3] [CHECK_DATA] 0xffff873df000 0x8000 B type GM
+[MTE3] [CHECK_TBUF] 0xffff873df000 0x8000 B type GM
+[MEMCHEK] Mem[281472932421648]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE3, (pipe_t)PIPE_V, (event_t)0);
+
+[MTE3] [RECV_INST] set_flag type 3
+[MTE3] [EXECUTE] set_flag type 3
+[MTE3] [SYNC_DATA] 0xffff873df000 0x8000 B type GM
+[MTE3] [send event] on set_flag 5 1 0
+[MTE3] -> [V] [GET_DATA] 0xffff8738f000 0x58000 B stat 1 type GM
+[V] [RECV_EVENT] SRC MTE3 DST V EVENT 0
+[V] [RECV_DATA] 0xffff8738f000 0x58000 B stat 1 type GM
+[ALL] [TBUF_EVENT] FREE 0xffff8626a010 0x8000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x20000, Rate: 50%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281472932421648]checkNum is 0
+[MEMCHEK] Mem[281472932421648] is FREE
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)1);
+
+[MTE2] [RECV_INST] wait_flag type 4
+[MTE2] [EXECUTE] wait_flag type 4
+[MTE2] [no wait] on wait_flag 1 4 1
+[V] [EVENT_CLEAR] send 1 4 1 has been waited
+[ALL] [TBUF_EVENT] ALLOC 0xffff86262010 0x8000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x8000, Rate: 12.5%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x20000, Rate: 50%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281472932388880len: 32768
+
+### copy_gm_to_ubuf((__ubuf__ void*)0xffff86262010, (__gm__ void*)0xffff87443000, (uint8_t)0, (uint16_t)1, (uint16_t)256, (uint16_t)0, (uint16_t)0);
+
+[MTE2] [RECV_INST] copy_gm_to_ubuf type 0
+[MTE2] [EXECUTE] copy_gm_to_ubuf type 0
+[MTE2] read  data 0xffff87443000 0x2000 B type GM
+[MTE2] [DATA_MARK] 0xffff87443000 0x2000 B type GM mark read
+[MTE2] write data 0xffff86262010 0x2000 B type UB
+[MTE2] checking pending queue
+[MTE2] [CHECK_DATA] 0xffff86262010 0x2000 B type UB
+[MTE2] checking wrote queue
+[MTE2] [CHECK_DATA] 0xffff86262010 0x2000 B type UB
+[MTE2] data matched whole 0xffff8625a010 0x10000 stat 1
+[MTE2] [CHECK_TBUF] 0xffff86262010 0x2000 B type UB
+[MTE2] allocation buffer match result 0
+[MEMCHEK] Mem[281472932388880]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)0);
+
+[MTE2] [RECV_INST] set_flag type 3
+[MTE2] [EXECUTE] set_flag type 3
+[MTE2] [SYNC_DATA] 0xffff86262010 0x2000 B type UB
+[MTE2] [send event] on set_flag 4 1 0
+[MTE2] -> [V] [GET_DATA] 0xffff8625a010 0x10000 B stat 1 type UB
+[V] [RECV_EVENT] SRC MTE2 DST V EVENT 0
+[V] [RECV_DATA] 0xffff8625a010 0x10000 B stat 1 type UB
+[MEMCHEK] Mem[281472932388880]checkNum is 0
+
+### wait_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)0);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 4 1 0
+[MTE2] [EVENT_CLEAR] send 4 1 0 has been waited
+[MEMCHEK] Mem[281472932388880]checkNum is 0
+
+### wait_flag((pipe_t)PIPE_MTE3, (pipe_t)PIPE_V, (event_t)1);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 5 1 1
+[MTE3] [EVENT_CLEAR] send 5 1 1 has been waited
+[ALL] [TBUF_EVENT] ALLOC 0xffff86272010 0x8000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x10000, Rate: 25%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x20000, Rate: 50%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281472932454416len: 32768
+
+### set_mask_count();
+
+[set_mask_count] unsupported
+[S] [RECV_INST] set_mask_count type 7
+[S] [EXECUTE] set_mask_count type 7
+
+### set_vector_mask((uint64_t)0, (uint64_t)2048);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### vmaxs((__ubuf__ float*)0xffff86272010, (__ubuf__ float*)0xffff86262010, (float)0, (uint8_t)1, (uint16_t)1, (uint16_t)1, (uint8_t)8, (uint8_t)8, (bool)0, (bool)0);
+
+[V] [RECV_INST] vmaxs type 1
+[V] [EXECUTE] vmaxs type 1
+[MEMCHEK] Mem[281472932388880]checkNum is 0
+[MEMCHEK] Mem[281472932454416]checkNum is 0
+DataMergeAllOnceAll dataLen: 8192
+[V] [ErrorRead4] on read 0 0x2000 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffff8913e9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffff8913ef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x1ec) [0xffff89116df4]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x434) [0xffff89119334]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1c8) [0xffff89113d54]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffff8912500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk5vmaxsEPfS0_fhtthhbb+0x4d0) [0xffff8921b3d0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z5vmaxsPfS_fhtthhbb+0xa0) [0xffff88f8c9f4]
+  ./relu_op_kernel_ut(+0x3fa2c) [0xaaaac507fa2c]
+  ./relu_op_kernel_ut(+0x4bec8) [0xaaaac508bec8]
+  ./relu_op_kernel_ut(+0x47088) [0xaaaac5087088]
+  ./relu_op_kernel_ut(+0x41d2c) [0xaaaac5081d2c]
+  ./relu_op_kernel_ut(+0x3c218) [0xaaaac507c218]
+  ./relu_op_kernel_ut(+0x364c4) [0xaaaac50764c4]
+  ./relu_op_kernel_ut(+0x36cac) [0xaaaac5076cac]
+  ./relu_op_kernel_ut(+0x2b31c) [0xaaaac506b31c]
+  ./relu_op_kernel_ut(+0x93ff8) [0xaaaac50d3ff8]
+  ./relu_op_kernel_ut(+0x80790) [0xaaaac50c0790]
+  ./relu_op_kernel_ut(+0x80994) [0xaaaac50c0994]
+  ./relu_op_kernel_ut(+0x83970) [0xaaaac50c3970]
+  ./relu_op_kernel_ut(+0x86e2c) [0xaaaac50c6e2c]
+  ./relu_op_kernel_ut(+0x80b84) [0xaaaac50c0b84]
+  ./relu_op_kernel_ut(+0x2a918) [0xaaaac506a918]
+  /lib/aarch64-linux-gnu/libc.so.6(+0x27400) [0xffff87e67400]
+  /lib/aarch64-linux-gnu/libc.so.6(__libc_start_main+0x98) [0xffff87e674d8]
+  ./relu_op_kernel_ut(+0x2af30) [0xaaaac506af30]
+
+[V] read  data 0 0x2000 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0 0x2000 B type UB
+[V] [ErrorRead2] on read 0 0x2000 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffff8913e9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffff8913ef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x4e0) [0xffff891170e8]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x434) [0xffff89119334]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1c8) [0xffff89113d54]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffff8912500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk5vmaxsEPfS0_fhtthhbb+0x4d0) [0xffff8921b3d0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z5vmaxsPfS_fhtthhbb+0xa0) [0xffff88f8c9f4]
+  ./relu_op_kernel_ut(+0x3fa2c) [0xaaaac507fa2c]
+  ./relu_op_kernel_ut(+0x4bec8) [0xaaaac508bec8]
+  ./relu_op_kernel_ut(+0x47088) [0xaaaac5087088]
+  ./relu_op_kernel_ut(+0x41d2c) [0xaaaac5081d2c]
+  ./relu_op_kernel_ut(+0x3c218) [0xaaaac507c218]
+  ./relu_op_kernel_ut(+0x364c4) [0xaaaac50764c4]
+  ./relu_op_kernel_ut(+0x36cac) [0xaaaac5076cac]
+  ./relu_op_kernel_ut(+0x2b31c) [0xaaaac506b31c]
+  ./relu_op_kernel_ut(+0x93ff8) [0xaaaac50d3ff8]
+  ./relu_op_kernel_ut(+0x80790) [0xaaaac50c0790]
+  ./relu_op_kernel_ut(+0x80994) [0xaaaac50c0994]
+  ./relu_op_kernel_ut(+0x83970) [0xaaaac50c3970]
+  ./relu_op_kernel_ut(+0x86e2c) [0xaaaac50c6e2c]
+  ./relu_op_kernel_ut(+0x80b84) [0xaaaac50c0b84]
+  ./relu_op_kernel_ut(+0x2a918) [0xaaaac506a918]
+  /lib/aarch64-linux-gnu/libc.so.6(+0x27400) [0xffff87e67400]
+  /lib/aarch64-linux-gnu/libc.so.6(__libc_start_main+0x98) [0xffff87e674d8]
+  ./relu_op_kernel_ut(+0x2af30) [0xaaaac506af30]
+
+[V] checking pending queue
+[V] [CHECK_DATA] 0 0x2000 B type UB
+[V] [CHECK_TBUF] 0 0x2000 B type UB
+[V] allocation buffer match result 2
+[V] persistent buffer match result 2
+[V] [ErrorRead1] on read 0 0x2000 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffff8913e9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffff8913ef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x82c) [0xffff89117434]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x434) [0xffff89119334]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1c8) [0xffff89113d54]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffff8912500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk5vmaxsEPfS0_fhtthhbb+0x4d0) [0xffff8921b3d0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z5vmaxsPfS_fhtthhbb+0xa0) [0xffff88f8c9f4]
+  ./relu_op_kernel_ut(+0x3fa2c) [0xaaaac507fa2c]
+  ./relu_op_kernel_ut(+0x4bec8) [0xaaaac508bec8]
+  ./relu_op_kernel_ut(+0x47088) [0xaaaac5087088]
+  ./relu_op_kernel_ut(+0x41d2c) [0xaaaac5081d2c]
+  ./relu_op_kernel_ut(+0x3c218) [0xaaaac507c218]
+  ./relu_op_kernel_ut(+0x364c4) [0xaaaac50764c4]
+  ./relu_op_kernel_ut(+0x36cac) [0xaaaac5076cac]
+  ./relu_op_kernel_ut(+0x2b31c) [0xaaaac506b31c]
+  ./relu_op_kernel_ut(+0x93ff8) [0xaaaac50d3ff8]
+  ./relu_op_kernel_ut(+0x80790) [0xaaaac50c0790]
+  ./relu_op_kernel_ut(+0x80994) [0xaaaac50c0994]
+  ./relu_op_kernel_ut(+0x83970) [0xaaaac50c3970]
+  ./relu_op_kernel_ut(+0x86e2c) [0xaaaac50c6e2c]
+  ./relu_op_kernel_ut(+0x80b84) [0xaaaac50c0b84]
+  ./relu_op_kernel_ut(+0x2a918) [0xaaaac506a918]
+  /lib/aarch64-linux-gnu/libc.so.6(+0x27400) [0xffff87e67400]
+  /lib/aarch64-linux-gnu/libc.so.6(__libc_start_main+0x98) [0xffff87e674d8]
+  ./relu_op_kernel_ut(+0x2af30) [0xaaaac506af30]
+
+[V] read  data 0xffff86262010 0x2000 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0xffff86262010 0x2000 B type UB
+[V] data matched whole 0xffff8625a010 0x20000 stat 1
+[V] [DATA_MARK] 0xffff86262010 0x2000 B type UB mark read
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffff86262010 0x2000 B type UB
+[V] [CHECK_TBUF] 0xffff86262010 0x2000 B type UB
+[V] allocation buffer match result 0
+[V] write data 0xffff86272010 0x2000 B type UB
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffff86272010 0x2000 B type UB
+[V] checking wrote queue
+[V] [CHECK_DATA] 0xffff86272010 0x2000 B type UB
+[V] data matched whole 0xffff8626a010 0x10000 stat 1
+[V] [CHECK_TBUF] 0xffff86272010 0x2000 B type UB
+[V] allocation buffer match result 0
+
+### set_vector_mask((uint64_t)18446744073709551615, (uint64_t)18446744073709551615);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### set_mask_norm();
+
+[set_mask_norm] unsupported
+[S] [RECV_INST] set_mask_norm type 7
+[S] [EXECUTE] set_mask_norm type 7
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE3, (event_t)0);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [SYNC_DATA] 0xffff86272010 0x2000 B type UB
+[V] [send event] on set_flag 1 5 0
+[V] -> [MTE3] [GET_DATA] 0xffff8626a010 0x10000 B stat 1 type UB
+[MTE3] [RECV_EVENT] SRC V DST MTE3 EVENT 0
+[MTE3] [RECV_DATA] 0xffff8626a010 0x10000 B stat 1 type UB
+[MEMCHEK] Mem[281472932454416]checkNum is 0
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)1);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [send event] on set_flag 1 4 1
+[V] -> [MTE2] [GET_DATA] 0xffff8626a010 0x10000 B stat 1 type UB
+[MTE2] [RECV_EVENT] SRC V DST MTE2 EVENT 1
+[MTE2] [RECV_DATA] 0xffff8626a010 0x10000 B stat 1 type UB
+[ALL] [TBUF_EVENT] FREE 0xffff86262010 0x8000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x8000, Rate: 12.5%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x20000, Rate: 50%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281472932388880]checkNum is 0
+[MEMCHEK] Mem[281472932388880] is FREE
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE3, (event_t)0);
+
+[MTE3] [RECV_INST] wait_flag type 4
+[MTE3] [EXECUTE] wait_flag type 4
+[MTE3] [no wait] on wait_flag 1 5 0
+[V] [EVENT_CLEAR] send 1 5 0 has been waited
+[MEMCHEK] Mem[281472932454416]checkNum is 0
+
+### copy_ubuf_to_gm((__gm__ void*)0xffff873e7000, (__ubuf__ void*)0xffff86272010, (uint8_t)0, (uint16_t)1, (uint16_t)256, (uint16_t)0, (uint16_t)0);
+
+[MTE3] [RECV_INST] copy_ubuf_to_gm type 0
+[MTE3] [EXECUTE] copy_ubuf_to_gm type 0
+[MTE3] read  data 0xffff86272010 0x2000 B type UB
+[MTE3] checking synced queue
+[MTE3] [CHECK_DATA] 0xffff86272010 0x2000 B type UB
+[MTE3] data matched whole 0xffff8626a010 0x10000 stat 1
+[MTE3] [DATA_MARK] 0xffff86272010 0x2000 B type UB mark read
+[MTE3] checking pending queue
+[MTE3] [CHECK_DATA] 0xffff86272010 0x2000 B type UB
+[MTE3] [CHECK_TBUF] 0xffff86272010 0x2000 B type UB
+[MTE3] allocation buffer match result 0
+[MTE3] write data 0xffff873e7000 0x2000 B type GM
+[MTE3] checking pending queue
+[MTE3] [CHECK_DATA] 0xffff873e7000 0x2000 B type GM
+[MTE3] checking wrote queue
+[MTE3] [CHECK_DATA] 0xffff873e7000 0x2000 B type GM
+[MTE3] [CHECK_TBUF] 0xffff873e7000 0x2000 B type GM
+[MEMCHEK] Mem[281472932454416]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE3, (pipe_t)PIPE_V, (event_t)1);
+
+[MTE3] [RECV_INST] set_flag type 3
+[MTE3] [EXECUTE] set_flag type 3
+[MTE3] [SYNC_DATA] 0xffff873e7000 0x2000 B type GM
+[MTE3] [send event] on set_flag 5 1 1
+[MTE3] -> [V] [GET_DATA] 0xffff8738f000 0x5a000 B stat 1 type GM
+[V] [RECV_EVENT] SRC MTE3 DST V EVENT 1
+[V] [RECV_DATA] 0xffff8738f000 0x5a000 B stat 1 type GM
+[ALL] [TBUF_EVENT] FREE 0xffff86272010 0x8000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x20000, Rate: 50%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281472932454416]checkNum is 0
+[MEMCHEK] Mem[281472932454416] is FREE
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)0);
+
+[MTE2] [RECV_INST] wait_flag type 4
+[MTE2] [EXECUTE] wait_flag type 4
+[MTE2] [no wait] on wait_flag 1 4 0
+[V] [EVENT_CLEAR] send 1 4 0 has been waited
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)1);
+
+[MTE2] [RECV_INST] wait_flag type 4
+[MTE2] [EXECUTE] wait_flag type 4
+[MTE2] [no wait] on wait_flag 1 4 1
+[V] [EVENT_CLEAR] send 1 4 1 has been waited
+
+### wait_flag((pipe_t)PIPE_MTE3, (pipe_t)PIPE_V, (event_t)0);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 5 1 0
+[MTE3] [EVENT_CLEAR] send 5 1 0 has been waited
+
+### wait_flag((pipe_t)PIPE_MTE3, (pipe_t)PIPE_V, (event_t)1);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 5 1 1
+[MTE3] [EVENT_CLEAR] send 5 1 1 has been waited
+
+### pipe_barrier((pipe_t)PIPE_ALL);
+
+[V] -> [ALL] [GET_DATA] 0xffff8626a010 0x10000 B stat 1 type UB
+[S] [RECV_DATA] 0xffff8626a010 0x10000 B stat 1 type UB
+[M] [RECV_DATA] 0xffff8626a010 0x10000 B stat 1 type UB
+[MTE1] [RECV_DATA] 0xffff8626a010 0x10000 B stat 1 type UB
+[MTE2] [RECV_DATA] 0xffff8626a010 0x10000 B stat 1 type UB
+[MTE3] [RECV_DATA] 0xffff8626a010 0x10000 B stat 1 type UB
+[MTE4] [RECV_DATA] 0xffff8626a010 0x10000 B stat 1 type UB
+[MTE5] [RECV_DATA] 0xffff8626a010 0x10000 B stat 1 type UB
+[V2] [RECV_DATA] 0xffff8626a010 0x10000 B stat 1 type UB
+[FIX] [RECV_DATA] 0xffff8626a010 0x10000 B stat 1 type UB
+[MTE2] -> [ALL] [GET_DATA] 0xffff8625a010 0x10000 B stat 1 type UB
+[S] [RECV_DATA] 0xffff8625a010 0x10000 B stat 1 type UB
+[V] [RECV_DATA] 0xffff8625a010 0x10000 B stat 1 type UB
+[M] [RECV_DATA] 0xffff8625a010 0x10000 B stat 1 type UB
+[MTE1] [RECV_DATA] 0xffff8625a010 0x10000 B stat 1 type UB
+[MTE3] [RECV_DATA] 0xffff8625a010 0x10000 B stat 1 type UB
+[MTE4] [RECV_DATA] 0xffff8625a010 0x10000 B stat 1 type UB
+[MTE5] [RECV_DATA] 0xffff8625a010 0x10000 B stat 1 type UB
+[V2] [RECV_DATA] 0xffff8625a010 0x10000 B stat 1 type UB
+[FIX] [RECV_DATA] 0xffff8625a010 0x10000 B stat 1 type UB
+[MTE3] -> [ALL] [GET_DATA] 0xffff8738f000 0x5a000 B stat 1 type GM
+[S] [RECV_DATA] 0xffff8738f000 0x5a000 B stat 1 type GM
+[V] [RECV_DATA] 0xffff8738f000 0x5a000 B stat 1 type GM
+[M] [RECV_DATA] 0xffff8738f000 0x5a000 B stat 1 type GM
+[MTE1] [RECV_DATA] 0xffff8738f000 0x5a000 B stat 1 type GM
+[MTE2] [RECV_DATA] 0xffff8738f000 0x5a000 B stat 1 type GM
+[MTE4] [RECV_DATA] 0xffff8738f000 0x5a000 B stat 1 type GM
+[MTE5] [RECV_DATA] 0xffff8738f000 0x5a000 B stat 1 type GM
+[V2] [RECV_DATA] 0xffff8738f000 0x5a000 B stat 1 type GM
+[FIX] [RECV_DATA] 0xffff8738f000 0x5a000 B stat 1 type GM
+[S] [STAT] Recv 26 PC 26
+[V] [STAT] Recv 85 PC 85
+[M] [STAT] Recv 0 PC 0
+[MTE1] [STAT] Recv 0 PC 0
+[MTE2] [STAT] Recv 36 PC 36
+[MTE3] [STAT] Recv 36 PC 36
+[ALL] [STAT] Recv 0 PC 0
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x20000, Rate: 50%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MTE4] [STAT] Recv 0 PC 0
+[MTE5] [STAT] Recv 0 PC 0
+[V2] [STAT] Recv 0 PC 0
+[FIX] [STAT] Recv 0 PC 0
+[Executor] [STAT] codes 184

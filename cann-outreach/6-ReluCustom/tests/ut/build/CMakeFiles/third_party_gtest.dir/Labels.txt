@@ -1,0 +1,13 @@
+# Target labels
+ third_party_gtest
+# Source files and their labels
+/workspace/code/tests/ut/build/CMakeFiles/third_party_gtest
+/workspace/code/tests/ut/build/CMakeFiles/third_party_gtest.rule
+/workspace/code/tests/ut/build/CMakeFiles/third_party_gtest-complete.rule
+/workspace/code/tests/ut/build/third_party_gtest-prefix/src/third_party_gtest-stamp/third_party_gtest-build.rule
+/workspace/code/tests/ut/build/third_party_gtest-prefix/src/third_party_gtest-stamp/third_party_gtest-configure.rule
+/workspace/code/tests/ut/build/third_party_gtest-prefix/src/third_party_gtest-stamp/third_party_gtest-download.rule
+/workspace/code/tests/ut/build/third_party_gtest-prefix/src/third_party_gtest-stamp/third_party_gtest-install.rule
+/workspace/code/tests/ut/build/third_party_gtest-prefix/src/third_party_gtest-stamp/third_party_gtest-mkdir.rule
+/workspace/code/tests/ut/build/third_party_gtest-prefix/src/third_party_gtest-stamp/third_party_gtest-patch.rule
+/workspace/code/tests/ut/build/third_party_gtest-prefix/src/third_party_gtest-stamp/third_party_gtest-update.rule

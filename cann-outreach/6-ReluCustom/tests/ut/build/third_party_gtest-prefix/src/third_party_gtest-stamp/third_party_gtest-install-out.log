@@ -1,0 +1,70 @@
+Consolidate compiler generated dependencies of target gtest
+[ 25%] Built target gtest
+Consolidate compiler generated dependencies of target gtest_main
+Consolidate compiler generated dependencies of target gmock
+[ 50%] Built target gtest_main
+[ 75%] Built target gmock
+Consolidate compiler generated dependencies of target gmock_main
+[100%] Built target gmock_main
+Install the project...
+-- Install configuration: ""
+-- Up-to-date: /workspace/code/tests/ut/build/3rd_party/gtest/include
+-- Installing: /workspace/code/tests/ut/build/3rd_party/gtest/include/gmock
+-- Installing: /workspace/code/tests/ut/build/3rd_party/gtest/include/gmock/gmock-actions.h
+-- Installing: /workspace/code/tests/ut/build/3rd_party/gtest/include/gmock/gmock-cardinalities.h
+-- Installing: /workspace/code/tests/ut/build/3rd_party/gtest/include/gmock/gmock-function-mocker.h
+-- Installing: /workspace/code/tests/ut/build/3rd_party/gtest/include/gmock/gmock-matchers.h
+-- Installing: /workspace/code/tests/ut/build/3rd_party/gtest/include/gmock/gmock-more-actions.h
+-- Installing: /workspace/code/tests/ut/build/3rd_party/gtest/include/gmock/gmock-more-matchers.h
+-- Installing: /workspace/code/tests/ut/build/3rd_party/gtest/include/gmock/gmock-nice-strict.h
+-- Installing: /workspace/code/tests/ut/build/3rd_party/gtest/include/gmock/gmock-spec-builders.h
+-- Installing: /workspace/code/tests/ut/build/3rd_party/gtest/include/gmock/gmock.h
+-- Installing: /workspace/code/tests/ut/build/3rd_party/gtest/include/gmock/internal
+-- Installing: /workspace/code/tests/ut/build/3rd_party/gtest/include/gmock/internal/custom
+-- Installing: /workspace/code/tests/ut/build/3rd_party/gtest/include/gmock/internal/custom/README.md
+-- Installing: /workspace/code/tests/ut/build/3rd_party/gtest/include/gmock/internal/custom/gmock-generated-actions.h
+-- Installing: /workspace/code/tests/ut/build/3rd_party/gtest/include/gmock/internal/custom/gmock-matchers.h
+-- Installing: /workspace/code/tests/ut/build/3rd_party/gtest/include/gmock/internal/custom/gmock-port.h
+-- Installing: /workspace/code/tests/ut/build/3rd_party/gtest/include/gmock/internal/gmock-internal-utils.h
+-- Installing: /workspace/code/tests/ut/build/3rd_party/gtest/include/gmock/internal/gmock-port.h
+-- Installing: /workspace/code/tests/ut/build/3rd_party/gtest/include/gmock/internal/gmock-pp.h
+-- Installing: /workspace/code/tests/ut/build/3rd_party/gtest/lib/libgmock.a
+-- Installing: /workspace/code/tests/ut/build/3rd_party/gtest/lib/libgmock_main.a
+-- Installing: /workspace/code/tests/ut/build/3rd_party/gtest/lib/pkgconfig/gmock.pc
+-- Installing: /workspace/code/tests/ut/build/3rd_party/gtest/lib/pkgconfig/gmock_main.pc
+-- Installing: /workspace/code/tests/ut/build/3rd_party/gtest/lib/cmake/GTest/GTestTargets.cmake
+-- Installing: /workspace/code/tests/ut/build/3rd_party/gtest/lib/cmake/GTest/GTestTargets-noconfig.cmake
+-- Installing: /workspace/code/tests/ut/build/3rd_party/gtest/lib/cmake/GTest/GTestConfigVersion.cmake
+-- Installing: /workspace/code/tests/ut/build/3rd_party/gtest/lib/cmake/GTest/GTestConfig.cmake
+-- Up-to-date: /workspace/code/tests/ut/build/3rd_party/gtest/include
+-- Installing: /workspace/code/tests/ut/build/3rd_party/gtest/include/gtest
+-- Installing: /workspace/code/tests/ut/build/3rd_party/gtest/include/gtest/gtest-assertion-result.h
+-- Installing: /workspace/code/tests/ut/build/3rd_party/gtest/include/gtest/gtest-death-test.h
+-- Installing: /workspace/code/tests/ut/build/3rd_party/gtest/include/gtest/gtest-matchers.h
+-- Installing: /workspace/code/tests/ut/build/3rd_party/gtest/include/gtest/gtest-message.h
+-- Installing: /workspace/code/tests/ut/build/3rd_party/gtest/include/gtest/gtest-param-test.h
+-- Installing: /workspace/code/tests/ut/build/3rd_party/gtest/include/gtest/gtest-printers.h
+-- Installing: /workspace/code/tests/ut/build/3rd_party/gtest/include/gtest/gtest-spi.h
+-- Installing: /workspace/code/tests/ut/build/3rd_party/gtest/include/gtest/gtest-test-part.h
+-- Installing: /workspace/code/tests/ut/build/3rd_party/gtest/include/gtest/gtest-typed-test.h
+-- Installing: /workspace/code/tests/ut/build/3rd_party/gtest/include/gtest/gtest.h
+-- Installing: /workspace/code/tests/ut/build/3rd_party/gtest/include/gtest/gtest_pred_impl.h
+-- Installing: /workspace/code/tests/ut/build/3rd_party/gtest/include/gtest/gtest_prod.h
+-- Installing: /workspace/code/tests/ut/build/3rd_party/gtest/include/gtest/internal
+-- Installing: /workspace/code/tests/ut/build/3rd_party/gtest/include/gtest/internal/custom
+-- Installing: /workspace/code/tests/ut/build/3rd_party/gtest/include/gtest/internal/custom/README.md
+-- Installing: /workspace/code/tests/ut/build/3rd_party/gtest/include/gtest/internal/custom/gtest-port.h
+-- Installing: /workspace/code/tests/ut/build/3rd_party/gtest/include/gtest/internal/custom/gtest-printers.h
+-- Installing: /workspace/code/tests/ut/build/3rd_party/gtest/include/gtest/internal/custom/gtest.h
+-- Installing: /workspace/code/tests/ut/build/3rd_party/gtest/include/gtest/internal/gtest-death-test-internal.h
+-- Installing: /workspace/code/tests/ut/build/3rd_party/gtest/include/gtest/internal/gtest-filepath.h
+-- Installing: /workspace/code/tests/ut/build/3rd_party/gtest/include/gtest/internal/gtest-internal.h
+-- Installing: /workspace/code/tests/ut/build/3rd_party/gtest/include/gtest/internal/gtest-param-util.h
+-- Installing: /workspace/code/tests/ut/build/3rd_party/gtest/include/gtest/internal/gtest-port-arch.h
+-- Installing: /workspace/code/tests/ut/build/3rd_party/gtest/include/gtest/internal/gtest-port.h
+-- Installing: /workspace/code/tests/ut/build/3rd_party/gtest/include/gtest/internal/gtest-string.h
+-- Installing: /workspace/code/tests/ut/build/3rd_party/gtest/include/gtest/internal/gtest-type-util.h
+-- Installing: /workspace/code/tests/ut/build/3rd_party/gtest/lib/libgtest.a
+-- Installing: /workspace/code/tests/ut/build/3rd_party/gtest/lib/libgtest_main.a
+-- Installing: /workspace/code/tests/ut/build/3rd_party/gtest/lib/pkgconfig/gtest.pc
+-- Installing: /workspace/code/tests/ut/build/3rd_party/gtest/lib/pkgconfig/gtest_main.pc
