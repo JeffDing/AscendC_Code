@@ -1,0 +1,1056 @@
+
+### set_ffts_base_addr((uint64_t)139991676327584);
+
+[set_ffts_base_addr] unsupported
+[S] [RECV_INST] set_ffts_base_addr type 7
+[S] [EXECUTE] set_ffts_base_addr type 7
+
+### set_mask_norm();
+
+[set_mask_norm] unsupported
+[S] [RECV_INST] set_mask_norm type 7
+[S] [EXECUTE] set_mask_norm type 7
+
+### set_vector_mask((uint64_t)18446744073709551615, (uint64_t)18446744073709551615);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+[ALL] [TBUF_EVENT] ABS_ADDR 0x7f525a207010 0x30000 B type L1
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[ALL] [TBUF_EVENT] ABS_ADDR 0x7f5258779010 0x80000 B type L0A
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[ALL] [TBUF_EVENT] ABS_ADDR 0x558f255eb6c0 0x10000 B type L1
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[ALL] [TBUF_EVENT] ABS_ADDR 0x558f255fb6d0 0x10000 B type L0B
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[ALL] [TBUF_EVENT] ABS_ADDR 0x7f525a1e6010 0x20000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[ALL] [TBUF_EVENT] ABS_ADDR 0x558f2509dee0 0x400 B type L0C
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[ALL] [TBUF_EVENT] ABS_ADDR 0x558f255c38d0 0x1c00 B type L0C
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[ALL] [TBUF_EVENT] INIT 0x7f525a207010 0x10000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x10000, Rate: 25%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][InitMemRecord]add addr: 139991676121104len: 65536
+[ALL] [TBUF_EVENT] INIT 0x7f525a217010 0x10000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x20000, Rate: 50%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][InitMemRecord]add addr: 139991676186640len: 65536
+[ALL] [TBUF_EVENT] ALLOC 0x7f525a207010 0x10000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x10000, Rate: 25%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x20000, Rate: 50%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 139991676121104len: 65536
+
+### copy_gm_to_ubuf_align_b32((__ubuf__ void*)0x7f525a207010, (__gm__ void*)0x7f525a251000, (uint8_t)0, (uint16_t)1, (uint32_t)65536, (uint8_t)0, (uint8_t)0, (uint32_t)0, (uint32_t)0);
+
+[MTE2] [RECV_INST] copy_gm_to_ubuf_align_b32 type 0
+[MTE2] [EXECUTE] copy_gm_to_ubuf_align_b32 type 0
+[MTE2] read  data 0x7f525a251000 0 B type GM
+[MTE2] [DATA_MARK] 0x7f525a251000 0 B type GM mark read
+[MTE2] write data 0x7f525a207010 0 B type UB
+[MTE2] checking pending queue
+[MTE2] [CHECK_DATA] 0x7f525a207010 0 B type UB
+[MTE2] checking wrote queue
+[MTE2] [CHECK_DATA] 0x7f525a207010 0 B type UB
+[MTE2] [CHECK_TBUF] 0x7f525a207010 0 B type UB
+[MTE2] allocation buffer match result 0
+
+### set_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)0);
+
+[MTE2] [RECV_INST] set_flag type 3
+[MTE2] [EXECUTE] set_flag type 3
+[MTE2] [SYNC_DATA] 0x7f525a207010 0 B type UB
+[MTE2] [send event] on set_flag 4 1 0
+[MTE2] -> [V] [GET_DATA] 0x7f525a207010 0 B stat 1 type UB
+[V] [RECV_EVENT] SRC MTE2 DST V EVENT 0
+[V] [RECV_DATA] 0x7f525a207010 0 B stat 1 type UB
+[MEMCHEK] Mem[139991676121104]checkNum is 0
+[Buffer Check] [ErrorBuffer2] VecIn Operation inconsistent with the paradigm:ALLOC--ENQUE-- ALLOC--DATACOPY--ENQUE--DEQUE--OPVEC--FREE--
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xce) [0x7f525b7bc917]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0xa5) [0x7f525b7bceb2]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk13BlockMemCheck10CheckVecInERKSt6vectorINS_11QueOperatorESaIS2_EE+0x1ff) [0x7f525b7b9963]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZNSt17_Function_handlerIFbRKSt6vectorIN6npuchk11QueOperatorESaIS2_EEEPS7_E9_M_invokeERKSt9_Any_dataS6_+0x31) [0x7f525b7baefb]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZNKSt8functionIFbRKSt6vectorIN6npuchk11QueOperatorESaIS2_EEEEclES6_+0x49) [0x7f525b7ba9fb]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk13BlockMemCheck15BlockMemOpCheckENS_11QueOperatorE+0x1b1) [0x7f525b7b9527]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk15MemCheckManager12AddMemRecordEmhhjNS_11QueOperatorE+0x48f) [0x7f525b7ab699]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk15AscendCBufEnqueEhhhm+0x55) [0x7f525b7926b1]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z15AscendCBufEnquehhhm+0x67) [0x7f525b644cfc]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x5377e) [0x558ef27a777e]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x4efbd) [0x558ef27a2fbd]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x49d30) [0x558ef279dd30]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x4380e) [0x558ef279780e]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x3dc34) [0x558ef2791c34]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x3e461) [0x558ef2792461]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x301ae) [0x558ef27841ae]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x987af) [0x558ef27ec7af]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x87596) [0x558ef27db596]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x87795) [0x558ef27db795]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x8a169) [0x558ef27de169]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x8d91f) [0x558ef27e191f]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x98d77) [0x558ef27ecd77]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x8784b) [0x558ef27db84b]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x2f952) [0x558ef2783952]
+  /lib/x86_64-linux-gnu/libc.so.6(+0x29d90) [0x7f525a3ced90]
+  /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x80) [0x7f525a3cee40]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x2fe05) [0x558ef2783e05]
+
+
+### wait_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)0);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 4 1 0
+[MTE2] [EVENT_CLEAR] send 4 1 0 has been waited
+[MEMCHEK] Mem[139991676121104]checkNum is 0
+[Buffer Check] [ErrorBuffer2] VecIn Operation inconsistent with the paradigm:ALLOC--ENQUE--DEQUE-- ALLOC--DATACOPY--ENQUE--DEQUE--OPVEC--FREE--
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xce) [0x7f525b7bc917]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0xa5) [0x7f525b7bceb2]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk13BlockMemCheck10CheckVecInERKSt6vectorINS_11QueOperatorESaIS2_EE+0x1ff) [0x7f525b7b9963]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZNSt17_Function_handlerIFbRKSt6vectorIN6npuchk11QueOperatorESaIS2_EEEPS7_E9_M_invokeERKSt9_Any_dataS6_+0x31) [0x7f525b7baefb]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZNKSt8functionIFbRKSt6vectorIN6npuchk11QueOperatorESaIS2_EEEEclES6_+0x49) [0x7f525b7ba9fb]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk13BlockMemCheck15BlockMemOpCheckENS_11QueOperatorE+0x1b1) [0x7f525b7b9527]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk15MemCheckManager12AddMemRecordEmhhjNS_11QueOperatorE+0x48f) [0x7f525b7ab699]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk15AscendCBufDequeEhhhm+0x55) [0x7f525b792710]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z15AscendCBufDequehhhm+0x67) [0x7f525b644d6c]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x53b54) [0x558ef27a7b54]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x4efef) [0x558ef27a2fef]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x49dc9) [0x558ef279ddc9]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x43821) [0x558ef2797821]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x3dc34) [0x558ef2791c34]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x3e461) [0x558ef2792461]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x301ae) [0x558ef27841ae]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x987af) [0x558ef27ec7af]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x87596) [0x558ef27db596]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x87795) [0x558ef27db795]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x8a169) [0x558ef27de169]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x8d91f) [0x558ef27e191f]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x98d77) [0x558ef27ecd77]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x8784b) [0x558ef27db84b]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x2f952) [0x558ef2783952]
+  /lib/x86_64-linux-gnu/libc.so.6(+0x29d90) [0x7f525a3ced90]
+  /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x80) [0x7f525a3cee40]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x2fe05) [0x558ef2783e05]
+
+[ALL] [TBUF_EVENT] ALLOC 0x7f525a217010 0x10000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x20000, Rate: 50%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x20000, Rate: 50%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 139991676186640len: 65536
+[ALL] [TBUF_EVENT] PERSISTENT 0x7f525a227010 0xff80 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x2ff80, Rate: 74.9512%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x20000, Rate: 50%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][InitMemRecord]add addr: 139991676252176len: 65408
+[ALL] [TBUF_EVENT] PERSISTENT 0x7f525a236f90 0x40 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x2ffc0, Rate: 74.9756%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x20000, Rate: 50%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][InitMemRecord]add addr: 139991676317584len: 64
+
+### set_mask_count();
+
+[set_mask_count] unsupported
+[S] [RECV_INST] set_mask_count type 7
+[S] [EXECUTE] set_mask_count type 7
+
+### set_vector_mask((uint64_t)0, (uint64_t)16352);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### pipe_barrier((pipe_t)PIPE_V);
+
+[V] [RECV_INST] pipe_barrier type 5
+[V] [EXECUTE] pipe_barrier type 5
+
+### vmuls((__ubuf__ float*)0x7f525a217010, (__ubuf__ float*)0x7f525a207010, (float)-1, (uint8_t)1, (uint16_t)1, (uint16_t)1, (uint16_t)8, (uint16_t)8);
+
+[V] [RECV_INST] vmuls type 1
+[V] [EXECUTE] vmuls type 1
+[MEMCHEK] Mem[139991676121104]checkNum is 0
+[Buffer Check] [ErrorBuffer2] VecIn Operation inconsistent with the paradigm:ALLOC--ENQUE--DEQUE--OPVEC-- ALLOC--DATACOPY--ENQUE--DEQUE--OPVEC--FREE--
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xce) [0x7f525b7bc917]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0xa5) [0x7f525b7bceb2]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk13BlockMemCheck10CheckVecInERKSt6vectorINS_11QueOperatorESaIS2_EE+0x1ff) [0x7f525b7b9963]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZNSt17_Function_handlerIFbRKSt6vectorIN6npuchk11QueOperatorESaIS2_EEEPS7_E9_M_invokeERKSt9_Any_dataS6_+0x31) [0x7f525b7baefb]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZNKSt8functionIFbRKSt6vectorIN6npuchk11QueOperatorESaIS2_EEEEclES6_+0x49) [0x7f525b7ba9fb]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk13BlockMemCheck15BlockMemOpCheckENS_11QueOperatorE+0x1b1) [0x7f525b7b9527]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk15MemCheckManager12AddMemRecordEmhhjNS_11QueOperatorE+0x48f) [0x7f525b7ab699]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x4d4) [0x7f525b7985ca]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1b7) [0x7f525b792b4d]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x172) [0x7f525b7a3bfc]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk5vmulsEPfS0_fhtttt+0x4bb) [0x7f525b8b3a16]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z5vmulsPfS_fhtttt+0xa5) [0x7f525b633681]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x46fb0) [0x558ef279afb0]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x41c08) [0x558ef2795c08]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x3c1de) [0x558ef27901de]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x5e98a) [0x558ef27b298a]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x5c0b1) [0x558ef27b00b1]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x5928e) [0x558ef27ad28e]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x541ae) [0x558ef27a81ae]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x4f0b7) [0x558ef27a30b7]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x49e0b) [0x558ef279de0b]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x43821) [0x558ef2797821]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x3dc34) [0x558ef2791c34]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x3e461) [0x558ef2792461]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x301ae) [0x558ef27841ae]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x987af) [0x558ef27ec7af]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x87596) [0x558ef27db596]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x87795) [0x558ef27db795]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x8a169) [0x558ef27de169]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x8d91f) [0x558ef27e191f]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x98d77) [0x558ef27ecd77]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x8784b) [0x558ef27db84b]
+
+[MEMCHEK] Mem[139991676186640]checkNum is 0
+DataMergeAllOnceAll dataLen: 65408
+[V] [ErrorRead4] on read 0 0xff80 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xce) [0x7f525b7bc917]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0xa5) [0x7f525b7bceb2]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x257) [0x7f525b795ab7]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x554) [0x7f525b79864a]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1b7) [0x7f525b792b4d]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x172) [0x7f525b7a3bfc]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk5vmulsEPfS0_fhtttt+0x4bb) [0x7f525b8b3a16]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z5vmulsPfS_fhtttt+0xa5) [0x7f525b633681]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x46fb0) [0x558ef279afb0]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x41c08) [0x558ef2795c08]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x3c1de) [0x558ef27901de]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x5e98a) [0x558ef27b298a]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x5c0b1) [0x558ef27b00b1]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x5928e) [0x558ef27ad28e]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x541ae) [0x558ef27a81ae]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x4f0b7) [0x558ef27a30b7]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x49e0b) [0x558ef279de0b]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x43821) [0x558ef2797821]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x3dc34) [0x558ef2791c34]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x3e461) [0x558ef2792461]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x301ae) [0x558ef27841ae]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x987af) [0x558ef27ec7af]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x87596) [0x558ef27db596]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x87795) [0x558ef27db795]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x8a169) [0x558ef27de169]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x8d91f) [0x558ef27e191f]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x98d77) [0x558ef27ecd77]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x8784b) [0x558ef27db84b]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x2f952) [0x558ef2783952]
+  /lib/x86_64-linux-gnu/libc.so.6(+0x29d90) [0x7f525a3ced90]
+  /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x80) [0x7f525a3cee40]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x2fe05) [0x558ef2783e05]
+
+[V] read  data 0 0xff80 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0 0xff80 B type UB
+[V] [ErrorRead2] on read 0 0xff80 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xce) [0x7f525b7bc917]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0xa5) [0x7f525b7bceb2]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x57c) [0x7f525b795ddc]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x554) [0x7f525b79864a]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1b7) [0x7f525b792b4d]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x172) [0x7f525b7a3bfc]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk5vmulsEPfS0_fhtttt+0x4bb) [0x7f525b8b3a16]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z5vmulsPfS_fhtttt+0xa5) [0x7f525b633681]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x46fb0) [0x558ef279afb0]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x41c08) [0x558ef2795c08]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x3c1de) [0x558ef27901de]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x5e98a) [0x558ef27b298a]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x5c0b1) [0x558ef27b00b1]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x5928e) [0x558ef27ad28e]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x541ae) [0x558ef27a81ae]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x4f0b7) [0x558ef27a30b7]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x49e0b) [0x558ef279de0b]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x43821) [0x558ef2797821]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x3dc34) [0x558ef2791c34]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x3e461) [0x558ef2792461]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x301ae) [0x558ef27841ae]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x987af) [0x558ef27ec7af]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x87596) [0x558ef27db596]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x87795) [0x558ef27db795]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x8a169) [0x558ef27de169]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x8d91f) [0x558ef27e191f]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x98d77) [0x558ef27ecd77]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x8784b) [0x558ef27db84b]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x2f952) [0x558ef2783952]
+  /lib/x86_64-linux-gnu/libc.so.6(+0x29d90) [0x7f525a3ced90]
+  /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x80) [0x7f525a3cee40]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x2fe05) [0x558ef2783e05]
+
+[V] checking pending queue
+[V] [CHECK_DATA] 0 0xff80 B type UB
+[V] [CHECK_TBUF] 0 0xff80 B type UB
+[V] allocation buffer match result 2
+[V] persistent buffer match result 2
+[V] [ErrorRead1] on read 0 0xff80 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xce) [0x7f525b7bc917]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0xa5) [0x7f525b7bceb2]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x96a) [0x7f525b7961ca]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x554) [0x7f525b79864a]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1b7) [0x7f525b792b4d]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x172) [0x7f525b7a3bfc]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk5vmulsEPfS0_fhtttt+0x4bb) [0x7f525b8b3a16]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z5vmulsPfS_fhtttt+0xa5) [0x7f525b633681]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x46fb0) [0x558ef279afb0]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x41c08) [0x558ef2795c08]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x3c1de) [0x558ef27901de]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x5e98a) [0x558ef27b298a]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x5c0b1) [0x558ef27b00b1]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x5928e) [0x558ef27ad28e]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x541ae) [0x558ef27a81ae]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x4f0b7) [0x558ef27a30b7]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x49e0b) [0x558ef279de0b]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x43821) [0x558ef2797821]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x3dc34) [0x558ef2791c34]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x3e461) [0x558ef2792461]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x301ae) [0x558ef27841ae]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x987af) [0x558ef27ec7af]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x87596) [0x558ef27db596]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x87795) [0x558ef27db795]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x8a169) [0x558ef27de169]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x8d91f) [0x558ef27e191f]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x98d77) [0x558ef27ecd77]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x8784b) [0x558ef27db84b]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x2f952) [0x558ef2783952]
+  /lib/x86_64-linux-gnu/libc.so.6(+0x29d90) [0x7f525a3ced90]
+  /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x80) [0x7f525a3cee40]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x2fe05) [0x558ef2783e05]
+
+[V] read  data 0x7f525a207010 0xff80 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0x7f525a207010 0xff80 B type UB
+[V] [ErrorRead2] on read 0x7f525a207010 0xff80 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xce) [0x7f525b7bc917]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0xa5) [0x7f525b7bceb2]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x57c) [0x7f525b795ddc]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x554) [0x7f525b79864a]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1b7) [0x7f525b792b4d]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x172) [0x7f525b7a3bfc]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk5vmulsEPfS0_fhtttt+0x4bb) [0x7f525b8b3a16]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z5vmulsPfS_fhtttt+0xa5) [0x7f525b633681]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x46fb0) [0x558ef279afb0]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x41c08) [0x558ef2795c08]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x3c1de) [0x558ef27901de]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x5e98a) [0x558ef27b298a]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x5c0b1) [0x558ef27b00b1]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x5928e) [0x558ef27ad28e]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x541ae) [0x558ef27a81ae]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x4f0b7) [0x558ef27a30b7]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x49e0b) [0x558ef279de0b]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x43821) [0x558ef2797821]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x3dc34) [0x558ef2791c34]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x3e461) [0x558ef2792461]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x301ae) [0x558ef27841ae]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x987af) [0x558ef27ec7af]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x87596) [0x558ef27db596]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x87795) [0x558ef27db795]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x8a169) [0x558ef27de169]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x8d91f) [0x558ef27e191f]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x98d77) [0x558ef27ecd77]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x8784b) [0x558ef27db84b]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x2f952) [0x558ef2783952]
+  /lib/x86_64-linux-gnu/libc.so.6(+0x29d90) [0x7f525a3ced90]
+  /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x80) [0x7f525a3cee40]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x2fe05) [0x558ef2783e05]
+
+[V] checking pending queue
+[V] [CHECK_DATA] 0x7f525a207010 0xff80 B type UB
+[V] [CHECK_TBUF] 0x7f525a207010 0xff80 B type UB
+[V] allocation buffer match result 0
+[V] write data 0x7f525a217010 0xff80 B type UB
+[V] checking pending queue
+[V] [CHECK_DATA] 0x7f525a217010 0xff80 B type UB
+[V] checking wrote queue
+[V] [CHECK_DATA] 0x7f525a217010 0xff80 B type UB
+[V] [CHECK_TBUF] 0x7f525a217010 0xff80 B type UB
+[V] allocation buffer match result 0
+
+### pipe_barrier((pipe_t)PIPE_V);
+
+[V] [RECV_INST] pipe_barrier type 5
+[V] [EXECUTE] pipe_barrier type 5
+[V] [SYNC_DATA] 0x7f525a217010 0xff80 B type UB
+
+### vexp((__ubuf__ float*)0x7f525a217010, (__ubuf__ float*)0x7f525a217010, (uint8_t)1, (uint16_t)1, (uint16_t)1, (uint8_t)8, (uint8_t)8);
+
+[V] [RECV_INST] vexp type 1
+[V] [EXECUTE] vexp type 1
+[MEMCHEK] Mem[139991676186640]checkNum is 0
+[MEMCHEK] Mem[139991676186640]checkNum is 0
+[V] read  data 0x7f525a217010 0x40 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0x7f525a217010 0x40 B type UB
+[V] data matched whole 0x7f525a217010 0xff80 stat 2
+[V] [DATA_MARK] 0x7f525a217010 0x40 B type UB mark read
+[V] checking pending queue
+[V] [CHECK_DATA] 0x7f525a217010 0x40 B type UB
+[V] [CHECK_TBUF] 0x7f525a217010 0x40 B type UB
+[V] allocation buffer match result 0
+
+### pipe_barrier((pipe_t)PIPE_V);
+
+[V] [RECV_INST] pipe_barrier type 5
+[V] [EXECUTE] pipe_barrier type 5
+[V] [SYNC_DATA] 0x7f525a217010 0x40 B type UB
+
+### vadds((__ubuf__ float*)0x7f525a217010, (__ubuf__ float*)0x7f525a217010, (float)1, (uint8_t)1, (uint16_t)1, (uint16_t)1, (uint16_t)8, (uint16_t)8);
+
+[V] [RECV_INST] vadds type 1
+[V] [EXECUTE] vadds type 1
+[MEMCHEK] Mem[139991676186640]checkNum is 0
+[MEMCHEK] Mem[139991676186640]checkNum is 0
+[V] read  data 0x7f525a217010 0x40 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0x7f525a217010 0x40 B type UB
+[V] data matched whole 0x7f525a217010 0xff80 stat 1
+[V] [DATA_MARK] 0x7f525a217010 0x40 B type UB mark read
+[V] checking pending queue
+[V] [CHECK_DATA] 0x7f525a217010 0x40 B type UB
+[V] [CHECK_TBUF] 0x7f525a217010 0x40 B type UB
+[V] allocation buffer match result 0
+
+### vector_dup((__ubuf__ float*)0x7f525a227010, (float)1, (uint8_t)1, (uint16_t)1, (uint16_t)1, (uint8_t)8, (uint8_t)0);
+
+[V] [RECV_INST] vector_dup type 1
+[V] [EXECUTE] vector_dup type 1
+[MEMCHEK] Mem[139991676252176]checkNum is 0
+[V] write data 0x7f525a227010 0x40 B type UB
+[V] checking pending queue
+[V] [CHECK_DATA] 0x7f525a227010 0x40 B type UB
+[V] checking wrote queue
+[V] [CHECK_DATA] 0x7f525a227010 0x40 B type UB
+[V] [CHECK_TBUF] 0x7f525a227010 0x40 B type UB
+[V] allocation buffer match result 2
+[V] persistent buffer match result 0
+
+### pipe_barrier((pipe_t)PIPE_V);
+
+[V] [RECV_INST] pipe_barrier type 5
+[V] [EXECUTE] pipe_barrier type 5
+[V] [SYNC_DATA] 0x7f525a217010 0x40 B type UB
+[V] [SYNC_DATA] 0x7f525a227010 0x40 B type UB
+
+### vdiv((__ubuf__ float*)0x7f525a217010, (__ubuf__ float*)0x7f525a227010, (__ubuf__ float*)0x7f525a217010, (uint8_t)1, (uint8_t)1, (uint8_t)1, (uint8_t)1, (uint8_t)8, (uint8_t)8, (uint8_t)8);
+
+[V] [RECV_INST] vdiv type 1
+[V] [EXECUTE] vdiv type 1
+[MEMCHEK] Mem[139991676252176]checkNum is 0
+[MEMCHEK] Mem[139991676186640]checkNum is 0
+[MEMCHEK] Mem[139991676186640]checkNum is 0
+[V] read  data 0x7f525a217010 0x40 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0x7f525a217010 0x40 B type UB
+[V] data matched whole 0x7f525a217010 0xff80 stat 1
+[V] [DATA_MARK] 0x7f525a217010 0x40 B type UB mark read
+[V] checking pending queue
+[V] [CHECK_DATA] 0x7f525a217010 0x40 B type UB
+[V] [CHECK_TBUF] 0x7f525a217010 0x40 B type UB
+[V] allocation buffer match result 0
+[V] read  data 0x7f525a227010 0x40 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0x7f525a227010 0x40 B type UB
+[V] data matched whole 0x7f525a227010 0x40 stat 2
+[V] [DATA_MARK] 0x7f525a227010 0x40 B type UB mark read
+[V] checking pending queue
+[V] [CHECK_DATA] 0x7f525a227010 0x40 B type UB
+[V] [CHECK_TBUF] 0x7f525a227010 0x40 B type UB
+[V] allocation buffer match result 2
+[V] persistent buffer match result 0
+
+### pipe_barrier((pipe_t)PIPE_V);
+
+[V] [RECV_INST] pipe_barrier type 5
+[V] [EXECUTE] pipe_barrier type 5
+[V] [SYNC_DATA] 0x7f525a217010 0x40 B type UB
+
+### set_vector_mask((uint64_t)0, (uint64_t)32);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### pipe_barrier((pipe_t)PIPE_V);
+
+[V] [RECV_INST] pipe_barrier type 5
+[V] [EXECUTE] pipe_barrier type 5
+
+### vmuls((__ubuf__ float*)0x7f525a226f90, (__ubuf__ float*)0x7f525a216f90, (float)-1, (uint8_t)1, (uint16_t)1, (uint16_t)1, (uint16_t)8, (uint16_t)8);
+
+[V] [RECV_INST] vmuls type 1
+[V] [EXECUTE] vmuls type 1
+[MEMCHEK] Mem[139991676186512]checkNum is 0
+[Buffer Check] [ErrorBuffer2] VecIn Operation inconsistent with the paradigm:ALLOC--ENQUE--DEQUE--OPVEC-- ALLOC--DATACOPY--ENQUE--DEQUE--OPVEC--FREE--
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xce) [0x7f525b7bc917]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0xa5) [0x7f525b7bceb2]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk13BlockMemCheck10CheckVecInERKSt6vectorINS_11QueOperatorESaIS2_EE+0x1ff) [0x7f525b7b9963]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZNSt17_Function_handlerIFbRKSt6vectorIN6npuchk11QueOperatorESaIS2_EEEPS7_E9_M_invokeERKSt9_Any_dataS6_+0x31) [0x7f525b7baefb]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZNKSt8functionIFbRKSt6vectorIN6npuchk11QueOperatorESaIS2_EEEEclES6_+0x49) [0x7f525b7ba9fb]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk13BlockMemCheck15BlockMemOpCheckENS_11QueOperatorE+0x1b1) [0x7f525b7b9527]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk15MemCheckManager12AddMemRecordEmhhjNS_11QueOperatorE+0x48f) [0x7f525b7ab699]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x4d4) [0x7f525b7985ca]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1b7) [0x7f525b792b4d]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x172) [0x7f525b7a3bfc]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk5vmulsEPfS0_fhtttt+0x4bb) [0x7f525b8b3a16]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z5vmulsPfS_fhtttt+0xa5) [0x7f525b633681]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x46fb0) [0x558ef279afb0]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x41c08) [0x558ef2795c08]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x3c1de) [0x558ef27901de]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x5e98a) [0x558ef27b298a]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x5c178) [0x558ef27b0178]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x5928e) [0x558ef27ad28e]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x541ae) [0x558ef27a81ae]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x4f0b7) [0x558ef27a30b7]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x49e0b) [0x558ef279de0b]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x43821) [0x558ef2797821]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x3dc34) [0x558ef2791c34]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x3e461) [0x558ef2792461]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x301ae) [0x558ef27841ae]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x987af) [0x558ef27ec7af]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x87596) [0x558ef27db596]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x87795) [0x558ef27db795]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x8a169) [0x558ef27de169]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x8d91f) [0x558ef27e191f]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x98d77) [0x558ef27ecd77]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x8784b) [0x558ef27db84b]
+
+[MEMCHEK] Mem[139991676252048]checkNum is 0
+DataMergeAllOnceAll dataLen: 128
+[V] [ErrorRead4] on read 0 0x80 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xce) [0x7f525b7bc917]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0xa5) [0x7f525b7bceb2]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x257) [0x7f525b795ab7]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x554) [0x7f525b79864a]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1b7) [0x7f525b792b4d]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x172) [0x7f525b7a3bfc]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk5vmulsEPfS0_fhtttt+0x4bb) [0x7f525b8b3a16]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z5vmulsPfS_fhtttt+0xa5) [0x7f525b633681]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x46fb0) [0x558ef279afb0]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x41c08) [0x558ef2795c08]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x3c1de) [0x558ef27901de]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x5e98a) [0x558ef27b298a]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x5c178) [0x558ef27b0178]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x5928e) [0x558ef27ad28e]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x541ae) [0x558ef27a81ae]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x4f0b7) [0x558ef27a30b7]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x49e0b) [0x558ef279de0b]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x43821) [0x558ef2797821]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x3dc34) [0x558ef2791c34]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x3e461) [0x558ef2792461]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x301ae) [0x558ef27841ae]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x987af) [0x558ef27ec7af]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x87596) [0x558ef27db596]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x87795) [0x558ef27db795]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x8a169) [0x558ef27de169]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x8d91f) [0x558ef27e191f]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x98d77) [0x558ef27ecd77]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x8784b) [0x558ef27db84b]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x2f952) [0x558ef2783952]
+  /lib/x86_64-linux-gnu/libc.so.6(+0x29d90) [0x7f525a3ced90]
+  /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x80) [0x7f525a3cee40]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x2fe05) [0x558ef2783e05]
+
+[V] read  data 0 0x80 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0 0x80 B type UB
+[V] [ErrorRead2] on read 0 0x80 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xce) [0x7f525b7bc917]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0xa5) [0x7f525b7bceb2]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x57c) [0x7f525b795ddc]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x554) [0x7f525b79864a]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1b7) [0x7f525b792b4d]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x172) [0x7f525b7a3bfc]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk5vmulsEPfS0_fhtttt+0x4bb) [0x7f525b8b3a16]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z5vmulsPfS_fhtttt+0xa5) [0x7f525b633681]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x46fb0) [0x558ef279afb0]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x41c08) [0x558ef2795c08]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x3c1de) [0x558ef27901de]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x5e98a) [0x558ef27b298a]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x5c178) [0x558ef27b0178]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x5928e) [0x558ef27ad28e]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x541ae) [0x558ef27a81ae]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x4f0b7) [0x558ef27a30b7]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x49e0b) [0x558ef279de0b]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x43821) [0x558ef2797821]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x3dc34) [0x558ef2791c34]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x3e461) [0x558ef2792461]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x301ae) [0x558ef27841ae]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x987af) [0x558ef27ec7af]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x87596) [0x558ef27db596]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x87795) [0x558ef27db795]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x8a169) [0x558ef27de169]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x8d91f) [0x558ef27e191f]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x98d77) [0x558ef27ecd77]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x8784b) [0x558ef27db84b]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x2f952) [0x558ef2783952]
+  /lib/x86_64-linux-gnu/libc.so.6(+0x29d90) [0x7f525a3ced90]
+  /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x80) [0x7f525a3cee40]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x2fe05) [0x558ef2783e05]
+
+[V] checking pending queue
+[V] [CHECK_DATA] 0 0x80 B type UB
+[V] [CHECK_TBUF] 0 0x80 B type UB
+[V] allocation buffer match result 2
+[V] persistent buffer match result 2
+[V] [ErrorRead1] on read 0 0x80 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xce) [0x7f525b7bc917]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0xa5) [0x7f525b7bceb2]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x96a) [0x7f525b7961ca]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x554) [0x7f525b79864a]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1b7) [0x7f525b792b4d]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x172) [0x7f525b7a3bfc]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk5vmulsEPfS0_fhtttt+0x4bb) [0x7f525b8b3a16]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z5vmulsPfS_fhtttt+0xa5) [0x7f525b633681]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x46fb0) [0x558ef279afb0]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x41c08) [0x558ef2795c08]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x3c1de) [0x558ef27901de]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x5e98a) [0x558ef27b298a]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x5c178) [0x558ef27b0178]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x5928e) [0x558ef27ad28e]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x541ae) [0x558ef27a81ae]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x4f0b7) [0x558ef27a30b7]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x49e0b) [0x558ef279de0b]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x43821) [0x558ef2797821]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x3dc34) [0x558ef2791c34]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x3e461) [0x558ef2792461]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x301ae) [0x558ef27841ae]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x987af) [0x558ef27ec7af]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x87596) [0x558ef27db596]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x87795) [0x558ef27db795]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x8a169) [0x558ef27de169]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x8d91f) [0x558ef27e191f]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x98d77) [0x558ef27ecd77]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x8784b) [0x558ef27db84b]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x2f952) [0x558ef2783952]
+  /lib/x86_64-linux-gnu/libc.so.6(+0x29d90) [0x7f525a3ced90]
+  /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x80) [0x7f525a3cee40]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x2fe05) [0x558ef2783e05]
+
+[V] read  data 0x7f525a216f90 0x80 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0x7f525a216f90 0x80 B type UB
+[V] [ErrorRead2] on read 0x7f525a216f90 0x80 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xce) [0x7f525b7bc917]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0xa5) [0x7f525b7bceb2]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x57c) [0x7f525b795ddc]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x554) [0x7f525b79864a]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1b7) [0x7f525b792b4d]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x172) [0x7f525b7a3bfc]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk5vmulsEPfS0_fhtttt+0x4bb) [0x7f525b8b3a16]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z5vmulsPfS_fhtttt+0xa5) [0x7f525b633681]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x46fb0) [0x558ef279afb0]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x41c08) [0x558ef2795c08]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x3c1de) [0x558ef27901de]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x5e98a) [0x558ef27b298a]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x5c178) [0x558ef27b0178]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x5928e) [0x558ef27ad28e]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x541ae) [0x558ef27a81ae]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x4f0b7) [0x558ef27a30b7]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x49e0b) [0x558ef279de0b]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x43821) [0x558ef2797821]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x3dc34) [0x558ef2791c34]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x3e461) [0x558ef2792461]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x301ae) [0x558ef27841ae]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x987af) [0x558ef27ec7af]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x87596) [0x558ef27db596]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x87795) [0x558ef27db795]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x8a169) [0x558ef27de169]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x8d91f) [0x558ef27e191f]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x98d77) [0x558ef27ecd77]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x8784b) [0x558ef27db84b]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x2f952) [0x558ef2783952]
+  /lib/x86_64-linux-gnu/libc.so.6(+0x29d90) [0x7f525a3ced90]
+  /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x80) [0x7f525a3cee40]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x2fe05) [0x558ef2783e05]
+
+[V] checking pending queue
+[V] [CHECK_DATA] 0x7f525a216f90 0x80 B type UB
+[V] [CHECK_TBUF] 0x7f525a216f90 0x80 B type UB
+[V] allocation buffer match result 0
+[V] write data 0x7f525a226f90 0x80 B type UB
+[V] checking pending queue
+[V] [CHECK_DATA] 0x7f525a226f90 0x80 B type UB
+[V] checking wrote queue
+[V] [CHECK_DATA] 0x7f525a226f90 0x80 B type UB
+[V] [CHECK_TBUF] 0x7f525a226f90 0x80 B type UB
+[V] allocation buffer match result 0
+
+### pipe_barrier((pipe_t)PIPE_V);
+
+[V] [RECV_INST] pipe_barrier type 5
+[V] [EXECUTE] pipe_barrier type 5
+[V] [SYNC_DATA] 0x7f525a226f90 0x80 B type UB
+
+### vexp((__ubuf__ float*)0x7f525a226f90, (__ubuf__ float*)0x7f525a226f90, (uint8_t)1, (uint16_t)1, (uint16_t)1, (uint8_t)8, (uint8_t)8);
+
+[V] [RECV_INST] vexp type 1
+[V] [EXECUTE] vexp type 1
+[MEMCHEK] Mem[139991676252048]checkNum is 0
+[MEMCHEK] Mem[139991676252048]checkNum is 0
+[V] read  data 0x7f525a226f90 0x20 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0x7f525a226f90 0x20 B type UB
+[V] data matched whole 0x7f525a217010 0x10000 stat 1
+[V] [DATA_MARK] 0x7f525a226f90 0x20 B type UB mark read
+[V] checking pending queue
+[V] [CHECK_DATA] 0x7f525a226f90 0x20 B type UB
+[V] [CHECK_TBUF] 0x7f525a226f90 0x20 B type UB
+[V] allocation buffer match result 0
+
+### pipe_barrier((pipe_t)PIPE_V);
+
+[V] [RECV_INST] pipe_barrier type 5
+[V] [EXECUTE] pipe_barrier type 5
+[V] [SYNC_DATA] 0x7f525a226f90 0x20 B type UB
+
+### vadds((__ubuf__ float*)0x7f525a226f90, (__ubuf__ float*)0x7f525a226f90, (float)1, (uint8_t)1, (uint16_t)1, (uint16_t)1, (uint16_t)8, (uint16_t)8);
+
+[V] [RECV_INST] vadds type 1
+[V] [EXECUTE] vadds type 1
+[MEMCHEK] Mem[139991676252048]checkNum is 0
+[MEMCHEK] Mem[139991676252048]checkNum is 0
+[V] read  data 0x7f525a226f90 0x20 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0x7f525a226f90 0x20 B type UB
+[V] data matched whole 0x7f525a217010 0x10000 stat 1
+[V] [DATA_MARK] 0x7f525a226f90 0x20 B type UB mark read
+[V] checking pending queue
+[V] [CHECK_DATA] 0x7f525a226f90 0x20 B type UB
+[V] [CHECK_TBUF] 0x7f525a226f90 0x20 B type UB
+[V] allocation buffer match result 0
+
+### vector_dup((__ubuf__ float*)0x7f525a227010, (float)1, (uint8_t)1, (uint16_t)1, (uint16_t)1, (uint8_t)8, (uint8_t)0);
+
+[V] [RECV_INST] vector_dup type 1
+[V] [EXECUTE] vector_dup type 1
+[MEMCHEK] Mem[139991676252176]checkNum is 0
+[V] write data 0x7f525a227010 0x20 B type UB
+[V] checking pending queue
+[V] [CHECK_DATA] 0x7f525a227010 0x20 B type UB
+[V] checking wrote queue
+[V] [CHECK_DATA] 0x7f525a227010 0x20 B type UB
+[V] data matched whole 0x7f525a227010 0x40 stat 2
+[V] [ErrorWrite3] on write 0x7f525a227010 0x20 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xce) [0x7f525b7bc917]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0xa5) [0x7f525b7bceb2]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine14DataWriteCheckERSt6vectorINS_5DataTESaIS2_EEb+0x753) [0x7f525b7950e7]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine9DataWriteERSt6vectorINS_5DataTESaIS2_EEb+0xd8) [0x7f525b7957de]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x586) [0x7f525b79867c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1b7) [0x7f525b792b4d]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x172) [0x7f525b7a3bfc]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk10vector_dupEPffhtthh+0x3f5) [0x7f525b89281f]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z10vector_dupPffhtthh+0x91) [0x7f525b62b7e7]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x46dba) [0x558ef279adba]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x41a12) [0x558ef2795a12]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x3bef0) [0x558ef278fef0]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x5ea1b) [0x558ef27b2a1b]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x5c178) [0x558ef27b0178]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x5928e) [0x558ef27ad28e]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x541ae) [0x558ef27a81ae]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x4f0b7) [0x558ef27a30b7]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x49e0b) [0x558ef279de0b]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x43821) [0x558ef2797821]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x3dc34) [0x558ef2791c34]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x3e461) [0x558ef2792461]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x301ae) [0x558ef27841ae]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x987af) [0x558ef27ec7af]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x87596) [0x558ef27db596]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x87795) [0x558ef27db795]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x8a169) [0x558ef27de169]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x8d91f) [0x558ef27e191f]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x98d77) [0x558ef27ecd77]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x8784b) [0x558ef27db84b]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x2f952) [0x558ef2783952]
+  /lib/x86_64-linux-gnu/libc.so.6(+0x29d90) [0x7f525a3ced90]
+  /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x80) [0x7f525a3cee40]
+
+[V] [CHECK_TBUF] 0x7f525a227010 0x20 B type UB
+[V] allocation buffer match result 2
+[V] persistent buffer match result 0
+
+### pipe_barrier((pipe_t)PIPE_V);
+
+[V] [RECV_INST] pipe_barrier type 5
+[V] [EXECUTE] pipe_barrier type 5
+[V] [SYNC_DATA] 0x7f525a226f90 0x20 B type UB
+[V] [SYNC_DATA] 0x7f525a227010 0x20 B type UB
+
+### vdiv((__ubuf__ float*)0x7f525a226f90, (__ubuf__ float*)0x7f525a227010, (__ubuf__ float*)0x7f525a226f90, (uint8_t)1, (uint8_t)1, (uint8_t)1, (uint8_t)1, (uint8_t)8, (uint8_t)8, (uint8_t)8);
+
+[V] [RECV_INST] vdiv type 1
+[V] [EXECUTE] vdiv type 1
+[MEMCHEK] Mem[139991676252176]checkNum is 0
+[MEMCHEK] Mem[139991676252048]checkNum is 0
+[MEMCHEK] Mem[139991676252048]checkNum is 0
+[V] read  data 0x7f525a226f90 0x20 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0x7f525a226f90 0x20 B type UB
+[V] data matched whole 0x7f525a217010 0x10020 stat 1
+[V] [DATA_MARK] 0x7f525a226f90 0x20 B type UB mark read
+[V] checking pending queue
+[V] [CHECK_DATA] 0x7f525a226f90 0x20 B type UB
+[V] [CHECK_TBUF] 0x7f525a226f90 0x20 B type UB
+[V] allocation buffer match result 0
+[V] read  data 0x7f525a227010 0x20 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0x7f525a227010 0x20 B type UB
+[V] data matched whole 0x7f525a217010 0x10020 stat 1
+[V] [DATA_MARK] 0x7f525a227010 0x20 B type UB mark read
+[V] [DATA_MARK] 0x7f525a227010 0x20 B type UB mark read
+[V] checking pending queue
+[V] [CHECK_DATA] 0x7f525a227010 0x20 B type UB
+[V] [CHECK_TBUF] 0x7f525a227010 0x20 B type UB
+[V] allocation buffer match result 2
+[V] persistent buffer match result 0
+
+### pipe_barrier((pipe_t)PIPE_V);
+
+[V] [RECV_INST] pipe_barrier type 5
+[V] [EXECUTE] pipe_barrier type 5
+[V] [SYNC_DATA] 0x7f525a226f90 0x20 B type UB
+
+### set_mask_norm();
+
+[set_mask_norm] unsupported
+[S] [RECV_INST] set_mask_norm type 7
+[S] [EXECUTE] set_mask_norm type 7
+
+### set_vector_mask((uint64_t)18446744073709551615, (uint64_t)18446744073709551615);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)0);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [send event] on set_flag 1 4 0
+[V] -> [MTE2] [GET_DATA] 0x7f525a217010 0x10020 B stat 1 type UB
+[V] -> [MTE2] [GET_DATA] 0x7f525a227010 0x40 B stat 1 type UB
+[MTE2] [RECV_EVENT] SRC V DST MTE2 EVENT 0
+[MTE2] [RECV_DATA] 0x7f525a217010 0x10020 B stat 1 type UB
+[MTE2] [RECV_DATA] 0x7f525a227010 0x40 B stat 1 type UB
+[ALL] [TBUF_EVENT] FREE 0x7f525a207010 0x10000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x1ffc0, Rate: 49.9756%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x20000, Rate: 50%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[139991676121104]checkNum is 0
+[Buffer Check] [ErrorBuffer2] VecIn Operation inconsistent with the paradigm:ALLOC--ENQUE--DEQUE--OPVEC--FREE-- ALLOC--DATACOPY--ENQUE--DEQUE--OPVEC--FREE--
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xce) [0x7f525b7bc917]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0xa5) [0x7f525b7bceb2]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk13BlockMemCheck10CheckVecInERKSt6vectorINS_11QueOperatorESaIS2_EE+0x1ff) [0x7f525b7b9963]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZNSt17_Function_handlerIFbRKSt6vectorIN6npuchk11QueOperatorESaIS2_EEEPS7_E9_M_invokeERKSt9_Any_dataS6_+0x31) [0x7f525b7baefb]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZNKSt8functionIFbRKSt6vectorIN6npuchk11QueOperatorESaIS2_EEEEclES6_+0x49) [0x7f525b7ba9fb]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk13BlockMemCheck15BlockMemOpCheckENS_11QueOperatorE+0x1b1) [0x7f525b7b9527]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk15MemCheckManager12AddMemRecordEmhhjNS_11QueOperatorE+0x48f) [0x7f525b7ab699]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk14AscendCBufFreeEhhmm+0x6b) [0x7f525b7924cc]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z14AscendCBufFreehhmm+0x66) [0x7f525b644c8c]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x544b9) [0x558ef27a84b9]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x4f0ec) [0x558ef27a30ec]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x49e2b) [0x558ef279de2b]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x43821) [0x558ef2797821]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x3dc34) [0x558ef2791c34]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x3e461) [0x558ef2792461]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x301ae) [0x558ef27841ae]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x987af) [0x558ef27ec7af]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x87596) [0x558ef27db596]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x87795) [0x558ef27db795]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x8a169) [0x558ef27de169]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x8d91f) [0x558ef27e191f]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x98d77) [0x558ef27ecd77]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x8784b) [0x558ef27db84b]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x2f952) [0x558ef2783952]
+  /lib/x86_64-linux-gnu/libc.so.6(+0x29d90) [0x7f525a3ced90]
+  /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x80) [0x7f525a3cee40]
+  /workspace/code/tests/ut/build/op_kernel/sigmoid_op_kernel_ut(+0x2fe05) [0x558ef2783e05]
+
+[MEMCHEK] Mem[139991676121104] is FREE
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE3, (event_t)0);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [send event] on set_flag 1 5 0
+[V] -> [MTE3] [GET_DATA] 0x7f525a217010 0x10020 B stat 1 type UB
+[V] -> [MTE3] [GET_DATA] 0x7f525a227010 0x40 B stat 1 type UB
+[MTE3] [RECV_EVENT] SRC V DST MTE3 EVENT 0
+[MTE3] [RECV_DATA] 0x7f525a217010 0x10020 B stat 1 type UB
+[MTE3] [RECV_DATA] 0x7f525a227010 0x40 B stat 1 type UB
+[MEMCHEK] Mem[139991676186640]checkNum is 0
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE3, (event_t)0);
+
+[MTE3] [RECV_INST] wait_flag type 4
+[MTE3] [EXECUTE] wait_flag type 4
+[MTE3] [no wait] on wait_flag 1 5 0
+[V] [EVENT_CLEAR] send 1 5 0 has been waited
+[MEMCHEK] Mem[139991676186640]checkNum is 0
+
+### copy_ubuf_to_gm_align_b32((__gm__ void*)0x7f525a23f000, (__ubuf__ void*)0x7f525a217010, (uint8_t)0, (uint16_t)1, (uint32_t)65536, (uint8_t)0, (uint8_t)0, (uint32_t)0, (uint32_t)0);
+
+[MTE3] [RECV_INST] copy_ubuf_to_gm_align_b32 type 0
+[MTE3] [EXECUTE] copy_ubuf_to_gm_align_b32 type 0
+[MTE3] read  data 0x7f525a217010 0x10000 B type UB
+[MTE3] checking synced queue
+[MTE3] [CHECK_DATA] 0x7f525a217010 0x10000 B type UB
+[MTE3] data matched whole 0x7f525a217010 0x10040 stat 1
+[MTE3] [DATA_MARK] 0x7f525a217010 0x10000 B type UB mark read
+[MTE3] checking pending queue
+[MTE3] [CHECK_DATA] 0x7f525a217010 0x10000 B type UB
+[MTE3] [CHECK_TBUF] 0x7f525a217010 0x10000 B type UB
+[MTE3] allocation buffer match result 0
+[MTE3] write data 0x7f525a23f000 0x10000 B type GM
+[MTE3] checking pending queue
+[MTE3] [CHECK_DATA] 0x7f525a23f000 0x10000 B type GM
+[MTE3] checking wrote queue
+[MTE3] [CHECK_DATA] 0x7f525a23f000 0x10000 B type GM
+[MTE3] [CHECK_TBUF] 0x7f525a23f000 0x10000 B type GM
+[MEMCHEK] Mem[139991676186640]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE3, (pipe_t)PIPE_V, (event_t)0);
+
+[MTE3] [RECV_INST] set_flag type 3
+[MTE3] [EXECUTE] set_flag type 3
+[MTE3] [SYNC_DATA] 0x7f525a23f000 0x10000 B type GM
+[MTE3] [send event] on set_flag 5 1 0
+[MTE3] -> [V] [GET_DATA] 0x7f525a23f000 0x10000 B stat 1 type GM
+[V] [RECV_EVENT] SRC MTE3 DST V EVENT 0
+[V] [RECV_DATA] 0x7f525a23f000 0x10000 B stat 1 type GM
+[ALL] [TBUF_EVENT] FREE 0x7f525a217010 0x10000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0xffc0, Rate: 24.9756%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x20000, Rate: 50%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[139991676186640]checkNum is 0
+[MEMCHEK] Mem[139991676186640] is FREE
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)0);
+
+[MTE2] [RECV_INST] wait_flag type 4
+[MTE2] [EXECUTE] wait_flag type 4
+[MTE2] [no wait] on wait_flag 1 4 0
+[V] [EVENT_CLEAR] send 1 4 0 has been waited
+
+### wait_flag((pipe_t)PIPE_MTE3, (pipe_t)PIPE_V, (event_t)0);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 5 1 0
+[MTE3] [EVENT_CLEAR] send 5 1 0 has been waited
+
+### pipe_barrier((pipe_t)PIPE_ALL);
+
+[V] -> [ALL] [GET_DATA] 0x7f525a217010 0x10020 B stat 1 type UB
+[V] -> [ALL] [GET_DATA] 0x7f525a227010 0x40 B stat 1 type UB
+[S] [RECV_DATA] 0x7f525a217010 0x10020 B stat 1 type UB
+[S] [RECV_DATA] 0x7f525a227010 0x40 B stat 1 type UB
+[M] [RECV_DATA] 0x7f525a217010 0x10020 B stat 1 type UB
+[M] [RECV_DATA] 0x7f525a227010 0x40 B stat 1 type UB
+[MTE1] [RECV_DATA] 0x7f525a217010 0x10020 B stat 1 type UB
+[MTE1] [RECV_DATA] 0x7f525a227010 0x40 B stat 1 type UB
+[MTE2] [RECV_DATA] 0x7f525a217010 0x10020 B stat 1 type UB
+[MTE2] [RECV_DATA] 0x7f525a227010 0x40 B stat 1 type UB
+[MTE3] [RECV_DATA] 0x7f525a217010 0x10020 B stat 1 type UB
+[MTE3] [RECV_DATA] 0x7f525a227010 0x40 B stat 1 type UB
+[MTE4] [RECV_DATA] 0x7f525a217010 0x10020 B stat 1 type UB
+[MTE4] [RECV_DATA] 0x7f525a227010 0x40 B stat 1 type UB
+[MTE5] [RECV_DATA] 0x7f525a217010 0x10020 B stat 1 type UB
+[MTE5] [RECV_DATA] 0x7f525a227010 0x40 B stat 1 type UB
+[V2] [RECV_DATA] 0x7f525a217010 0x10020 B stat 1 type UB
+[V2] [RECV_DATA] 0x7f525a227010 0x40 B stat 1 type UB
+[FIX] [RECV_DATA] 0x7f525a217010 0x10020 B stat 1 type UB
+[FIX] [RECV_DATA] 0x7f525a227010 0x40 B stat 1 type UB
+[MTE2] -> [ALL] [GET_DATA] 0x7f525a207010 0 B stat 1 type UB
+[S] [RECV_DATA] 0x7f525a207010 0 B stat 1 type UB
+[V] [RECV_DATA] 0x7f525a207010 0 B stat 1 type UB
+[M] [RECV_DATA] 0x7f525a207010 0 B stat 1 type UB
+[MTE1] [RECV_DATA] 0x7f525a207010 0 B stat 1 type UB
+[MTE3] [RECV_DATA] 0x7f525a207010 0 B stat 1 type UB
+[MTE4] [RECV_DATA] 0x7f525a207010 0 B stat 1 type UB
+[MTE5] [RECV_DATA] 0x7f525a207010 0 B stat 1 type UB
+[V2] [RECV_DATA] 0x7f525a207010 0 B stat 1 type UB
+[FIX] [RECV_DATA] 0x7f525a207010 0 B stat 1 type UB
+[MTE3] -> [ALL] [GET_DATA] 0x7f525a23f000 0x10000 B stat 1 type GM
+[S] [RECV_DATA] 0x7f525a23f000 0x10000 B stat 1 type GM
+[V] [RECV_DATA] 0x7f525a23f000 0x10000 B stat 1 type GM
+[M] [RECV_DATA] 0x7f525a23f000 0x10000 B stat 1 type GM
+[MTE1] [RECV_DATA] 0x7f525a23f000 0x10000 B stat 1 type GM
+[MTE2] [RECV_DATA] 0x7f525a23f000 0x10000 B stat 1 type GM
+[MTE4] [RECV_DATA] 0x7f525a23f000 0x10000 B stat 1 type GM
+[MTE5] [RECV_DATA] 0x7f525a23f000 0x10000 B stat 1 type GM
+[V2] [RECV_DATA] 0x7f525a23f000 0x10000 B stat 1 type GM
+[FIX] [RECV_DATA] 0x7f525a23f000 0x10000 B stat 1 type GM
+[S] [STAT] Recv 4 PC 4
+[V] [STAT] Recv 28 PC 28
+[M] [STAT] Recv 0 PC 0
+[MTE1] [STAT] Recv 0 PC 0
+[MTE2] [STAT] Recv 3 PC 3
+[MTE3] [STAT] Recv 3 PC 3
+[ALL] [STAT] Recv 0 PC 0
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0xffc0, Rate: 24.9756%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x20000, Rate: 50%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MTE4] [STAT] Recv 0 PC 0
+[MTE5] [STAT] Recv 0 PC 0
+[V2] [STAT] Recv 0 PC 0
+[FIX] [STAT] Recv 0 PC 0
+[Executor] [STAT] codes 39
