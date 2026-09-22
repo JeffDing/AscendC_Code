@@ -1,0 +1,538 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:211 (message)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      The system is: Linux - 5.10.0-216.0.0.115.oe2203sp4.aarch64 - aarch64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/cc 
+      Build flags: -D_GLIBCXX_USE_CXX11_ABI=0;-O2;-D_FORTIFY_SOURCE=2;-fPIC;-fstack-protector-all;-w
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /workspace/code/tests/ut/build/third_party_gtest-prefix/src/third_party_gtest-build/CMakeFiles/3.27.9/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/c++ 
+      Build flags: -D_GLIBCXX_USE_CXX11_ABI=0;-O2;-D_FORTIFY_SOURCE=2;-fPIC;-fstack-protector-all;-w
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /workspace/code/tests/ut/build/third_party_gtest-prefix/src/third_party_gtest-build/CMakeFiles/3.27.9/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/workspace/code/tests/ut/build/third_party_gtest-prefix/src/third_party_gtest-build/CMakeFiles/CMakeScratch/TryCompile-2awg5W"
+      binary: "/workspace/code/tests/ut/build/third_party_gtest-prefix/src/third_party_gtest-build/CMakeFiles/CMakeScratch/TryCompile-2awg5W"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-D_GLIBCXX_USE_CXX11_ABI=0 -O2 -D_FORTIFY_SOURCE=2 -fPIC -fstack-protector-all -w"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/code/tests/ut/build/third_party_gtest-prefix/src/third_party_gtest-build/CMakeFiles/CMakeScratch/TryCompile-2awg5W'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b04bc/fast
+        gmake[3]: Entering directory '/workspace/code/tests/ut/build/third_party_gtest-prefix/src/third_party_gtest-build/CMakeFiles/CMakeScratch/TryCompile-2awg5W'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b04bc.dir/build.make CMakeFiles/cmTC_b04bc.dir/build
+        gmake[4]: Entering directory '/workspace/code/tests/ut/build/third_party_gtest-prefix/src/third_party_gtest-build/CMakeFiles/CMakeScratch/TryCompile-2awg5W'
+        Building C object CMakeFiles/cmTC_b04bc.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -D_GLIBCXX_USE_CXX11_ABI=0 -O2 -D_FORTIFY_SOURCE=2 -fPIC -fstack-protector-all -w    -v -o CMakeFiles/cmTC_b04bc.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        GCC_AI4C_ONNX_FDATA=/usr/libexec/gcc/aarch64-openEuler-linux/12/../../onnx.fdata
+        Target: aarch64-openEuler-linux
+        Configured with: ../configure --disable-bootstrap --disable-libgcj --without-cloog --enable-languages=c,c++,fortran,objc,obj-c++,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitee.com/src-openeuler/gcc/issues --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-libstdcxx-backtrace --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --without-isl --enable-gnu-indirect-function --with-multilib-list=lp64 --enable-bolt --build=aarch64-openEuler-linux
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 12.3.1 (openEuler 12.3.1-105.oe2403sp3) (GCC) 
+        COLLECT_GCC_OPTIONS='-D' '_GLIBCXX_USE_CXX11_ABI=0' '-O2' '-D' '_FORTIFY_SOURCE=2' '-fPIC' '-fstack-protector-all' '-w' '-v' '-o' 'CMakeFiles/cmTC_b04bc.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_b04bc.dir/'
+         /usr/libexec/gcc/aarch64-openEuler-linux/12/cc1 -quiet -v -D _GLIBCXX_USE_CXX11_ABI=0 -D _FORTIFY_SOURCE=2 /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_b04bc.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mlittle-endian -mabi=lp64 -O2 -w -version -fPIC -fstack-protector-all -o /tmp/ccISDJf4.s
+        GNU C17 (GCC) version 12.3.1 (openEuler 12.3.1-105.oe2403sp3) (aarch64-openEuler-linux)
+        	compiled by GNU C version 12.3.1 (openEuler 12.3.1-105.oe2403sp3), GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/lib/gcc/aarch64-openEuler-linux/12/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/aarch64-openEuler-linux/12/../../../../aarch64-openEuler-linux/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/aarch64-openEuler-linux/12/include
+         /usr/local/include
+         /usr/include
+        End of search list.
+        GNU C17 (GCC) version 12.3.1 (openEuler 12.3.1-105.oe2403sp3) (aarch64-openEuler-linux)
+        	compiled by GNU C version 12.3.1 (openEuler 12.3.1-105.oe2403sp3), GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: 128e46e2bdeca68dc38a29df2a17fd6b
+        COLLECT_GCC_OPTIONS='-D' '_GLIBCXX_USE_CXX11_ABI=0' '-O2' '-D' '_FORTIFY_SOURCE=2' '-fPIC' '-fstack-protector-all' '-w' '-v' '-o' 'CMakeFiles/cmTC_b04bc.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_b04bc.dir/'
+         as -v -W -EL -mabi=lp64 -o CMakeFiles/cmTC_b04bc.dir/CMakeCCompilerABI.c.o /tmp/ccISDJf4.s
+        GNU assembler version 2.41 (aarch64-openEuler-linux) using BFD version (GNU Binutils) 2.41
+        COMPILER_PATH=/usr/libexec/gcc/aarch64-openEuler-linux/12/:/usr/libexec/gcc/aarch64-openEuler-linux/12/:/usr/libexec/gcc/aarch64-openEuler-linux/:/usr/lib/gcc/aarch64-openEuler-linux/12/:/usr/lib/gcc/aarch64-openEuler-linux/
+        LIBRARY_PATH=/usr/lib/gcc/aarch64-openEuler-linux/12/:/usr/lib/gcc/aarch64-openEuler-linux/12/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/aarch64-openEuler-linux/12/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-D' '_GLIBCXX_USE_CXX11_ABI=0' '-O2' '-D' '_FORTIFY_SOURCE=2' '-fPIC' '-fstack-protector-all' '-w' '-v' '-o' 'CMakeFiles/cmTC_b04bc.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_b04bc.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_b04bc
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b04bc.dir/link.txt --verbose=1
+        /usr/bin/cc -D_GLIBCXX_USE_CXX11_ABI=0 -O2 -D_FORTIFY_SOURCE=2 -fPIC -fstack-protector-all -w   -v CMakeFiles/cmTC_b04bc.dir/CMakeCCompilerABI.c.o -o cmTC_b04bc 
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/aarch64-openEuler-linux/12/lto-wrapper
+        GCC_AI4C_ONNX_FDATA=/usr/libexec/gcc/aarch64-openEuler-linux/12/../../onnx.fdata
+        Target: aarch64-openEuler-linux
+        Configured with: ../configure --disable-bootstrap --disable-libgcj --without-cloog --enable-languages=c,c++,fortran,objc,obj-c++,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitee.com/src-openeuler/gcc/issues --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-libstdcxx-backtrace --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --without-isl --enable-gnu-indirect-function --with-multilib-list=lp64 --enable-bolt --build=aarch64-openEuler-linux
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 12.3.1 (openEuler 12.3.1-105.oe2403sp3) (GCC) 
+        COMPILER_PATH=/usr/libexec/gcc/aarch64-openEuler-linux/12/:/usr/libexec/gcc/aarch64-openEuler-linux/12/:/usr/libexec/gcc/aarch64-openEuler-linux/:/usr/lib/gcc/aarch64-openEuler-linux/12/:/usr/lib/gcc/aarch64-openEuler-linux/
+        LIBRARY_PATH=/usr/lib/gcc/aarch64-openEuler-linux/12/:/usr/lib/gcc/aarch64-openEuler-linux/12/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/aarch64-openEuler-linux/12/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-D' '_GLIBCXX_USE_CXX11_ABI=0' '-O2' '-D' '_FORTIFY_SOURCE=2' '-fPIC' '-fstack-protector-all' '-w' '-v' '-o' 'cmTC_b04bc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_b04bc.'
+         /usr/libexec/gcc/aarch64-openEuler-linux/12/collect2 -plugin /usr/libexec/gcc/aarch64-openEuler-linux/12/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-openEuler-linux/12/lto-wrapper -plugin-opt=-fresolution=/tmp/ccNlV926.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -o cmTC_b04bc /usr/lib/gcc/aarch64-openEuler-linux/12/../../../../lib64/crt1.o /usr/lib/gcc/aarch64-openEuler-linux/12/../../../../lib64/crti.o /usr/lib/gcc/aarch64-openEuler-linux/12/crtbegin.o -L/usr/lib/gcc/aarch64-openEuler-linux/12 -L/usr/lib/gcc/aarch64-openEuler-linux/12/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/aarch64-openEuler-linux/12/../../.. CMakeFiles/cmTC_b04bc.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/aarch64-openEuler-linux/12/crtend.o /usr/lib/gcc/aarch64-openEuler-linux/12/../../../../lib64/crtn.o
+        COLLECT_GCC_OPTIONS='-D' '_GLIBCXX_USE_CXX11_ABI=0' '-O2' '-D' '_FORTIFY_SOURCE=2' '-fPIC' '-fstack-protector-all' '-w' '-v' '-o' 'cmTC_b04bc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_b04bc.'
+        gmake[4]: Leaving directory '/workspace/code/tests/ut/build/third_party_gtest-prefix/src/third_party_gtest-build/CMakeFiles/CMakeScratch/TryCompile-2awg5W'
+        gmake[3]: Leaving directory '/workspace/code/tests/ut/build/third_party_gtest-prefix/src/third_party_gtest-build/CMakeFiles/CMakeScratch/TryCompile-2awg5W'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/aarch64-openEuler-linux/12/include]
+          add: [/usr/local/include]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/aarch64-openEuler-linux/12/include] ==> [/usr/lib/gcc/aarch64-openEuler-linux/12/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/gcc/aarch64-openEuler-linux/12/include;/usr/local/include;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/workspace/code/tests/ut/build/third_party_gtest-prefix/src/third_party_gtest-build/CMakeFiles/CMakeScratch/TryCompile-2awg5W']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b04bc/fast]
+        ignore line: [gmake[3]: Entering directory '/workspace/code/tests/ut/build/third_party_gtest-prefix/src/third_party_gtest-build/CMakeFiles/CMakeScratch/TryCompile-2awg5W']
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_b04bc.dir/build.make CMakeFiles/cmTC_b04bc.dir/build]
+        ignore line: [gmake[4]: Entering directory '/workspace/code/tests/ut/build/third_party_gtest-prefix/src/third_party_gtest-build/CMakeFiles/CMakeScratch/TryCompile-2awg5W']
+        ignore line: [Building C object CMakeFiles/cmTC_b04bc.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -D_GLIBCXX_USE_CXX11_ABI=0 -O2 -D_FORTIFY_SOURCE=2 -fPIC -fstack-protector-all -w    -v -o CMakeFiles/cmTC_b04bc.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [GCC_AI4C_ONNX_FDATA=/usr/libexec/gcc/aarch64-openEuler-linux/12/../../onnx.fdata]
+        ignore line: [Target: aarch64-openEuler-linux]
+        ignore line: [Configured with: ../configure --disable-bootstrap --disable-libgcj --without-cloog --enable-languages=c c++ fortran objc obj-c++ lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitee.com/src-openeuler/gcc/issues --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-libstdcxx-backtrace --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --without-isl --enable-gnu-indirect-function --with-multilib-list=lp64 --enable-bolt --build=aarch64-openEuler-linux]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 12.3.1 (openEuler 12.3.1-105.oe2403sp3) (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' '_GLIBCXX_USE_CXX11_ABI=0' '-O2' '-D' '_FORTIFY_SOURCE=2' '-fPIC' '-fstack-protector-all' '-w' '-v' '-o' 'CMakeFiles/cmTC_b04bc.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_b04bc.dir/']
+        ignore line: [ /usr/libexec/gcc/aarch64-openEuler-linux/12/cc1 -quiet -v -D _GLIBCXX_USE_CXX11_ABI=0 -D _FORTIFY_SOURCE=2 /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_b04bc.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mlittle-endian -mabi=lp64 -O2 -w -version -fPIC -fstack-protector-all -o /tmp/ccISDJf4.s]
+        ignore line: [GNU C17 (GCC) version 12.3.1 (openEuler 12.3.1-105.oe2403sp3) (aarch64-openEuler-linux)]
+        ignore line: [	compiled by GNU C version 12.3.1 (openEuler 12.3.1-105.oe2403sp3)  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/aarch64-openEuler-linux/12/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/aarch64-openEuler-linux/12/../../../../aarch64-openEuler-linux/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/aarch64-openEuler-linux/12/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C17 (GCC) version 12.3.1 (openEuler 12.3.1-105.oe2403sp3) (aarch64-openEuler-linux)]
+        ignore line: [	compiled by GNU C version 12.3.1 (openEuler 12.3.1-105.oe2403sp3)  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: 128e46e2bdeca68dc38a29df2a17fd6b]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' '_GLIBCXX_USE_CXX11_ABI=0' '-O2' '-D' '_FORTIFY_SOURCE=2' '-fPIC' '-fstack-protector-all' '-w' '-v' '-o' 'CMakeFiles/cmTC_b04bc.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_b04bc.dir/']
+        ignore line: [ as -v -W -EL -mabi=lp64 -o CMakeFiles/cmTC_b04bc.dir/CMakeCCompilerABI.c.o /tmp/ccISDJf4.s]
+        ignore line: [GNU assembler version 2.41 (aarch64-openEuler-linux) using BFD version (GNU Binutils) 2.41]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/aarch64-openEuler-linux/12/:/usr/libexec/gcc/aarch64-openEuler-linux/12/:/usr/libexec/gcc/aarch64-openEuler-linux/:/usr/lib/gcc/aarch64-openEuler-linux/12/:/usr/lib/gcc/aarch64-openEuler-linux/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/aarch64-openEuler-linux/12/:/usr/lib/gcc/aarch64-openEuler-linux/12/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/aarch64-openEuler-linux/12/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' '_GLIBCXX_USE_CXX11_ABI=0' '-O2' '-D' '_FORTIFY_SOURCE=2' '-fPIC' '-fstack-protector-all' '-w' '-v' '-o' 'CMakeFiles/cmTC_b04bc.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_b04bc.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_b04bc]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b04bc.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/cc -D_GLIBCXX_USE_CXX11_ABI=0 -O2 -D_FORTIFY_SOURCE=2 -fPIC -fstack-protector-all -w   -v CMakeFiles/cmTC_b04bc.dir/CMakeCCompilerABI.c.o -o cmTC_b04bc ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/aarch64-openEuler-linux/12/lto-wrapper]
+        ignore line: [GCC_AI4C_ONNX_FDATA=/usr/libexec/gcc/aarch64-openEuler-linux/12/../../onnx.fdata]
+        ignore line: [Target: aarch64-openEuler-linux]
+        ignore line: [Configured with: ../configure --disable-bootstrap --disable-libgcj --without-cloog --enable-languages=c c++ fortran objc obj-c++ lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitee.com/src-openeuler/gcc/issues --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-libstdcxx-backtrace --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --without-isl --enable-gnu-indirect-function --with-multilib-list=lp64 --enable-bolt --build=aarch64-openEuler-linux]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 12.3.1 (openEuler 12.3.1-105.oe2403sp3) (GCC) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/aarch64-openEuler-linux/12/:/usr/libexec/gcc/aarch64-openEuler-linux/12/:/usr/libexec/gcc/aarch64-openEuler-linux/:/usr/lib/gcc/aarch64-openEuler-linux/12/:/usr/lib/gcc/aarch64-openEuler-linux/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/aarch64-openEuler-linux/12/:/usr/lib/gcc/aarch64-openEuler-linux/12/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/aarch64-openEuler-linux/12/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' '_GLIBCXX_USE_CXX11_ABI=0' '-O2' '-D' '_FORTIFY_SOURCE=2' '-fPIC' '-fstack-protector-all' '-w' '-v' '-o' 'cmTC_b04bc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_b04bc.']
+        link line: [ /usr/libexec/gcc/aarch64-openEuler-linux/12/collect2 -plugin /usr/libexec/gcc/aarch64-openEuler-linux/12/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-openEuler-linux/12/lto-wrapper -plugin-opt=-fresolution=/tmp/ccNlV926.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -o cmTC_b04bc /usr/lib/gcc/aarch64-openEuler-linux/12/../../../../lib64/crt1.o /usr/lib/gcc/aarch64-openEuler-linux/12/../../../../lib64/crti.o /usr/lib/gcc/aarch64-openEuler-linux/12/crtbegin.o -L/usr/lib/gcc/aarch64-openEuler-linux/12 -L/usr/lib/gcc/aarch64-openEuler-linux/12/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/aarch64-openEuler-linux/12/../../.. CMakeFiles/cmTC_b04bc.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/aarch64-openEuler-linux/12/crtend.o /usr/lib/gcc/aarch64-openEuler-linux/12/../../../../lib64/crtn.o]
+          arg [/usr/libexec/gcc/aarch64-openEuler-linux/12/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/aarch64-openEuler-linux/12/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/aarch64-openEuler-linux/12/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccNlV926.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib/ld-linux-aarch64.so.1] ==> ignore
+          arg [-X] ==> ignore
+          arg [-EL] ==> ignore
+          arg [-maarch64linux] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_b04bc] ==> ignore
+          arg [/usr/lib/gcc/aarch64-openEuler-linux/12/../../../../lib64/crt1.o] ==> obj [/usr/lib/gcc/aarch64-openEuler-linux/12/../../../../lib64/crt1.o]
+          arg [/usr/lib/gcc/aarch64-openEuler-linux/12/../../../../lib64/crti.o] ==> obj [/usr/lib/gcc/aarch64-openEuler-linux/12/../../../../lib64/crti.o]
+          arg [/usr/lib/gcc/aarch64-openEuler-linux/12/crtbegin.o] ==> obj [/usr/lib/gcc/aarch64-openEuler-linux/12/crtbegin.o]
+          arg [-L/usr/lib/gcc/aarch64-openEuler-linux/12] ==> dir [/usr/lib/gcc/aarch64-openEuler-linux/12]
+          arg [-L/usr/lib/gcc/aarch64-openEuler-linux/12/../../../../lib64] ==> dir [/usr/lib/gcc/aarch64-openEuler-linux/12/../../../../lib64]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/usr/lib/gcc/aarch64-openEuler-linux/12/../../..] ==> dir [/usr/lib/gcc/aarch64-openEuler-linux/12/../../..]
+          arg [CMakeFiles/cmTC_b04bc.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/usr/lib/gcc/aarch64-openEuler-linux/12/crtend.o] ==> obj [/usr/lib/gcc/aarch64-openEuler-linux/12/crtend.o]
+          arg [/usr/lib/gcc/aarch64-openEuler-linux/12/../../../../lib64/crtn.o] ==> obj [/usr/lib/gcc/aarch64-openEuler-linux/12/../../../../lib64/crtn.o]
+        collapse obj [/usr/lib/gcc/aarch64-openEuler-linux/12/../../../../lib64/crt1.o] ==> [/usr/lib64/crt1.o]
+        collapse obj [/usr/lib/gcc/aarch64-openEuler-linux/12/../../../../lib64/crti.o] ==> [/usr/lib64/crti.o]
+        collapse obj [/usr/lib/gcc/aarch64-openEuler-linux/12/../../../../lib64/crtn.o] ==> [/usr/lib64/crtn.o]
+        collapse library dir [/usr/lib/gcc/aarch64-openEuler-linux/12] ==> [/usr/lib/gcc/aarch64-openEuler-linux/12]
+        collapse library dir [/usr/lib/gcc/aarch64-openEuler-linux/12/../../../../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/usr/lib/gcc/aarch64-openEuler-linux/12/../../..] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/usr/lib64/crt1.o;/usr/lib64/crti.o;/usr/lib/gcc/aarch64-openEuler-linux/12/crtbegin.o;/usr/lib/gcc/aarch64-openEuler-linux/12/crtend.o;/usr/lib64/crtn.o]
+        implicit dirs: [/usr/lib/gcc/aarch64-openEuler-linux/12;/usr/lib64;/lib64;/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/workspace/code/tests/ut/build/third_party_gtest-prefix/src/third_party_gtest-build/CMakeFiles/CMakeScratch/TryCompile-0nzp7b"
+      binary: "/workspace/code/tests/ut/build/third_party_gtest-prefix/src/third_party_gtest-build/CMakeFiles/CMakeScratch/TryCompile-0nzp7b"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-D_GLIBCXX_USE_CXX11_ABI=0 -O2 -D_FORTIFY_SOURCE=2 -fPIC -fstack-protector-all -w"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/code/tests/ut/build/third_party_gtest-prefix/src/third_party_gtest-build/CMakeFiles/CMakeScratch/TryCompile-0nzp7b'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_2abf5/fast
+        gmake[3]: Entering directory '/workspace/code/tests/ut/build/third_party_gtest-prefix/src/third_party_gtest-build/CMakeFiles/CMakeScratch/TryCompile-0nzp7b'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_2abf5.dir/build.make CMakeFiles/cmTC_2abf5.dir/build
+        gmake[4]: Entering directory '/workspace/code/tests/ut/build/third_party_gtest-prefix/src/third_party_gtest-build/CMakeFiles/CMakeScratch/TryCompile-0nzp7b'
+        Building CXX object CMakeFiles/cmTC_2abf5.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -D_GLIBCXX_USE_CXX11_ABI=0 -O2 -D_FORTIFY_SOURCE=2 -fPIC -fstack-protector-all -w    -v -o CMakeFiles/cmTC_2abf5.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        GCC_AI4C_ONNX_FDATA=/usr/libexec/gcc/aarch64-openEuler-linux/12/../../onnx.fdata
+        Target: aarch64-openEuler-linux
+        Configured with: ../configure --disable-bootstrap --disable-libgcj --without-cloog --enable-languages=c,c++,fortran,objc,obj-c++,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitee.com/src-openeuler/gcc/issues --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-libstdcxx-backtrace --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --without-isl --enable-gnu-indirect-function --with-multilib-list=lp64 --enable-bolt --build=aarch64-openEuler-linux
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 12.3.1 (openEuler 12.3.1-105.oe2403sp3) (GCC) 
+        COLLECT_GCC_OPTIONS='-D' '_GLIBCXX_USE_CXX11_ABI=0' '-O2' '-D' '_FORTIFY_SOURCE=2' '-fPIC' '-fstack-protector-all' '-w' '-v' '-o' 'CMakeFiles/cmTC_2abf5.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_2abf5.dir/'
+         /usr/libexec/gcc/aarch64-openEuler-linux/12/cc1plus -quiet -v -D_GNU_SOURCE -D _GLIBCXX_USE_CXX11_ABI=0 -D _FORTIFY_SOURCE=2 /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_2abf5.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mlittle-endian -mabi=lp64 -O2 -w -version -fPIC -fstack-protector-all -o /tmp/ccsha5Zf.s
+        GNU C++17 (GCC) version 12.3.1 (openEuler 12.3.1-105.oe2403sp3) (aarch64-openEuler-linux)
+        	compiled by GNU C version 12.3.1 (openEuler 12.3.1-105.oe2403sp3), GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/lib/gcc/aarch64-openEuler-linux/12/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/aarch64-openEuler-linux/12/../../../../aarch64-openEuler-linux/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/aarch64-openEuler-linux/12/../../../../include/c++/12
+         /usr/lib/gcc/aarch64-openEuler-linux/12/../../../../include/c++/12/aarch64-openEuler-linux
+         /usr/lib/gcc/aarch64-openEuler-linux/12/../../../../include/c++/12/backward
+         /usr/lib/gcc/aarch64-openEuler-linux/12/include
+         /usr/local/include
+         /usr/include
+        End of search list.
+        GNU C++17 (GCC) version 12.3.1 (openEuler 12.3.1-105.oe2403sp3) (aarch64-openEuler-linux)
+        	compiled by GNU C version 12.3.1 (openEuler 12.3.1-105.oe2403sp3), GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: 6bc4c5f262ab3b582d3bd3757789182d
+        COLLECT_GCC_OPTIONS='-D' '_GLIBCXX_USE_CXX11_ABI=0' '-O2' '-D' '_FORTIFY_SOURCE=2' '-fPIC' '-fstack-protector-all' '-w' '-v' '-o' 'CMakeFiles/cmTC_2abf5.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_2abf5.dir/'
+         as -v -W -EL -mabi=lp64 -o CMakeFiles/cmTC_2abf5.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccsha5Zf.s
+        GNU assembler version 2.41 (aarch64-openEuler-linux) using BFD version (GNU Binutils) 2.41
+        COMPILER_PATH=/usr/libexec/gcc/aarch64-openEuler-linux/12/:/usr/libexec/gcc/aarch64-openEuler-linux/12/:/usr/libexec/gcc/aarch64-openEuler-linux/:/usr/lib/gcc/aarch64-openEuler-linux/12/:/usr/lib/gcc/aarch64-openEuler-linux/
+        LIBRARY_PATH=/usr/lib/gcc/aarch64-openEuler-linux/12/:/usr/lib/gcc/aarch64-openEuler-linux/12/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/aarch64-openEuler-linux/12/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-D' '_GLIBCXX_USE_CXX11_ABI=0' '-O2' '-D' '_FORTIFY_SOURCE=2' '-fPIC' '-fstack-protector-all' '-w' '-v' '-o' 'CMakeFiles/cmTC_2abf5.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_2abf5.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_2abf5
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2abf5.dir/link.txt --verbose=1
+        /usr/bin/c++ -D_GLIBCXX_USE_CXX11_ABI=0 -O2 -D_FORTIFY_SOURCE=2 -fPIC -fstack-protector-all -w   -v CMakeFiles/cmTC_2abf5.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_2abf5 
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/aarch64-openEuler-linux/12/lto-wrapper
+        GCC_AI4C_ONNX_FDATA=/usr/libexec/gcc/aarch64-openEuler-linux/12/../../onnx.fdata
+        Target: aarch64-openEuler-linux
+        Configured with: ../configure --disable-bootstrap --disable-libgcj --without-cloog --enable-languages=c,c++,fortran,objc,obj-c++,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitee.com/src-openeuler/gcc/issues --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-libstdcxx-backtrace --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --without-isl --enable-gnu-indirect-function --with-multilib-list=lp64 --enable-bolt --build=aarch64-openEuler-linux
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 12.3.1 (openEuler 12.3.1-105.oe2403sp3) (GCC) 
+        COMPILER_PATH=/usr/libexec/gcc/aarch64-openEuler-linux/12/:/usr/libexec/gcc/aarch64-openEuler-linux/12/:/usr/libexec/gcc/aarch64-openEuler-linux/:/usr/lib/gcc/aarch64-openEuler-linux/12/:/usr/lib/gcc/aarch64-openEuler-linux/
+        LIBRARY_PATH=/usr/lib/gcc/aarch64-openEuler-linux/12/:/usr/lib/gcc/aarch64-openEuler-linux/12/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/aarch64-openEuler-linux/12/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-D' '_GLIBCXX_USE_CXX11_ABI=0' '-O2' '-D' '_FORTIFY_SOURCE=2' '-fPIC' '-fstack-protector-all' '-w' '-v' '-o' 'cmTC_2abf5' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_2abf5.'
+         /usr/libexec/gcc/aarch64-openEuler-linux/12/collect2 -plugin /usr/libexec/gcc/aarch64-openEuler-linux/12/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-openEuler-linux/12/lto-wrapper -plugin-opt=-fresolution=/tmp/ccSOWfyR.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -o cmTC_2abf5 /usr/lib/gcc/aarch64-openEuler-linux/12/../../../../lib64/crt1.o /usr/lib/gcc/aarch64-openEuler-linux/12/../../../../lib64/crti.o /usr/lib/gcc/aarch64-openEuler-linux/12/crtbegin.o -L/usr/lib/gcc/aarch64-openEuler-linux/12 -L/usr/lib/gcc/aarch64-openEuler-linux/12/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/aarch64-openEuler-linux/12/../../.. CMakeFiles/cmTC_2abf5.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/aarch64-openEuler-linux/12/crtend.o /usr/lib/gcc/aarch64-openEuler-linux/12/../../../../lib64/crtn.o
+        COLLECT_GCC_OPTIONS='-D' '_GLIBCXX_USE_CXX11_ABI=0' '-O2' '-D' '_FORTIFY_SOURCE=2' '-fPIC' '-fstack-protector-all' '-w' '-v' '-o' 'cmTC_2abf5' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_2abf5.'
+        gmake[4]: Leaving directory '/workspace/code/tests/ut/build/third_party_gtest-prefix/src/third_party_gtest-build/CMakeFiles/CMakeScratch/TryCompile-0nzp7b'
+        gmake[3]: Leaving directory '/workspace/code/tests/ut/build/third_party_gtest-prefix/src/third_party_gtest-build/CMakeFiles/CMakeScratch/TryCompile-0nzp7b'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/aarch64-openEuler-linux/12/../../../../include/c++/12]
+          add: [/usr/lib/gcc/aarch64-openEuler-linux/12/../../../../include/c++/12/aarch64-openEuler-linux]
+          add: [/usr/lib/gcc/aarch64-openEuler-linux/12/../../../../include/c++/12/backward]
+          add: [/usr/lib/gcc/aarch64-openEuler-linux/12/include]
+          add: [/usr/local/include]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/aarch64-openEuler-linux/12/../../../../include/c++/12] ==> [/usr/include/c++/12]
+        collapse include dir [/usr/lib/gcc/aarch64-openEuler-linux/12/../../../../include/c++/12/aarch64-openEuler-linux] ==> [/usr/include/c++/12/aarch64-openEuler-linux]
+        collapse include dir [/usr/lib/gcc/aarch64-openEuler-linux/12/../../../../include/c++/12/backward] ==> [/usr/include/c++/12/backward]
+        collapse include dir [/usr/lib/gcc/aarch64-openEuler-linux/12/include] ==> [/usr/lib/gcc/aarch64-openEuler-linux/12/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/include/c++/12;/usr/include/c++/12/aarch64-openEuler-linux;/usr/include/c++/12/backward;/usr/lib/gcc/aarch64-openEuler-linux/12/include;/usr/local/include;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/workspace/code/tests/ut/build/third_party_gtest-prefix/src/third_party_gtest-build/CMakeFiles/CMakeScratch/TryCompile-0nzp7b']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_2abf5/fast]
+        ignore line: [gmake[3]: Entering directory '/workspace/code/tests/ut/build/third_party_gtest-prefix/src/third_party_gtest-build/CMakeFiles/CMakeScratch/TryCompile-0nzp7b']
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_2abf5.dir/build.make CMakeFiles/cmTC_2abf5.dir/build]
+        ignore line: [gmake[4]: Entering directory '/workspace/code/tests/ut/build/third_party_gtest-prefix/src/third_party_gtest-build/CMakeFiles/CMakeScratch/TryCompile-0nzp7b']
+        ignore line: [Building CXX object CMakeFiles/cmTC_2abf5.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -D_GLIBCXX_USE_CXX11_ABI=0 -O2 -D_FORTIFY_SOURCE=2 -fPIC -fstack-protector-all -w    -v -o CMakeFiles/cmTC_2abf5.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [GCC_AI4C_ONNX_FDATA=/usr/libexec/gcc/aarch64-openEuler-linux/12/../../onnx.fdata]
+        ignore line: [Target: aarch64-openEuler-linux]
+        ignore line: [Configured with: ../configure --disable-bootstrap --disable-libgcj --without-cloog --enable-languages=c c++ fortran objc obj-c++ lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitee.com/src-openeuler/gcc/issues --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-libstdcxx-backtrace --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --without-isl --enable-gnu-indirect-function --with-multilib-list=lp64 --enable-bolt --build=aarch64-openEuler-linux]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 12.3.1 (openEuler 12.3.1-105.oe2403sp3) (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' '_GLIBCXX_USE_CXX11_ABI=0' '-O2' '-D' '_FORTIFY_SOURCE=2' '-fPIC' '-fstack-protector-all' '-w' '-v' '-o' 'CMakeFiles/cmTC_2abf5.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_2abf5.dir/']
+        ignore line: [ /usr/libexec/gcc/aarch64-openEuler-linux/12/cc1plus -quiet -v -D_GNU_SOURCE -D _GLIBCXX_USE_CXX11_ABI=0 -D _FORTIFY_SOURCE=2 /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_2abf5.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mlittle-endian -mabi=lp64 -O2 -w -version -fPIC -fstack-protector-all -o /tmp/ccsha5Zf.s]
+        ignore line: [GNU C++17 (GCC) version 12.3.1 (openEuler 12.3.1-105.oe2403sp3) (aarch64-openEuler-linux)]
+        ignore line: [	compiled by GNU C version 12.3.1 (openEuler 12.3.1-105.oe2403sp3)  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/aarch64-openEuler-linux/12/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/aarch64-openEuler-linux/12/../../../../aarch64-openEuler-linux/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/aarch64-openEuler-linux/12/../../../../include/c++/12]
+        ignore line: [ /usr/lib/gcc/aarch64-openEuler-linux/12/../../../../include/c++/12/aarch64-openEuler-linux]
+        ignore line: [ /usr/lib/gcc/aarch64-openEuler-linux/12/../../../../include/c++/12/backward]
+        ignore line: [ /usr/lib/gcc/aarch64-openEuler-linux/12/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C++17 (GCC) version 12.3.1 (openEuler 12.3.1-105.oe2403sp3) (aarch64-openEuler-linux)]
+        ignore line: [	compiled by GNU C version 12.3.1 (openEuler 12.3.1-105.oe2403sp3)  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: 6bc4c5f262ab3b582d3bd3757789182d]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' '_GLIBCXX_USE_CXX11_ABI=0' '-O2' '-D' '_FORTIFY_SOURCE=2' '-fPIC' '-fstack-protector-all' '-w' '-v' '-o' 'CMakeFiles/cmTC_2abf5.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_2abf5.dir/']
+        ignore line: [ as -v -W -EL -mabi=lp64 -o CMakeFiles/cmTC_2abf5.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccsha5Zf.s]
+        ignore line: [GNU assembler version 2.41 (aarch64-openEuler-linux) using BFD version (GNU Binutils) 2.41]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/aarch64-openEuler-linux/12/:/usr/libexec/gcc/aarch64-openEuler-linux/12/:/usr/libexec/gcc/aarch64-openEuler-linux/:/usr/lib/gcc/aarch64-openEuler-linux/12/:/usr/lib/gcc/aarch64-openEuler-linux/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/aarch64-openEuler-linux/12/:/usr/lib/gcc/aarch64-openEuler-linux/12/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/aarch64-openEuler-linux/12/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' '_GLIBCXX_USE_CXX11_ABI=0' '-O2' '-D' '_FORTIFY_SOURCE=2' '-fPIC' '-fstack-protector-all' '-w' '-v' '-o' 'CMakeFiles/cmTC_2abf5.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_2abf5.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_2abf5]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2abf5.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/c++ -D_GLIBCXX_USE_CXX11_ABI=0 -O2 -D_FORTIFY_SOURCE=2 -fPIC -fstack-protector-all -w   -v CMakeFiles/cmTC_2abf5.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_2abf5 ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/aarch64-openEuler-linux/12/lto-wrapper]
+        ignore line: [GCC_AI4C_ONNX_FDATA=/usr/libexec/gcc/aarch64-openEuler-linux/12/../../onnx.fdata]
+        ignore line: [Target: aarch64-openEuler-linux]
+        ignore line: [Configured with: ../configure --disable-bootstrap --disable-libgcj --without-cloog --enable-languages=c c++ fortran objc obj-c++ lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitee.com/src-openeuler/gcc/issues --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-libstdcxx-backtrace --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --without-isl --enable-gnu-indirect-function --with-multilib-list=lp64 --enable-bolt --build=aarch64-openEuler-linux]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 12.3.1 (openEuler 12.3.1-105.oe2403sp3) (GCC) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/aarch64-openEuler-linux/12/:/usr/libexec/gcc/aarch64-openEuler-linux/12/:/usr/libexec/gcc/aarch64-openEuler-linux/:/usr/lib/gcc/aarch64-openEuler-linux/12/:/usr/lib/gcc/aarch64-openEuler-linux/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/aarch64-openEuler-linux/12/:/usr/lib/gcc/aarch64-openEuler-linux/12/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/aarch64-openEuler-linux/12/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' '_GLIBCXX_USE_CXX11_ABI=0' '-O2' '-D' '_FORTIFY_SOURCE=2' '-fPIC' '-fstack-protector-all' '-w' '-v' '-o' 'cmTC_2abf5' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_2abf5.']
+        link line: [ /usr/libexec/gcc/aarch64-openEuler-linux/12/collect2 -plugin /usr/libexec/gcc/aarch64-openEuler-linux/12/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-openEuler-linux/12/lto-wrapper -plugin-opt=-fresolution=/tmp/ccSOWfyR.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -o cmTC_2abf5 /usr/lib/gcc/aarch64-openEuler-linux/12/../../../../lib64/crt1.o /usr/lib/gcc/aarch64-openEuler-linux/12/../../../../lib64/crti.o /usr/lib/gcc/aarch64-openEuler-linux/12/crtbegin.o -L/usr/lib/gcc/aarch64-openEuler-linux/12 -L/usr/lib/gcc/aarch64-openEuler-linux/12/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/aarch64-openEuler-linux/12/../../.. CMakeFiles/cmTC_2abf5.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/aarch64-openEuler-linux/12/crtend.o /usr/lib/gcc/aarch64-openEuler-linux/12/../../../../lib64/crtn.o]
+          arg [/usr/libexec/gcc/aarch64-openEuler-linux/12/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/aarch64-openEuler-linux/12/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/aarch64-openEuler-linux/12/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccSOWfyR.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib/ld-linux-aarch64.so.1] ==> ignore
+          arg [-X] ==> ignore
+          arg [-EL] ==> ignore
+          arg [-maarch64linux] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_2abf5] ==> ignore
+          arg [/usr/lib/gcc/aarch64-openEuler-linux/12/../../../../lib64/crt1.o] ==> obj [/usr/lib/gcc/aarch64-openEuler-linux/12/../../../../lib64/crt1.o]
+          arg [/usr/lib/gcc/aarch64-openEuler-linux/12/../../../../lib64/crti.o] ==> obj [/usr/lib/gcc/aarch64-openEuler-linux/12/../../../../lib64/crti.o]
+          arg [/usr/lib/gcc/aarch64-openEuler-linux/12/crtbegin.o] ==> obj [/usr/lib/gcc/aarch64-openEuler-linux/12/crtbegin.o]
+          arg [-L/usr/lib/gcc/aarch64-openEuler-linux/12] ==> dir [/usr/lib/gcc/aarch64-openEuler-linux/12]
+          arg [-L/usr/lib/gcc/aarch64-openEuler-linux/12/../../../../lib64] ==> dir [/usr/lib/gcc/aarch64-openEuler-linux/12/../../../../lib64]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/usr/lib/gcc/aarch64-openEuler-linux/12/../../..] ==> dir [/usr/lib/gcc/aarch64-openEuler-linux/12/../../..]
+          arg [CMakeFiles/cmTC_2abf5.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/lib/gcc/aarch64-openEuler-linux/12/crtend.o] ==> obj [/usr/lib/gcc/aarch64-openEuler-linux/12/crtend.o]
+          arg [/usr/lib/gcc/aarch64-openEuler-linux/12/../../../../lib64/crtn.o] ==> obj [/usr/lib/gcc/aarch64-openEuler-linux/12/../../../../lib64/crtn.o]
+        collapse obj [/usr/lib/gcc/aarch64-openEuler-linux/12/../../../../lib64/crt1.o] ==> [/usr/lib64/crt1.o]
+        collapse obj [/usr/lib/gcc/aarch64-openEuler-linux/12/../../../../lib64/crti.o] ==> [/usr/lib64/crti.o]
+        collapse obj [/usr/lib/gcc/aarch64-openEuler-linux/12/../../../../lib64/crtn.o] ==> [/usr/lib64/crtn.o]
+        collapse library dir [/usr/lib/gcc/aarch64-openEuler-linux/12] ==> [/usr/lib/gcc/aarch64-openEuler-linux/12]
+        collapse library dir [/usr/lib/gcc/aarch64-openEuler-linux/12/../../../../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/usr/lib/gcc/aarch64-openEuler-linux/12/../../..] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/usr/lib64/crt1.o;/usr/lib64/crti.o;/usr/lib/gcc/aarch64-openEuler-linux/12/crtbegin.o;/usr/lib/gcc/aarch64-openEuler-linux/12/crtend.o;/usr/lib64/crtn.o]
+        implicit dirs: [/usr/lib/gcc/aarch64-openEuler-linux/12;/usr/lib64;/lib64;/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/usr/share/cmake/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "googletest/cmake/internal_utils.cmake:66 (find_package)"
+      - "googletest/CMakeLists.txt:83 (config_compiler_and_linker)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/workspace/code/tests/ut/build/third_party_gtest-prefix/src/third_party_gtest-build/CMakeFiles/CMakeScratch/TryCompile-A7DArz"
+      binary: "/workspace/code/tests/ut/build/third_party_gtest-prefix/src/third_party_gtest-build/CMakeFiles/CMakeScratch/TryCompile-A7DArz"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-D_GLIBCXX_USE_CXX11_ABI=0 -O2 -D_FORTIFY_SOURCE=2 -fPIC -fstack-protector-all -w"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/code/tests/ut/build/third_party_gtest-prefix/src/third_party_gtest-build/CMakeFiles/CMakeScratch/TryCompile-A7DArz'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b8a44/fast
+        gmake[3]: Entering directory '/workspace/code/tests/ut/build/third_party_gtest-prefix/src/third_party_gtest-build/CMakeFiles/CMakeScratch/TryCompile-A7DArz'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b8a44.dir/build.make CMakeFiles/cmTC_b8a44.dir/build
+        gmake[4]: Entering directory '/workspace/code/tests/ut/build/third_party_gtest-prefix/src/third_party_gtest-build/CMakeFiles/CMakeScratch/TryCompile-A7DArz'
+        Building C object CMakeFiles/cmTC_b8a44.dir/src.c.o
+        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD  -D_GLIBCXX_USE_CXX11_ABI=0 -O2 -D_FORTIFY_SOURCE=2 -fPIC -fstack-protector-all -w  -o CMakeFiles/cmTC_b8a44.dir/src.c.o -c /workspace/code/tests/ut/build/third_party_gtest-prefix/src/third_party_gtest-build/CMakeFiles/CMakeScratch/TryCompile-A7DArz/src.c
+        Linking C executable cmTC_b8a44
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b8a44.dir/link.txt --verbose=1
+        /usr/bin/cc -D_GLIBCXX_USE_CXX11_ABI=0 -O2 -D_FORTIFY_SOURCE=2 -fPIC -fstack-protector-all -w  CMakeFiles/cmTC_b8a44.dir/src.c.o -o cmTC_b8a44 
+        gmake[4]: Leaving directory '/workspace/code/tests/ut/build/third_party_gtest-prefix/src/third_party_gtest-build/CMakeFiles/CMakeScratch/TryCompile-A7DArz'
+        gmake[3]: Leaving directory '/workspace/code/tests/ut/build/third_party_gtest-prefix/src/third_party_gtest-build/CMakeFiles/CMakeScratch/TryCompile-A7DArz'
+        
+      exitCode: 0
+...

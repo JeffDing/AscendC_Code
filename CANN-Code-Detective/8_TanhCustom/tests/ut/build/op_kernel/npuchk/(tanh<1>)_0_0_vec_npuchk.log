@@ -1,0 +1,2361 @@
+
+### set_ffts_base_addr((uint64_t)281473600661152);
+
+[set_ffts_base_addr] unsupported
+[S] [RECV_INST] set_ffts_base_addr type 7
+[S] [EXECUTE] set_ffts_base_addr type 7
+
+### set_mask_norm();
+
+[set_mask_norm] unsupported
+[S] [RECV_INST] set_mask_norm type 7
+[S] [EXECUTE] set_mask_norm type 7
+
+### set_vector_mask((uint64_t)18446744073709551615, (uint64_t)18446744073709551615);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+[ALL] [TBUF_EVENT] ABS_ADDR 0xffffaabf4010 0x30000 B type L1
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[ALL] [TBUF_EVENT] ABS_ADDR 0xffffaab73010 0x80000 B type L0A
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[ALL] [TBUF_EVENT] ABS_ADDR 0x3d11acb0 0x10000 B type L1
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[ALL] [TBUF_EVENT] ABS_ADDR 0x3d12acc0 0x10000 B type L0B
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[ALL] [TBUF_EVENT] ABS_ADDR 0xffffaab52010 0x20000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[ALL] [TBUF_EVENT] ABS_ADDR 0x3cbc2130 0x400 B type L0C
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[ALL] [TBUF_EVENT] ABS_ADDR 0x3d0f2d40 0x1c00 B type L0C
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[ALL] [TBUF_EVENT] INIT 0xffffaabf4010 0x8000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x8000, Rate: 12.5%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[ALL] [TBUF_EVENT] INIT 0xffffaabfc010 0x8000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x10000, Rate: 25%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][InitMemRecord]add addr: 281473546403856len: 32768
+[ALL] [TBUF_EVENT] INIT 0xffffaac04010 0x8000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x18000, Rate: 37.5%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[ALL] [TBUF_EVENT] INIT 0xffffaac0c010 0x8000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x20000, Rate: 50%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][InitMemRecord]add addr: 281473546469392len: 32768
+[ALL] [TBUF_EVENT] ALLOC 0xffffaabf4010 0x8000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x8000, Rate: 12.5%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x20000, Rate: 50%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281473546403856len: 32768
+
+### copy_gm_to_ubuf((__ubuf__ void*)0xffffaabf4010, (__gm__ void*)0xffffabd3b000, (uint8_t)0, (uint16_t)1, (uint16_t)1024, (uint16_t)0, (uint16_t)0);
+
+[MTE2] [RECV_INST] copy_gm_to_ubuf type 0
+[MTE2] [EXECUTE] copy_gm_to_ubuf type 0
+[MTE2] read  data 0xffffabd3b000 0x8000 B type GM
+[MTE2] [DATA_MARK] 0xffffabd3b000 0x8000 B type GM mark read
+[MTE2] write data 0xffffaabf4010 0x8000 B type UB
+[MTE2] checking pending queue
+[MTE2] [CHECK_DATA] 0xffffaabf4010 0x8000 B type UB
+[MTE2] checking wrote queue
+[MTE2] [CHECK_DATA] 0xffffaabf4010 0x8000 B type UB
+[MTE2] [CHECK_TBUF] 0xffffaabf4010 0x8000 B type UB
+[MTE2] allocation buffer match result 0
+[MEMCHEK] Mem[281473546403856]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)0);
+
+[MTE2] [RECV_INST] set_flag type 3
+[MTE2] [EXECUTE] set_flag type 3
+[MTE2] [SYNC_DATA] 0xffffaabf4010 0x8000 B type UB
+[MTE2] [send event] on set_flag 4 1 0
+[MTE2] -> [V] [GET_DATA] 0xffffaabf4010 0x8000 B stat 1 type UB
+[V] [RECV_EVENT] SRC MTE2 DST V EVENT 0
+[V] [RECV_DATA] 0xffffaabf4010 0x8000 B stat 1 type UB
+[MEMCHEK] Mem[281473546403856]checkNum is 0
+
+### wait_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)0);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 4 1 0
+[MTE2] [EVENT_CLEAR] send 4 1 0 has been waited
+[MEMCHEK] Mem[281473546403856]checkNum is 0
+[ALL] [TBUF_EVENT] ALLOC 0xffffaac04010 0x8000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x10000, Rate: 25%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x20000, Rate: 50%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281473546469392len: 32768
+
+### set_mask_count();
+
+[set_mask_count] unsupported
+[S] [RECV_INST] set_mask_count type 7
+[S] [EXECUTE] set_mask_count type 7
+
+### set_vector_mask((uint64_t)0, (uint64_t)8192);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### vmuls((__ubuf__ float*)0xffffaac04010, (__ubuf__ float*)0xffffaabf4010, (float)-2, (uint8_t)1, (uint16_t)1, (uint16_t)1, (uint16_t)8, (uint16_t)8);
+
+[V] [RECV_INST] vmuls type 1
+[V] [EXECUTE] vmuls type 1
+[MEMCHEK] Mem[281473546403856]checkNum is 0
+[MEMCHEK] Mem[281473546469392]checkNum is 0
+DataMergeAllOnceAll dataLen: 32768
+[V] [ErrorRead4] on read 0 0x8000 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffffad9ae9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffffad9aef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x1ec) [0xffffad986df4]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x434) [0xffffad989334]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1c8) [0xffffad983d54]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffffad99500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk5vmulsEPfS0_fhtttt+0x45c) [0xffffada9ceec]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z5vmulsPfS_fhtttt+0x8c) [0xffffad800124]
+  ./tanh_op_kernel_ut() [0x4393ec]
+  ./tanh_op_kernel_ut() [0x435464]
+  ./tanh_op_kernel_ut() [0x42fba4]
+  ./tanh_op_kernel_ut() [0x43bc34]
+  ./tanh_op_kernel_ut() [0x436410]
+  ./tanh_op_kernel_ut() [0x43094c]
+  ./tanh_op_kernel_ut() [0x430f74]
+  ./tanh_op_kernel_ut() [0x424980]
+  ./tanh_op_kernel_ut() [0x48b008]
+  ./tanh_op_kernel_ut() [0x4762f8]
+  ./tanh_op_kernel_ut() [0x4764f8]
+  ./tanh_op_kernel_ut() [0x47a1dc]
+  ./tanh_op_kernel_ut() [0x47f1e4]
+  ./tanh_op_kernel_ut() [0x4766d0]
+  ./tanh_op_kernel_ut() [0x424098]
+  /usr/lib64/libc.so.6(+0x276c4) [0xffffac6b76c4]
+  /usr/lib64/libc.so.6(__libc_start_main+0x98) [0xffffac6b77a8]
+  ./tanh_op_kernel_ut() [0x424670]
+
+[V] read  data 0 0x8000 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0 0x8000 B type UB
+[V] [ErrorRead2] on read 0 0x8000 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffffad9ae9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffffad9aef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x4e0) [0xffffad9870e8]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x434) [0xffffad989334]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1c8) [0xffffad983d54]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffffad99500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk5vmulsEPfS0_fhtttt+0x45c) [0xffffada9ceec]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z5vmulsPfS_fhtttt+0x8c) [0xffffad800124]
+  ./tanh_op_kernel_ut() [0x4393ec]
+  ./tanh_op_kernel_ut() [0x435464]
+  ./tanh_op_kernel_ut() [0x42fba4]
+  ./tanh_op_kernel_ut() [0x43bc34]
+  ./tanh_op_kernel_ut() [0x436410]
+  ./tanh_op_kernel_ut() [0x43094c]
+  ./tanh_op_kernel_ut() [0x430f74]
+  ./tanh_op_kernel_ut() [0x424980]
+  ./tanh_op_kernel_ut() [0x48b008]
+  ./tanh_op_kernel_ut() [0x4762f8]
+  ./tanh_op_kernel_ut() [0x4764f8]
+  ./tanh_op_kernel_ut() [0x47a1dc]
+  ./tanh_op_kernel_ut() [0x47f1e4]
+  ./tanh_op_kernel_ut() [0x4766d0]
+  ./tanh_op_kernel_ut() [0x424098]
+  /usr/lib64/libc.so.6(+0x276c4) [0xffffac6b76c4]
+  /usr/lib64/libc.so.6(__libc_start_main+0x98) [0xffffac6b77a8]
+  ./tanh_op_kernel_ut() [0x424670]
+
+[V] checking pending queue
+[V] [CHECK_DATA] 0 0x8000 B type UB
+[V] [CHECK_TBUF] 0 0x8000 B type UB
+[V] allocation buffer match result 2
+[V] persistent buffer match result 2
+[V] [ErrorRead1] on read 0 0x8000 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffffad9ae9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffffad9aef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x82c) [0xffffad987434]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x434) [0xffffad989334]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1c8) [0xffffad983d54]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffffad99500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk5vmulsEPfS0_fhtttt+0x45c) [0xffffada9ceec]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z5vmulsPfS_fhtttt+0x8c) [0xffffad800124]
+  ./tanh_op_kernel_ut() [0x4393ec]
+  ./tanh_op_kernel_ut() [0x435464]
+  ./tanh_op_kernel_ut() [0x42fba4]
+  ./tanh_op_kernel_ut() [0x43bc34]
+  ./tanh_op_kernel_ut() [0x436410]
+  ./tanh_op_kernel_ut() [0x43094c]
+  ./tanh_op_kernel_ut() [0x430f74]
+  ./tanh_op_kernel_ut() [0x424980]
+  ./tanh_op_kernel_ut() [0x48b008]
+  ./tanh_op_kernel_ut() [0x4762f8]
+  ./tanh_op_kernel_ut() [0x4764f8]
+  ./tanh_op_kernel_ut() [0x47a1dc]
+  ./tanh_op_kernel_ut() [0x47f1e4]
+  ./tanh_op_kernel_ut() [0x4766d0]
+  ./tanh_op_kernel_ut() [0x424098]
+  /usr/lib64/libc.so.6(+0x276c4) [0xffffac6b76c4]
+  /usr/lib64/libc.so.6(__libc_start_main+0x98) [0xffffac6b77a8]
+  ./tanh_op_kernel_ut() [0x424670]
+
+[V] read  data 0xffffaabf4010 0x8000 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0xffffaabf4010 0x8000 B type UB
+[V] data matched whole 0xffffaabf4010 0x8000 stat 1
+[V] [DATA_MARK] 0xffffaabf4010 0x8000 B type UB mark read
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffffaabf4010 0x8000 B type UB
+[V] [CHECK_TBUF] 0xffffaabf4010 0x8000 B type UB
+[V] allocation buffer match result 0
+[V] write data 0xffffaac04010 0x8000 B type UB
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffffaac04010 0x8000 B type UB
+[V] checking wrote queue
+[V] [CHECK_DATA] 0xffffaac04010 0x8000 B type UB
+[V] [CHECK_TBUF] 0xffffaac04010 0x8000 B type UB
+[V] allocation buffer match result 0
+
+### set_vector_mask((uint64_t)18446744073709551615, (uint64_t)18446744073709551615);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### set_mask_norm();
+
+[set_mask_norm] unsupported
+[S] [RECV_INST] set_mask_norm type 7
+[S] [EXECUTE] set_mask_norm type 7
+
+### set_mask_count();
+
+[set_mask_count] unsupported
+[S] [RECV_INST] set_mask_count type 7
+[S] [EXECUTE] set_mask_count type 7
+
+### set_vector_mask((uint64_t)0, (uint64_t)8192);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### vexp((__ubuf__ float*)0xffffaac04010, (__ubuf__ float*)0xffffaac04010, (uint8_t)1, (uint16_t)1, (uint16_t)1, (uint8_t)8, (uint8_t)8);
+
+[V] [RECV_INST] vexp type 1
+[V] [EXECUTE] vexp type 1
+[MEMCHEK] Mem[281473546469392]checkNum is 0
+[MEMCHEK] Mem[281473546469392]checkNum is 0
+DataMergeAllOnceAll dataLen: 32768
+[V] [ErrorRead4] on read 0 0x8000 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffffad9ae9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffffad9aef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x1ec) [0xffffad986df4]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x434) [0xffffad989334]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1c8) [0xffffad983d54]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffffad99500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk4vexpEPfS0_htthh+0x3c8) [0xffffada81698]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z4vexpPfS_htthh+0x84) [0xffffad7f96fc]
+  ./tanh_op_kernel_ut() [0x43538c]
+  ./tanh_op_kernel_ut() [0x42f8bc]
+  ./tanh_op_kernel_ut() [0x43bc4c]
+  ./tanh_op_kernel_ut() [0x436410]
+  ./tanh_op_kernel_ut() [0x43094c]
+  ./tanh_op_kernel_ut() [0x430f74]
+  ./tanh_op_kernel_ut() [0x424980]
+  ./tanh_op_kernel_ut() [0x48b008]
+  ./tanh_op_kernel_ut() [0x4762f8]
+  ./tanh_op_kernel_ut() [0x4764f8]
+  ./tanh_op_kernel_ut() [0x47a1dc]
+  ./tanh_op_kernel_ut() [0x47f1e4]
+  ./tanh_op_kernel_ut() [0x4766d0]
+  ./tanh_op_kernel_ut() [0x424098]
+  /usr/lib64/libc.so.6(+0x276c4) [0xffffac6b76c4]
+  /usr/lib64/libc.so.6(__libc_start_main+0x98) [0xffffac6b77a8]
+  ./tanh_op_kernel_ut() [0x424670]
+
+[V] read  data 0 0x8000 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0 0x8000 B type UB
+[V] [ErrorRead2] on read 0 0x8000 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffffad9ae9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffffad9aef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x4e0) [0xffffad9870e8]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x434) [0xffffad989334]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1c8) [0xffffad983d54]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffffad99500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk4vexpEPfS0_htthh+0x3c8) [0xffffada81698]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z4vexpPfS_htthh+0x84) [0xffffad7f96fc]
+  ./tanh_op_kernel_ut() [0x43538c]
+  ./tanh_op_kernel_ut() [0x42f8bc]
+  ./tanh_op_kernel_ut() [0x43bc4c]
+  ./tanh_op_kernel_ut() [0x436410]
+  ./tanh_op_kernel_ut() [0x43094c]
+  ./tanh_op_kernel_ut() [0x430f74]
+  ./tanh_op_kernel_ut() [0x424980]
+  ./tanh_op_kernel_ut() [0x48b008]
+  ./tanh_op_kernel_ut() [0x4762f8]
+  ./tanh_op_kernel_ut() [0x4764f8]
+  ./tanh_op_kernel_ut() [0x47a1dc]
+  ./tanh_op_kernel_ut() [0x47f1e4]
+  ./tanh_op_kernel_ut() [0x4766d0]
+  ./tanh_op_kernel_ut() [0x424098]
+  /usr/lib64/libc.so.6(+0x276c4) [0xffffac6b76c4]
+  /usr/lib64/libc.so.6(__libc_start_main+0x98) [0xffffac6b77a8]
+  ./tanh_op_kernel_ut() [0x424670]
+
+[V] checking pending queue
+[V] [CHECK_DATA] 0 0x8000 B type UB
+[V] [CHECK_TBUF] 0 0x8000 B type UB
+[V] allocation buffer match result 2
+[V] persistent buffer match result 2
+[V] [ErrorRead1] on read 0 0x8000 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffffad9ae9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffffad9aef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x82c) [0xffffad987434]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x434) [0xffffad989334]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1c8) [0xffffad983d54]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffffad99500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk4vexpEPfS0_htthh+0x3c8) [0xffffada81698]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z4vexpPfS_htthh+0x84) [0xffffad7f96fc]
+  ./tanh_op_kernel_ut() [0x43538c]
+  ./tanh_op_kernel_ut() [0x42f8bc]
+  ./tanh_op_kernel_ut() [0x43bc4c]
+  ./tanh_op_kernel_ut() [0x436410]
+  ./tanh_op_kernel_ut() [0x43094c]
+  ./tanh_op_kernel_ut() [0x430f74]
+  ./tanh_op_kernel_ut() [0x424980]
+  ./tanh_op_kernel_ut() [0x48b008]
+  ./tanh_op_kernel_ut() [0x4762f8]
+  ./tanh_op_kernel_ut() [0x4764f8]
+  ./tanh_op_kernel_ut() [0x47a1dc]
+  ./tanh_op_kernel_ut() [0x47f1e4]
+  ./tanh_op_kernel_ut() [0x4766d0]
+  ./tanh_op_kernel_ut() [0x424098]
+  /usr/lib64/libc.so.6(+0x276c4) [0xffffac6b76c4]
+  /usr/lib64/libc.so.6(__libc_start_main+0x98) [0xffffac6b77a8]
+  ./tanh_op_kernel_ut() [0x424670]
+
+[V] read  data 0xffffaac04010 0x8000 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0xffffaac04010 0x8000 B type UB
+[V] [ErrorRead2] on read 0xffffaac04010 0x8000 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffffad9ae9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffffad9aef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x4e0) [0xffffad9870e8]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x434) [0xffffad989334]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1c8) [0xffffad983d54]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffffad99500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk4vexpEPfS0_htthh+0x3c8) [0xffffada81698]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z4vexpPfS_htthh+0x84) [0xffffad7f96fc]
+  ./tanh_op_kernel_ut() [0x43538c]
+  ./tanh_op_kernel_ut() [0x42f8bc]
+  ./tanh_op_kernel_ut() [0x43bc4c]
+  ./tanh_op_kernel_ut() [0x436410]
+  ./tanh_op_kernel_ut() [0x43094c]
+  ./tanh_op_kernel_ut() [0x430f74]
+  ./tanh_op_kernel_ut() [0x424980]
+  ./tanh_op_kernel_ut() [0x48b008]
+  ./tanh_op_kernel_ut() [0x4762f8]
+  ./tanh_op_kernel_ut() [0x4764f8]
+  ./tanh_op_kernel_ut() [0x47a1dc]
+  ./tanh_op_kernel_ut() [0x47f1e4]
+  ./tanh_op_kernel_ut() [0x4766d0]
+  ./tanh_op_kernel_ut() [0x424098]
+  /usr/lib64/libc.so.6(+0x276c4) [0xffffac6b76c4]
+  /usr/lib64/libc.so.6(__libc_start_main+0x98) [0xffffac6b77a8]
+  ./tanh_op_kernel_ut() [0x424670]
+
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffffaac04010 0x8000 B type UB
+[V] data matched whole 0xffffaac04010 0x8000 stat 2
+[V] [ErrorSync2] on read 0xffffaac04010 0x8000 B
+[V] [CHECK_TBUF] 0xffffaac04010 0x8000 B type UB
+[V] allocation buffer match result 0
+
+### set_mask_norm();
+
+[set_mask_norm] unsupported
+[S] [RECV_INST] set_mask_norm type 7
+[S] [EXECUTE] set_mask_norm type 7
+
+### set_vector_mask((uint64_t)18446744073709551615, (uint64_t)18446744073709551615);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### set_mask_count();
+
+[set_mask_count] unsupported
+[S] [RECV_INST] set_mask_count type 7
+[S] [EXECUTE] set_mask_count type 7
+
+### set_vector_mask((uint64_t)0, (uint64_t)8192);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### vadds((__ubuf__ float*)0xffffaac04010, (__ubuf__ float*)0xffffaac04010, (float)1, (uint8_t)1, (uint16_t)1, (uint16_t)1, (uint16_t)8, (uint16_t)8);
+
+[V] [RECV_INST] vadds type 1
+[V] [EXECUTE] vadds type 1
+[MEMCHEK] Mem[281473546469392]checkNum is 0
+[MEMCHEK] Mem[281473546469392]checkNum is 0
+DataMergeAllOnceAll dataLen: 32768
+[V] [ErrorRead4] on read 0 0x8000 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffffad9ae9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffffad9aef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x1ec) [0xffffad986df4]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x434) [0xffffad989334]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1c8) [0xffffad983d54]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffffad99500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk5vaddsEPfS0_fhtttt+0x458) [0xffffada24740]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z5vaddsPfS_fhtttt+0x8c) [0xffffad7d8c24]
+  ./tanh_op_kernel_ut() [0x439b90]
+  ./tanh_op_kernel_ut() [0x435524]
+  ./tanh_op_kernel_ut() [0x42fe08]
+  ./tanh_op_kernel_ut() [0x43bc70]
+  ./tanh_op_kernel_ut() [0x436410]
+  ./tanh_op_kernel_ut() [0x43094c]
+  ./tanh_op_kernel_ut() [0x430f74]
+  ./tanh_op_kernel_ut() [0x424980]
+  ./tanh_op_kernel_ut() [0x48b008]
+  ./tanh_op_kernel_ut() [0x4762f8]
+  ./tanh_op_kernel_ut() [0x4764f8]
+  ./tanh_op_kernel_ut() [0x47a1dc]
+  ./tanh_op_kernel_ut() [0x47f1e4]
+  ./tanh_op_kernel_ut() [0x4766d0]
+  ./tanh_op_kernel_ut() [0x424098]
+  /usr/lib64/libc.so.6(+0x276c4) [0xffffac6b76c4]
+  /usr/lib64/libc.so.6(__libc_start_main+0x98) [0xffffac6b77a8]
+  ./tanh_op_kernel_ut() [0x424670]
+
+[V] read  data 0 0x8000 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0 0x8000 B type UB
+[V] [ErrorRead2] on read 0 0x8000 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffffad9ae9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffffad9aef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x4e0) [0xffffad9870e8]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x434) [0xffffad989334]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1c8) [0xffffad983d54]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffffad99500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk5vaddsEPfS0_fhtttt+0x458) [0xffffada24740]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z5vaddsPfS_fhtttt+0x8c) [0xffffad7d8c24]
+  ./tanh_op_kernel_ut() [0x439b90]
+  ./tanh_op_kernel_ut() [0x435524]
+  ./tanh_op_kernel_ut() [0x42fe08]
+  ./tanh_op_kernel_ut() [0x43bc70]
+  ./tanh_op_kernel_ut() [0x436410]
+  ./tanh_op_kernel_ut() [0x43094c]
+  ./tanh_op_kernel_ut() [0x430f74]
+  ./tanh_op_kernel_ut() [0x424980]
+  ./tanh_op_kernel_ut() [0x48b008]
+  ./tanh_op_kernel_ut() [0x4762f8]
+  ./tanh_op_kernel_ut() [0x4764f8]
+  ./tanh_op_kernel_ut() [0x47a1dc]
+  ./tanh_op_kernel_ut() [0x47f1e4]
+  ./tanh_op_kernel_ut() [0x4766d0]
+  ./tanh_op_kernel_ut() [0x424098]
+  /usr/lib64/libc.so.6(+0x276c4) [0xffffac6b76c4]
+  /usr/lib64/libc.so.6(__libc_start_main+0x98) [0xffffac6b77a8]
+  ./tanh_op_kernel_ut() [0x424670]
+
+[V] checking pending queue
+[V] [CHECK_DATA] 0 0x8000 B type UB
+[V] [CHECK_TBUF] 0 0x8000 B type UB
+[V] allocation buffer match result 2
+[V] persistent buffer match result 2
+[V] [ErrorRead1] on read 0 0x8000 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffffad9ae9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffffad9aef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x82c) [0xffffad987434]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x434) [0xffffad989334]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1c8) [0xffffad983d54]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffffad99500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk5vaddsEPfS0_fhtttt+0x458) [0xffffada24740]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z5vaddsPfS_fhtttt+0x8c) [0xffffad7d8c24]
+  ./tanh_op_kernel_ut() [0x439b90]
+  ./tanh_op_kernel_ut() [0x435524]
+  ./tanh_op_kernel_ut() [0x42fe08]
+  ./tanh_op_kernel_ut() [0x43bc70]
+  ./tanh_op_kernel_ut() [0x436410]
+  ./tanh_op_kernel_ut() [0x43094c]
+  ./tanh_op_kernel_ut() [0x430f74]
+  ./tanh_op_kernel_ut() [0x424980]
+  ./tanh_op_kernel_ut() [0x48b008]
+  ./tanh_op_kernel_ut() [0x4762f8]
+  ./tanh_op_kernel_ut() [0x4764f8]
+  ./tanh_op_kernel_ut() [0x47a1dc]
+  ./tanh_op_kernel_ut() [0x47f1e4]
+  ./tanh_op_kernel_ut() [0x4766d0]
+  ./tanh_op_kernel_ut() [0x424098]
+  /usr/lib64/libc.so.6(+0x276c4) [0xffffac6b76c4]
+  /usr/lib64/libc.so.6(__libc_start_main+0x98) [0xffffac6b77a8]
+  ./tanh_op_kernel_ut() [0x424670]
+
+[V] read  data 0xffffaac04010 0x8000 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0xffffaac04010 0x8000 B type UB
+[V] [ErrorRead2] on read 0xffffaac04010 0x8000 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffffad9ae9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffffad9aef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x4e0) [0xffffad9870e8]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x434) [0xffffad989334]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1c8) [0xffffad983d54]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffffad99500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk5vaddsEPfS0_fhtttt+0x458) [0xffffada24740]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z5vaddsPfS_fhtttt+0x8c) [0xffffad7d8c24]
+  ./tanh_op_kernel_ut() [0x439b90]
+  ./tanh_op_kernel_ut() [0x435524]
+  ./tanh_op_kernel_ut() [0x42fe08]
+  ./tanh_op_kernel_ut() [0x43bc70]
+  ./tanh_op_kernel_ut() [0x436410]
+  ./tanh_op_kernel_ut() [0x43094c]
+  ./tanh_op_kernel_ut() [0x430f74]
+  ./tanh_op_kernel_ut() [0x424980]
+  ./tanh_op_kernel_ut() [0x48b008]
+  ./tanh_op_kernel_ut() [0x4762f8]
+  ./tanh_op_kernel_ut() [0x4764f8]
+  ./tanh_op_kernel_ut() [0x47a1dc]
+  ./tanh_op_kernel_ut() [0x47f1e4]
+  ./tanh_op_kernel_ut() [0x4766d0]
+  ./tanh_op_kernel_ut() [0x424098]
+  /usr/lib64/libc.so.6(+0x276c4) [0xffffac6b76c4]
+  /usr/lib64/libc.so.6(__libc_start_main+0x98) [0xffffac6b77a8]
+  ./tanh_op_kernel_ut() [0x424670]
+
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffffaac04010 0x8000 B type UB
+[V] data matched whole 0xffffaac04010 0x8000 stat 2
+[V] [ErrorSync2] on read 0xffffaac04010 0x8000 B
+[V] [CHECK_TBUF] 0xffffaac04010 0x8000 B type UB
+[V] allocation buffer match result 0
+
+### set_vector_mask((uint64_t)18446744073709551615, (uint64_t)18446744073709551615);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### set_mask_norm();
+
+[set_mask_norm] unsupported
+[S] [RECV_INST] set_mask_norm type 7
+[S] [EXECUTE] set_mask_norm type 7
+
+### set_mask_count();
+
+[set_mask_count] unsupported
+[S] [RECV_INST] set_mask_count type 7
+[S] [EXECUTE] set_mask_count type 7
+
+### set_vector_mask((uint64_t)0, (uint64_t)8192);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### vector_dup((__ubuf__ float*)0xffffaabf4010, (float)2, (uint8_t)1, (uint16_t)1, (uint16_t)1, (uint8_t)8, (uint8_t)0);
+
+[V] [RECV_INST] vector_dup type 1
+[V] [EXECUTE] vector_dup type 1
+[MEMCHEK] Mem[281473546403856]checkNum is 0
+DataMergeAllOnceAll dataLen: 32768
+[V] [ErrorRead4] on read 0 0x8000 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffffad9ae9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffffad9aef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x1ec) [0xffffad986df4]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x434) [0xffffad989334]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1c8) [0xffffad983d54]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffffad99500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk10vector_dupEPffhtthh+0x3b8) [0xffffada7d478]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z10vector_dupPffhtthh+0x84) [0xffffad7f868c]
+  ./tanh_op_kernel_ut() [0x43930c]
+  ./tanh_op_kernel_ut() [0x433e30]
+  ./tanh_op_kernel_ut() [0x42ece0]
+  ./tanh_op_kernel_ut() [0x43bc90]
+  ./tanh_op_kernel_ut() [0x436410]
+  ./tanh_op_kernel_ut() [0x43094c]
+  ./tanh_op_kernel_ut() [0x430f74]
+  ./tanh_op_kernel_ut() [0x424980]
+  ./tanh_op_kernel_ut() [0x48b008]
+  ./tanh_op_kernel_ut() [0x4762f8]
+  ./tanh_op_kernel_ut() [0x4764f8]
+  ./tanh_op_kernel_ut() [0x47a1dc]
+  ./tanh_op_kernel_ut() [0x47f1e4]
+  ./tanh_op_kernel_ut() [0x4766d0]
+  ./tanh_op_kernel_ut() [0x424098]
+  /usr/lib64/libc.so.6(+0x276c4) [0xffffac6b76c4]
+  /usr/lib64/libc.so.6(__libc_start_main+0x98) [0xffffac6b77a8]
+  ./tanh_op_kernel_ut() [0x424670]
+
+[V] read  data 0 0x8000 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0 0x8000 B type UB
+[V] [ErrorRead2] on read 0 0x8000 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffffad9ae9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffffad9aef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x4e0) [0xffffad9870e8]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x434) [0xffffad989334]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1c8) [0xffffad983d54]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffffad99500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk10vector_dupEPffhtthh+0x3b8) [0xffffada7d478]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z10vector_dupPffhtthh+0x84) [0xffffad7f868c]
+  ./tanh_op_kernel_ut() [0x43930c]
+  ./tanh_op_kernel_ut() [0x433e30]
+  ./tanh_op_kernel_ut() [0x42ece0]
+  ./tanh_op_kernel_ut() [0x43bc90]
+  ./tanh_op_kernel_ut() [0x436410]
+  ./tanh_op_kernel_ut() [0x43094c]
+  ./tanh_op_kernel_ut() [0x430f74]
+  ./tanh_op_kernel_ut() [0x424980]
+  ./tanh_op_kernel_ut() [0x48b008]
+  ./tanh_op_kernel_ut() [0x4762f8]
+  ./tanh_op_kernel_ut() [0x4764f8]
+  ./tanh_op_kernel_ut() [0x47a1dc]
+  ./tanh_op_kernel_ut() [0x47f1e4]
+  ./tanh_op_kernel_ut() [0x4766d0]
+  ./tanh_op_kernel_ut() [0x424098]
+  /usr/lib64/libc.so.6(+0x276c4) [0xffffac6b76c4]
+  /usr/lib64/libc.so.6(__libc_start_main+0x98) [0xffffac6b77a8]
+  ./tanh_op_kernel_ut() [0x424670]
+
+[V] checking pending queue
+[V] [CHECK_DATA] 0 0x8000 B type UB
+[V] [CHECK_TBUF] 0 0x8000 B type UB
+[V] allocation buffer match result 2
+[V] persistent buffer match result 2
+[V] [ErrorRead1] on read 0 0x8000 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffffad9ae9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffffad9aef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x82c) [0xffffad987434]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x434) [0xffffad989334]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1c8) [0xffffad983d54]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffffad99500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk10vector_dupEPffhtthh+0x3b8) [0xffffada7d478]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z10vector_dupPffhtthh+0x84) [0xffffad7f868c]
+  ./tanh_op_kernel_ut() [0x43930c]
+  ./tanh_op_kernel_ut() [0x433e30]
+  ./tanh_op_kernel_ut() [0x42ece0]
+  ./tanh_op_kernel_ut() [0x43bc90]
+  ./tanh_op_kernel_ut() [0x436410]
+  ./tanh_op_kernel_ut() [0x43094c]
+  ./tanh_op_kernel_ut() [0x430f74]
+  ./tanh_op_kernel_ut() [0x424980]
+  ./tanh_op_kernel_ut() [0x48b008]
+  ./tanh_op_kernel_ut() [0x4762f8]
+  ./tanh_op_kernel_ut() [0x4764f8]
+  ./tanh_op_kernel_ut() [0x47a1dc]
+  ./tanh_op_kernel_ut() [0x47f1e4]
+  ./tanh_op_kernel_ut() [0x4766d0]
+  ./tanh_op_kernel_ut() [0x424098]
+  /usr/lib64/libc.so.6(+0x276c4) [0xffffac6b76c4]
+  /usr/lib64/libc.so.6(__libc_start_main+0x98) [0xffffac6b77a8]
+  ./tanh_op_kernel_ut() [0x424670]
+
+[V] write data 0xffffaabf4010 0x8000 B type UB
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffffaabf4010 0x8000 B type UB
+[V] checking wrote queue
+[V] [CHECK_DATA] 0xffffaabf4010 0x8000 B type UB
+[V] [CHECK_TBUF] 0xffffaabf4010 0x8000 B type UB
+[V] allocation buffer match result 0
+
+### set_vector_mask((uint64_t)18446744073709551615, (uint64_t)18446744073709551615);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### set_mask_norm();
+
+[set_mask_norm] unsupported
+[S] [RECV_INST] set_mask_norm type 7
+[S] [EXECUTE] set_mask_norm type 7
+
+### set_mask_count();
+
+[set_mask_count] unsupported
+[S] [RECV_INST] set_mask_count type 7
+[S] [EXECUTE] set_mask_count type 7
+
+### set_vector_mask((uint64_t)0, (uint64_t)8192);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### vdiv((__ubuf__ float*)0xffffaabf4010, (__ubuf__ float*)0xffffaabf4010, (__ubuf__ float*)0xffffaac04010, (uint8_t)1, (uint8_t)1, (uint8_t)1, (uint8_t)1, (uint8_t)8, (uint8_t)8, (uint8_t)8);
+
+[V] [RECV_INST] vdiv type 1
+[V] [EXECUTE] vdiv type 1
+[MEMCHEK] Mem[281473546403856]checkNum is 0
+[MEMCHEK] Mem[281473546469392]checkNum is 0
+[MEMCHEK] Mem[281473546403856]checkNum is 0
+DataMergeAllOnceAll dataLen: 32768
+[V] read  data 0xffffaabf4010 0x8000 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0xffffaabf4010 0x8000 B type UB
+[V] data matched whole 0xffffaabf4010 0x8000 stat 1
+[V] [DATA_MARK] 0xffffaabf4010 0x8000 B type UB mark read
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffffaabf4010 0x8000 B type UB
+[V] data matched whole 0xffffaabf4010 0x8000 stat 2
+[V] [ErrorSync2] on read 0xffffaabf4010 0x8000 B
+[V] [CHECK_TBUF] 0xffffaabf4010 0x8000 B type UB
+[V] allocation buffer match result 0
+[V] read  data 0xffffaac04010 0x8000 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0xffffaac04010 0x8000 B type UB
+[V] [ErrorRead2] on read 0xffffaac04010 0x8000 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffffad9ae9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffffad9aef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x4e0) [0xffffad9870e8]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x434) [0xffffad989334]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1c8) [0xffffad983d54]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffffad99500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk4vdivEPfS0_S0_hhhhhhh+0x4d8) [0xffffada7c290]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z4vdivPfS_S_hhhhhhh+0xa0) [0xffffad7f7fcc]
+  ./tanh_op_kernel_ut() [0x434080]
+  ./tanh_op_kernel_ut() [0x42eeec]
+  ./tanh_op_kernel_ut() [0x43bcac]
+  ./tanh_op_kernel_ut() [0x436410]
+  ./tanh_op_kernel_ut() [0x43094c]
+  ./tanh_op_kernel_ut() [0x430f74]
+  ./tanh_op_kernel_ut() [0x424980]
+  ./tanh_op_kernel_ut() [0x48b008]
+  ./tanh_op_kernel_ut() [0x4762f8]
+  ./tanh_op_kernel_ut() [0x4764f8]
+  ./tanh_op_kernel_ut() [0x47a1dc]
+  ./tanh_op_kernel_ut() [0x47f1e4]
+  ./tanh_op_kernel_ut() [0x4766d0]
+  ./tanh_op_kernel_ut() [0x424098]
+  /usr/lib64/libc.so.6(+0x276c4) [0xffffac6b76c4]
+  /usr/lib64/libc.so.6(__libc_start_main+0x98) [0xffffac6b77a8]
+  ./tanh_op_kernel_ut() [0x424670]
+
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffffaac04010 0x8000 B type UB
+[V] data matched whole 0xffffaac04010 0x8000 stat 2
+[V] [ErrorSync2] on read 0xffffaac04010 0x8000 B
+[V] [CHECK_TBUF] 0xffffaac04010 0x8000 B type UB
+[V] allocation buffer match result 0
+
+### set_mask_norm();
+
+[set_mask_norm] unsupported
+[S] [RECV_INST] set_mask_norm type 7
+[S] [EXECUTE] set_mask_norm type 7
+
+### set_vector_mask((uint64_t)18446744073709551615, (uint64_t)18446744073709551615);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### set_mask_count();
+
+[set_mask_count] unsupported
+[S] [RECV_INST] set_mask_count type 7
+[S] [EXECUTE] set_mask_count type 7
+
+### set_vector_mask((uint64_t)0, (uint64_t)8192);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### vadds((__ubuf__ float*)0xffffaabf4010, (__ubuf__ float*)0xffffaabf4010, (float)-1, (uint8_t)1, (uint16_t)1, (uint16_t)1, (uint16_t)8, (uint16_t)8);
+
+[V] [RECV_INST] vadds type 1
+[V] [EXECUTE] vadds type 1
+[MEMCHEK] Mem[281473546403856]checkNum is 0
+[MEMCHEK] Mem[281473546403856]checkNum is 0
+DataMergeAllOnceAll dataLen: 32768
+[V] [ErrorRead4] on read 0 0x8000 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffffad9ae9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffffad9aef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x1ec) [0xffffad986df4]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x434) [0xffffad989334]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1c8) [0xffffad983d54]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffffad99500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk5vaddsEPfS0_fhtttt+0x458) [0xffffada24740]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z5vaddsPfS_fhtttt+0x8c) [0xffffad7d8c24]
+  ./tanh_op_kernel_ut() [0x439b90]
+  ./tanh_op_kernel_ut() [0x435524]
+  ./tanh_op_kernel_ut() [0x42fe08]
+  ./tanh_op_kernel_ut() [0x43bcd0]
+  ./tanh_op_kernel_ut() [0x436410]
+  ./tanh_op_kernel_ut() [0x43094c]
+  ./tanh_op_kernel_ut() [0x430f74]
+  ./tanh_op_kernel_ut() [0x424980]
+  ./tanh_op_kernel_ut() [0x48b008]
+  ./tanh_op_kernel_ut() [0x4762f8]
+  ./tanh_op_kernel_ut() [0x4764f8]
+  ./tanh_op_kernel_ut() [0x47a1dc]
+  ./tanh_op_kernel_ut() [0x47f1e4]
+  ./tanh_op_kernel_ut() [0x4766d0]
+  ./tanh_op_kernel_ut() [0x424098]
+  /usr/lib64/libc.so.6(+0x276c4) [0xffffac6b76c4]
+  /usr/lib64/libc.so.6(__libc_start_main+0x98) [0xffffac6b77a8]
+  ./tanh_op_kernel_ut() [0x424670]
+
+[V] read  data 0 0x8000 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0 0x8000 B type UB
+[V] [ErrorRead2] on read 0 0x8000 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffffad9ae9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffffad9aef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x4e0) [0xffffad9870e8]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x434) [0xffffad989334]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1c8) [0xffffad983d54]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffffad99500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk5vaddsEPfS0_fhtttt+0x458) [0xffffada24740]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z5vaddsPfS_fhtttt+0x8c) [0xffffad7d8c24]
+  ./tanh_op_kernel_ut() [0x439b90]
+  ./tanh_op_kernel_ut() [0x435524]
+  ./tanh_op_kernel_ut() [0x42fe08]
+  ./tanh_op_kernel_ut() [0x43bcd0]
+  ./tanh_op_kernel_ut() [0x436410]
+  ./tanh_op_kernel_ut() [0x43094c]
+  ./tanh_op_kernel_ut() [0x430f74]
+  ./tanh_op_kernel_ut() [0x424980]
+  ./tanh_op_kernel_ut() [0x48b008]
+  ./tanh_op_kernel_ut() [0x4762f8]
+  ./tanh_op_kernel_ut() [0x4764f8]
+  ./tanh_op_kernel_ut() [0x47a1dc]
+  ./tanh_op_kernel_ut() [0x47f1e4]
+  ./tanh_op_kernel_ut() [0x4766d0]
+  ./tanh_op_kernel_ut() [0x424098]
+  /usr/lib64/libc.so.6(+0x276c4) [0xffffac6b76c4]
+  /usr/lib64/libc.so.6(__libc_start_main+0x98) [0xffffac6b77a8]
+  ./tanh_op_kernel_ut() [0x424670]
+
+[V] checking pending queue
+[V] [CHECK_DATA] 0 0x8000 B type UB
+[V] [CHECK_TBUF] 0 0x8000 B type UB
+[V] allocation buffer match result 2
+[V] persistent buffer match result 2
+[V] [ErrorRead1] on read 0 0x8000 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffffad9ae9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffffad9aef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x82c) [0xffffad987434]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x434) [0xffffad989334]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1c8) [0xffffad983d54]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffffad99500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk5vaddsEPfS0_fhtttt+0x458) [0xffffada24740]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z5vaddsPfS_fhtttt+0x8c) [0xffffad7d8c24]
+  ./tanh_op_kernel_ut() [0x439b90]
+  ./tanh_op_kernel_ut() [0x435524]
+  ./tanh_op_kernel_ut() [0x42fe08]
+  ./tanh_op_kernel_ut() [0x43bcd0]
+  ./tanh_op_kernel_ut() [0x436410]
+  ./tanh_op_kernel_ut() [0x43094c]
+  ./tanh_op_kernel_ut() [0x430f74]
+  ./tanh_op_kernel_ut() [0x424980]
+  ./tanh_op_kernel_ut() [0x48b008]
+  ./tanh_op_kernel_ut() [0x4762f8]
+  ./tanh_op_kernel_ut() [0x4764f8]
+  ./tanh_op_kernel_ut() [0x47a1dc]
+  ./tanh_op_kernel_ut() [0x47f1e4]
+  ./tanh_op_kernel_ut() [0x4766d0]
+  ./tanh_op_kernel_ut() [0x424098]
+  /usr/lib64/libc.so.6(+0x276c4) [0xffffac6b76c4]
+  /usr/lib64/libc.so.6(__libc_start_main+0x98) [0xffffac6b77a8]
+  ./tanh_op_kernel_ut() [0x424670]
+
+[V] read  data 0xffffaabf4010 0x8000 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0xffffaabf4010 0x8000 B type UB
+[V] data matched whole 0xffffaabf4010 0x8000 stat 1
+[V] [DATA_MARK] 0xffffaabf4010 0x8000 B type UB mark read
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffffaabf4010 0x8000 B type UB
+[V] data matched whole 0xffffaabf4010 0x8000 stat 2
+[V] [ErrorSync2] on read 0xffffaabf4010 0x8000 B
+[V] [CHECK_TBUF] 0xffffaabf4010 0x8000 B type UB
+[V] allocation buffer match result 0
+
+### set_vector_mask((uint64_t)18446744073709551615, (uint64_t)18446744073709551615);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### set_mask_norm();
+
+[set_mask_norm] unsupported
+[S] [RECV_INST] set_mask_norm type 7
+[S] [EXECUTE] set_mask_norm type 7
+
+### copy_ubuf_to_ubuf((__ubuf__ void*)0xffffaac04010, (__ubuf__ void*)0xffffaabf4010, (uint8_t)0, (uint16_t)1, (uint16_t)1024, (uint16_t)0, (uint16_t)0);
+
+[V] [RECV_INST] copy_ubuf_to_ubuf type 0
+[V] [EXECUTE] copy_ubuf_to_ubuf type 0
+[V] read  data 0xffffaabf4010 0x8000 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0xffffaabf4010 0x8000 B type UB
+[V] data matched whole 0xffffaabf4010 0x8000 stat 1
+[V] [DATA_MARK] 0xffffaabf4010 0x8000 B type UB mark read
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffffaabf4010 0x8000 B type UB
+[V] data matched whole 0xffffaabf4010 0x8000 stat 2
+[V] [ErrorSync2] on read 0xffffaabf4010 0x8000 B
+[V] [CHECK_TBUF] 0xffffaabf4010 0x8000 B type UB
+[V] allocation buffer match result 0
+[V] write data 0xffffaac04010 0x8000 B type UB
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffffaac04010 0x8000 B type UB
+[V] data matched whole 0xffffaac04010 0x8000 stat 2
+[V] [ErrorSync1] on write 0xffffaac04010 0x8000 B
+[V] checking wrote queue
+[V] [CHECK_DATA] 0xffffaac04010 0x8000 B type UB
+[V] [CHECK_TBUF] 0xffffaac04010 0x8000 B type UB
+[V] allocation buffer match result 0
+[MEMCHEK] Mem[281473546403856]checkNum is 0
+[MEMCHEK] Mem[281473546469392]checkNum is 0
+[Buffer Check] [ErrorBuffer2] VecOut Operation inconsistent with the paradigm:ALLOC--OPVEC--DATACOPY-- ALLOC--OPVEC--ENQUE--DEQUE--DATACOPY--FREE--
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffffad9ae9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffffad9aef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk13BlockMemCheck11CheckVecOutERKSt6vectorINS_11QueOperatorESaIS2_EE+0x1d4) [0xffffad9abb74]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZNSt17_Function_handlerIFbRKSt6vectorIN6npuchk11QueOperatorESaIS2_EEEPS7_E9_M_invokeERKSt9_Any_dataS6_+0x2c) [0xffffad9ace3c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZNKSt8functionIFbRKSt6vectorIN6npuchk11QueOperatorESaIS2_EEEEclES6_+0x4c) [0xffffad9ac934]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk13BlockMemCheck15BlockMemOpCheckENS_11QueOperatorE+0x1d8) [0xffffad9ab4a0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk15MemCheckManager12AddMemRecordEmhhjNS_11QueOperatorE+0x3e4) [0xffffad99cd64]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessDmaERNS_7OpInstTE+0x424) [0xffffad98834c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1a0) [0xffffad983d2c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffffad99500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk17copy_ubuf_to_ubufEPvS0_htttt+0x3c0) [0xffffada19ff8]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z17copy_ubuf_to_ubufPvS_htttt+0x80) [0xffffad755748]
+  ./tanh_op_kernel_ut() [0x4399e0]
+  ./tanh_op_kernel_ut() [0x4344fc]
+  ./tanh_op_kernel_ut() [0x42f0d0]
+  ./tanh_op_kernel_ut() [0x42f6f4]
+  ./tanh_op_kernel_ut() [0x43bce4]
+  ./tanh_op_kernel_ut() [0x436410]
+  ./tanh_op_kernel_ut() [0x43094c]
+  ./tanh_op_kernel_ut() [0x430f74]
+  ./tanh_op_kernel_ut() [0x424980]
+  ./tanh_op_kernel_ut() [0x48b008]
+  ./tanh_op_kernel_ut() [0x4762f8]
+  ./tanh_op_kernel_ut() [0x4764f8]
+  ./tanh_op_kernel_ut() [0x47a1dc]
+  ./tanh_op_kernel_ut() [0x47f1e4]
+  ./tanh_op_kernel_ut() [0x4766d0]
+  ./tanh_op_kernel_ut() [0x424098]
+  /usr/lib64/libc.so.6(+0x276c4) [0xffffac6b76c4]
+  /usr/lib64/libc.so.6(__libc_start_main+0x98) [0xffffac6b77a8]
+  ./tanh_op_kernel_ut() [0x424670]
+
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE3, (event_t)0);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [SYNC_DATA] 0xffffaac04010 0x8000 B type UB
+[V] [SYNC_DATA] 0xffffaac04010 0x8000 B type UB
+[V] [SYNC_DATA] 0xffffaac04010 0x8000 B type UB
+[V] [SYNC_DATA] 0xffffaabf4010 0x8000 B type UB
+[V] [SYNC_DATA] 0xffffaabf4010 0x8000 B type UB
+[V] [SYNC_DATA] 0xffffaabf4010 0x8000 B type UB
+[V] [SYNC_DATA] 0xffffaac04010 0x8000 B type UB
+[V] [send event] on set_flag 1 5 0
+[V] -> [MTE3] [GET_DATA] 0xffffaabf4010 0x8000 B stat 1 type UB
+[V] -> [MTE3] [GET_DATA] 0xffffaac04010 0x8000 B stat 1 type UB
+[MTE3] [RECV_EVENT] SRC V DST MTE3 EVENT 0
+[MTE3] [RECV_DATA] 0xffffaabf4010 0x8000 B stat 1 type UB
+[MTE3] [RECV_DATA] 0xffffaac04010 0x8000 B stat 1 type UB
+[MEMCHEK] Mem[281473546469392]checkNum is 0
+[Buffer Check] [ErrorBuffer2] VecOut Operation inconsistent with the paradigm:ALLOC--OPVEC--DATACOPY--ENQUE-- ALLOC--OPVEC--ENQUE--DEQUE--DATACOPY--FREE--
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffffad9ae9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffffad9aef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk13BlockMemCheck11CheckVecOutERKSt6vectorINS_11QueOperatorESaIS2_EE+0x1d4) [0xffffad9abb74]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZNSt17_Function_handlerIFbRKSt6vectorIN6npuchk11QueOperatorESaIS2_EEEPS7_E9_M_invokeERKSt9_Any_dataS6_+0x2c) [0xffffad9ace3c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZNKSt8functionIFbRKSt6vectorIN6npuchk11QueOperatorESaIS2_EEEEclES6_+0x4c) [0xffffad9ac934]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk13BlockMemCheck15BlockMemOpCheckENS_11QueOperatorE+0x1d8) [0xffffad9ab4a0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk15MemCheckManager12AddMemRecordEmhhjNS_11QueOperatorE+0x3e4) [0xffffad99cd64]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk15AscendCBufEnqueEhhhm+0x4c) [0xffffad983880]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z15AscendCBufEnquehhhm+0x6c) [0xffffad81323c]
+  ./tanh_op_kernel_ut() [0x444e90]
+  ./tanh_op_kernel_ut() [0x44074c]
+  ./tanh_op_kernel_ut() [0x43bcf4]
+  ./tanh_op_kernel_ut() [0x436410]
+  ./tanh_op_kernel_ut() [0x43094c]
+  ./tanh_op_kernel_ut() [0x430f74]
+  ./tanh_op_kernel_ut() [0x424980]
+  ./tanh_op_kernel_ut() [0x48b008]
+  ./tanh_op_kernel_ut() [0x4762f8]
+  ./tanh_op_kernel_ut() [0x4764f8]
+  ./tanh_op_kernel_ut() [0x47a1dc]
+  ./tanh_op_kernel_ut() [0x47f1e4]
+  ./tanh_op_kernel_ut() [0x4766d0]
+  ./tanh_op_kernel_ut() [0x424098]
+  /usr/lib64/libc.so.6(+0x276c4) [0xffffac6b76c4]
+  /usr/lib64/libc.so.6(__libc_start_main+0x98) [0xffffac6b77a8]
+  ./tanh_op_kernel_ut() [0x424670]
+
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)0);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [send event] on set_flag 1 4 0
+[V] -> [MTE2] [GET_DATA] 0xffffaabf4010 0x8000 B stat 1 type UB
+[V] -> [MTE2] [GET_DATA] 0xffffaac04010 0x8000 B stat 1 type UB
+[MTE2] [RECV_EVENT] SRC V DST MTE2 EVENT 0
+[MTE2] [RECV_DATA] 0xffffaabf4010 0x8000 B stat 1 type UB
+[MTE2] [RECV_DATA] 0xffffaac04010 0x8000 B stat 1 type UB
+[ALL] [TBUF_EVENT] FREE 0xffffaabf4010 0x8000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x8000, Rate: 12.5%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x20000, Rate: 50%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281473546403856]checkNum is 0
+[MEMCHEK] Mem[281473546403856] is FREE
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE3, (event_t)0);
+
+[MTE3] [RECV_INST] wait_flag type 4
+[MTE3] [EXECUTE] wait_flag type 4
+[MTE3] [no wait] on wait_flag 1 5 0
+[V] [EVENT_CLEAR] send 1 5 0 has been waited
+[MEMCHEK] Mem[281473546469392]checkNum is 0
+[Buffer Check] [ErrorBuffer2] VecOut Operation inconsistent with the paradigm:ALLOC--OPVEC--DATACOPY--ENQUE--DEQUE-- ALLOC--OPVEC--ENQUE--DEQUE--DATACOPY--FREE--
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffffad9ae9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffffad9aef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk13BlockMemCheck11CheckVecOutERKSt6vectorINS_11QueOperatorESaIS2_EE+0x1d4) [0xffffad9abb74]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZNSt17_Function_handlerIFbRKSt6vectorIN6npuchk11QueOperatorESaIS2_EEEPS7_E9_M_invokeERKSt9_Any_dataS6_+0x2c) [0xffffad9ace3c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZNKSt8functionIFbRKSt6vectorIN6npuchk11QueOperatorESaIS2_EEEEclES6_+0x4c) [0xffffad9ac934]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk13BlockMemCheck15BlockMemOpCheckENS_11QueOperatorE+0x1d8) [0xffffad9ab4a0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk15MemCheckManager12AddMemRecordEmhhjNS_11QueOperatorE+0x3e4) [0xffffad99cd64]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk15AscendCBufDequeEhhhm+0x4c) [0xffffad9838dc]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z15AscendCBufDequehhhm+0x6c) [0xffffad8132c4]
+  ./tanh_op_kernel_ut() [0x445504]
+  ./tanh_op_kernel_ut() [0x4407a4]
+  ./tanh_op_kernel_ut() [0x43bd7c]
+  ./tanh_op_kernel_ut() [0x436420]
+  ./tanh_op_kernel_ut() [0x43094c]
+  ./tanh_op_kernel_ut() [0x430f74]
+  ./tanh_op_kernel_ut() [0x424980]
+  ./tanh_op_kernel_ut() [0x48b008]
+  ./tanh_op_kernel_ut() [0x4762f8]
+  ./tanh_op_kernel_ut() [0x4764f8]
+  ./tanh_op_kernel_ut() [0x47a1dc]
+  ./tanh_op_kernel_ut() [0x47f1e4]
+  ./tanh_op_kernel_ut() [0x4766d0]
+  ./tanh_op_kernel_ut() [0x424098]
+  /usr/lib64/libc.so.6(+0x276c4) [0xffffac6b76c4]
+  /usr/lib64/libc.so.6(__libc_start_main+0x98) [0xffffac6b77a8]
+  ./tanh_op_kernel_ut() [0x424670]
+
+
+### copy_ubuf_to_gm((__gm__ void*)0xffffabd29000, (__ubuf__ void*)0xffffaac04010, (uint8_t)0, (uint16_t)1, (uint16_t)1024, (uint16_t)0, (uint16_t)0);
+
+[MTE3] [RECV_INST] copy_ubuf_to_gm type 0
+[MTE3] [EXECUTE] copy_ubuf_to_gm type 0
+[MTE3] read  data 0xffffaac04010 0x8000 B type UB
+[MTE3] checking synced queue
+[MTE3] [CHECK_DATA] 0xffffaac04010 0x8000 B type UB
+[MTE3] data matched whole 0xffffaac04010 0x8000 stat 1
+[MTE3] [DATA_MARK] 0xffffaac04010 0x8000 B type UB mark read
+[MTE3] checking pending queue
+[MTE3] [CHECK_DATA] 0xffffaac04010 0x8000 B type UB
+[MTE3] [CHECK_TBUF] 0xffffaac04010 0x8000 B type UB
+[MTE3] allocation buffer match result 0
+[MTE3] write data 0xffffabd29000 0x8000 B type GM
+[MTE3] checking pending queue
+[MTE3] [CHECK_DATA] 0xffffabd29000 0x8000 B type GM
+[MTE3] checking wrote queue
+[MTE3] [CHECK_DATA] 0xffffabd29000 0x8000 B type GM
+[MTE3] [CHECK_TBUF] 0xffffabd29000 0x8000 B type GM
+[MEMCHEK] Mem[281473546469392]checkNum is 0
+[Buffer Check] [ErrorBuffer2] VecOut Operation inconsistent with the paradigm:ALLOC--OPVEC--DATACOPY--ENQUE--DEQUE-- ALLOC--OPVEC--ENQUE--DEQUE--DATACOPY--FREE--
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffffad9ae9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffffad9aef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk13BlockMemCheck11CheckVecOutERKSt6vectorINS_11QueOperatorESaIS2_EE+0x1d4) [0xffffad9abb74]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZNSt17_Function_handlerIFbRKSt6vectorIN6npuchk11QueOperatorESaIS2_EEEPS7_E9_M_invokeERKSt9_Any_dataS6_+0x2c) [0xffffad9ace3c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZNKSt8functionIFbRKSt6vectorIN6npuchk11QueOperatorESaIS2_EEEEclES6_+0x4c) [0xffffad9ac934]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk13BlockMemCheck15BlockMemOpCheckENS_11QueOperatorE+0x1d8) [0xffffad9ab4a0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk15MemCheckManager12AddMemRecordEmhhjNS_11QueOperatorE+0x3e4) [0xffffad99cd64]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessDmaERNS_7OpInstTE+0x35c) [0xffffad988284]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1a0) [0xffffad983d2c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffffad99500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk15copy_ubuf_to_gmEPvS0_htttt+0x3c0) [0xffffada181b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z15copy_ubuf_to_gmPvS_htttt+0x80) [0xffffad754a00]
+  ./tanh_op_kernel_ut() [0x449820]
+  ./tanh_op_kernel_ut() [0x4458ac]
+  ./tanh_op_kernel_ut() [0x44083c]
+  ./tanh_op_kernel_ut() [0x43bda8]
+  ./tanh_op_kernel_ut() [0x436420]
+  ./tanh_op_kernel_ut() [0x43094c]
+  ./tanh_op_kernel_ut() [0x430f74]
+  ./tanh_op_kernel_ut() [0x424980]
+  ./tanh_op_kernel_ut() [0x48b008]
+  ./tanh_op_kernel_ut() [0x4762f8]
+  ./tanh_op_kernel_ut() [0x4764f8]
+  ./tanh_op_kernel_ut() [0x47a1dc]
+  ./tanh_op_kernel_ut() [0x47f1e4]
+  ./tanh_op_kernel_ut() [0x4766d0]
+  ./tanh_op_kernel_ut() [0x424098]
+  /usr/lib64/libc.so.6(+0x276c4) [0xffffac6b76c4]
+  /usr/lib64/libc.so.6(__libc_start_main+0x98) [0xffffac6b77a8]
+  ./tanh_op_kernel_ut() [0x424670]
+
+
+### set_flag((pipe_t)PIPE_MTE3, (pipe_t)PIPE_V, (event_t)0);
+
+[MTE3] [RECV_INST] set_flag type 3
+[MTE3] [EXECUTE] set_flag type 3
+[MTE3] [SYNC_DATA] 0xffffabd29000 0x8000 B type GM
+[MTE3] [send event] on set_flag 5 1 0
+[MTE3] -> [V] [GET_DATA] 0xffffabd29000 0x8000 B stat 1 type GM
+[V] [RECV_EVENT] SRC MTE3 DST V EVENT 0
+[V] [RECV_DATA] 0xffffabd29000 0x8000 B stat 1 type GM
+[ALL] [TBUF_EVENT] FREE 0xffffaac04010 0x8000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x20000, Rate: 50%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281473546469392]checkNum is 0
+[MEMCHEK] Mem[281473546469392] is FREE
+[ALL] [TBUF_EVENT] ALLOC 0xffffaabfc010 0x8000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x8000, Rate: 12.5%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x20000, Rate: 50%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281473546436624len: 32768
+
+### copy_gm_to_ubuf((__ubuf__ void*)0xffffaabfc010, (__gm__ void*)0xffffabd43000, (uint8_t)0, (uint16_t)1, (uint16_t)1024, (uint16_t)0, (uint16_t)0);
+
+[MTE2] [RECV_INST] copy_gm_to_ubuf type 0
+[MTE2] [EXECUTE] copy_gm_to_ubuf type 0
+[MTE2] read  data 0xffffabd43000 0x8000 B type GM
+[MTE2] [DATA_MARK] 0xffffabd43000 0x8000 B type GM mark read
+[MTE2] write data 0xffffaabfc010 0x8000 B type UB
+[MTE2] checking pending queue
+[MTE2] [CHECK_DATA] 0xffffaabfc010 0x8000 B type UB
+[MTE2] checking wrote queue
+[MTE2] [CHECK_DATA] 0xffffaabfc010 0x8000 B type UB
+[MTE2] [CHECK_TBUF] 0xffffaabfc010 0x8000 B type UB
+[MTE2] allocation buffer match result 0
+[MEMCHEK] Mem[281473546436624]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)0);
+
+[MTE2] [RECV_INST] set_flag type 3
+[MTE2] [EXECUTE] set_flag type 3
+[MTE2] [SYNC_DATA] 0xffffaabfc010 0x8000 B type UB
+[MTE2] [send event] on set_flag 4 1 0
+[MTE2] -> [V] [GET_DATA] 0xffffaabf4010 0x10000 B stat 1 type UB
+[V] [RECV_EVENT] SRC MTE2 DST V EVENT 0
+[V] [RECV_DATA] 0xffffaabf4010 0x10000 B stat 1 type UB
+[MEMCHEK] Mem[281473546436624]checkNum is 0
+
+### wait_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)0);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 4 1 0
+[MTE2] [EVENT_CLEAR] send 4 1 0 has been waited
+[MEMCHEK] Mem[281473546436624]checkNum is 0
+[ALL] [TBUF_EVENT] ALLOC 0xffffaac0c010 0x8000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x10000, Rate: 25%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x20000, Rate: 50%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281473546502160len: 32768
+
+### set_mask_count();
+
+[set_mask_count] unsupported
+[S] [RECV_INST] set_mask_count type 7
+[S] [EXECUTE] set_mask_count type 7
+
+### set_vector_mask((uint64_t)0, (uint64_t)8192);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### vmuls((__ubuf__ float*)0xffffaac0c010, (__ubuf__ float*)0xffffaabfc010, (float)-2, (uint8_t)1, (uint16_t)1, (uint16_t)1, (uint16_t)8, (uint16_t)8);
+
+[V] [RECV_INST] vmuls type 1
+[V] [EXECUTE] vmuls type 1
+[MEMCHEK] Mem[281473546436624]checkNum is 0
+[MEMCHEK] Mem[281473546502160]checkNum is 0
+DataMergeAllOnceAll dataLen: 32768
+[V] [ErrorRead4] on read 0 0x8000 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffffad9ae9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffffad9aef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x1ec) [0xffffad986df4]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x434) [0xffffad989334]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1c8) [0xffffad983d54]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffffad99500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk5vmulsEPfS0_fhtttt+0x45c) [0xffffada9ceec]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z5vmulsPfS_fhtttt+0x8c) [0xffffad800124]
+  ./tanh_op_kernel_ut() [0x4393ec]
+  ./tanh_op_kernel_ut() [0x435464]
+  ./tanh_op_kernel_ut() [0x42fba4]
+  ./tanh_op_kernel_ut() [0x43bc34]
+  ./tanh_op_kernel_ut() [0x436410]
+  ./tanh_op_kernel_ut() [0x43094c]
+  ./tanh_op_kernel_ut() [0x430f74]
+  ./tanh_op_kernel_ut() [0x424980]
+  ./tanh_op_kernel_ut() [0x48b008]
+  ./tanh_op_kernel_ut() [0x4762f8]
+  ./tanh_op_kernel_ut() [0x4764f8]
+  ./tanh_op_kernel_ut() [0x47a1dc]
+  ./tanh_op_kernel_ut() [0x47f1e4]
+  ./tanh_op_kernel_ut() [0x4766d0]
+  ./tanh_op_kernel_ut() [0x424098]
+  /usr/lib64/libc.so.6(+0x276c4) [0xffffac6b76c4]
+  /usr/lib64/libc.so.6(__libc_start_main+0x98) [0xffffac6b77a8]
+  ./tanh_op_kernel_ut() [0x424670]
+
+[V] read  data 0 0x8000 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0 0x8000 B type UB
+[V] [ErrorRead2] on read 0 0x8000 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffffad9ae9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffffad9aef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x4e0) [0xffffad9870e8]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x434) [0xffffad989334]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1c8) [0xffffad983d54]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffffad99500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk5vmulsEPfS0_fhtttt+0x45c) [0xffffada9ceec]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z5vmulsPfS_fhtttt+0x8c) [0xffffad800124]
+  ./tanh_op_kernel_ut() [0x4393ec]
+  ./tanh_op_kernel_ut() [0x435464]
+  ./tanh_op_kernel_ut() [0x42fba4]
+  ./tanh_op_kernel_ut() [0x43bc34]
+  ./tanh_op_kernel_ut() [0x436410]
+  ./tanh_op_kernel_ut() [0x43094c]
+  ./tanh_op_kernel_ut() [0x430f74]
+  ./tanh_op_kernel_ut() [0x424980]
+  ./tanh_op_kernel_ut() [0x48b008]
+  ./tanh_op_kernel_ut() [0x4762f8]
+  ./tanh_op_kernel_ut() [0x4764f8]
+  ./tanh_op_kernel_ut() [0x47a1dc]
+  ./tanh_op_kernel_ut() [0x47f1e4]
+  ./tanh_op_kernel_ut() [0x4766d0]
+  ./tanh_op_kernel_ut() [0x424098]
+  /usr/lib64/libc.so.6(+0x276c4) [0xffffac6b76c4]
+  /usr/lib64/libc.so.6(__libc_start_main+0x98) [0xffffac6b77a8]
+  ./tanh_op_kernel_ut() [0x424670]
+
+[V] checking pending queue
+[V] [CHECK_DATA] 0 0x8000 B type UB
+[V] [CHECK_TBUF] 0 0x8000 B type UB
+[V] allocation buffer match result 2
+[V] persistent buffer match result 2
+[V] [ErrorRead1] on read 0 0x8000 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffffad9ae9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffffad9aef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x82c) [0xffffad987434]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x434) [0xffffad989334]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1c8) [0xffffad983d54]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffffad99500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk5vmulsEPfS0_fhtttt+0x45c) [0xffffada9ceec]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z5vmulsPfS_fhtttt+0x8c) [0xffffad800124]
+  ./tanh_op_kernel_ut() [0x4393ec]
+  ./tanh_op_kernel_ut() [0x435464]
+  ./tanh_op_kernel_ut() [0x42fba4]
+  ./tanh_op_kernel_ut() [0x43bc34]
+  ./tanh_op_kernel_ut() [0x436410]
+  ./tanh_op_kernel_ut() [0x43094c]
+  ./tanh_op_kernel_ut() [0x430f74]
+  ./tanh_op_kernel_ut() [0x424980]
+  ./tanh_op_kernel_ut() [0x48b008]
+  ./tanh_op_kernel_ut() [0x4762f8]
+  ./tanh_op_kernel_ut() [0x4764f8]
+  ./tanh_op_kernel_ut() [0x47a1dc]
+  ./tanh_op_kernel_ut() [0x47f1e4]
+  ./tanh_op_kernel_ut() [0x4766d0]
+  ./tanh_op_kernel_ut() [0x424098]
+  /usr/lib64/libc.so.6(+0x276c4) [0xffffac6b76c4]
+  /usr/lib64/libc.so.6(__libc_start_main+0x98) [0xffffac6b77a8]
+  ./tanh_op_kernel_ut() [0x424670]
+
+[V] read  data 0xffffaabfc010 0x8000 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0xffffaabfc010 0x8000 B type UB
+[V] data matched whole 0xffffaabf4010 0x10000 stat 1
+[V] [DATA_MARK] 0xffffaabfc010 0x8000 B type UB mark read
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffffaabfc010 0x8000 B type UB
+[V] [CHECK_TBUF] 0xffffaabfc010 0x8000 B type UB
+[V] allocation buffer match result 0
+[V] write data 0xffffaac0c010 0x8000 B type UB
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffffaac0c010 0x8000 B type UB
+[V] checking wrote queue
+[V] [CHECK_DATA] 0xffffaac0c010 0x8000 B type UB
+[V] [CHECK_TBUF] 0xffffaac0c010 0x8000 B type UB
+[V] allocation buffer match result 0
+
+### set_vector_mask((uint64_t)18446744073709551615, (uint64_t)18446744073709551615);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### set_mask_norm();
+
+[set_mask_norm] unsupported
+[S] [RECV_INST] set_mask_norm type 7
+[S] [EXECUTE] set_mask_norm type 7
+
+### set_mask_count();
+
+[set_mask_count] unsupported
+[S] [RECV_INST] set_mask_count type 7
+[S] [EXECUTE] set_mask_count type 7
+
+### set_vector_mask((uint64_t)0, (uint64_t)8192);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### vexp((__ubuf__ float*)0xffffaac0c010, (__ubuf__ float*)0xffffaac0c010, (uint8_t)1, (uint16_t)1, (uint16_t)1, (uint8_t)8, (uint8_t)8);
+
+[V] [RECV_INST] vexp type 1
+[V] [EXECUTE] vexp type 1
+[MEMCHEK] Mem[281473546502160]checkNum is 0
+[MEMCHEK] Mem[281473546502160]checkNum is 0
+DataMergeAllOnceAll dataLen: 32768
+[V] [ErrorRead4] on read 0 0x8000 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffffad9ae9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffffad9aef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x1ec) [0xffffad986df4]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x434) [0xffffad989334]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1c8) [0xffffad983d54]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffffad99500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk4vexpEPfS0_htthh+0x3c8) [0xffffada81698]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z4vexpPfS_htthh+0x84) [0xffffad7f96fc]
+  ./tanh_op_kernel_ut() [0x43538c]
+  ./tanh_op_kernel_ut() [0x42f8bc]
+  ./tanh_op_kernel_ut() [0x43bc4c]
+  ./tanh_op_kernel_ut() [0x436410]
+  ./tanh_op_kernel_ut() [0x43094c]
+  ./tanh_op_kernel_ut() [0x430f74]
+  ./tanh_op_kernel_ut() [0x424980]
+  ./tanh_op_kernel_ut() [0x48b008]
+  ./tanh_op_kernel_ut() [0x4762f8]
+  ./tanh_op_kernel_ut() [0x4764f8]
+  ./tanh_op_kernel_ut() [0x47a1dc]
+  ./tanh_op_kernel_ut() [0x47f1e4]
+  ./tanh_op_kernel_ut() [0x4766d0]
+  ./tanh_op_kernel_ut() [0x424098]
+  /usr/lib64/libc.so.6(+0x276c4) [0xffffac6b76c4]
+  /usr/lib64/libc.so.6(__libc_start_main+0x98) [0xffffac6b77a8]
+  ./tanh_op_kernel_ut() [0x424670]
+
+[V] read  data 0 0x8000 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0 0x8000 B type UB
+[V] [ErrorRead2] on read 0 0x8000 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffffad9ae9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffffad9aef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x4e0) [0xffffad9870e8]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x434) [0xffffad989334]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1c8) [0xffffad983d54]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffffad99500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk4vexpEPfS0_htthh+0x3c8) [0xffffada81698]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z4vexpPfS_htthh+0x84) [0xffffad7f96fc]
+  ./tanh_op_kernel_ut() [0x43538c]
+  ./tanh_op_kernel_ut() [0x42f8bc]
+  ./tanh_op_kernel_ut() [0x43bc4c]
+  ./tanh_op_kernel_ut() [0x436410]
+  ./tanh_op_kernel_ut() [0x43094c]
+  ./tanh_op_kernel_ut() [0x430f74]
+  ./tanh_op_kernel_ut() [0x424980]
+  ./tanh_op_kernel_ut() [0x48b008]
+  ./tanh_op_kernel_ut() [0x4762f8]
+  ./tanh_op_kernel_ut() [0x4764f8]
+  ./tanh_op_kernel_ut() [0x47a1dc]
+  ./tanh_op_kernel_ut() [0x47f1e4]
+  ./tanh_op_kernel_ut() [0x4766d0]
+  ./tanh_op_kernel_ut() [0x424098]
+  /usr/lib64/libc.so.6(+0x276c4) [0xffffac6b76c4]
+  /usr/lib64/libc.so.6(__libc_start_main+0x98) [0xffffac6b77a8]
+  ./tanh_op_kernel_ut() [0x424670]
+
+[V] checking pending queue
+[V] [CHECK_DATA] 0 0x8000 B type UB
+[V] [CHECK_TBUF] 0 0x8000 B type UB
+[V] allocation buffer match result 2
+[V] persistent buffer match result 2
+[V] [ErrorRead1] on read 0 0x8000 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffffad9ae9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffffad9aef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x82c) [0xffffad987434]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x434) [0xffffad989334]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1c8) [0xffffad983d54]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffffad99500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk4vexpEPfS0_htthh+0x3c8) [0xffffada81698]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z4vexpPfS_htthh+0x84) [0xffffad7f96fc]
+  ./tanh_op_kernel_ut() [0x43538c]
+  ./tanh_op_kernel_ut() [0x42f8bc]
+  ./tanh_op_kernel_ut() [0x43bc4c]
+  ./tanh_op_kernel_ut() [0x436410]
+  ./tanh_op_kernel_ut() [0x43094c]
+  ./tanh_op_kernel_ut() [0x430f74]
+  ./tanh_op_kernel_ut() [0x424980]
+  ./tanh_op_kernel_ut() [0x48b008]
+  ./tanh_op_kernel_ut() [0x4762f8]
+  ./tanh_op_kernel_ut() [0x4764f8]
+  ./tanh_op_kernel_ut() [0x47a1dc]
+  ./tanh_op_kernel_ut() [0x47f1e4]
+  ./tanh_op_kernel_ut() [0x4766d0]
+  ./tanh_op_kernel_ut() [0x424098]
+  /usr/lib64/libc.so.6(+0x276c4) [0xffffac6b76c4]
+  /usr/lib64/libc.so.6(__libc_start_main+0x98) [0xffffac6b77a8]
+  ./tanh_op_kernel_ut() [0x424670]
+
+[V] read  data 0xffffaac0c010 0x8000 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0xffffaac0c010 0x8000 B type UB
+[V] [ErrorRead2] on read 0xffffaac0c010 0x8000 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffffad9ae9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffffad9aef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x4e0) [0xffffad9870e8]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x434) [0xffffad989334]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1c8) [0xffffad983d54]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffffad99500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk4vexpEPfS0_htthh+0x3c8) [0xffffada81698]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z4vexpPfS_htthh+0x84) [0xffffad7f96fc]
+  ./tanh_op_kernel_ut() [0x43538c]
+  ./tanh_op_kernel_ut() [0x42f8bc]
+  ./tanh_op_kernel_ut() [0x43bc4c]
+  ./tanh_op_kernel_ut() [0x436410]
+  ./tanh_op_kernel_ut() [0x43094c]
+  ./tanh_op_kernel_ut() [0x430f74]
+  ./tanh_op_kernel_ut() [0x424980]
+  ./tanh_op_kernel_ut() [0x48b008]
+  ./tanh_op_kernel_ut() [0x4762f8]
+  ./tanh_op_kernel_ut() [0x4764f8]
+  ./tanh_op_kernel_ut() [0x47a1dc]
+  ./tanh_op_kernel_ut() [0x47f1e4]
+  ./tanh_op_kernel_ut() [0x4766d0]
+  ./tanh_op_kernel_ut() [0x424098]
+  /usr/lib64/libc.so.6(+0x276c4) [0xffffac6b76c4]
+  /usr/lib64/libc.so.6(__libc_start_main+0x98) [0xffffac6b77a8]
+  ./tanh_op_kernel_ut() [0x424670]
+
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffffaac0c010 0x8000 B type UB
+[V] data matched whole 0xffffaac0c010 0x8000 stat 2
+[V] [ErrorSync2] on read 0xffffaac0c010 0x8000 B
+[V] [CHECK_TBUF] 0xffffaac0c010 0x8000 B type UB
+[V] allocation buffer match result 0
+
+### set_mask_norm();
+
+[set_mask_norm] unsupported
+[S] [RECV_INST] set_mask_norm type 7
+[S] [EXECUTE] set_mask_norm type 7
+
+### set_vector_mask((uint64_t)18446744073709551615, (uint64_t)18446744073709551615);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### set_mask_count();
+
+[set_mask_count] unsupported
+[S] [RECV_INST] set_mask_count type 7
+[S] [EXECUTE] set_mask_count type 7
+
+### set_vector_mask((uint64_t)0, (uint64_t)8192);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### vadds((__ubuf__ float*)0xffffaac0c010, (__ubuf__ float*)0xffffaac0c010, (float)1, (uint8_t)1, (uint16_t)1, (uint16_t)1, (uint16_t)8, (uint16_t)8);
+
+[V] [RECV_INST] vadds type 1
+[V] [EXECUTE] vadds type 1
+[MEMCHEK] Mem[281473546502160]checkNum is 0
+[MEMCHEK] Mem[281473546502160]checkNum is 0
+DataMergeAllOnceAll dataLen: 32768
+[V] [ErrorRead4] on read 0 0x8000 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffffad9ae9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffffad9aef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x1ec) [0xffffad986df4]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x434) [0xffffad989334]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1c8) [0xffffad983d54]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffffad99500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk5vaddsEPfS0_fhtttt+0x458) [0xffffada24740]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z5vaddsPfS_fhtttt+0x8c) [0xffffad7d8c24]
+  ./tanh_op_kernel_ut() [0x439b90]
+  ./tanh_op_kernel_ut() [0x435524]
+  ./tanh_op_kernel_ut() [0x42fe08]
+  ./tanh_op_kernel_ut() [0x43bc70]
+  ./tanh_op_kernel_ut() [0x436410]
+  ./tanh_op_kernel_ut() [0x43094c]
+  ./tanh_op_kernel_ut() [0x430f74]
+  ./tanh_op_kernel_ut() [0x424980]
+  ./tanh_op_kernel_ut() [0x48b008]
+  ./tanh_op_kernel_ut() [0x4762f8]
+  ./tanh_op_kernel_ut() [0x4764f8]
+  ./tanh_op_kernel_ut() [0x47a1dc]
+  ./tanh_op_kernel_ut() [0x47f1e4]
+  ./tanh_op_kernel_ut() [0x4766d0]
+  ./tanh_op_kernel_ut() [0x424098]
+  /usr/lib64/libc.so.6(+0x276c4) [0xffffac6b76c4]
+  /usr/lib64/libc.so.6(__libc_start_main+0x98) [0xffffac6b77a8]
+  ./tanh_op_kernel_ut() [0x424670]
+
+[V] read  data 0 0x8000 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0 0x8000 B type UB
+[V] [ErrorRead2] on read 0 0x8000 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffffad9ae9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffffad9aef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x4e0) [0xffffad9870e8]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x434) [0xffffad989334]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1c8) [0xffffad983d54]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffffad99500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk5vaddsEPfS0_fhtttt+0x458) [0xffffada24740]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z5vaddsPfS_fhtttt+0x8c) [0xffffad7d8c24]
+  ./tanh_op_kernel_ut() [0x439b90]
+  ./tanh_op_kernel_ut() [0x435524]
+  ./tanh_op_kernel_ut() [0x42fe08]
+  ./tanh_op_kernel_ut() [0x43bc70]
+  ./tanh_op_kernel_ut() [0x436410]
+  ./tanh_op_kernel_ut() [0x43094c]
+  ./tanh_op_kernel_ut() [0x430f74]
+  ./tanh_op_kernel_ut() [0x424980]
+  ./tanh_op_kernel_ut() [0x48b008]
+  ./tanh_op_kernel_ut() [0x4762f8]
+  ./tanh_op_kernel_ut() [0x4764f8]
+  ./tanh_op_kernel_ut() [0x47a1dc]
+  ./tanh_op_kernel_ut() [0x47f1e4]
+  ./tanh_op_kernel_ut() [0x4766d0]
+  ./tanh_op_kernel_ut() [0x424098]
+  /usr/lib64/libc.so.6(+0x276c4) [0xffffac6b76c4]
+  /usr/lib64/libc.so.6(__libc_start_main+0x98) [0xffffac6b77a8]
+  ./tanh_op_kernel_ut() [0x424670]
+
+[V] checking pending queue
+[V] [CHECK_DATA] 0 0x8000 B type UB
+[V] [CHECK_TBUF] 0 0x8000 B type UB
+[V] allocation buffer match result 2
+[V] persistent buffer match result 2
+[V] [ErrorRead1] on read 0 0x8000 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffffad9ae9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffffad9aef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x82c) [0xffffad987434]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x434) [0xffffad989334]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1c8) [0xffffad983d54]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffffad99500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk5vaddsEPfS0_fhtttt+0x458) [0xffffada24740]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z5vaddsPfS_fhtttt+0x8c) [0xffffad7d8c24]
+  ./tanh_op_kernel_ut() [0x439b90]
+  ./tanh_op_kernel_ut() [0x435524]
+  ./tanh_op_kernel_ut() [0x42fe08]
+  ./tanh_op_kernel_ut() [0x43bc70]
+  ./tanh_op_kernel_ut() [0x436410]
+  ./tanh_op_kernel_ut() [0x43094c]
+  ./tanh_op_kernel_ut() [0x430f74]
+  ./tanh_op_kernel_ut() [0x424980]
+  ./tanh_op_kernel_ut() [0x48b008]
+  ./tanh_op_kernel_ut() [0x4762f8]
+  ./tanh_op_kernel_ut() [0x4764f8]
+  ./tanh_op_kernel_ut() [0x47a1dc]
+  ./tanh_op_kernel_ut() [0x47f1e4]
+  ./tanh_op_kernel_ut() [0x4766d0]
+  ./tanh_op_kernel_ut() [0x424098]
+  /usr/lib64/libc.so.6(+0x276c4) [0xffffac6b76c4]
+  /usr/lib64/libc.so.6(__libc_start_main+0x98) [0xffffac6b77a8]
+  ./tanh_op_kernel_ut() [0x424670]
+
+[V] read  data 0xffffaac0c010 0x8000 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0xffffaac0c010 0x8000 B type UB
+[V] [ErrorRead2] on read 0xffffaac0c010 0x8000 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffffad9ae9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffffad9aef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x4e0) [0xffffad9870e8]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x434) [0xffffad989334]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1c8) [0xffffad983d54]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffffad99500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk5vaddsEPfS0_fhtttt+0x458) [0xffffada24740]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z5vaddsPfS_fhtttt+0x8c) [0xffffad7d8c24]
+  ./tanh_op_kernel_ut() [0x439b90]
+  ./tanh_op_kernel_ut() [0x435524]
+  ./tanh_op_kernel_ut() [0x42fe08]
+  ./tanh_op_kernel_ut() [0x43bc70]
+  ./tanh_op_kernel_ut() [0x436410]
+  ./tanh_op_kernel_ut() [0x43094c]
+  ./tanh_op_kernel_ut() [0x430f74]
+  ./tanh_op_kernel_ut() [0x424980]
+  ./tanh_op_kernel_ut() [0x48b008]
+  ./tanh_op_kernel_ut() [0x4762f8]
+  ./tanh_op_kernel_ut() [0x4764f8]
+  ./tanh_op_kernel_ut() [0x47a1dc]
+  ./tanh_op_kernel_ut() [0x47f1e4]
+  ./tanh_op_kernel_ut() [0x4766d0]
+  ./tanh_op_kernel_ut() [0x424098]
+  /usr/lib64/libc.so.6(+0x276c4) [0xffffac6b76c4]
+  /usr/lib64/libc.so.6(__libc_start_main+0x98) [0xffffac6b77a8]
+  ./tanh_op_kernel_ut() [0x424670]
+
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffffaac0c010 0x8000 B type UB
+[V] data matched whole 0xffffaac0c010 0x8000 stat 2
+[V] [ErrorSync2] on read 0xffffaac0c010 0x8000 B
+[V] [CHECK_TBUF] 0xffffaac0c010 0x8000 B type UB
+[V] allocation buffer match result 0
+
+### set_vector_mask((uint64_t)18446744073709551615, (uint64_t)18446744073709551615);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### set_mask_norm();
+
+[set_mask_norm] unsupported
+[S] [RECV_INST] set_mask_norm type 7
+[S] [EXECUTE] set_mask_norm type 7
+
+### set_mask_count();
+
+[set_mask_count] unsupported
+[S] [RECV_INST] set_mask_count type 7
+[S] [EXECUTE] set_mask_count type 7
+
+### set_vector_mask((uint64_t)0, (uint64_t)8192);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### vector_dup((__ubuf__ float*)0xffffaabfc010, (float)2, (uint8_t)1, (uint16_t)1, (uint16_t)1, (uint8_t)8, (uint8_t)0);
+
+[V] [RECV_INST] vector_dup type 1
+[V] [EXECUTE] vector_dup type 1
+[MEMCHEK] Mem[281473546436624]checkNum is 0
+DataMergeAllOnceAll dataLen: 32768
+[V] [ErrorRead4] on read 0 0x8000 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffffad9ae9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffffad9aef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x1ec) [0xffffad986df4]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x434) [0xffffad989334]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1c8) [0xffffad983d54]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffffad99500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk10vector_dupEPffhtthh+0x3b8) [0xffffada7d478]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z10vector_dupPffhtthh+0x84) [0xffffad7f868c]
+  ./tanh_op_kernel_ut() [0x43930c]
+  ./tanh_op_kernel_ut() [0x433e30]
+  ./tanh_op_kernel_ut() [0x42ece0]
+  ./tanh_op_kernel_ut() [0x43bc90]
+  ./tanh_op_kernel_ut() [0x436410]
+  ./tanh_op_kernel_ut() [0x43094c]
+  ./tanh_op_kernel_ut() [0x430f74]
+  ./tanh_op_kernel_ut() [0x424980]
+  ./tanh_op_kernel_ut() [0x48b008]
+  ./tanh_op_kernel_ut() [0x4762f8]
+  ./tanh_op_kernel_ut() [0x4764f8]
+  ./tanh_op_kernel_ut() [0x47a1dc]
+  ./tanh_op_kernel_ut() [0x47f1e4]
+  ./tanh_op_kernel_ut() [0x4766d0]
+  ./tanh_op_kernel_ut() [0x424098]
+  /usr/lib64/libc.so.6(+0x276c4) [0xffffac6b76c4]
+  /usr/lib64/libc.so.6(__libc_start_main+0x98) [0xffffac6b77a8]
+  ./tanh_op_kernel_ut() [0x424670]
+
+[V] read  data 0 0x8000 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0 0x8000 B type UB
+[V] [ErrorRead2] on read 0 0x8000 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffffad9ae9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffffad9aef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x4e0) [0xffffad9870e8]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x434) [0xffffad989334]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1c8) [0xffffad983d54]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffffad99500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk10vector_dupEPffhtthh+0x3b8) [0xffffada7d478]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z10vector_dupPffhtthh+0x84) [0xffffad7f868c]
+  ./tanh_op_kernel_ut() [0x43930c]
+  ./tanh_op_kernel_ut() [0x433e30]
+  ./tanh_op_kernel_ut() [0x42ece0]
+  ./tanh_op_kernel_ut() [0x43bc90]
+  ./tanh_op_kernel_ut() [0x436410]
+  ./tanh_op_kernel_ut() [0x43094c]
+  ./tanh_op_kernel_ut() [0x430f74]
+  ./tanh_op_kernel_ut() [0x424980]
+  ./tanh_op_kernel_ut() [0x48b008]
+  ./tanh_op_kernel_ut() [0x4762f8]
+  ./tanh_op_kernel_ut() [0x4764f8]
+  ./tanh_op_kernel_ut() [0x47a1dc]
+  ./tanh_op_kernel_ut() [0x47f1e4]
+  ./tanh_op_kernel_ut() [0x4766d0]
+  ./tanh_op_kernel_ut() [0x424098]
+  /usr/lib64/libc.so.6(+0x276c4) [0xffffac6b76c4]
+  /usr/lib64/libc.so.6(__libc_start_main+0x98) [0xffffac6b77a8]
+  ./tanh_op_kernel_ut() [0x424670]
+
+[V] checking pending queue
+[V] [CHECK_DATA] 0 0x8000 B type UB
+[V] [CHECK_TBUF] 0 0x8000 B type UB
+[V] allocation buffer match result 2
+[V] persistent buffer match result 2
+[V] [ErrorRead1] on read 0 0x8000 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffffad9ae9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffffad9aef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x82c) [0xffffad987434]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x434) [0xffffad989334]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1c8) [0xffffad983d54]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffffad99500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk10vector_dupEPffhtthh+0x3b8) [0xffffada7d478]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z10vector_dupPffhtthh+0x84) [0xffffad7f868c]
+  ./tanh_op_kernel_ut() [0x43930c]
+  ./tanh_op_kernel_ut() [0x433e30]
+  ./tanh_op_kernel_ut() [0x42ece0]
+  ./tanh_op_kernel_ut() [0x43bc90]
+  ./tanh_op_kernel_ut() [0x436410]
+  ./tanh_op_kernel_ut() [0x43094c]
+  ./tanh_op_kernel_ut() [0x430f74]
+  ./tanh_op_kernel_ut() [0x424980]
+  ./tanh_op_kernel_ut() [0x48b008]
+  ./tanh_op_kernel_ut() [0x4762f8]
+  ./tanh_op_kernel_ut() [0x4764f8]
+  ./tanh_op_kernel_ut() [0x47a1dc]
+  ./tanh_op_kernel_ut() [0x47f1e4]
+  ./tanh_op_kernel_ut() [0x4766d0]
+  ./tanh_op_kernel_ut() [0x424098]
+  /usr/lib64/libc.so.6(+0x276c4) [0xffffac6b76c4]
+  /usr/lib64/libc.so.6(__libc_start_main+0x98) [0xffffac6b77a8]
+  ./tanh_op_kernel_ut() [0x424670]
+
+[V] write data 0xffffaabfc010 0x8000 B type UB
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffffaabfc010 0x8000 B type UB
+[V] checking wrote queue
+[V] [CHECK_DATA] 0xffffaabfc010 0x8000 B type UB
+[V] [CHECK_TBUF] 0xffffaabfc010 0x8000 B type UB
+[V] allocation buffer match result 0
+
+### set_vector_mask((uint64_t)18446744073709551615, (uint64_t)18446744073709551615);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### set_mask_norm();
+
+[set_mask_norm] unsupported
+[S] [RECV_INST] set_mask_norm type 7
+[S] [EXECUTE] set_mask_norm type 7
+
+### set_mask_count();
+
+[set_mask_count] unsupported
+[S] [RECV_INST] set_mask_count type 7
+[S] [EXECUTE] set_mask_count type 7
+
+### set_vector_mask((uint64_t)0, (uint64_t)8192);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### vdiv((__ubuf__ float*)0xffffaabfc010, (__ubuf__ float*)0xffffaabfc010, (__ubuf__ float*)0xffffaac0c010, (uint8_t)1, (uint8_t)1, (uint8_t)1, (uint8_t)1, (uint8_t)8, (uint8_t)8, (uint8_t)8);
+
+[V] [RECV_INST] vdiv type 1
+[V] [EXECUTE] vdiv type 1
+[MEMCHEK] Mem[281473546436624]checkNum is 0
+[MEMCHEK] Mem[281473546502160]checkNum is 0
+[MEMCHEK] Mem[281473546436624]checkNum is 0
+DataMergeAllOnceAll dataLen: 32768
+[V] read  data 0xffffaabfc010 0x8000 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0xffffaabfc010 0x8000 B type UB
+[V] data matched whole 0xffffaabf4010 0x10000 stat 1
+[V] [DATA_MARK] 0xffffaabfc010 0x8000 B type UB mark read
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffffaabfc010 0x8000 B type UB
+[V] data matched whole 0xffffaabfc010 0x8000 stat 2
+[V] [ErrorSync2] on read 0xffffaabfc010 0x8000 B
+[V] [CHECK_TBUF] 0xffffaabfc010 0x8000 B type UB
+[V] allocation buffer match result 0
+[V] read  data 0xffffaac0c010 0x8000 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0xffffaac0c010 0x8000 B type UB
+[V] [ErrorRead2] on read 0xffffaac0c010 0x8000 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffffad9ae9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffffad9aef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x4e0) [0xffffad9870e8]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x434) [0xffffad989334]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1c8) [0xffffad983d54]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffffad99500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk4vdivEPfS0_S0_hhhhhhh+0x4d8) [0xffffada7c290]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z4vdivPfS_S_hhhhhhh+0xa0) [0xffffad7f7fcc]
+  ./tanh_op_kernel_ut() [0x434080]
+  ./tanh_op_kernel_ut() [0x42eeec]
+  ./tanh_op_kernel_ut() [0x43bcac]
+  ./tanh_op_kernel_ut() [0x436410]
+  ./tanh_op_kernel_ut() [0x43094c]
+  ./tanh_op_kernel_ut() [0x430f74]
+  ./tanh_op_kernel_ut() [0x424980]
+  ./tanh_op_kernel_ut() [0x48b008]
+  ./tanh_op_kernel_ut() [0x4762f8]
+  ./tanh_op_kernel_ut() [0x4764f8]
+  ./tanh_op_kernel_ut() [0x47a1dc]
+  ./tanh_op_kernel_ut() [0x47f1e4]
+  ./tanh_op_kernel_ut() [0x4766d0]
+  ./tanh_op_kernel_ut() [0x424098]
+  /usr/lib64/libc.so.6(+0x276c4) [0xffffac6b76c4]
+  /usr/lib64/libc.so.6(__libc_start_main+0x98) [0xffffac6b77a8]
+  ./tanh_op_kernel_ut() [0x424670]
+
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffffaac0c010 0x8000 B type UB
+[V] data matched whole 0xffffaac0c010 0x8000 stat 2
+[V] [ErrorSync2] on read 0xffffaac0c010 0x8000 B
+[V] [CHECK_TBUF] 0xffffaac0c010 0x8000 B type UB
+[V] allocation buffer match result 0
+
+### set_mask_norm();
+
+[set_mask_norm] unsupported
+[S] [RECV_INST] set_mask_norm type 7
+[S] [EXECUTE] set_mask_norm type 7
+
+### set_vector_mask((uint64_t)18446744073709551615, (uint64_t)18446744073709551615);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### set_mask_count();
+
+[set_mask_count] unsupported
+[S] [RECV_INST] set_mask_count type 7
+[S] [EXECUTE] set_mask_count type 7
+
+### set_vector_mask((uint64_t)0, (uint64_t)8192);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### vadds((__ubuf__ float*)0xffffaabfc010, (__ubuf__ float*)0xffffaabfc010, (float)-1, (uint8_t)1, (uint16_t)1, (uint16_t)1, (uint16_t)8, (uint16_t)8);
+
+[V] [RECV_INST] vadds type 1
+[V] [EXECUTE] vadds type 1
+[MEMCHEK] Mem[281473546436624]checkNum is 0
+[MEMCHEK] Mem[281473546436624]checkNum is 0
+DataMergeAllOnceAll dataLen: 32768
+[V] [ErrorRead4] on read 0 0x8000 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffffad9ae9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffffad9aef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x1ec) [0xffffad986df4]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x434) [0xffffad989334]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1c8) [0xffffad983d54]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffffad99500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk5vaddsEPfS0_fhtttt+0x458) [0xffffada24740]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z5vaddsPfS_fhtttt+0x8c) [0xffffad7d8c24]
+  ./tanh_op_kernel_ut() [0x439b90]
+  ./tanh_op_kernel_ut() [0x435524]
+  ./tanh_op_kernel_ut() [0x42fe08]
+  ./tanh_op_kernel_ut() [0x43bcd0]
+  ./tanh_op_kernel_ut() [0x436410]
+  ./tanh_op_kernel_ut() [0x43094c]
+  ./tanh_op_kernel_ut() [0x430f74]
+  ./tanh_op_kernel_ut() [0x424980]
+  ./tanh_op_kernel_ut() [0x48b008]
+  ./tanh_op_kernel_ut() [0x4762f8]
+  ./tanh_op_kernel_ut() [0x4764f8]
+  ./tanh_op_kernel_ut() [0x47a1dc]
+  ./tanh_op_kernel_ut() [0x47f1e4]
+  ./tanh_op_kernel_ut() [0x4766d0]
+  ./tanh_op_kernel_ut() [0x424098]
+  /usr/lib64/libc.so.6(+0x276c4) [0xffffac6b76c4]
+  /usr/lib64/libc.so.6(__libc_start_main+0x98) [0xffffac6b77a8]
+  ./tanh_op_kernel_ut() [0x424670]
+
+[V] read  data 0 0x8000 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0 0x8000 B type UB
+[V] [ErrorRead2] on read 0 0x8000 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffffad9ae9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffffad9aef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x4e0) [0xffffad9870e8]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x434) [0xffffad989334]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1c8) [0xffffad983d54]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffffad99500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk5vaddsEPfS0_fhtttt+0x458) [0xffffada24740]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z5vaddsPfS_fhtttt+0x8c) [0xffffad7d8c24]
+  ./tanh_op_kernel_ut() [0x439b90]
+  ./tanh_op_kernel_ut() [0x435524]
+  ./tanh_op_kernel_ut() [0x42fe08]
+  ./tanh_op_kernel_ut() [0x43bcd0]
+  ./tanh_op_kernel_ut() [0x436410]
+  ./tanh_op_kernel_ut() [0x43094c]
+  ./tanh_op_kernel_ut() [0x430f74]
+  ./tanh_op_kernel_ut() [0x424980]
+  ./tanh_op_kernel_ut() [0x48b008]
+  ./tanh_op_kernel_ut() [0x4762f8]
+  ./tanh_op_kernel_ut() [0x4764f8]
+  ./tanh_op_kernel_ut() [0x47a1dc]
+  ./tanh_op_kernel_ut() [0x47f1e4]
+  ./tanh_op_kernel_ut() [0x4766d0]
+  ./tanh_op_kernel_ut() [0x424098]
+  /usr/lib64/libc.so.6(+0x276c4) [0xffffac6b76c4]
+  /usr/lib64/libc.so.6(__libc_start_main+0x98) [0xffffac6b77a8]
+  ./tanh_op_kernel_ut() [0x424670]
+
+[V] checking pending queue
+[V] [CHECK_DATA] 0 0x8000 B type UB
+[V] [CHECK_TBUF] 0 0x8000 B type UB
+[V] allocation buffer match result 2
+[V] persistent buffer match result 2
+[V] [ErrorRead1] on read 0 0x8000 B
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffffad9ae9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffffad9aef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine8DataReadERSt6vectorINS_5DataTESaIS2_EEb+0x82c) [0xffffad987434]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessVecERNS_7OpInstTE+0x434) [0xffffad989334]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1c8) [0xffffad983d54]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffffad99500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk5vaddsEPfS0_fhtttt+0x458) [0xffffada24740]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z5vaddsPfS_fhtttt+0x8c) [0xffffad7d8c24]
+  ./tanh_op_kernel_ut() [0x439b90]
+  ./tanh_op_kernel_ut() [0x435524]
+  ./tanh_op_kernel_ut() [0x42fe08]
+  ./tanh_op_kernel_ut() [0x43bcd0]
+  ./tanh_op_kernel_ut() [0x436410]
+  ./tanh_op_kernel_ut() [0x43094c]
+  ./tanh_op_kernel_ut() [0x430f74]
+  ./tanh_op_kernel_ut() [0x424980]
+  ./tanh_op_kernel_ut() [0x48b008]
+  ./tanh_op_kernel_ut() [0x4762f8]
+  ./tanh_op_kernel_ut() [0x4764f8]
+  ./tanh_op_kernel_ut() [0x47a1dc]
+  ./tanh_op_kernel_ut() [0x47f1e4]
+  ./tanh_op_kernel_ut() [0x4766d0]
+  ./tanh_op_kernel_ut() [0x424098]
+  /usr/lib64/libc.so.6(+0x276c4) [0xffffac6b76c4]
+  /usr/lib64/libc.so.6(__libc_start_main+0x98) [0xffffac6b77a8]
+  ./tanh_op_kernel_ut() [0x424670]
+
+[V] read  data 0xffffaabfc010 0x8000 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0xffffaabfc010 0x8000 B type UB
+[V] data matched whole 0xffffaabf4010 0x10000 stat 1
+[V] [DATA_MARK] 0xffffaabfc010 0x8000 B type UB mark read
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffffaabfc010 0x8000 B type UB
+[V] data matched whole 0xffffaabfc010 0x8000 stat 2
+[V] [ErrorSync2] on read 0xffffaabfc010 0x8000 B
+[V] [CHECK_TBUF] 0xffffaabfc010 0x8000 B type UB
+[V] allocation buffer match result 0
+
+### set_vector_mask((uint64_t)18446744073709551615, (uint64_t)18446744073709551615);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### set_mask_norm();
+
+[set_mask_norm] unsupported
+[S] [RECV_INST] set_mask_norm type 7
+[S] [EXECUTE] set_mask_norm type 7
+
+### copy_ubuf_to_ubuf((__ubuf__ void*)0xffffaac0c010, (__ubuf__ void*)0xffffaabfc010, (uint8_t)0, (uint16_t)1, (uint16_t)1024, (uint16_t)0, (uint16_t)0);
+
+[V] [RECV_INST] copy_ubuf_to_ubuf type 0
+[V] [EXECUTE] copy_ubuf_to_ubuf type 0
+[V] read  data 0xffffaabfc010 0x8000 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0xffffaabfc010 0x8000 B type UB
+[V] data matched whole 0xffffaabf4010 0x10000 stat 1
+[V] [DATA_MARK] 0xffffaabfc010 0x8000 B type UB mark read
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffffaabfc010 0x8000 B type UB
+[V] data matched whole 0xffffaabfc010 0x8000 stat 2
+[V] [ErrorSync2] on read 0xffffaabfc010 0x8000 B
+[V] [CHECK_TBUF] 0xffffaabfc010 0x8000 B type UB
+[V] allocation buffer match result 0
+[V] write data 0xffffaac0c010 0x8000 B type UB
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffffaac0c010 0x8000 B type UB
+[V] data matched whole 0xffffaac0c010 0x8000 stat 2
+[V] [ErrorSync1] on write 0xffffaac0c010 0x8000 B
+[V] checking wrote queue
+[V] [CHECK_DATA] 0xffffaac0c010 0x8000 B type UB
+[V] [CHECK_TBUF] 0xffffaac0c010 0x8000 B type UB
+[V] allocation buffer match result 0
+[MEMCHEK] Mem[281473546436624]checkNum is 0
+[MEMCHEK] Mem[281473546502160]checkNum is 0
+[Buffer Check] [ErrorBuffer2] VecOut Operation inconsistent with the paradigm:ALLOC--OPVEC--DATACOPY-- ALLOC--OPVEC--ENQUE--DEQUE--DATACOPY--FREE--
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffffad9ae9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffffad9aef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk13BlockMemCheck11CheckVecOutERKSt6vectorINS_11QueOperatorESaIS2_EE+0x1d4) [0xffffad9abb74]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZNSt17_Function_handlerIFbRKSt6vectorIN6npuchk11QueOperatorESaIS2_EEEPS7_E9_M_invokeERKSt9_Any_dataS6_+0x2c) [0xffffad9ace3c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZNKSt8functionIFbRKSt6vectorIN6npuchk11QueOperatorESaIS2_EEEEclES6_+0x4c) [0xffffad9ac934]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk13BlockMemCheck15BlockMemOpCheckENS_11QueOperatorE+0x1d8) [0xffffad9ab4a0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk15MemCheckManager12AddMemRecordEmhhjNS_11QueOperatorE+0x3e4) [0xffffad99cd64]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessDmaERNS_7OpInstTE+0x424) [0xffffad98834c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1a0) [0xffffad983d2c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffffad99500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk17copy_ubuf_to_ubufEPvS0_htttt+0x3c0) [0xffffada19ff8]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z17copy_ubuf_to_ubufPvS_htttt+0x80) [0xffffad755748]
+  ./tanh_op_kernel_ut() [0x4399e0]
+  ./tanh_op_kernel_ut() [0x4344fc]
+  ./tanh_op_kernel_ut() [0x42f0d0]
+  ./tanh_op_kernel_ut() [0x42f6f4]
+  ./tanh_op_kernel_ut() [0x43bce4]
+  ./tanh_op_kernel_ut() [0x436410]
+  ./tanh_op_kernel_ut() [0x43094c]
+  ./tanh_op_kernel_ut() [0x430f74]
+  ./tanh_op_kernel_ut() [0x424980]
+  ./tanh_op_kernel_ut() [0x48b008]
+  ./tanh_op_kernel_ut() [0x4762f8]
+  ./tanh_op_kernel_ut() [0x4764f8]
+  ./tanh_op_kernel_ut() [0x47a1dc]
+  ./tanh_op_kernel_ut() [0x47f1e4]
+  ./tanh_op_kernel_ut() [0x4766d0]
+  ./tanh_op_kernel_ut() [0x424098]
+  /usr/lib64/libc.so.6(+0x276c4) [0xffffac6b76c4]
+  /usr/lib64/libc.so.6(__libc_start_main+0x98) [0xffffac6b77a8]
+  ./tanh_op_kernel_ut() [0x424670]
+
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE3, (event_t)0);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [SYNC_DATA] 0xffffaac0c010 0x8000 B type UB
+[V] [SYNC_DATA] 0xffffaac0c010 0x8000 B type UB
+[V] [SYNC_DATA] 0xffffaac0c010 0x8000 B type UB
+[V] [SYNC_DATA] 0xffffaabfc010 0x8000 B type UB
+[V] [SYNC_DATA] 0xffffaabfc010 0x8000 B type UB
+[V] [SYNC_DATA] 0xffffaabfc010 0x8000 B type UB
+[V] [SYNC_DATA] 0xffffaac0c010 0x8000 B type UB
+[V] [send event] on set_flag 1 5 0
+[V] -> [MTE3] [GET_DATA] 0xffffaabf4010 0x10000 B stat 1 type UB
+[V] -> [MTE3] [GET_DATA] 0xffffaac04010 0x10000 B stat 1 type UB
+[MTE3] [RECV_EVENT] SRC V DST MTE3 EVENT 0
+[MTE3] [RECV_DATA] 0xffffaabf4010 0x10000 B stat 1 type UB
+[MTE3] [RECV_DATA] 0xffffaac04010 0x10000 B stat 1 type UB
+[MEMCHEK] Mem[281473546502160]checkNum is 0
+[Buffer Check] [ErrorBuffer2] VecOut Operation inconsistent with the paradigm:ALLOC--OPVEC--DATACOPY--ENQUE-- ALLOC--OPVEC--ENQUE--DEQUE--DATACOPY--FREE--
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffffad9ae9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffffad9aef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk13BlockMemCheck11CheckVecOutERKSt6vectorINS_11QueOperatorESaIS2_EE+0x1d4) [0xffffad9abb74]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZNSt17_Function_handlerIFbRKSt6vectorIN6npuchk11QueOperatorESaIS2_EEEPS7_E9_M_invokeERKSt9_Any_dataS6_+0x2c) [0xffffad9ace3c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZNKSt8functionIFbRKSt6vectorIN6npuchk11QueOperatorESaIS2_EEEEclES6_+0x4c) [0xffffad9ac934]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk13BlockMemCheck15BlockMemOpCheckENS_11QueOperatorE+0x1d8) [0xffffad9ab4a0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk15MemCheckManager12AddMemRecordEmhhjNS_11QueOperatorE+0x3e4) [0xffffad99cd64]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk15AscendCBufEnqueEhhhm+0x4c) [0xffffad983880]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z15AscendCBufEnquehhhm+0x6c) [0xffffad81323c]
+  ./tanh_op_kernel_ut() [0x444e90]
+  ./tanh_op_kernel_ut() [0x44074c]
+  ./tanh_op_kernel_ut() [0x43bcf4]
+  ./tanh_op_kernel_ut() [0x436410]
+  ./tanh_op_kernel_ut() [0x43094c]
+  ./tanh_op_kernel_ut() [0x430f74]
+  ./tanh_op_kernel_ut() [0x424980]
+  ./tanh_op_kernel_ut() [0x48b008]
+  ./tanh_op_kernel_ut() [0x4762f8]
+  ./tanh_op_kernel_ut() [0x4764f8]
+  ./tanh_op_kernel_ut() [0x47a1dc]
+  ./tanh_op_kernel_ut() [0x47f1e4]
+  ./tanh_op_kernel_ut() [0x4766d0]
+  ./tanh_op_kernel_ut() [0x424098]
+  /usr/lib64/libc.so.6(+0x276c4) [0xffffac6b76c4]
+  /usr/lib64/libc.so.6(__libc_start_main+0x98) [0xffffac6b77a8]
+  ./tanh_op_kernel_ut() [0x424670]
+
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)1);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [send event] on set_flag 1 4 1
+[V] -> [MTE2] [GET_DATA] 0xffffaabf4010 0x10000 B stat 1 type UB
+[V] -> [MTE2] [GET_DATA] 0xffffaac04010 0x10000 B stat 1 type UB
+[MTE2] [RECV_EVENT] SRC V DST MTE2 EVENT 1
+[MTE2] [RECV_DATA] 0xffffaabf4010 0x10000 B stat 1 type UB
+[MTE2] [RECV_DATA] 0xffffaac04010 0x10000 B stat 1 type UB
+[ALL] [TBUF_EVENT] FREE 0xffffaabfc010 0x8000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x8000, Rate: 12.5%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x20000, Rate: 50%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281473546436624]checkNum is 0
+[MEMCHEK] Mem[281473546436624] is FREE
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE3, (event_t)0);
+
+[MTE3] [RECV_INST] wait_flag type 4
+[MTE3] [EXECUTE] wait_flag type 4
+[MTE3] [no wait] on wait_flag 1 5 0
+[V] [EVENT_CLEAR] send 1 5 0 has been waited
+[MEMCHEK] Mem[281473546502160]checkNum is 0
+[Buffer Check] [ErrorBuffer2] VecOut Operation inconsistent with the paradigm:ALLOC--OPVEC--DATACOPY--ENQUE--DEQUE-- ALLOC--OPVEC--ENQUE--DEQUE--DATACOPY--FREE--
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffffad9ae9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffffad9aef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk13BlockMemCheck11CheckVecOutERKSt6vectorINS_11QueOperatorESaIS2_EE+0x1d4) [0xffffad9abb74]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZNSt17_Function_handlerIFbRKSt6vectorIN6npuchk11QueOperatorESaIS2_EEEPS7_E9_M_invokeERKSt9_Any_dataS6_+0x2c) [0xffffad9ace3c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZNKSt8functionIFbRKSt6vectorIN6npuchk11QueOperatorESaIS2_EEEEclES6_+0x4c) [0xffffad9ac934]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk13BlockMemCheck15BlockMemOpCheckENS_11QueOperatorE+0x1d8) [0xffffad9ab4a0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk15MemCheckManager12AddMemRecordEmhhjNS_11QueOperatorE+0x3e4) [0xffffad99cd64]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk15AscendCBufDequeEhhhm+0x4c) [0xffffad9838dc]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z15AscendCBufDequehhhm+0x6c) [0xffffad8132c4]
+  ./tanh_op_kernel_ut() [0x445504]
+  ./tanh_op_kernel_ut() [0x4407a4]
+  ./tanh_op_kernel_ut() [0x43bd7c]
+  ./tanh_op_kernel_ut() [0x436420]
+  ./tanh_op_kernel_ut() [0x43094c]
+  ./tanh_op_kernel_ut() [0x430f74]
+  ./tanh_op_kernel_ut() [0x424980]
+  ./tanh_op_kernel_ut() [0x48b008]
+  ./tanh_op_kernel_ut() [0x4762f8]
+  ./tanh_op_kernel_ut() [0x4764f8]
+  ./tanh_op_kernel_ut() [0x47a1dc]
+  ./tanh_op_kernel_ut() [0x47f1e4]
+  ./tanh_op_kernel_ut() [0x4766d0]
+  ./tanh_op_kernel_ut() [0x424098]
+  /usr/lib64/libc.so.6(+0x276c4) [0xffffac6b76c4]
+  /usr/lib64/libc.so.6(__libc_start_main+0x98) [0xffffac6b77a8]
+  ./tanh_op_kernel_ut() [0x424670]
+
+
+### copy_ubuf_to_gm((__gm__ void*)0xffffabd31000, (__ubuf__ void*)0xffffaac0c010, (uint8_t)0, (uint16_t)1, (uint16_t)1024, (uint16_t)0, (uint16_t)0);
+
+[MTE3] [RECV_INST] copy_ubuf_to_gm type 0
+[MTE3] [EXECUTE] copy_ubuf_to_gm type 0
+[MTE3] read  data 0xffffaac0c010 0x8000 B type UB
+[MTE3] checking synced queue
+[MTE3] [CHECK_DATA] 0xffffaac0c010 0x8000 B type UB
+[MTE3] data matched whole 0xffffaabf4010 0x20000 stat 1
+[MTE3] [DATA_MARK] 0xffffaac0c010 0x8000 B type UB mark read
+[MTE3] [DATA_MARK] 0xffffaac0c010 0x8000 B type UB mark read
+[MTE3] checking pending queue
+[MTE3] [CHECK_DATA] 0xffffaac0c010 0x8000 B type UB
+[MTE3] [CHECK_TBUF] 0xffffaac0c010 0x8000 B type UB
+[MTE3] allocation buffer match result 0
+[MTE3] write data 0xffffabd31000 0x8000 B type GM
+[MTE3] checking pending queue
+[MTE3] [CHECK_DATA] 0xffffabd31000 0x8000 B type GM
+[MTE3] checking wrote queue
+[MTE3] [CHECK_DATA] 0xffffabd31000 0x8000 B type GM
+[MTE3] [CHECK_TBUF] 0xffffabd31000 0x8000 B type GM
+[MEMCHEK] Mem[281473546502160]checkNum is 0
+[Buffer Check] [ErrorBuffer2] VecOut Operation inconsistent with the paradigm:ALLOC--OPVEC--DATACOPY--ENQUE--DEQUE-- ALLOC--OPVEC--ENQUE--DEQUE--DATACOPY--FREE--
+##### BackTrace #####
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk12GetBackTraceERSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE+0xa4) [0xffffad9ae9b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk23NpuCheckErrorMsgProcessESsRSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEbb+0x80) [0xffffad9aef7c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk13BlockMemCheck11CheckVecOutERKSt6vectorINS_11QueOperatorESaIS2_EE+0x1d4) [0xffffad9abb74]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZNSt17_Function_handlerIFbRKSt6vectorIN6npuchk11QueOperatorESaIS2_EEEPS7_E9_M_invokeERKSt9_Any_dataS6_+0x2c) [0xffffad9ace3c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZNKSt8functionIFbRKSt6vectorIN6npuchk11QueOperatorESaIS2_EEEEclES6_+0x4c) [0xffffad9ac934]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk13BlockMemCheck15BlockMemOpCheckENS_11QueOperatorE+0x1d8) [0xffffad9ab4a0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk15MemCheckManager12AddMemRecordEmhhjNS_11QueOperatorE+0x3e4) [0xffffad99cd64]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine10ProcessDmaERNS_7OpInstTE+0x35c) [0xffffad988284]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk6Engine7ExecuteEv+0x1a0) [0xffffad983d2c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk8Executor11ExecuteCodeERNS_7OpInstTE+0x15c) [0xffffad99500c]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_npuchk.so(_ZN6npuchk15copy_ubuf_to_gmEPvS0_htttt+0x3c0) [0xffffada181b0]
+  /usr/local/Ascend/cann-9.1.0/tools/tikicpulib/lib/libcpudebug_stubreg.so(_Z15copy_ubuf_to_gmPvS_htttt+0x80) [0xffffad754a00]
+  ./tanh_op_kernel_ut() [0x449820]
+  ./tanh_op_kernel_ut() [0x4458ac]
+  ./tanh_op_kernel_ut() [0x44083c]
+  ./tanh_op_kernel_ut() [0x43bda8]
+  ./tanh_op_kernel_ut() [0x436420]
+  ./tanh_op_kernel_ut() [0x43094c]
+  ./tanh_op_kernel_ut() [0x430f74]
+  ./tanh_op_kernel_ut() [0x424980]
+  ./tanh_op_kernel_ut() [0x48b008]
+  ./tanh_op_kernel_ut() [0x4762f8]
+  ./tanh_op_kernel_ut() [0x4764f8]
+  ./tanh_op_kernel_ut() [0x47a1dc]
+  ./tanh_op_kernel_ut() [0x47f1e4]
+  ./tanh_op_kernel_ut() [0x4766d0]
+  ./tanh_op_kernel_ut() [0x424098]
+  /usr/lib64/libc.so.6(+0x276c4) [0xffffac6b76c4]
+  /usr/lib64/libc.so.6(__libc_start_main+0x98) [0xffffac6b77a8]
+  ./tanh_op_kernel_ut() [0x424670]
+
+
+### set_flag((pipe_t)PIPE_MTE3, (pipe_t)PIPE_V, (event_t)1);
+
+[MTE3] [RECV_INST] set_flag type 3
+[MTE3] [EXECUTE] set_flag type 3
+[MTE3] [SYNC_DATA] 0xffffabd31000 0x8000 B type GM
+[MTE3] [send event] on set_flag 5 1 1
+[MTE3] -> [V] [GET_DATA] 0xffffabd29000 0x10000 B stat 1 type GM
+[V] [RECV_EVENT] SRC MTE3 DST V EVENT 1
+[V] [RECV_DATA] 0xffffabd29000 0x10000 B stat 1 type GM
+[ALL] [TBUF_EVENT] FREE 0xffffaac0c010 0x8000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x20000, Rate: 50%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281473546502160]checkNum is 0
+[MEMCHEK] Mem[281473546502160] is FREE
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)0);
+
+[MTE2] [RECV_INST] wait_flag type 4
+[MTE2] [EXECUTE] wait_flag type 4
+[MTE2] [no wait] on wait_flag 1 4 0
+[V] [EVENT_CLEAR] send 1 4 0 has been waited
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)1);
+
+[MTE2] [RECV_INST] wait_flag type 4
+[MTE2] [EXECUTE] wait_flag type 4
+[MTE2] [no wait] on wait_flag 1 4 1
+[V] [EVENT_CLEAR] send 1 4 1 has been waited
+
+### wait_flag((pipe_t)PIPE_MTE3, (pipe_t)PIPE_V, (event_t)0);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 5 1 0
+[MTE3] [EVENT_CLEAR] send 5 1 0 has been waited
+
+### wait_flag((pipe_t)PIPE_MTE3, (pipe_t)PIPE_V, (event_t)1);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 5 1 1
+[MTE3] [EVENT_CLEAR] send 5 1 1 has been waited
+
+### pipe_barrier((pipe_t)PIPE_ALL);
+
+[V] -> [ALL] [GET_DATA] 0xffffaabf4010 0x10000 B stat 1 type UB
+[V] -> [ALL] [GET_DATA] 0xffffaac04010 0x10000 B stat 1 type UB
+[S] [RECV_DATA] 0xffffaabf4010 0x10000 B stat 1 type UB
+[S] [RECV_DATA] 0xffffaac04010 0x10000 B stat 1 type UB
+[M] [RECV_DATA] 0xffffaabf4010 0x10000 B stat 1 type UB
+[M] [RECV_DATA] 0xffffaac04010 0x10000 B stat 1 type UB
+[MTE1] [RECV_DATA] 0xffffaabf4010 0x10000 B stat 1 type UB
+[MTE1] [RECV_DATA] 0xffffaac04010 0x10000 B stat 1 type UB
+[MTE2] [RECV_DATA] 0xffffaabf4010 0x10000 B stat 1 type UB
+[MTE2] [RECV_DATA] 0xffffaac04010 0x10000 B stat 1 type UB
+[MTE3] [RECV_DATA] 0xffffaabf4010 0x10000 B stat 1 type UB
+[MTE3] [RECV_DATA] 0xffffaac04010 0x10000 B stat 1 type UB
+[MTE4] [RECV_DATA] 0xffffaabf4010 0x10000 B stat 1 type UB
+[MTE4] [RECV_DATA] 0xffffaac04010 0x10000 B stat 1 type UB
+[MTE5] [RECV_DATA] 0xffffaabf4010 0x10000 B stat 1 type UB
+[MTE5] [RECV_DATA] 0xffffaac04010 0x10000 B stat 1 type UB
+[V2] [RECV_DATA] 0xffffaabf4010 0x10000 B stat 1 type UB
+[V2] [RECV_DATA] 0xffffaac04010 0x10000 B stat 1 type UB
+[FIX] [RECV_DATA] 0xffffaabf4010 0x10000 B stat 1 type UB
+[FIX] [RECV_DATA] 0xffffaac04010 0x10000 B stat 1 type UB
+[MTE2] -> [ALL] [GET_DATA] 0xffffaabf4010 0x10000 B stat 1 type UB
+[S] [RECV_DATA] 0xffffaabf4010 0x10000 B stat 1 type UB
+[V] [RECV_DATA] 0xffffaabf4010 0x10000 B stat 1 type UB
+[M] [RECV_DATA] 0xffffaabf4010 0x10000 B stat 1 type UB
+[MTE1] [RECV_DATA] 0xffffaabf4010 0x10000 B stat 1 type UB
+[MTE3] [RECV_DATA] 0xffffaabf4010 0x10000 B stat 1 type UB
+[MTE4] [RECV_DATA] 0xffffaabf4010 0x10000 B stat 1 type UB
+[MTE5] [RECV_DATA] 0xffffaabf4010 0x10000 B stat 1 type UB
+[V2] [RECV_DATA] 0xffffaabf4010 0x10000 B stat 1 type UB
+[FIX] [RECV_DATA] 0xffffaabf4010 0x10000 B stat 1 type UB
+[MTE3] -> [ALL] [GET_DATA] 0xffffabd29000 0x10000 B stat 1 type GM
+[S] [RECV_DATA] 0xffffabd29000 0x10000 B stat 1 type GM
+[V] [RECV_DATA] 0xffffabd29000 0x10000 B stat 1 type GM
+[M] [RECV_DATA] 0xffffabd29000 0x10000 B stat 1 type GM
+[MTE1] [RECV_DATA] 0xffffabd29000 0x10000 B stat 1 type GM
+[MTE2] [RECV_DATA] 0xffffabd29000 0x10000 B stat 1 type GM
+[MTE4] [RECV_DATA] 0xffffabd29000 0x10000 B stat 1 type GM
+[MTE5] [RECV_DATA] 0xffffabd29000 0x10000 B stat 1 type GM
+[V2] [RECV_DATA] 0xffffabd29000 0x10000 B stat 1 type GM
+[FIX] [RECV_DATA] 0xffffabd29000 0x10000 B stat 1 type GM
+[S] [STAT] Recv 26 PC 26
+[V] [STAT] Recv 47 PC 47
+[M] [STAT] Recv 0 PC 0
+[MTE1] [STAT] Recv 0 PC 0
+[MTE2] [STAT] Recv 6 PC 6
+[MTE3] [STAT] Recv 6 PC 6
+[ALL] [STAT] Recv 0 PC 0
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x20000, Rate: 50%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MTE4] [STAT] Recv 0 PC 0
+[MTE5] [STAT] Recv 0 PC 0
+[V2] [STAT] Recv 0 PC 0
+[FIX] [STAT] Recv 0 PC 0
+[Executor] [STAT] codes 86

@@ -1,0 +1,12 @@
+# This is a generated file and its contents are an internal implementation detail.
+# The download step will be re-executed if anything in this file changes.
+# No other meaning or use of this file is supported.
+
+method=url
+command=/usr/bin/cmake;-P;/workspace/code/tests/ut/build/third_party_gtest-prefix/src/third_party_gtest-stamp/download-third_party_gtest.cmake;COMMAND;/usr/bin/cmake;-P;/workspace/code/tests/ut/build/third_party_gtest-prefix/src/third_party_gtest-stamp/verify-third_party_gtest.cmake;COMMAND;/usr/bin/cmake;-P;/workspace/code/tests/ut/build/third_party_gtest-prefix/src/third_party_gtest-stamp/extract-third_party_gtest.cmake
+source_dir=/workspace/code/tests/ut/build/3rd_party/gtest-src
+work_dir=/workspace/code/tests/ut/build/3rd_party
+url(s)=https://gitcode.com/cann-src-third-party/googletest/releases/download/v1.14.0/googletest-1.14.0.tar.gz
+hash=
+no_extract=
+
