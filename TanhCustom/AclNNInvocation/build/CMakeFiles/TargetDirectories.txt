@@ -1,0 +1,7 @@
+/workspace/TanhCustom/AclNNInvocation/build/CMakeFiles/execute_sigmoid_op.dir
+/workspace/TanhCustom/AclNNInvocation/build/CMakeFiles/edit_cache.dir
+/workspace/TanhCustom/AclNNInvocation/build/CMakeFiles/rebuild_cache.dir
+/workspace/TanhCustom/AclNNInvocation/build/CMakeFiles/list_install_components.dir
+/workspace/TanhCustom/AclNNInvocation/build/CMakeFiles/install.dir
+/workspace/TanhCustom/AclNNInvocation/build/CMakeFiles/install/local.dir
+/workspace/TanhCustom/AclNNInvocation/build/CMakeFiles/install/strip.dir
