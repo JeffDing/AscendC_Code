@@ -1,3 +1,0 @@
-repository='external project URL'
-module='https://gitcode.com/cann-src-third-party/googletest/releases/download/v1.14.0/googletest-1.14.0.tar.gz'
-tag=''
