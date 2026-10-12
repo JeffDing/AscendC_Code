@@ -53,6 +53,10 @@ done
 echo "---- $pass passed, $fail failed"
 
 echo "== [2/3] 性能实测（设备侧 event 计时，best-of-8，单位 us）=="
+# 性能段依赖独立目标 bmm_bench；report.sh 不假定用户已编译，缺失时自动构建
+if [ ! -x "$ROOT/build/bmm_bench" ]; then
+  make -C "$ROOT/build" bmm_bench -j4 >/dev/null 2>&1 || true
+fi
 perf_rows=""
 for cid in $(seq 1 15); do
   best=$(timeout 120 ./build/bmm_bench "$cid" 2>/dev/null | grep -o 'best_us=[0-9.]*' | head -1 | sed -E 's/best_us=//')

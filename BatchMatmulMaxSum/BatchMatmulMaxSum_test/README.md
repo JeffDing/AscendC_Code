@@ -29,33 +29,9 @@ BatchMatmulMaxSum_test/
 ```bash
 cd /workspace/cann/BatchMatmulMaxSum_test
 mkdir -p build && cd build
-cmake .. -DNPU_ARCH=dav-2201
+cmake ..
 make bmm_multi -j4        # 产物：build/bmm_multi
 ```
-
-### `-DNPU_ARCH` 如何取值
-
-`NPU_ARCH` 是 Ascend C 编译的芯片架构版本，CMake 会传给 `ccec --npu-arch=...`，**必须与运行机器的 NPU 匹配**，否则 kernel 无法运行或行为异常。不传该参数时默认 `dav-2201`（Atlas A2 训练系列，Ascend 910B；本设施在 910B2 上验证）。
-
-获取自己环境取值的方法（任选其一）：
-
-1. **查 NPU 型号**：`npu-smi info` 看 `Name` 列（如 910B2、310P、950PR），再对照 CANN 文档《Ascend C API 参考》中的“芯片架构版本（npu-arch）”表。
-2. **查 CANN 自带的架构表**（本机 CANN 9.1.0 实测路径，其他版本路径类似）：
-   ```bash
-   grep -n "dav-" /usr/local/Ascend/ascend-toolkit/latest/aarch64-linux/tikcpp/ascendc_kernel_cmake/asc_modules/CMakeASCInformation.cmake
-   ```
-   其中 simulator / CPU 仿真模式支持的架构：`dav-2002`（Ascend310P1）、`dav-2201`（Ascend910B1）、`dav-3510`（Ascend950PR_9599）。
-3. **问编译器**：`/usr/local/Ascend/ascend-toolkit/latest/bin/ccec --help`，查看 `--npu-arch` / `--npu-soc` 说明；传一个错误值（如 `--npu-arch=bad`）也会被拒绝并提示无效。
-
-已知对应（以所用 CANN 版本的官方文档为准）：
-
-| NPU 型号 | npu-arch |
-|---|---|
-| Ascend 910B（A2 训练系列，含 910B2） | dav-2201 |
-| Ascend 310P1 | dav-2002 |
-| Ascend 950PR | dav-3510 |
-
-注意：换硬件环境编译时务必改这个参数——用默认值能编译通过，但上板运行会失败。
 
 ## 使用方法
 
