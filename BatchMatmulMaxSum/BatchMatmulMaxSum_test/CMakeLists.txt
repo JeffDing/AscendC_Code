@@ -25,3 +25,17 @@ target_link_libraries(bmm_multi PRIVATE
 )
 target_include_directories(bmm_multi PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
 target_compile_options(bmm_multi PRIVATE $<$<COMPILE_LANGUAGE:ASC>:--npu-arch=${SOC_ARCH}>)
+
+# 设备侧事件计时基准（best-of-10，口径对齐 OJ TBest）：./bmm_bench <caseId 1..15>
+add_executable(bmm_bench bench_case.asc)
+target_link_libraries(bmm_bench PRIVATE
+    tiling_api
+    register
+    platform
+    unified_dlog
+    dl
+    m
+    graph_base
+)
+target_include_directories(bmm_bench PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
+target_compile_options(bmm_bench PRIVATE $<$<COMPILE_LANGUAGE:ASC>:--npu-arch=${SOC_ARCH}>)

@@ -12,7 +12,7 @@ BatchMatmulMaxSum_test/
 ├── kernel.asc            # 被测 kernel 副本（从目标工程拷贝，见下文"同步 kernel"）
 ├── gen_data15.py         # 重新生成 15 case 输入 + FP64 golden
 ├── check_one.py          # 单 case 判分（rtol=atol=1e-3，输出 max_rel）
-├── run15.sh              # 15 case 正确性回归
+├── report.sh             # 一键测试报告：正确性回归 + 性能实测 + 稳定性连跑
 ├── flaky.sh              # 单 case 稳定性连跑（每次独立进程）
 ├── input/case1..15/      # 各 case 的 x1.bin / x2.bin（65MB）
 └── output/golden_case1..15/  # FP64 golden（y 为 fp32 标量）
@@ -59,16 +59,14 @@ make bmm_multi -j4        # 产物：build/bmm_multi
 
 ## 使用方法
 
-### 1. 15 case 正确性回归（最常用）
+### 1. 15 case 正确性回归
 
 ```bash
 cd /workspace/cann/BatchMatmulMaxSum_test
-bash run15.sh              # 每 case 以 5 个独立进程各跑 1 次后判分（OJ 同构口径）
-bash run15.sh 1            # 冷启动口径：每 case 只跑 1 次
-bash run15.sh 5 8 12       # 只跑指定 case
+bash report.sh 5 1         # 正确性回归(reps=5) + 稳定性各 1 次
 ```
 
-输出示例：`case12: PASS (y[0]=60286.5703, max_rel=0.00e+00)`，末尾 `---- 15 passed, 0 failed`。
+正确性回归环节：每 case 以 reps 个独立进程各跑 1 次后判分（OJ 同构口径），stdout 输出 `case12: PASS (y[0]=60286.5703, max_rel=0.00e+00)`，末尾 `---- 15 passed, 0 failed`。
 
 ### 2. 单 case 稳定性连跑（查偶发错误）
 
@@ -91,18 +89,18 @@ REPS=5 ./build/bmm_multi 12                 # 同进程连跑 5 次，stderr 输
 ### 4. 一键生成完整测试报告（markdown）
 
 ```bash
-bash report.sh              # 默认：15 case 回归(reps=5) + c9-c12 各连跑 20 次
+bash report.sh              # 默认：正确性回归(reps=5) + 性能实测 + c9/c10/c11/c15 各连跑 20 次
 bash report.sh 3 10         # 自定义：回归 reps=3，稳定性各 10 次
 ```
 
-跑完在当前目录生成 **`TEST_REPORT.md`**，包含：
+跑完在当前目录生成 **`TEST_REPORT.md`**，包含三个章节：
 
-- 正确性回归表（每 case 的 y[0]、max_rel、单次耗时）
-- 稳定性表（关键 case 独立进程连跑通过率）
-- 性能对比表（warm 口径 vs 原版 796 行基准）
-- 关键修复说明（async 引擎禁用原因）
+- **正确性回归表**：每 case 的 y[0]、max_rel、launch/单次 total（单位 us）
+- **性能实测表**：每 case 设备侧 event 计时 best-of-8（单位 us）、OJ TBest 目标（us）、达成率（<100% 即优于官方目标）
+- **稳定性表**：关键 case（c9/c10/c11/c15）独立进程冷启动连跑通过率
+- 附：关键修复说明（async 引擎 SyncAll 修复）
 
-单独跑 `run15.sh` 或 `flaky.sh` 也会各自刷新/追加报告的对应章节。
+单独跑 `flaky.sh` 只会向报告的稳定性章节追加结果（report.sh 为全量重写）。
 
 ### 5. 重新生成数据与 golden（一般不用，input/ 已内置）
 
