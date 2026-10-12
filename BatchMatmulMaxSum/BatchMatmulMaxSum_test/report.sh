@@ -6,7 +6,11 @@
 set -u
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPS=${1:-5}; FLAKY=${2:-20}
-PY=/usr/local/python3.12.13/bin/python3
+PY="$(command -v python3 || command -v python || true)"
+if [ -z "$PY" ]; then
+  echo "错误：未找到 python3/python 解释器，请先安装并加入 PATH" >&2
+  exit 1
+fi
 REPORT="$ROOT/TEST_REPORT.md"
 cd "$ROOT" || exit 1
 mkdir -p input output
