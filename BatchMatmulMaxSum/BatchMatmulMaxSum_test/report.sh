@@ -15,6 +15,19 @@ REPORT="$ROOT/TEST_REPORT.md"
 cd "$ROOT" || exit 1
 mkdir -p input output
 
+# 构建兜底：正确性段依赖 bmm_multi、性能段依赖 bmm_bench；
+# build 目录缺失时自动 cmake 配置，目标缺失时自动编译（失败则明确报错，不静默）
+export ASCEND_HOME_PATH="${ASCEND_HOME_PATH:-/home/developer/Ascend/cann-9.0.0}"
+if [ ! -f "$ROOT/build/CMakeCache.txt" ]; then
+  mkdir -p "$ROOT/build"
+  ( cd "$ROOT/build" && cmake .. ) >"$ROOT/build_config.log" 2>&1 || {
+    echo "错误：cmake 配置失败（详见 $ROOT/build_config.log）" >&2; exit 1; }
+fi
+if [ ! -x "$ROOT/build/bmm_multi" ] || [ ! -x "$ROOT/build/bmm_bench" ]; then
+  make -C "$ROOT/build" bmm_multi bmm_bench -j4 >"$ROOT/build_make.log" 2>&1 || {
+    echo "错误：编译失败（详见 $ROOT/build_make.log）" >&2; exit 1; }
+fi
+
 # OJ TBest 目标（us，官方口径）
 tbest_of() {
   case "$1" in
@@ -53,10 +66,6 @@ done
 echo "---- $pass passed, $fail failed"
 
 echo "== [2/3] 性能实测（设备侧 event 计时，best-of-8，单位 us）=="
-# 性能段依赖独立目标 bmm_bench；report.sh 不假定用户已编译，缺失时自动构建
-if [ ! -x "$ROOT/build/bmm_bench" ]; then
-  make -C "$ROOT/build" bmm_bench -j4 >/dev/null 2>&1 || true
-fi
 perf_rows=""
 for cid in $(seq 1 15); do
   best=$(timeout 120 ./build/bmm_bench "$cid" 2>/dev/null | grep -o 'best_us=[0-9.]*' | head -1 | sed -E 's/best_us=//')
