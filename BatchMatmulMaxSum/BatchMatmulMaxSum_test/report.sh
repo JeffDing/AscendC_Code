@@ -54,7 +54,7 @@ for cid in $(seq 1 15); do
   best=$(timeout 120 ./build/bmm_bench "$cid" 2>/dev/null | grep -o 'best_us=[0-9.]*' | head -1 | sed -E 's/best_us=//')
   tb=$(tbest_of "$cid")
   if [ -n "$best" ] && [ "$tb" != "-" ]; then
-    ratio=$($PY -c "print(f'{$best/$tb*100:.0f}%')")
+    ratio=$($PY -c "print(f'{$tb/$best*100:.0f}%')")
     perf_rows="${perf_rows}| ${cid} | ${best} | ${tb} | ${ratio} |\n"
   else
     perf_rows="${perf_rows}| ${cid} | ${best:-n/a} | ${tb} | - |\n"
@@ -102,7 +102,7 @@ done
   printf '%b' "$perf_rows"
   echo
   echo "注："
-  echo "- 实测口径为设备侧事件计时 best-of-8，与 OJ TBest 同口径；达成率 = 实测/TBest，<100% 即优于官方目标。"
+  echo "- 实测口径为设备侧事件计时 best-of-8，与 OJ TBest 同口径；达成率 = TBest/实测，>100% 即优于官方目标。"
   echo "- 正确性回归表中的 launch/total 为独立进程单次执行，含 ACL 初始化/IO 固定开销（约 0.5-1.3ms），小 case 下无法体现 kernel 差异；衡量 kernel 计算性能以本性能表为准。"
   echo
   echo "## 稳定性（关键 case 独立进程冷启动连跑）"

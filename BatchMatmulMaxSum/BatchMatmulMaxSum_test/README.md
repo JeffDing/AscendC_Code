@@ -96,7 +96,7 @@ bash report.sh 3 10         # 自定义：回归 reps=3，稳定性各 10 次
 跑完在当前目录生成 **`TEST_REPORT.md`**，包含三个章节：
 
 - **正确性回归表**：每 case 的 y[0]、max_rel、launch/单次 total（单位 us）
-- **性能实测表**：每 case 设备侧 event 计时 best-of-8（单位 us）、OJ TBest 目标（us）、达成率（<100% 即优于官方目标）
+- **性能实测表**：每 case 设备侧 event 计时 best-of-8（单位 us）、OJ TBest 目标（us）、达成率（>100% 即优于官方目标）
 - **稳定性表**：关键 case（c9/c10/c11/c15）独立进程冷启动连跑通过率
 - 附：关键修复说明（async 引擎 SyncAll 修复）
 
