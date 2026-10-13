@@ -6,9 +6,13 @@
 set -u
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPS=${1:-5}; FLAKY=${2:-20}
-PY="$(command -v python3 || command -v python || true)"
+PY=""
+for cand in /usr/local/python3.12.13/bin/python3 /usr/local/python3.12.13/bin/python python3 python; do
+  p=$(command -v "$cand" 2>/dev/null) || continue
+  if "$p" -c "import numpy" >/dev/null 2>&1; then PY="$p"; break; fi
+done
 if [ -z "$PY" ]; then
-  echo "错误：未找到 python3/python 解释器，请先安装并加入 PATH" >&2
+  echo "错误：未找到带 numpy 的 python 解释器（系统 /usr/bin/python3 无 numpy，请使用 /usr/local/python3.12.13/bin/python3）" >&2
   exit 1
 fi
 REPORT="$ROOT/TEST_REPORT.md"
