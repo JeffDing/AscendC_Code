@@ -20,7 +20,8 @@ constexpr int32_t MAX_NDIM = 8;
 constexpr int64_t DIM_MASK = (int64_t(1) << 20) - 1;
 constexpr int64_t Q_MASK = (int64_t(1) << 22) - 1;
 constexpr int64_t TAIL_CHUNK_MAX = 4096;
-// UB 单次搬运允许的最大元素数（决定块 DMA 的 blockCount 上限）
+// UB 并发批处理缓冲字节数（slot 存储一个 tail_ 连续块）
+constexpr int64_t BATCH_BUF_BYTES = 32768;
 constexpr int64_t UB_ELEMS_MAX = 4096;
 constexpr int64_t IDX_BUF_ELEMS = 8192;
 
@@ -45,11 +46,14 @@ private:
     __aicore__ inline void DeriveLayout(GM_ADDR indexed_sizes, GM_ADDR indices);
     __aicore__ inline void Prepare(GM_ADDR x, GM_ADDR indices, GM_ADDR y);
     __aicore__ inline int64_t DecodeOffset(int64_t idx, const int64_t* dimList, int64_t cnt) const;
+    __aicore__ inline int64_t WrapOffset(int64_t idxVal) const;
     __aicore__ inline int64_t ReadInt64(const LocalTensor<int32_t>& buf, int64_t elemIdx) const;
     __aicore__ inline void CopyIndicesChunk(int64_t startElem, int64_t count);
     __aicore__ inline int64_t IndexValue(int64_t t);
     __aicore__ inline void Gather(int64_t srcOff, int64_t dstOff, int64_t len);
     __aicore__ inline void IdentityCopy();
+    __aicore__ inline void BatchRun(int64_t u0, int64_t u1);
+    __aicore__ inline void FlushContigRun(int64_t runStart, int64_t runSrc, int64_t runLen, int64_t runD);
     __aicore__ inline void Drain();
     // 多块 DMA 要求每个数据块在 UB 侧按 32B 对齐，故仅当块字节数为 32B 倍数时才可用块 DMA
     __aicore__ inline bool CanBatch(int64_t blkLen) const
@@ -61,10 +65,13 @@ private:
     TPipe pipe;
     TBuf<TPosition::VECCALC> bufA_;
     TBuf<TPosition::VECCALC> bufB_;
+    TBuf<TPosition::VECCALC> batchBuf_;
     TBuf<TPosition::VECCALC> maskBuf;
     TBuf<TPosition::VECCALC> idxBuf;
     int32_t curBuf_ = 0;
     bool pending_[2] = {false, false};
+    // 并发批处理：每个 slot 存一个 tail_ 连续块（32B 对齐），批内所有块 DMA 并发发出
+    int64_t slotElems_ = 1;
 
     GlobalTensor<T> inputGMX;
     GlobalTensor<T> outputGMY;
@@ -277,6 +284,16 @@ __aicore__ inline void Index<T>::Prepare(GM_ADDR x, GM_ADDR indices, GM_ADDR y)
     int64_t tailBytes = ((UB_ELEMS_MAX * elemSize * byteUnits_ + 31) / 32) * 32;
     pipe.InitBuffer(bufA_, tailBytes);
     pipe.InitBuffer(bufB_, tailBytes);
+    pipe.InitBuffer(batchBuf_, BATCH_BUF_BYTES);
+    {
+        // slot 按 32B 对齐（DataCopyPad 的 UB 块需 32B 对齐）；slotElems_ 以 T 元素为单位
+        int64_t blockBytes = tail_ * elemSize * byteUnits_;
+        int64_t slotBytes = ((blockBytes + 31) / 32) * 32;
+        slotElems_ = slotBytes / elemSize;
+        if (slotElems_ < 1) {
+            slotElems_ = 1;
+        }
+    }
 
     // indices 缓冲区按可能的最大分块分配，兼容 q_ 很大时分块读取
     int64_t idxBytes = ((IDX_BUF_ELEMS * 8 + 31) / 32) * 32;
@@ -317,8 +334,9 @@ template <typename T>
 __aicore__ inline int64_t Index<T>::IndexValue(int64_t t)
 {
     if (idxCached_) {
-        LocalTensor<int32_t> idxLocal = idxBuf.Get<int32_t>();
-        return ReadInt64(idxLocal, t);
+        // 直接用 int64 视图一次标量读（避免每单元 2 次 32bit GetValue）
+        LocalTensor<int64_t> idxLocal = idxBuf.Get<int64_t>();
+        return idxLocal.GetValue(static_cast<int32_t>(t));
     }
     int64_t chunkIdx = t / IDX_BUF_ELEMS;
     if (chunkIdx != idxChunk_) {
@@ -330,8 +348,8 @@ __aicore__ inline int64_t Index<T>::IndexValue(int64_t t)
         CopyIndicesChunk(start, count);
         idxChunk_ = chunkIdx;
     }
-    LocalTensor<int32_t> idxLocal = idxBuf.Get<int32_t>();
-    return ReadInt64(idxLocal, t - chunkIdx * IDX_BUF_ELEMS);
+    LocalTensor<int64_t> idxLocal = idxBuf.Get<int64_t>();
+    return idxLocal.GetValue(static_cast<int32_t>(t - chunkIdx * IDX_BUF_ELEMS));
 }
 
 template <typename T>
@@ -339,14 +357,55 @@ __aicore__ inline int64_t Index<T>::DecodeOffset(int64_t idx, const int64_t* dim
 {
     int64_t off = 0;
     int64_t tmp = idx;
+    // 32 位除法快路径（64 位除法很慢）；越界再退回 64 位
+    bool small = (idx >= 0 && idx <= 2147483647LL);
     for (int64_t i = cnt - 1; i >= 0; --i) {
         int64_t d = dimList[i];
         int64_t sz = dims_[d];
         if (sz <= 0) {
             continue;
         }
-        off += (tmp % sz) * strides_[d];
-        tmp /= sz;
+        if (small && sz <= 2147483647LL) {
+            int32_t v = static_cast<int32_t>(tmp);
+            int32_t s = static_cast<int32_t>(sz);
+            off += static_cast<int64_t>(v % s) * strides_[d];
+            tmp = static_cast<int64_t>(v / s);
+        } else {
+            off += (tmp % sz) * strides_[d];
+            tmp /= sz;
+        }
+    }
+    return off;
+}
+
+// 被索引维度的源偏移贡献：所有被索引维度复用同一 indices 值，每个维度按自身长度取模（支持负索引）
+template <typename T>
+__aicore__ inline int64_t Index<T>::WrapOffset(int64_t idxVal) const
+{
+    int64_t off = 0;
+    // 绝大多数情形 idxVal 与维长都在 int32 范围内：走 32 位除法快路径（64 位除法很慢）
+    bool small = (idxVal >= -2147483648LL && idxVal <= 2147483647LL);
+    for (int64_t j = 0; j < maskCnt_; ++j) {
+        int64_t d = maskDims_[j];
+        int64_t sz = dims_[d];
+        if (sz <= 0) {
+            continue;
+        }
+        int64_t c;
+        if (small && sz <= 2147483647LL) {
+            int32_t v = static_cast<int32_t>(idxVal);
+            int32_t s = static_cast<int32_t>(sz);
+            c = static_cast<int64_t>(v % s);
+            if (c < 0) {
+                c += sz;
+            }
+        } else {
+            c = idxVal % sz;
+            if (c < 0) {
+                c += sz;
+            }
+        }
+        off += c * strides_[d];
     }
     return off;
 }
@@ -503,6 +562,98 @@ __aicore__ inline void Index<T>::IdentityCopy()
     Drain();
 }
 
+// 并发批处理：把本核负责的输出段切成若干 tail_ 连续块（每块一个 32B 对齐 slot），
+// 批内所有源块单块 DMA 并发发出（隐藏小 DMA 的启动延迟），再逐块写到连续输出。
+// 不依赖形状、不用向量指令，对连续/非连续轴统一适用（块序 gi 的输出位置恒为 u0*rr_+gi*tail_）。
+template <typename T>
+__aicore__ inline void Index<T>::BatchRun(int64_t u0, int64_t u1)
+{
+    if (u1 <= u0 || outerNum_ <= 0 || tail_ <= 0) {
+        return;
+    }
+    int64_t totalBlocks = (u1 - u0) * outerNum_;
+    int64_t ubSlots = (BATCH_BUF_BYTES / static_cast<int64_t>(sizeof(T))) / slotElems_;
+    if (ubSlots < 1) {
+        ubSlots = 1;
+    }
+    int64_t dstBase = u0 * rr_;
+    int64_t lastU = -1;
+    int64_t baseOff = 0;
+    uint32_t lenBytes = static_cast<uint32_t>(tail_ * static_cast<int64_t>(sizeof(T)) * byteUnits_);
+    LocalTensor<T> ub = batchBuf_.Get<T>();
+    int64_t bi = 0;
+    while (bi < totalBlocks) {
+        int64_t cnt = totalBlocks - bi;
+        if (cnt > ubSlots) {
+            cnt = ubSlots;
+        }
+        for (int64_t i = 0; i < cnt; ++i) {
+            int64_t gi = bi + i;
+            int64_t u = u0 + gi / outerNum_;
+            int64_t k = gi - (gi / outerNum_) * outerNum_;
+            if (u != lastU) {
+                int64_t pp = u / q_;
+                int64_t tt = u - pp * q_;
+                int64_t idxVal = IndexValue(tt);
+                int64_t idxOff = 0;
+                for (int64_t j = 0; j < maskCnt_; ++j) {
+                    int64_t d = maskDims_[j];
+                    int64_t sz = dims_[d];
+                    if (sz <= 0) {
+                        continue;
+                    }
+                    int64_t c = idxVal % sz;
+                    if (c < 0) {
+                        c += sz;
+                    }
+                    idxOff += c * strides_[d];
+                }
+                int64_t preOff = (preCnt_ > 0) ? DecodeOffset(pp, preDims_, preCnt_) : 0;
+                baseOff = preOff + idxOff;
+                lastU = u;
+            }
+            int64_t remOff = (outerCnt_ > 0) ? DecodeOffset(k, outerDims_, outerCnt_) : 0;
+            DataCopyExtParams cp{1, lenBytes, 0, 0, 0};
+            DataCopyPadExtParams<T> padParams{false, 0, 0, static_cast<T>(0)};
+            DataCopyPad(ub[i * slotElems_], inputGMX[(baseOff + remOff) * byteUnits_], cp, padParams);
+        }
+        SetFlag<HardEvent::MTE2_MTE3>(0);
+        WaitFlag<HardEvent::MTE2_MTE3>(0);
+        for (int64_t i = 0; i < cnt; ++i) {
+            DataCopyExtParams cp{1, lenBytes, 0, 0, 0};
+            DataCopyPad(outputGMY[(dstBase + (bi + i) * tail_) * byteUnits_], ub[i * slotElems_], cp);
+        }
+        SetFlag<HardEvent::MTE3_MTE2>(0);
+        WaitFlag<HardEvent::MTE3_MTE2>(0);
+        bi += cnt;
+    }
+}
+
+// 收尾一个「源块步长恒定」的运行段（连续轴）
+template <typename T>
+__aicore__ inline void Index<T>::FlushContigRun(int64_t runStart, int64_t runSrc, int64_t runLen, int64_t runD)
+{
+    if (runLen <= 0 || tail_ <= 0) {
+        return;
+    }
+    if (runLen == 1 || runD == tail_) {
+        // 单个单元，或源块首尾相接（源连续）→ 一次（分块）大搬运
+        Gather(runSrc, runStart * rr_, runLen * tail_);
+        return;
+    }
+    if (runD > tail_ && CanBatch(tail_)) {
+        int64_t srcGap = (runD - tail_) * static_cast<int64_t>(sizeof(T)) * byteUnits_;
+        if (srcGap <= 0xFFFFFFFFLL) {
+            // 等步长块 DMA（块长 32B 对齐），DMA 次数降 runLen 倍
+            BlockCopy(runSrc, runStart * rr_, tail_, runD, tail_, runLen);
+            return;
+        }
+    }
+    for (int64_t i = 0; i < runLen; ++i) {
+        Gather(runSrc + i * runD, (runStart + i) * rr_, tail_);
+    }
+}
+
 // TODO: 实现具体的 kernel 逻辑
 template <typename T>
 __aicore__ inline void Index<T>::Process()
@@ -529,52 +680,81 @@ __aicore__ inline void Index<T>::Process()
     if (u1 > totalUnits_) {
         u1 = totalUnits_;
     }
-    for (int64_t u = u0; u < u1; ++u) {
-        int64_t p = u / q_;
-        int64_t t = u - p * q_;
-        int64_t idxVal = IndexValue(t);
-        // 所有被索引维度复用同一 indices 值；每个维度按自身长度取模（支持负索引，
-        // 与 Ascend 官方 Index 规范的 [-dim, dim-1] 取值域一致）
-        int64_t idxOff = 0;
-        for (int64_t j = 0; j < maskCnt_; ++j) {
-            int64_t d = maskDims_[j];
-            int64_t sz = dims_[d];
-            if (sz <= 0) {
-                continue;
+    if (tail_ <= UB_ELEMS_MAX && outerCnt_ > 0 && !CanBatch(tail_)) {
+        // 非连续轴且尾块太小（无法用块 DMA）：走并发批处理，隐藏大量小 DMA 的启动延迟
+        BatchRun(u0, u1);
+        return;
+    }
+    if (outerCnt_ == 0) {
+        // 连续轴：把源块步长恒定的连续单元合并（d==tail_ 时源连续→一次大搬运；
+        // d 恒定其它值且块长 32B 对齐时→一次 strided 块 DMA）。随机索引下逐单元，不回退。
+        int64_t runStart = 0;
+        int64_t runSrc = 0;
+        int64_t runLen = 0;
+        int64_t runD = 0;
+        int64_t prevS = 0;
+        int64_t p = u0 / q_;
+        int64_t t = u0 - p * q_;
+        int64_t preOff = (preCnt_ > 0) ? DecodeOffset(p, preDims_, preCnt_) : 0;
+        for (int64_t u = u0; u < u1; ++u) {
+            int64_t sOff = preOff + WrapOffset(IndexValue(t));
+            bool extend = false;
+            if (runLen == 1) {
+                runD = sOff - runSrc;  // 由第二个单元确定公共步长
+                extend = (runD >= 0);
+            } else if (runLen > 1) {
+                extend = (sOff - prevS == runD);
             }
-            int64_t c = idxVal % sz;
-            if (c < 0) {
-                c += sz;
-            }
-            idxOff += c * strides_[d];
-        }
-        int64_t outBase = u * rr_;
-        if (outerCnt_ == 0) {
-            if (preCnt_ == 0) {
-                // 完全连续的单次搬运
-                Gather(idxOff, outBase, tail_);
+            if (extend) {
+                runLen++;
             } else {
-                int64_t preOff = DecodeOffset(p, preDims_, preCnt_);
-                Gather(preOff + idxOff, outBase, tail_);
+                if (runLen > 0) {
+                    FlushContigRun(runStart, runSrc, runLen, runD);
+                }
+                runStart = u;
+                runSrc = sOff;
+                runLen = 1;
+            }
+            prevS = sOff;
+            ++t;
+            if (t >= q_) {
+                t = 0;
+                ++p;
+                preOff = (preCnt_ > 0) ? DecodeOffset(p, preDims_, preCnt_) : 0;
+            }
+        }
+        if (runLen > 0) {
+            FlushContigRun(runStart, runSrc, runLen, runD);
+        }
+        Drain();
+        return;
+    }
+    int64_t pc = u0 / q_;
+    int64_t tc = u0 - pc * q_;
+    for (int64_t u = u0; u < u1; ++u) {
+        // 非连续轴：所有被索引维度复用同一 indices 值并按其维度长度取模
+        int64_t idxOff = WrapOffset(IndexValue(tc));
+        int64_t outBase = u * rr_;
+        int64_t inner = outerDims_[outerCnt_ - 1];
+        int64_t innerSz = dims_[inner];
+        int64_t innerStride = strides_[inner];
+        int64_t combos = outerNum_ / innerSz;
+        if (innerSz > 1 && tail_ <= tailChunk_ && CanBatch(tail_)) {
+            // 把「最内层外层维度」的重复搬运合并为一次 strided 块 DMA
+            for (int64_t kk = 0; kk < combos; ++kk) {
+                int64_t remOff = DecodeOffset(kk, outerDims_, outerCnt_ - 1);
+                BlockCopy(idxOff + remOff, outBase + kk * innerSz * tail_, tail_, innerStride, tail_, innerSz);
             }
         } else {
-            // 非连续轴：把「最内层外层维度」的重复搬运合并为一次 strided 块 DMA
-            int64_t inner = outerDims_[outerCnt_ - 1];
-            int64_t innerSz = dims_[inner];
-            int64_t innerStride = strides_[inner];
-            int64_t combos = outerNum_ / innerSz;
-            if (innerSz > 1 && tail_ <= tailChunk_ && CanBatch(tail_)) {
-                for (int64_t kk = 0; kk < combos; ++kk) {
-                    int64_t remOff = DecodeOffset(kk, outerDims_, outerCnt_ - 1);
-                    BlockCopy(idxOff + remOff, outBase + kk * innerSz * tail_, tail_, innerStride, tail_, innerSz);
-                }
-            } else {
-                int64_t base = idxOff;
-                for (int64_t k = 0; k < outerNum_; ++k) {
-                    int64_t remOff = DecodeOffset(k, outerDims_, outerCnt_);
-                    Gather(base + remOff, outBase + k * tail_, tail_);
-                }
+            for (int64_t k = 0; k < outerNum_; ++k) {
+                int64_t remOff = DecodeOffset(k, outerDims_, outerCnt_);
+                Gather(idxOff + remOff, outBase + k * tail_, tail_);
             }
+        }
+        ++tc;
+        if (tc >= q_) {
+            tc = 0;
+            ++pc;
         }
     }
     Drain();
