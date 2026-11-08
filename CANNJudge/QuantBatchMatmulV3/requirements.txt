@@ -1,0 +1,6 @@
+-i https://repo.huaweicloud.com/repository/pypi/simple
+jupyterlab==3.6.1
+jupyter-server==2.3.0
+tornado==6.2
+ipywidgets
+ipykernel
