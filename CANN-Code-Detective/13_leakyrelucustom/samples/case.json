@@ -1,0 +1,53 @@
+{
+  "source_case": "npu_cases[0]",
+  "function": "impl",
+  "attributes": {
+    "negative_slope": 0.01
+  },
+  "inputs": [
+    {
+      "name": "x",
+      "kind": "required",
+      "tensors": [
+        {
+          "file": "x.bin",
+          "dtype": "float32",
+          "shape": [
+            8,
+            2048
+          ],
+          "bytes": 65536,
+          "elements": 16384,
+          "range": [
+            -10,
+            10
+          ],
+          "value": null,
+          "value_url": null,
+          "value_sha256": null
+        }
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "name": "y",
+      "kind": "required",
+      "tensors": [
+        {
+          "file": "y.bin",
+          "dtype": "float32",
+          "shape": [
+            8,
+            2048
+          ],
+          "bytes": 65536,
+          "elements": 16384,
+          "rtol": 0.0001,
+          "atol": 0.0001,
+          "tol": 0.0001
+        }
+      ]
+    }
+  ]
+}
